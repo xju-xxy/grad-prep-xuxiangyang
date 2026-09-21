@@ -7,7 +7,7 @@
 | 序号 | 论文标题 | 年份 | 会议/期刊 | 链接 | 笔记 | 复现 |
 |------|----------|------|-----------|------|------|------|
 | 01 | Deep Residual Learning for Image Recognition (ResNet) | 2015 | CVPR | https://arxiv.org/abs/1512.03385 | ✅ | ⬜ |
-| 02 | U-Net: Convolutional Networks for Biomedical Image Segmentation | 2015 | MICCAI | https://arxiv.org/abs/1505.04597 | ⬜ | ⬜ |
+| 02 | U-Net: Convolutional Networks for Biomedical Image Segmentation | 2015 | MICCAI | https://arxiv.org/abs/1505.04597 | ✅ | ⬜ |
 
 ## 复现进度
 
