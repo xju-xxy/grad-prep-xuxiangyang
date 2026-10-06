@@ -1,0 +1,4 @@
+# ReAct 复现项目用到的第三方库。
+# 安装方法： pip install -r requirements.txt
+zhipuai>=2.1.5
+python-dotenv
