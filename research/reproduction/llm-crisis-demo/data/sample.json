@@ -1,0 +1,2849 @@
+{
+ "seed": 42,
+ "source": "HumAID events_set1（crisisnlp.qcri.org 官网下载）",
+ "note": "优先取各事件 test 集；某类不足 14 条时从同事件 dev/train 补足，样本里 split 字段标了实际来源。论文在全量测试集上跑，这是裁剪后的子集",
+ "items": [
+  {
+   "id": "901831517307101184",
+   "event": "hurricane_harvey_2017",
+   "text": "Another rough day in #HoustonFloods we have had dozens of tornado warnings. About 1/2 turn in funnel clouds or hit the ground as tornados",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "903582036086149120",
+   "event": "hurricane_harvey_2017",
+   "text": "Understand electrical #hazards during #flooding. Download free safety guide:  #Harvey2017 #HurricaneHarvey",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "901714166443982849",
+   "event": "hurricane_harvey_2017",
+   "text": "Per @NWSNewOrleans and echoed from us. please avoid travel to the Houston metro area. Very dangerous situation ongoing there. #txwx #Harvey",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "901767350185320448",
+   "event": "hurricane_harvey_2017",
+   "text": "Emergency officials are advising Houstonians trapped in floodwaters in their homes to head to the top of their roofs, not the attic #Harvey",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "901679762829185024",
+   "event": "hurricane_harvey_2017",
+   "text": "RT @weatherchannel: Tornado Warning for Galveston County in TX until 12:45 AM CDT",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "901779543316467713",
+   "event": "hurricane_harvey_2017",
+   "text": "RT @WunderCave: So many at risk in SE Texas. Please pay attention to authorities. Dont drive in or near flood water.",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "901830961310167040",
+   "event": "hurricane_harvey_2017",
+   "text": "Pictures out of #Houston this morning show significant flooding across metro. #Harvey expected to drop as much as 30” of additional rain",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "901696559372480512",
+   "event": "hurricane_harvey_2017",
+   "text": "RT @austintexasgov: A flash flood warning is in effect for Travis County until 5 a.m.  #harvey #atxwx #atxfloods",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "901859372925542400",
+   "event": "hurricane_harvey_2017",
+   "text": "TROPICAL STORM HARVEY Winds 40 mph moving SSE at 2mph Radar:  #wx #weather #txwx #flooding",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "901775429064941568",
+   "event": "hurricane_harvey_2017",
+   "text": "Emergency services are maxed out across Houston and authorities are advising to use and ax or a hammer to break through to your roof #harvey",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "901437328585084928",
+   "event": "hurricane_harvey_2017",
+   "text": "The National Weather Service warns its only the start of major flooding in Texas. #HurricaneHarvey  via @USATODAY",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "901751540637192192",
+   "event": "hurricane_harvey_2017",
+   "text": "RT @Fox26Houston: #HURRICANEHARVEY Tornado hits northwest Harris County  YOUR GULF COAST WEATHER AUTHORITY",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "901717912410607617",
+   "event": "hurricane_harvey_2017",
+   "text": "#Harvey is causing WIDESPREAD flooding and we just received this video from the area of I-45 near Hwy 249.  #HouWx",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "902907401472499712",
+   "event": "hurricane_harvey_2017",
+   "text": "Our office in Houston remains closed due to #Harvey. Heed the instructions of local authorities. Travel advice:",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "902633473122422784",
+   "event": "hurricane_harvey_2017",
+   "text": "To all the Mexican people - thank you. Please continue to inspire resistance while again helping those who need it.",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "902859838245535745",
+   "event": "hurricane_harvey_2017",
+   "text": "Thoughts and prayers for those affected by hurricane Harvey. #diversepatriots #HarveyFlood #HarveyStorm #TexasStrong",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "902904907270938627",
+   "event": "hurricane_harvey_2017",
+   "text": "Let us continue to pray for everyone in Texas and Louisiana who has and who is being affected by Hurricane Harvey. #HurricaneHarvey",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "902644645351579649",
+   "event": "hurricane_harvey_2017",
+   "text": "#HurricaneHarvey #PrayForTexas #ComedyHeals #Repost @michaelblackson I have child support so I",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "902653689122443265",
+   "event": "hurricane_harvey_2017",
+   "text": "Our thoughts are with everyone who is affected by Hurricane Harvey. Sending support and encouragement from Detroit!",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "902642691535552516",
+   "event": "hurricane_harvey_2017",
+   "text": "Our hearts go out to those affected by Hurricane Harvey, the storms, and flooding in Texas. If you’re looking for",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "902649253964652544",
+   "event": "hurricane_harvey_2017",
+   "text": "Our thoughts &amp; prayers are with all those affected by #HurricaneHarvey , we mourn with the family &amp; colleagues of @houstonpolice Sgt. Perez",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "902664783568232450",
+   "event": "hurricane_harvey_2017",
+   "text": "Please share with those in need! We are praying for those impacted by #hurricaneharvey Thanks",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "902661989616332800",
+   "event": "hurricane_harvey_2017",
+   "text": "To those affected by Hurrican Harvey I send thoughts and prayers. Hearts and Love. #HurricaneHarvey",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "902640304796209152",
+   "event": "hurricane_harvey_2017",
+   "text": "I cant keep my eyes of the news coverage of #Harvey flooding in and around #Houston. My heart goes out to everyone in need.",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "902606939544281088",
+   "event": "hurricane_harvey_2017",
+   "text": "Find out how you can help families in need following the devastation and destruction brought on by Hurricane Harvey.",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "902869531584073728",
+   "event": "hurricane_harvey_2017",
+   "text": "I just feel like everybody should watch this 😩❤️🙏🏽 #PrayforTexas #Hurricaneharvey",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "902638973733961729",
+   "event": "hurricane_harvey_2017",
+   "text": "God rest our @houstonpolice brother 😥🙏🏼 #BackTheBlue #HurricaneHarvey #Harvey",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "902913539920232448",
+   "event": "hurricane_harvey_2017",
+   "text": "My heart, my thoughts, my prayers are with Houston",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "902903254698401793",
+   "event": "hurricane_harvey_2017",
+   "text": "Please send help to Port Arthur!!!! 🙏 Everybody needs help in Texas. #Harvey",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "903048427164065792",
+   "event": "hurricane_harvey_2017",
+   "text": "If you need emergency MAINTENANCE meds, visit CVS at NRG Convention Center - #houston #HurricaneHarvey #harveySOS #houstonflood",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "903655375395807233",
+   "event": "hurricane_harvey_2017",
+   "text": "Help UTA students affected by #Harvey by giving to Emergency Assistance Fund - . All proceeds go to students in need.",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "902635196524240896",
+   "event": "hurricane_harvey_2017",
+   "text": "TAMU vet school has sent an emergency response team to help rescue animals in Houston, meanwhile you doofuses are clowning for attention.",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "903645650088275969",
+   "event": "hurricane_harvey_2017",
+   "text": "Happy Friday!! Its football time again in America but dont forget those that are still suffering. Please help #Harvey text 90999",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "903450788906848256",
+   "event": "hurricane_harvey_2017",
+   "text": "What to look for in kids affected by Harvey that might indicate a need for mental health support, from TAG Center at @TexasChildrens",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "902850483974483968",
+   "event": "hurricane_harvey_2017",
+   "text": "Epic, historic, &amp; record setting crowds came to congratulate ME at my #HurricaneHarvey rally!! What a crowd! What a turnout! #HelpforHouston",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "903380653189677056",
+   "event": "hurricane_harvey_2017",
+   "text": "This Harvey fund focuses on immediate needs; food, clean water, shelter and more.",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "902803324289863680",
+   "event": "hurricane_harvey_2017",
+   "text": "To each and Everyone Viewing This Post please help Retweet and spread this post. #HurricaneHarvey #HelpforHouston",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "902852645630726144",
+   "event": "hurricane_harvey_2017",
+   "text": "Please help, this lady needs to be rescue Marilyn guidry ,6210 Charles ave, Port Arthur , tx 713 5427751, 80 year old Water waist #harvey",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "903361103660367872",
+   "event": "hurricane_harvey_2017",
+   "text": "A group of locals has come together to provide food to one of the cities hit hard by Hurricane Harvey, Ingleside.",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "902893489582735360",
+   "event": "hurricane_harvey_2017",
+   "text": "Please were in lumberton and I have a newborn we have to wait until 6 am for anyone to come help us 😰",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "902686067979157505",
+   "event": "hurricane_harvey_2017",
+   "text": "We have plenty of food, says Herbert Mitchell, of Alameda Plaza. Im looking for some wine.",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "903664732015603712",
+   "event": "hurricane_harvey_2017",
+   "text": "Have 5 minutes? Call @GovAbbott &amp; ask him to help #Harvey victiims by delaying implementation of the Blue Tarp bill:",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "903628191356649472",
+   "event": "hurricane_harvey_2017",
+   "text": "Citizens for Animal Protection on I-10 has pet food and other supplies for displaced pets and their people. #HurricaneHarvey #HoustonStrong",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "902680430842871810",
+   "event": "hurricane_harvey_2017",
+   "text": "Some of our team members &amp; Council Member @BrendaStardig in #SpringBranch setting up a shelter #Harvey #HarrisCounty #Houston #houwx",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "902658787080900609",
+   "event": "hurricane_harvey_2017",
+   "text": "Attn Iowans: @ARLIowa is holding a Clear the Shelter adoption event to make room for animals displaced by #Harvey!",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "902880933354889217",
+   "event": "hurricane_harvey_2017",
+   "text": "Furry evacuees from Texas make their way north",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "903731844545466368",
+   "event": "hurricane_harvey_2017",
+   "text": "PSA: The Austin Public Library is providing library cards to any Hurricane Harvey evacuees #ATX",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "902662770902147072",
+   "event": "hurricane_harvey_2017",
+   "text": "Levee Breached in Brazoria County, Texas; Residents Urged to Evacuate:  #Harvey2017 #Harvey",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "903674558456180737",
+   "event": "hurricane_harvey_2017",
+   "text": "HAWS says foster care needed for pets displaced from shelters due to Hurricane Harvey  via @journalsentinel",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "903671278544064512",
+   "event": "hurricane_harvey_2017",
+   "text": "Animals in Texas shelters coming so those shelters can help the animals displaced by the flooding.  via @PittsburghPG",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "902650446254399488",
+   "event": "hurricane_harvey_2017",
+   "text": "Roland Martin speaks with Congressman Al Green regarding #Harvey Death Toll, Evacuations Ordered As More Rain",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "902858483510386688",
+   "event": "hurricane_harvey_2017",
+   "text": "Here are the list of Evacuation shelters. #Harvey #TexasFloods",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "902896387771301888",
+   "event": "hurricane_harvey_2017",
+   "text": "Sam Houston Taking In Horses Displaced By Hurricane Harvey",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "902758687860772865",
+   "event": "hurricane_harvey_2017",
+   "text": "@danielmwatson @POTUS @SylvesterTurner Had years to design a viable evacuation plan.",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "903480967590903808",
+   "event": "hurricane_harvey_2017",
+   "text": "551st Multi Role Bridge Co transports #evacuees to shelter. We wont stop until every #Texan is safe. #TMDHarvey #Harvey #TexansServingTexas",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "902620391583211521",
+   "event": "hurricane_harvey_2017",
+   "text": "People evacuating - take your pets with you! Shelters are set up to take them in. Dont leave your fur babies to suffer &amp; drown. #Harvey2017",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "902851684115861506",
+   "event": "hurricane_harvey_2017",
+   "text": "LATEST: #Harvey makes 2nd landfall in Louisiana, death toll rises",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "902897589758066688",
+   "event": "hurricane_harvey_2017",
+   "text": "Floods kill more than 1,200 in Asia as all eyes are on Hurricane Harvey",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "901704958361444352",
+   "event": "hurricane_harvey_2017",
+   "text": "Rockport, Texas Hurricane Harvey Injuries: Reports",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "903585222263963648",
+   "event": "hurricane_harvey_2017",
+   "text": "Retweeted CBS This Morning (@CBSThisMorning): The confirmed death toll for #Harvey has jumped to 37. Helicopters",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "902912419231649792",
+   "event": "hurricane_harvey_2017",
+   "text": "#Harvey death toll rises to at least 20. MORE &gt;&gt;",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "901796296847237120",
+   "event": "hurricane_harvey_2017",
+   "text": "Rising floodwaters trap hundreds stranded in wake of Harvey; 2 dead, 14 injured",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "902879074208632837",
+   "event": "hurricane_harvey_2017",
+   "text": "Forecast brings hope as new shelters open, #Harveys death toll rises",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "903543412435156992",
+   "event": "hurricane_harvey_2017",
+   "text": "Breaking: where the #Harvey death toll stands next at #News4Today #LiveDesk",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "901776369696116736",
+   "event": "hurricane_harvey_2017",
+   "text": "Harvey, the most powerful storm to hit Texas in over 50 years, has left at least two people dead. #9News",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "903456790880239616",
+   "event": "hurricane_harvey_2017",
+   "text": "#harvey Death toll crosses 40, say officials, flood waters to crest in some places on Friday #flooding",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "901735471432257536",
+   "event": "hurricane_harvey_2017",
+   "text": "#Deaths #reported as #Harvey #strikes #Texas #coast | #USA #News: Tropical storm Harvey has",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "902851241683943424",
+   "event": "hurricane_harvey_2017",
+   "text": "30 Americans have died. Ppl lost everything &amp; @potus is selling hats. Disgraceful. No leadership, no empathy. #HurricaneHarvey",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "901667951396478977",
+   "event": "hurricane_harvey_2017",
+   "text": "First life lost from Harveys ruthless destruction. #2510BC",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "903597579329515520",
+   "event": "hurricane_harvey_2017",
+   "text": "As Texas tries to recover from #Harvey, fierce storms common in Southern Asia with 1,000 deaths in last 2 months.",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "903387842616987648",
+   "event": "hurricane_harvey_2017",
+   "text": "Hurricane Harvey Will Cause Long-Term Psychological Damage To Kids",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "901295469527224320",
+   "event": "hurricane_harvey_2017",
+   "text": "Streaming #hurricaneharvey live. Extensive damage and part 2 of the storm soon to come.",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "903703980898967554",
+   "event": "hurricane_harvey_2017",
+   "text": "Hurricane Harvey: No one will ever match me for damage and intesity! Hurricane Irma: Hold my Beer.",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "902827195009290240",
+   "event": "hurricane_harvey_2017",
+   "text": "Retweeted FEMA (@fema): A look at some of the damage caused by #Harvey via examples submitted through the @fema",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "903761325838520320",
+   "event": "hurricane_harvey_2017",
+   "text": "Residents of #Texas #HOA stranded after road, bridge destroyed in flood  via @goonan_deborah #HurricaneHarvey",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "903749496630370305",
+   "event": "hurricane_harvey_2017",
+   "text": "Hurricane Harvey may have destroyed 1 million cars—and changed the U.S. used auto market",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "903359701747937281",
+   "event": "hurricane_harvey_2017",
+   "text": "#HurricaneHarvey damage to be among top 10 most costly” for #insurers  via @insureca4less",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "903352997530542081",
+   "event": "hurricane_harvey_2017",
+   "text": "White House: 100000 homes affected by Hurricane Harvey flooding - Washington Examiner",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "902915536673280000",
+   "event": "hurricane_harvey_2017",
+   "text": "Officials say #Harvey could have damaged 30,000-40,000 homes. How will Houston deal with the aftermath?",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "902652906574368768",
+   "event": "hurricane_harvey_2017",
+   "text": "Is it me or something doesnt work to see @FLOTUS in a branded cap and high heels touring #HurricaneHarvey damage. Serve not self-serving!",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "903053310629994497",
+   "event": "hurricane_harvey_2017",
+   "text": "As long as she is safe, nothing else matters. Woman gave birth days after Hurricane Harvey destroyed her home:",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "903743667189448704",
+   "event": "hurricane_harvey_2017",
+   "text": "More explosions expected at #Arkema plant (Crosby,TX) as flooding has caused refrigeration &amp; generators to fail.",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "903456210153873408",
+   "event": "hurricane_harvey_2017",
+   "text": "Smoke erupting from a Houston area chemical plant that lost power in #Harvey flooding.",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "901655186015481858",
+   "event": "hurricane_harvey_2017",
+   "text": "#DSTRDamage Our sons house destroyed by Harvey.Lost everythi",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "903384161876049921",
+   "event": "hurricane_harvey_2017",
+   "text": "#Jefferies raises $5 million from clients, employees and shareholders for #Hurricane #Harvey Relief",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "902656444260126732",
+   "event": "hurricane_harvey_2017",
+   "text": ".@POTUS thanks @USCG for #Harvey rescue efforts: We are very proud of the Coast Guard – the job they’ve done, the lives they’ve saved.”",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "902652835229257728",
+   "event": "hurricane_harvey_2017",
+   "text": "some resources on helping Hurricane Harvey victims:",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "903057823461933056",
+   "event": "hurricane_harvey_2017",
+   "text": "A lot of people have asked how they can help. This campaign will help Rice staff &amp; students, as well as the City of Houston! #CUSAcares",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "902727480146087936",
+   "event": "hurricane_harvey_2017",
+   "text": "The Quickest Way To Find the Nearest Hurricane Harvey Shelter That Isn’t Already Full | Swamplot",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "902634046210973696",
+   "event": "hurricane_harvey_2017",
+   "text": "$125,000 and growing..Thank you! Call now to donate #Harvey #cbs13 @RedCross @GoodDaySac",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "902899570329485315",
+   "event": "hurricane_harvey_2017",
+   "text": "Daryl Hudek, Houston Police Officer &amp; American Hero, Saving Lives during the Texas Flooding from Hurricane Harvey, August 28, 2017.",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "902682769414909952",
+   "event": "hurricane_harvey_2017",
+   "text": "Red Cross isnt a reliable donation place. Donate to JJ Watts link",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "903049130951536640",
+   "event": "hurricane_harvey_2017",
+   "text": "Houston Bar offers legal assistance to those impacted by #Harvey  @thehba @HVLPtweets @HoustonChron @ABAJournal",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "902607046427725826",
+   "event": "hurricane_harvey_2017",
+   "text": "I tagged the organizations we are donating to if you want more information click on their pages and donate! #HurricaneHarvey #HoustonStrong",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "902881985714147328",
+   "event": "hurricane_harvey_2017",
+   "text": "Were supporting @convoyofhope as our emergency response to #HurricaneHarvey. Give a $10 donation simply by texting CONVOY to 50555.",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "902839371388387330",
+   "event": "hurricane_harvey_2017",
+   "text": "Together we can make a difference helping the victims of #HurricaneHarvey by #Donating @RedCross  #disasterrelief",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "903483037928665088",
+   "event": "hurricane_harvey_2017",
+   "text": "Thanks to all who are donating their time to help the citizens of southeast Texas. never seen this type of unity in my life. #Harvey2017",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "903448331317325825",
+   "event": "hurricane_harvey_2017",
+   "text": "Thanks to our friends at @CulliganMan we have been able to supply #HurricaneHarvey survivors with clean drinking water.",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "902853252739469312",
+   "event": "hurricane_harvey_2017",
+   "text": "On @NC9: Car bursts into flames in East EP•#Harvey makes landfall again•Olympic swimmer Michael Phelps reveals big family news",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "902854781584023552",
+   "event": "hurricane_harvey_2017",
+   "text": "Trump thinks of Hurricane Harvey only as an opportunity to improve his collapsing poll numbers. Victims be damned! He wants crowds! #Dems",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "903602236281978881",
+   "event": "hurricane_harvey_2017",
+   "text": "@realdonaldTrump Didnt Meet ONE #HurricaneHarvey Victim &amp; did NOT express sympathy for dead, dying, displaced  @GOP",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "903715163412381696",
+   "event": "hurricane_harvey_2017",
+   "text": "Hurricane Harvey or Indian floods - why we care about some catastrophes more than others  #indafloods",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "902896920116568066",
+   "event": "hurricane_harvey_2017",
+   "text": "That jackass theme song remake kills me everytime 😂😂😂",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "902645386116042761",
+   "event": "hurricane_harvey_2017",
+   "text": "Todays #Diabetic Life is out  #Diabetes #hurricaneharvey",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "902918355497177088",
+   "event": "hurricane_harvey_2017",
+   "text": "Watch: Men on a boat appear to take liquor shots during #Harvey flooding",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "902601044047351808",
+   "event": "hurricane_harvey_2017",
+   "text": "University fires professor who blamed Hurricane Harvey on Trump vote - Sun Sentinel",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "902663748854456321",
+   "event": "hurricane_harvey_2017",
+   "text": "He cant make money on Sundays if its being used as a shelter",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "902908720815984641",
+   "event": "hurricane_harvey_2017",
+   "text": "The victims of #Harvey dont hugs, they need effectiveness! Something sorely lacking with Obama",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "903631211393937408",
+   "event": "hurricane_harvey_2017",
+   "text": "A very timely topic. Thousands of patients disrupted by Harvey.",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "902643423303176192",
+   "event": "hurricane_harvey_2017",
+   "text": "I wonder if Trump will make Hurricane Harvey pay for the damage",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "901796825044267008",
+   "event": "hurricane_harvey_2017",
+   "text": "45: So far so good in Texas! (Doesnt know, care at least two people died in the flooding). #harvey",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "903456996652810241",
+   "event": "hurricane_harvey_2017",
+   "text": "For the love of God, please do not #politicize #Harvey. Everyone has been affected. You are either helping or hurting. #Texas #Louisiana",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "910646414136537088",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "People just ran: deadly 7.1 magnitude earthquake hits Mexico",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "910643441821872129",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @SafetyPinDaily: An earthquake early warning system helped Mexico City. Trump’s budget would kill it in the US | via @qz",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "910715265339375616",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @BBCBreaking: Strong earthquake of magnitude 7.4 hits southern Mexico, rattling buildings in Mexico City",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "911897735426723844",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @EQTracker: Strong earthquake - Near Coast Of Oaxaca, Mexico - September 24, 2017  via Earthquake-Report",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "910707407197818880",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "7.1-magnitude earthquake hit the city of Puebla in Mexico – VIDEO",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "910524897218019329",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @B911Nature: Mexico City Following Major 7.1 Magnitude Earthquake",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "911634262641831936",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @business: Magnitude 6.1 earthquake shakes jittery Mexico",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "912206487249965056",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @EQTW: THE TSUNAMI THREAT FROM THE 8.2 MAGNITUDE EARTHQUAKE NEAR CHIAPAS, MEXICO HAS NOW OFFICIALLY PASSED",
+   "label": "caution_and_advice",
+   "split": "dev_train"
+  },
+  {
+   "id": "910525007742214144",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "See the latest #Mexico travel advice:  - British citizens affected by the #earthquake can call +44 (0) 20 7008 1500",
+   "label": "caution_and_advice",
+   "split": "dev_train"
+  },
+  {
+   "id": "911902281007865856",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "#BREAKINGNEWS: New #earthquake, a magnitude 5.7 #earthquake strikes, #Paredon, #Mexico. @USGS @USGSBigQuakes confirmed. #MexicoEarthquake",
+   "label": "caution_and_advice",
+   "split": "dev_train"
+  },
+  {
+   "id": "911625354212716544",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "BREAKING ANOTHER EARTHQUAKE MEASURING 6.2 RECORDED SE OF MEXICO CITY #Severeweather #earthquakes #Mexicoearthquake",
+   "label": "caution_and_advice",
+   "split": "dev_train"
+  },
+  {
+   "id": "910579377859026944",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @TravelGov: #Mexico: Earthquake reported in Mexico City. Monitor local news for more information.",
+   "label": "caution_and_advice",
+   "split": "dev_train"
+  },
+  {
+   "id": "911709367099170816",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Mexico City was hit by yet another 6.1 #earthquake. Luckily I didnt feel it. I believe I did feel a wimpy 5 aftershock yesterday. #temblor",
+   "label": "caution_and_advice",
+   "split": "dev_train"
+  },
+  {
+   "id": "910812289334423553",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @BasedMonitored: BREAKING: Mexico City rocked by 7+ magnitude earthquake.",
+   "label": "caution_and_advice",
+   "split": "dev_train"
+  },
+  {
+   "id": "910546356132913152",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @PatrikBatAAr: Heard about yet another Mexico earthquake Im so sorry. Stay safe, everyone",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "910680618073300992",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Our thoughts are w/ those affected by the devastating earthquake in Mexico. We stand with @EPN &amp; the country during this trying time. - Jack",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "910610220522409984",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @rihanna: Mexico you are in my prayers as well! Just heard of this horrible earthquake! Praying for the families of those who lost their",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "910611363243859969",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "@Adrian_ElTitan My heart goes out to our brothers and sisters in Mexico city. Unbelievable damage by earthquake.",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "910567620151205889",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @sebastianant517: RT SirJadeja: BREAKING: Massive 7.1 Magnitude #Earthquake Strikes #Mexico City. Prayers ὤFἿE #MexicoEarthquake #sism ht",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "910701617866989569",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @CVasquezU: Sending my love, thoughts, and prayers to all the families affected by the earthquake in Mexico. #FuerzaMexico /",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "911643241245634560",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @NancyPelosi: Paul &amp; I are praying for the loved ones of those lost &amp; the injured today in the Mexico City earthquake. #PrayForMexico",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "912127610695516161",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @grillo1138: Look @NintendoAmerica The guys of @BarcadeVG sharing the love to the victims of the earthquake in Mexico City :) .",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "910644201947197440",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @PattyArquette: Prayers to our brothers and sisters in Mexico who are suffering from this severe earthquake.",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "911698224783622144",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @YojiNoda1: All my prayers go to the people affected by the Earthquake at Mexico. Wish for a fast recovery and hope therell be no more",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "911905322985390081",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Raiders send thoughts and prayers to Mexico after devastating earthquake",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "910580391823728640",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Our thoughts and prayers are with the people of Mexico after the devastating earthquake.",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "910719063831334917",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "[ARTICLE] 170920 Monsta X Praying that Mexico Will Recover From Earthquake Meaningful Award Speech (Soribada Awards) via. BlueMoonRiver_",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "914883695202455552",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @carlagugino: Just heard about the #earthquake in #mexico. I am sending love and prayers to all those affected. Boy, we must embrace eve",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "911747535760429056",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "@tealdiamonds23 @BeckieJBrown Hi Renée my country is in pain, an earthquake destroyed cities, please help me share this campaign for donations",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "910657068591235074",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "We need help right now!!!! Ὁ4ὢDὢD Theres lots of people inside rocks and that, please #PrayersforMexico ὄAἿB἟2἟D",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "910575552091885568",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Please @CTVAtlantic @NEWS957 @hfxgov #Mexico needs worldwide help! #RT  #EarthquakeMexico #donationformexico",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "914886555327545344",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Mexicos earthquake victims still need support! If you want to help please donate to this initiative #FuerzaMexico",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "910706558090252288",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "In the wake of the earthquake in central #Mexico, people turned to social media to ask for help — and to give it. @CarlNasman reports.",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "910697449219661825",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "@mcbourbonnais1 MC please help giving a shout out to your fans at Mexico suffering because of the earthquake. Try to make more people aware, we need help!",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "911673570241236992",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @HumanityRoad: #MexicoEarthquake People in #Cohetzala need help with building materials. #sismoMX #hmrd",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "910560031744999424",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Dear friends Mexico needs help. If your not from Mexico but you what help us you cans donate  everything can help us.",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "915972307063005184",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "&lt;3 Your fellow SACNISTAs need your help recovering from the three Hurricanes &amp; the Mexico earthquake! Take action:",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "911844707642347520",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "@denmarked Can i have some shelter there? I alrady lost my home in Mexicos earthquake :(",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "910658975015747584",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "WE NEED HELP, HANDS, FOOD, WHATEVERRRRR!!!!! Plz help us!!!!! ἟2἟DὉ4Ὁ4Ὁ4἟2἟D἟2἟D἟2἟D἟2἟D἟2἟D἟2἟D἟2἟D",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "912051045668409344",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @IngenieroQuotes: @garyvee @tailopez Mexico need your help, the earthquake hit us hard, but here we are. All support is welcome:",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "915078943157346304",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @CYPHER1610: @BTS_twt Im sorry for ranting on here but honestly imma just say this. Mexico is still in need of food and stuff.. after t",
+   "label": "requests_or_urgent_needs",
+   "split": "dev_train"
+  },
+  {
+   "id": "910645250342871040",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @PERRYSWlTNESS: Please send help im stuck in a collapsed building after Mexico Citys earthquake Tlalpan Street 1773, San Diego Churu",
+   "label": "requests_or_urgent_needs",
+   "split": "dev_train"
+  },
+  {
+   "id": "910628219296129025",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @HuffPost: Death toll from powerful earthquake in central Mexico tops 220, officials say",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "911807709724282880",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @cbsbaltimore: A 6.1 magnitude earthquake has hit Mexico in Oaxaca. Over 400 people have been killed by recent quakes in Mexico.",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "910617776431042560",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @TheMexLondoner: Sky News - At least 20 children died after their school collapsed in an earthquake in central Mexico",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "910542081742995456",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "7.1 magnitude earthquake in Mexico kills 226 people",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "911964226549362688",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Official death toll of 19 Sept Mexico Earthquake is now 318.",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "910576006787825665",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @azamsahmed: I cant bear this! The cries of the families who lost 30 schoolchildren to the earthquake in Mexico by @Paulina_VV :",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "910709012978716672",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @Plan_Prep_Live: Many children died in this collapse but some survived to be rescued. #Mexico #earthquake",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "910627471929872384",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "I leave this here for everyone that thinks the earthquake that happened in Mexico was no big deal. More than 200 people died. I was lucky",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "910525883579998208",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @emilytgreen: Removing the jungle gym from elementary school where at least 22 students died in Mexico earthquake",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "910617265007202305",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Mexico earthquake: at least 225 dead - La entrada Mexico earthquake: at least 225 dead aparece primero en Veo N",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "910546863207657472",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Please pray for the people of Mexico City in Mexico. The death toll from the earthquake has risen to 225.",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "913635912445071360",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @AFP: Rescue teams in Mexico lead last ongoing search operation to find 20 bodies in aftermath of devastating earthquake /",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "910687076537876480",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @OurBiNation: A FACT YOU SHOULD KNOW: Mexico: Huge earthquake topples buildings, killing more than 200 - BBC News",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "910715277289037824",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "LATEST: More than 230 dead after Mexico earthquake as rescue teams desperately try to free trapped schoolchildren.",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "912364624426672128",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Automakers survey earthquake damage in Mexico -",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "914186594550247425",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Some damages #earthquake #MexicoEarthquake #damages #buildings #edificios #daños #terremoto",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "912124233525944321",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Entering Ground 0: Mexico City collapsed buliding. All our info needs on our arms just in case #mexicoearthquake #volunteerminister #10x",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "912391622381506561",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @lifeasicit: Tens of thousands of homes badly damaged or completely destroyed, please help if you can. #MexicoEarthquake ἟2἟D",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "911974830479757312",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Teams from἞E἟1἟2἟D἟A἟8἞F἟5 working at site of ruins of a six-story building that collapsed in Condesa. #MexicoEarthquake #FuerzaMexico",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "912282659258228736",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Mexico’s Permanencia Voluntaria Film Archive Damaged in Earthquake: These Antique Film Reels Are Irreplaceable",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "911729839224131585",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @latimes: An entire block of homes destroyed by the earthquake in Mexico",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "910644412429955072",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "WATCH: A magnitude 7.1 earthquake was centered about 100 miles southeast of Mexico City, but caused lots of damage in the capital",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "911726268118392833",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @IvanCNN: #Mexicoearthquake destroyed a church celebrating the baptism of a baby girl. The next day,the village held a funeral",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "910554973594779649",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @vcaivano: Some great images of the aftermath of the earthquake in Mexico by the the @AP team. #mexicoterremoto",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "911910483661385728",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @KTLA: Survivor of Mexico’s 7.1 Magnitude Earthquake Says Floors Came Down Like Dominoes",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "910706529711673345",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @Olallo_Rubio: Battered, Not Broken: Pictures of Mexico After the Quake -",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "912130208089755649",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @gary_coronado: An entire block of homes destroyed by #MexicoEarthquake in the small town of #Jojutla, #Morelos @latimesphotos",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "910577630012829696",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @Azharkh4: Another shocking footage of buildings collapse as powerful #earthquake strikes #Mexico City. #FuerzaMexico",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "913878322769268738",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Earthquake rescue, relief and rebuilding–It’s up to me!  on @bloglovin",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "913183487531786241",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Help Javier Plascencia and Claudia Sandoval raise funds for MEXICO EARTHQUAKE relief by attending our Celebrity",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "910693040339210240",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Were supporting the relief effort for the recent Mexico earthquake. To donate visit  #CDMX #fuerzamexico #VivaMexico",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "910576613862944768",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "@thekillers #askthekillers Would you do a donation to the people in Mexico city who needs help because of the earthquake? Love you guys!!",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "910764274091483136",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "@katyperry can you tell me if the rumors are right? That you donated 500k USD for the victims of the Mexico Citys earthquake?",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "913622973256491009",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @maduro_en: RT @VTVcanal8: Mexico is grateful for humanitarian aid from Venezuela after earthquake.",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "910524590740275200",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Please donate to Topos, a rescue team that was formed during the 1985 #earthquake in México City YOU CAN HELP EVEN IF YOU ARE NOT IN #MEXICO",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "913156300909023232",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Interesting, Mexican tax and customs office opens channel to help diaspora population send donations to Mexico in #earthquake aftermath",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "914994931592134656",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "#LadyGaga has donated $1M to help relief efforts for Hurricane Harvey, Irma, José, and Maria, as well as the Mexico City earthquake.",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "910764354525638657",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "A Tide of Citizens Relentlessly Helps Earthquake Victims in Mexico City: Long lines of",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "912284655147249664",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "In the last 48 hours, 500 + @CruzRojz_Mx volunteers &amp; staff have been active in search, rescue, first aid &amp; medical care. #MexicoEarthquake",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "913594621812293632",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @LambrickPark: LP Mexican Earthquake relief fundraiser Friday! 2$ donation for a donut! #MexicoEarthquake",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "911988176415281152",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @caritas_bizkaia: iamCARITAS: RT CatholicRelief: In #Mexico, were distributing emergency supplies after #earthquake in Oaxaca w/ pa ht",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "910771978415439872",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @GlobalGiving: Text MEXICO to 80100 to give $10 to GlobalGiving’s Mexico Earthquake Relief Fund  US users only, m",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "914945742275514368",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Everybody in January: 2017 cant possibly be any worse than 2016! 2017: Hold my #MAGA hat. #PuertoRico #LasVegas #MexicoEarthquake #TomPetty #HughHefner #MaryTylerMoore #JerryLewis #RogerMoore #AdamWest #BobbyTheBrainHeenan",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "911759157417725958",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Earthquake - 6.1 - 18km SSE of Matias Romero, Mexico | PDC Hazard Information",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "911635152597651458",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Another 6.1 magnitude earthquake rocks Mexico",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "911622251166015489",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Another Earthquake in Mexico devastating events. At this rate, @Donald Trump wont need to build his WALL, he",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "910555202616520707",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @AmirAbdulazeez: Did something like this happen for the mudslide victims in Sierra Leone?",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "913117870145654786",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "your music and music in general always help :) it has been my solace after the ptsd that the earthquake in mexico left",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "911715104676335617",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Jojutla is a reflection of the disparity between the capital and the nation’s more rural areas. @nytimes gets it.",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "910631238557253632",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Statement by President of USCCB to the people of Mexico following yesterdays powerful earthquake:",
+   "label": "not_humanitarian",
+   "split": "dev_train"
+  },
+  {
+   "id": "911766479368056832",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Women laborers, dying in the factories they worked in under unknown conditions. It is not the first time.” #Chimalpopoca #MexicoEarthquake",
+   "label": "not_humanitarian",
+   "split": "dev_train"
+  },
+  {
+   "id": "913412495196299264",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @NathanielParish: Heres my essay on recovery efforts in Mexico City and what its like living in an city threatened by earthquakes http",
+   "label": "not_humanitarian",
+   "split": "dev_train"
+  },
+  {
+   "id": "914194499500478465",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @washingtonpost: Mexico’s president faces an earthquake of his own when he asks citizens for disaster assistance",
+   "label": "not_humanitarian",
+   "split": "dev_train"
+  },
+  {
+   "id": "910817169566502913",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "Mexico City was built on land that’s prone to severe earthquake damage.",
+   "label": "not_humanitarian",
+   "split": "dev_train"
+  },
+  {
+   "id": "914462666785247236",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @bbusa617:  Get the hell out of Criminal Mexico. This was Catholic Youth Volunteers, shot beaten &amp; raped. All $",
+   "label": "not_humanitarian",
+   "split": "dev_train"
+  },
+  {
+   "id": "910572509795196928",
+   "event": "puebla_mexico_earthquake_2017",
+   "text": "RT @alchemission: BEST ARTICLE ON #MEXICOCITYEARTHQUAKE AID RELIEF INQUIRIES  via @HuffPostImpact",
+   "label": "not_humanitarian",
+   "split": "dev_train"
+  },
+  {
+   "id": "730155477519106048",
+   "event": "canada_wildfires_2016",
+   "text": "Alberta wildfire: Emergency declared in Fort McMurray - BBC News -",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "732047761365929985",
+   "event": "canada_wildfires_2016",
+   "text": "RT @HouckisPokise: CRITICAL WILDFIRE ALERT; and a Local State of Emergency for Little Smoky area please RT",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "729854302898913281",
+   "event": "canada_wildfires_2016",
+   "text": "Make sure you fill up and keep a full tank cause- evacuation time",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "734066329578143746",
+   "event": "canada_wildfires_2016",
+   "text": "Survival Tip#11 #survival #prepping #evacuation #bugout #wildfire #FortMac #FortMacFire",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "733750628137066497",
+   "event": "canada_wildfires_2016",
+   "text": "RT @jana_pruden: Current emergency alerts for both wildfire and winter storm. #Alberta",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "728981598159282177",
+   "event": "canada_wildfires_2016",
+   "text": "RT @mb_adventurist: Wildfires in Nopiming and Whiteshell are spreading. Be careful out there folks. Check for travel bans. #manitoba #backc",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "728911108623372288",
+   "event": "canada_wildfires_2016",
+   "text": "RT @AllisonChinchar: MPCA has issued an Air Quality Advisory due to wildfire smoke until 10pm  #ymmfire @DDwx htt",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "733903030660173825",
+   "event": "canada_wildfires_2016",
+   "text": "Alberta: Wildfire alert earlier in the week, winter storm warning later in the week.",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "728738932909875204",
+   "event": "canada_wildfires_2016",
+   "text": "Northwestern Ontario Wildfire Update – May 6 2016: THUNDER BAY – Fire UPDATE – The fire",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "729380845606207488",
+   "event": "canada_wildfires_2016",
+   "text": "Rachel Notley says Fort McMurray wildfire not spreading as fast as feared this weekend. Suncor facility not damaged. $SU",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "729741279840473089",
+   "event": "canada_wildfires_2016",
+   "text": "Sothe fires in Alberta are under control now..Great to hear!",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "729096029241413632",
+   "event": "canada_wildfires_2016",
+   "text": "Wildfire above Oyama: UPDATE: 4:30 p.m. A helicopter has now joined in the battle against the wildfire above Oyama. The BC Wildfire",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "734120563782733824",
+   "event": "canada_wildfires_2016",
+   "text": "RT @Mix1037FMNews: Fire west of Janvier burning out of control, says province  #ymmfire #rmwb @Mix1037radio /",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "732934635450064897",
+   "event": "canada_wildfires_2016",
+   "text": "RT @JWongGlobalNews: Wildfire officials say strong winds from the west helped push the fire back on areas that were previously burned. #YMM",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "728782837856378880",
+   "event": "canada_wildfires_2016",
+   "text": "RT @Reggie_Dunlop7: @ItsRodStebbings Following Rod &amp; his support for all affected by Fort Mac wildfire. Thoughts with all. #ymmfire",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "732797815248850945",
+   "event": "canada_wildfires_2016",
+   "text": "RT @Planetmosh: Wildfire festival needs your help.",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "729445190411255808",
+   "event": "canada_wildfires_2016",
+   "text": "Thoughts are with all the Mums &amp; their families today!",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "729284197441933312",
+   "event": "canada_wildfires_2016",
+   "text": "RT @Digitalnun: Praying for all tweeps, esp those celebrating Ascension today, and for the well-being of all affected by the wildfire in Ca",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "729017990797242370",
+   "event": "canada_wildfires_2016",
+   "text": "@AlexYuki70 on . Appreciate your concern here and our thoughts are with all those affected by the wildfire ^MO3/3",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "728897194896535552",
+   "event": "canada_wildfires_2016",
+   "text": "IEA: RT IEABirol: Our thoughts are with the residents and workers of Fort McMurray, Alberta, as #wildfire forces evacuation",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "728647946527350784",
+   "event": "canada_wildfires_2016",
+   "text": "Our thoughts are with those affected and those helping #ABfire",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "729698610384764928",
+   "event": "canada_wildfires_2016",
+   "text": "RT @DaveMustaine: My thoughts and prayers go out to our neighbors in Canada Hopes rise in Canadian wildfire battle",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "730144153107988480",
+   "event": "canada_wildfires_2016",
+   "text": "Thanks, @planetlabs for releasing more images to help emergency crews.  #FortMacFire #FortMcMurray",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "729058501687836672",
+   "event": "canada_wildfires_2016",
+   "text": "RT @BenjaminSWatson: Heart is breaking for these families",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "728659696962314241",
+   "event": "canada_wildfires_2016",
+   "text": "@TheYoungTurks Syrian refugees helping out fort mac wildfire victims in Canada. Please cover this story. #FortMacFire",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "728956062817128449",
+   "event": "canada_wildfires_2016",
+   "text": "My thoughts and feelings go to evacuees and victims of @FortMcmurray wildfire.",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "729183782796988416",
+   "event": "canada_wildfires_2016",
+   "text": "@DaniCim Please pray for Fort McMurray its a few hours from where I live it has a massive wildfire up there that would consume most cities.",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "729132904521990144",
+   "event": "canada_wildfires_2016",
+   "text": "Dear World, please help us.",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "729435253660631041",
+   "event": "canada_wildfires_2016",
+   "text": "Change in weather gives firefighters a  goes out 2 our friends n neighbors!Please donate 2your nearest Red Cross",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "728623409022783488",
+   "event": "canada_wildfires_2016",
+   "text": "RT @GeorgeHatcher: #Aviationsafety Co-pilot uninjured;meanwhile, wildfire rages on.They need that water tanker.  htt",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "733008216766828546",
+   "event": "canada_wildfires_2016",
+   "text": "@JustinTrudeau @RachelNotley @jkenney we need immediate help in this province this is negligence on fed prov gov",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "729734692837023745",
+   "event": "canada_wildfires_2016",
+   "text": "All help is needed!! And welcomed.",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "728831267353956352",
+   "event": "canada_wildfires_2016",
+   "text": "@FDNY Please help with with the Fort McMurray wildfire #FortMacFire #FortMcMurray #ymm #ymmfire #AlbertaStrong",
+   "label": "requests_or_urgent_needs",
+   "split": "dev_train"
+  },
+  {
+   "id": "729772213184827392",
+   "event": "canada_wildfires_2016",
+   "text": "That is terrible. We need help to contain and stop the fire from spreading.",
+   "label": "requests_or_urgent_needs",
+   "split": "dev_train"
+  },
+  {
+   "id": "730051986465263617",
+   "event": "canada_wildfires_2016",
+   "text": "We dont need the help with the fireswe need the help now with food shelter and other necessities for these people",
+   "label": "requests_or_urgent_needs",
+   "split": "dev_train"
+  },
+  {
+   "id": "729064820704612352",
+   "event": "canada_wildfires_2016",
+   "text": "@NBCSports @HillaryScottLA Please, please send that rain to Alberta, we desperately need it to put out our MONSTER wildfire.",
+   "label": "requests_or_urgent_needs",
+   "split": "dev_train"
+  },
+  {
+   "id": "729706052866842624",
+   "event": "canada_wildfires_2016",
+   "text": "RT @atgiggleswick: @MerlinYYC @JustinTrudeau Exactly, help the people in the wildfire area AND stop fanning the flames of the cold war with",
+   "label": "requests_or_urgent_needs",
+   "split": "dev_train"
+  },
+  {
+   "id": "729875009565396992",
+   "event": "canada_wildfires_2016",
+   "text": "Dear Russia, mexico and USA .. Please invade and help us anyway. We DO need the extra assistance in #ymmfire",
+   "label": "requests_or_urgent_needs",
+   "split": "dev_train"
+  },
+  {
+   "id": "730049540426850305",
+   "event": "canada_wildfires_2016",
+   "text": "the Premiere w/ direction from the emergency team will ask for more help if they need it #cdnpoli",
+   "label": "requests_or_urgent_needs",
+   "split": "dev_train"
+  },
+  {
+   "id": "728574937770934272",
+   "event": "canada_wildfires_2016",
+   "text": "RT @GlobalEdmonton: Labatt Breweries providing drinking water to wildfire evacuees in Saskatchewan, Alberta &amp; B.C.  h",
+   "label": "requests_or_urgent_needs",
+   "split": "dev_train"
+  },
+  {
+   "id": "730052359049580544",
+   "event": "canada_wildfires_2016",
+   "text": "I need Head Shaker emoticon again as we turn down international aircraft help for fires:  #notpolitics #lotsoffires",
+   "label": "requests_or_urgent_needs",
+   "split": "dev_train"
+  },
+  {
+   "id": "730082528435052545",
+   "event": "canada_wildfires_2016",
+   "text": "@RentMainstreet Hi, I was wondering if you still have apartments available for Fort Mac wildfire victims with a family of five? Thank you!",
+   "label": "requests_or_urgent_needs",
+   "split": "dev_train"
+  },
+  {
+   "id": "732352369816702979",
+   "event": "canada_wildfires_2016",
+   "text": "RT@RMWoodBuffalo:Wildfire update, May 16, - Workers north of #ymm under controlled precautionary evacuation #ymmfire",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "730504661401096192",
+   "event": "canada_wildfires_2016",
+   "text": "As MLA for Lesser Slave Lake, @DanielleLarivee stresses she understands the strains of a wildfire evacuation. #ableg #rmwbcouncil",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "728613019119288320",
+   "event": "canada_wildfires_2016",
+   "text": "Evacuations Continue in Wildfire-Struck Alberta: With forest fires continuing to spread in Canada’s oil-patch",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "732348737926766593",
+   "event": "canada_wildfires_2016",
+   "text": "Growing wildfire forces evacuation of Fort McMurray oilfield camps: Oilsands camps north of Fort McMurray, which",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "728757379479691264",
+   "event": "canada_wildfires_2016",
+   "text": "RT @EmrgncyNewsWire: Fort St. John evacuation initiated after two wildfires merge -   #Wildfi",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "733391781627371521",
+   "event": "canada_wildfires_2016",
+   "text": "The massive Canadian wildfire that displaced thousands of people in Alberta has spread to neighbouring Saskatchewan",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "728567272386772992",
+   "event": "canada_wildfires_2016",
+   "text": "RT @YourAlberta: WILDFIRE ALERT: residents north of the Alexis Reserve should prepare for evacuation. See @AB_EmergAlert for updates :",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "728547747515731968",
+   "event": "canada_wildfires_2016",
+   "text": "#BCnews Fort McMurray wildfire: 85,000 hectare beast grows, northern evacuation efforts continue",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "732458886259707904",
+   "event": "canada_wildfires_2016",
+   "text": "BBC News - Canada wildfire: Oil workers evacuate camps near Fort McMurray  #FortMcMurray #ymm #ymmfire #FortMacFire",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "732341876934598656",
+   "event": "canada_wildfires_2016",
+   "text": "RT @davidcommon: New mandatory evacuation order for oil camps north of Fort McMurray as wildfire moves in",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "732556743641731072",
+   "event": "canada_wildfires_2016",
+   "text": "Work camps north of Fort McMurray evacuated due to wildfire: Evacuation of 12 camps being called a controlle",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "730818214096195585",
+   "event": "canada_wildfires_2016",
+   "text": "Fort McMurray evacuees line up in Calgary for wildfire relief cards",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "732568763397115905",
+   "event": "canada_wildfires_2016",
+   "text": "RT @lisabrokop: #FortMcMurray needs us! Entire city evacuated due to massive wildfire. Text RedCross to 30333 to donate $5. #FortMacFire",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "733374229819822080",
+   "event": "canada_wildfires_2016",
+   "text": "WATCH #FortMcMurray residents may return home Jun 1   @weathernetwork",
+   "label": "displaced_people_and_evacuations",
+   "split": "test"
+  },
+  {
+   "id": "731940349506002944",
+   "event": "canada_wildfires_2016",
+   "text": "Alberta government releases #FortMcMurray wildfire damage surveillance app",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "730625079143342082",
+   "event": "canada_wildfires_2016",
+   "text": "Canadian wildfire: Already 2400 houses destroyed, still burning out of control",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "728834409470803968",
+   "event": "canada_wildfires_2016",
+   "text": "The wildfire had destroyed 1600 homes two days ago as far as I recall. #r4today",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "728870660508770304",
+   "event": "canada_wildfires_2016",
+   "text": "DTN Canada: Ask the People: A wildfire in Fort McMurray, AL has destroyed 1,600 buildings and resulted in a m",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "729138696021139457",
+   "event": "canada_wildfires_2016",
+   "text": "RT @abcnews: Out of control #FortMcMurray wildfire doubles in size, homes destroyed",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "732619220647710720",
+   "event": "canada_wildfires_2016",
+   "text": "@RachelNotley says privately owned Black Sands Lodge north of #ymm destroyed by wildfire. 665 units lost. Noralta Lodge (3700 units) at risk",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "734142193653403648",
+   "event": "canada_wildfires_2016",
+   "text": "These bears have had their own homes destroyed by the fire. Non-lethal aversion tactics should be considered.",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "730606066023665665",
+   "event": "canada_wildfires_2016",
+   "text": "$9bn fire damage to Fort McMurray, ‘the beast’ will affect forests, carbon emissions, air, water pollution, waste",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "732962661785346049",
+   "event": "canada_wildfires_2016",
+   "text": "Nice article @ScottieUpshall Fort McMurray native Upshall reflects on the damage to his hometown in @PlayersTribune",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "728625710630371330",
+   "event": "canada_wildfires_2016",
+   "text": "RT @REITCanada: Boardwalk REIT Provides Ft. McMurray Wildfire Update - Damage Unknown, Will Reimburse Tenants of 352 Units w/ $1,500 :",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "728672411906805760",
+   "event": "canada_wildfires_2016",
+   "text": "RT @Alberta411: Fort McMurray Wildfire MEGA POST • Most expensive disaster in Canadian history at $9 billion • 1,600 Buildings",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "729674196817686528",
+   "event": "canada_wildfires_2016",
+   "text": "Notley in Fort McMurray Monday to survey wildfire damage.",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "729291439369273344",
+   "event": "canada_wildfires_2016",
+   "text": "Scorched remains: Haunting images from a city destroyed by wildfire #FortMcMurray #FortMacFire #yymfire",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "732688427381051392",
+   "event": "canada_wildfires_2016",
+   "text": "Oilsands workcamp destroyed as Alberta wildfire shifts north #ymmfire",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "730868410763116545",
+   "event": "canada_wildfires_2016",
+   "text": "So overwhelming when you donate $5 to Canadian Red Cross for the people of Alberta Wildfire ὠ7 May Godbless you ὠ7ὠA❤️ #AlbertaStrong",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "730790332036579329",
+   "event": "canada_wildfires_2016",
+   "text": "So easy! Donate $10 @redcrosscanada to Fort McMurray wildfire fund by texting Fires to 20222",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "728606798282919936",
+   "event": "canada_wildfires_2016",
+   "text": "RT @naomiyamamoto: BC Liquor stores accepting donations to help Alberta wildfire relief efforts:  @RedCrossAB",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "728909922331721728",
+   "event": "canada_wildfires_2016",
+   "text": "@MUTTScomics @spca #Alberta - what can be done to rescue abandoned pets? They need help. #ymmfire",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "729704696273883138",
+   "event": "canada_wildfires_2016",
+   "text": "Wildfire Update: Ottawa Promises Income Support | Help to Rebuild Fort McMurray #YMM #ymmfire",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "728674116773904384",
+   "event": "canada_wildfires_2016",
+   "text": "RT @FoothillsFCU23: In response the to the #FortMacFire we will be collecting cash donations at the gate before our final preseason game ht",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "729723341439836160",
+   "event": "canada_wildfires_2016",
+   "text": "Support to Alberta Wildfire Relief Coming from Kapuskasing",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "733520151077773313",
+   "event": "canada_wildfires_2016",
+   "text": "@BrianJeanWRP shows grace and resolve under pressure.",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "735879768839589890",
+   "event": "canada_wildfires_2016",
+   "text": "RT @JenCrosby: LIVE right now - details of #ymmfire aid concert:",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "729153892911583234",
+   "event": "canada_wildfires_2016",
+   "text": "@WWETheBigShow have you donated to help aid people affected by the wildfire?",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "728637742716956672",
+   "event": "canada_wildfires_2016",
+   "text": "RT @windspeakernews: Red Cross: To date $30 million received for wildfire evacuees. To donate: redcross.ca Donations matched by fed and AB",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "728586123581239296",
+   "event": "canada_wildfires_2016",
+   "text": "Albertas pro sports teams contribute to #yymfire relief. Unifor mbrs shld donate at  #canlab",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "728789317540184065",
+   "event": "canada_wildfires_2016",
+   "text": "#Canada to Review #Russia’s Offer to Assist With #Alberta Wildfire / Sputnik International #ymm",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "730485317673746434",
+   "event": "canada_wildfires_2016",
+   "text": "CUPE BC donates $20,000 to Fort McMurray wildfire relief fund #FortMcMurray",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "735882990916632576",
+   "event": "canada_wildfires_2016",
+   "text": "Fort McMurray wildfire: Nickelback, Corb Lund, Rankin Family, Blue Rodeo, Randy Bachman among Fire Aid acts.",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "733692223422910466",
+   "event": "canada_wildfires_2016",
+   "text": "Gee Im with AMA I guess I should look to change. Im not interested in dealing with poor businesses vendor",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "729969608669724672",
+   "event": "canada_wildfires_2016",
+   "text": "RT @tiniskwerl: #FortMacFire from #Space #Alberta 34 #Wildfires 5 #OutOfControl 23 UnderControl +1.5K #Firefighters #YMMFire #Canada :",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "731811403175202821",
+   "event": "canada_wildfires_2016",
+   "text": "Maybe we should just burn down our homes cuz they could be flammable and ignite Our home? Uh Wait a sec. FUCK OFF",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "728965334384844800",
+   "event": "canada_wildfires_2016",
+   "text": "RT @VPRobertATA: Teachers please contact your Locals leadership with this information ASAP @ATACounsellors @atassc",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "729415905638121472",
+   "event": "canada_wildfires_2016",
+   "text": "Notley will visit Fort McMurray tomorrow  amid cautious optimism re: #ymmfire",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "733317393863188481",
+   "event": "canada_wildfires_2016",
+   "text": "#YMMFire as Premier @christyclarkbc calls for a national strategy on #wildfires good to review history.",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "729322309056499712",
+   "event": "canada_wildfires_2016",
+   "text": "Who was counting wild fires in N.A. two hundred years ago?",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "730534536258289664",
+   "event": "canada_wildfires_2016",
+   "text": "RT @SteinTime44: So many hockey memories were destroyed my championship ring (with #BSens in 2010-11), my jersey from Ottawa :",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "734814182818750464",
+   "event": "canada_wildfires_2016",
+   "text": "RT @Christian_LTW: Wanna see us play main stage at Warped?! Help us out!! Spread it like wildfire!",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "728616974406823936",
+   "event": "canada_wildfires_2016",
+   "text": "Red Cross will sink 90% of that money into their own non-profit organization though.",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "728749890570838016",
+   "event": "canada_wildfires_2016",
+   "text": "Hi @northwestel. Has your fibre line near High Level, Alberta, been affected by the wildfire?",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "732691300420440064",
+   "event": "canada_wildfires_2016",
+   "text": "Fort McMurray Fire: Rain Could Be A Double-Edged Sword For Wildfire-Stricken Area: Firefighters near Fort McM",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "729154799115984896",
+   "event": "canada_wildfires_2016",
+   "text": "RT @NEWS1130: BC Wildfire Service says they received two reports of people about to launch drones near 2 fires near Fort St. John.",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "871048667888734209",
+   "event": "srilanka_floods_2017",
+   "text": "Compensation for flood damage; NITF pays Rs. 125 m To learn more @BuyObserver #SundayObserver #FloodSL #FloodRelief",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "870662381864538115",
+   "event": "srilanka_floods_2017",
+   "text": "Situation report for 2 june 2017 @6.00pm Due to bad #Weather #FloodSL #flood2017 #SLFlood #srioanka",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "870267486062735360",
+   "event": "srilanka_floods_2017",
+   "text": "RT @gopiharan: Water level situation in major rivers around the island as of 1530 hrs, 01.06.2017. Mostly normal/falling. #FloodSL /",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "870599076223401984",
+   "event": "srilanka_floods_2017",
+   "text": "@patralekha2011 @CGTNOfficial .Current disaster emergency has diminished. Stock taking now. #lka govt must draw &amp; heed lessons. Public trust in systems is low. #FloodSL",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "870427829045010432",
+   "event": "srilanka_floods_2017",
+   "text": "RT @jscarto: Severe flooding in #SriLanka seen with #Sentinel2 and #Landsat data:",
+   "label": "caution_and_advice",
+   "split": "test"
+  },
+  {
+   "id": "870198325898878976",
+   "event": "srilanka_floods_2017",
+   "text": "Early warning saves lives as Cyclone Mora strikes Bangladesh and Sri Lanka  #news",
+   "label": "caution_and_advice",
+   "split": "dev_train"
+  },
+  {
+   "id": "871653148196315136",
+   "event": "srilanka_floods_2017",
+   "text": "Floods bring with them the potential of illnesses spreading - but precautions can be taken #FloodSL",
+   "label": "caution_and_advice",
+   "split": "dev_train"
+  },
+  {
+   "id": "870604487056076800",
+   "event": "srilanka_floods_2017",
+   "text": "Can be outbreak several plague due contaminated water in flooded aera Be careful. #floodSL",
+   "label": "caution_and_advice",
+   "split": "dev_train"
+  },
+  {
+   "id": "878858722373709825",
+   "event": "srilanka_floods_2017",
+   "text": "Global hazards @PHE_uk bulletin: #SriLanka #flooding #CycloneMora #Bangladesh #CapeTown #drought &amp; #Moscow storm:",
+   "label": "caution_and_advice",
+   "split": "dev_train"
+  },
+  {
+   "id": "870938655971573760",
+   "event": "srilanka_floods_2017",
+   "text": "RT @official__sp: Landslide warning 03 june 2017 02.00pm #FloodSL #floods #slfloods #SriLanka",
+   "label": "caution_and_advice",
+   "split": "dev_train"
+  },
+  {
+   "id": "870265394237513728",
+   "event": "srilanka_floods_2017",
+   "text": "RT @lbolbr: Sri Lanka flood levels begin to reduce, more rain expected #SriLanka #lka #lbo -",
+   "label": "caution_and_advice",
+   "split": "dev_train"
+  },
+  {
+   "id": "870241412851408897",
+   "event": "srilanka_floods_2017",
+   "text": "NBRO has extended the landslide early warning if rainfall continues in the next 24 hours. Effective from 1300 hrs, 01.06.2017 #FloodSL",
+   "label": "caution_and_advice",
+   "split": "dev_train"
+  },
+  {
+   "id": "874694400504283137",
+   "event": "srilanka_floods_2017",
+   "text": "Flood/Landslide - Sri Lanka: FLOOD (WARNING)",
+   "label": "caution_and_advice",
+   "split": "dev_train"
+  },
+  {
+   "id": "870589965834608640",
+   "event": "srilanka_floods_2017",
+   "text": "Early warning, early action save thousands as Cyclone Mora strikes Bangladesh  via @reliefweb #lka #srilanka",
+   "label": "caution_and_advice",
+   "split": "dev_train"
+  },
+  {
+   "id": "876132870527623168",
+   "event": "srilanka_floods_2017",
+   "text": "RT @opendoorssa: #Pray for #provision and #comfort for those affected by the recent floods in #SriLanka; some lost everything, including lo",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "870878734957633537",
+   "event": "srilanka_floods_2017",
+   "text": "RT @RakeshRBag: My prayers with people of #SriLanka in this hour of grief. Pray to god to provide strength to families who have lost near o",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "874731211935141888",
+   "event": "srilanka_floods_2017",
+   "text": "At work in #SriLanka, our emergency team distributing aid, assessing needs and making friends. #floods #disaster",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "870447164660600833",
+   "event": "srilanka_floods_2017",
+   "text": "#PrayForSriLanka ἟1἟0! 91 Deaths, 110 missing, 300 houses damaged &amp; 20,000 families affected due to Landslides &amp; #FloodSL #SriLanka #LKA",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "875255095419691008",
+   "event": "srilanka_floods_2017",
+   "text": "RT @SailaSamuelraju: People of god prayer for island Sri Lanka and pray for Bangalore#india mighty flood is coming. Repent messiah is comin",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "870136463723085825",
+   "event": "srilanka_floods_2017",
+   "text": "I am not from Srilanka but this is hurtful!! Everyone please pray for all the victims..Your 1 minute prayer can save someones life #FloodSL",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "871948740709335040",
+   "event": "srilanka_floods_2017",
+   "text": "Korean Actress Lee Young-ae Changumi supports flood relief efforts in Sri Lanka #SriLank",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "870285573583273984",
+   "event": "srilanka_floods_2017",
+   "text": "Sri Lankans, young and old without and race differences coming together to help a brother or sister affected in the disaster. ❤️ὉAὉBὉC",
+   "label": "sympathy_and_support",
+   "split": "test"
+  },
+  {
+   "id": "881390420760174592",
+   "event": "srilanka_floods_2017",
+   "text": "RT @iamphoenixrisen: Its been a devastating year for Sri Lanka. My beautiful island. Thoughts and prayers for lost lives. #FloodSL",
+   "label": "sympathy_and_support",
+   "split": "dev_train"
+  },
+  {
+   "id": "871218302319775744",
+   "event": "srilanka_floods_2017",
+   "text": "RT @350: Our thoughts are with the millions facing utter hardship in Sri Lanka after Cyclone Mora &amp; in Bangladesh who now face it’s fury. S",
+   "label": "sympathy_and_support",
+   "split": "dev_train"
+  },
+  {
+   "id": "870097524551331840",
+   "event": "srilanka_floods_2017",
+   "text": "Retweeted Alok Sharma (@AlokSharma_RDG): Shocked &amp; saddened by the dreadful flooding in #SriLanka. My thoughts",
+   "label": "sympathy_and_support",
+   "split": "dev_train"
+  },
+  {
+   "id": "870515836947120129",
+   "event": "srilanka_floods_2017",
+   "text": "RT @angloyankophile: So sad to hear about the flood in #SriLanka - a country that is close to my heart and one that we love to visit.",
+   "label": "sympathy_and_support",
+   "split": "dev_train"
+  },
+  {
+   "id": "870040060888010752",
+   "event": "srilanka_floods_2017",
+   "text": "RT @thamasha1996: My thoughts and prayers are with everyone back home in Sri Lanka affected by the #FloodSL. Stay safe!",
+   "label": "sympathy_and_support",
+   "split": "dev_train"
+  },
+  {
+   "id": "870942928482467841",
+   "event": "srilanka_floods_2017",
+   "text": "RT @Tharangawavez: #SriLanka Cricket Players wearing Black arm bands as a marking respect for lives lost in widespread flooding #FloodSL #S",
+   "label": "sympathy_and_support",
+   "split": "dev_train"
+  },
+  {
+   "id": "870904365577453568",
+   "event": "srilanka_floods_2017",
+   "text": "Medical officers neededἾ5Ὡ1Ὢ8 #FloodSL #FloodRelief #Floods #slfloods #SriLanka #SriLankaFloods",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "877254326460272640",
+   "event": "srilanka_floods_2017",
+   "text": "RT @IamRavindu: URGENT NEED FOR DONATIONS!! IMCD Hotline : 0114248220 #FloodReliefLKA #DisasterReliefLKA #FloodSL #lka",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "871416115213324292",
+   "event": "srilanka_floods_2017",
+   "text": "RT @sulorammohan:  Medical aid for #Flood victims of #SriLanka covered by @CGTNOfficial #Kaduwela",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "870186795547471872",
+   "event": "srilanka_floods_2017",
+   "text": "400 #FloodSL victims in dnkoluwaththa in Pitabaddra .Not enough food to eat. Very hard situation there . Plz contact 71 870 6841 ( Bandara)",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "874922877560270848",
+   "event": "srilanka_floods_2017",
+   "text": "Chinese cargo aircraft carrying emergency humanitarian relief for flood victims arrived in Sri Lanka on Saturday",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "875623043497738240",
+   "event": "srilanka_floods_2017",
+   "text": "#UN appeals for more resources for flood-hit #SriLanka",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "870812532109344768",
+   "event": "srilanka_floods_2017",
+   "text": "RT @Tharangawavez: Indispensable ,Medicines and other sanitary equipment are requisitioned for displaced peoples. #floodSL",
+   "label": "requests_or_urgent_needs",
+   "split": "test"
+  },
+  {
+   "id": "874576084863471617",
+   "event": "srilanka_floods_2017",
+   "text": "RT @fonthillcharity: Last container being loaded today for #ExtraCover Sri Lanka. Much needed after the recent devastating floods #SriLank",
+   "label": "requests_or_urgent_needs",
+   "split": "dev_train"
+  },
+  {
+   "id": "870561572938231808",
+   "event": "srilanka_floods_2017",
+   "text": "RT @SenukaHansana: #FloodSL If you feel sympathy for people that died and became homeless in the Sri Lankan floods please like and share",
+   "label": "requests_or_urgent_needs",
+   "split": "dev_train"
+  },
+  {
+   "id": "871235989552873473",
+   "event": "srilanka_floods_2017",
+   "text": "Retweeted ECPAT Sri Lanka (@ecpatsl): @ecpatsl conducts medical programs for flood victims. More initiatives",
+   "label": "requests_or_urgent_needs",
+   "split": "dev_train"
+  },
+  {
+   "id": "870600107049222144",
+   "event": "srilanka_floods_2017",
+   "text": "BERNAMA - 1.3 Million Children Desperately Need Help After Cyclone Mora  #lka #srilanka",
+   "label": "requests_or_urgent_needs",
+   "split": "dev_train"
+  },
+  {
+   "id": "870492535658913792",
+   "event": "srilanka_floods_2017",
+   "text": "ALERT - We are appealing for support as waterborne disease threaten flood survivors.  #LKA #FloodSL #FloodReliefLKA",
+   "label": "requests_or_urgent_needs",
+   "split": "dev_train"
+  },
+  {
+   "id": "870500162879102976",
+   "event": "srilanka_floods_2017",
+   "text": "Responding to health needs of the 600 000+ people affected by the floods in #SriLanka is critical in the current disaster situation #FloodSL",
+   "label": "requests_or_urgent_needs",
+   "split": "dev_train"
+  },
+  {
+   "id": "871042444460032000",
+   "event": "srilanka_floods_2017",
+   "text": ".@UNSriLanka: $22.7 million needed for life-saving + protection needs of 374,000 ppl #SriLanka #floods #landslides -",
+   "label": "requests_or_urgent_needs",
+   "split": "dev_train"
+  },
+  {
+   "id": "870420529022423041",
+   "event": "srilanka_floods_2017",
+   "text": "While Trump denies climate change: 200 die, 80,000 evacuees from Sri Lanka floods 9 killed, 300,000 evacuees from Mora cyclone #paris",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "871007108162093056",
+   "event": "srilanka_floods_2017",
+   "text": "RT @priyatharshan1: Death toll due to adverse weather increased to 224; 78 missing &amp; 698,289 affected: #DMC #lka #FloodSL",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "873586632011788288",
+   "event": "srilanka_floods_2017",
+   "text": "#Srilanka Flood/Landslides 122 dead 97 missing according to Disaster Management Center as of 9 pm today, 1800 houses damaged #FloodSL #lka",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "870325729241726976",
+   "event": "srilanka_floods_2017",
+   "text": "RT @democracynow: Sri Lanka: Death Toll from Flooding Tops 200  #FloodSL",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "870395005386584064",
+   "event": "srilanka_floods_2017",
+   "text": "RT @PDChina: Death toll in flood-hit #SriLanka hits 202, hospitals to be evacuated",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "870252389672116224",
+   "event": "srilanka_floods_2017",
+   "text": "Saddened to learn about the #SriLanka mishap. My thoughts with those who are injured &amp; condolences to families who lost loved ones!",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "876024256894824448",
+   "event": "srilanka_floods_2017",
+   "text": "As death toll mounts in flood-hit #SriLanka, we fear dengue crisis looming in these stagnant waters. Contact us for SPOKESPEOPLE &amp; CONTENT",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "870535125099884544",
+   "event": "srilanka_floods_2017",
+   "text": "RT @TheWatchers_: 202 killed, 94 still missing after worst monsoon rains since 2003 hit Sri Lanka  #monsoon #flood #",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "870318925841551363",
+   "event": "srilanka_floods_2017",
+   "text": "RT @RasmilaD: Death toll increased to 206; 92 missing, 68 injured #SriLanka #FloodSL #LKA",
+   "label": "injured_or_dead_people",
+   "split": "test"
+  },
+  {
+   "id": "870184188342829056",
+   "event": "srilanka_floods_2017",
+   "text": "RT @PrasenjitDas_: Pray For SriLanka Death toll in #SriLanka #floods rise to 126.",
+   "label": "injured_or_dead_people",
+   "split": "dev_train"
+  },
+  {
+   "id": "870524744184905731",
+   "event": "srilanka_floods_2017",
+   "text": "#FloodSL: As per DMC stats this morning, the death toll from recent disasters stands at 206, while 92 people are still missing",
+   "label": "injured_or_dead_people",
+   "split": "dev_train"
+  },
+  {
+   "id": "870245570039996416",
+   "event": "srilanka_floods_2017",
+   "text": "RT @BreakDengue: At least 177 people have died in #SriLanka floods — and the survivors are at risk of #dengue fever",
+   "label": "injured_or_dead_people",
+   "split": "dev_train"
+  },
+  {
+   "id": "871941959799246849",
+   "event": "srilanka_floods_2017",
+   "text": "RT @vishiru: Do you know by 05th June, 717K+ People in 184K+ familes have been affected, 212 reported dead, 79 missing due to #FloodSL #Fl",
+   "label": "injured_or_dead_people",
+   "split": "dev_train"
+  },
+  {
+   "id": "870256276869181440",
+   "event": "srilanka_floods_2017",
+   "text": "RT @Roarlk: #FloodSL: As per DMC numbers at noon today, 203 people have died, while 63 are injured and 96 remain missing after recent disas",
+   "label": "injured_or_dead_people",
+   "split": "dev_train"
+  },
+  {
+   "id": "871935416194215938",
+   "event": "srilanka_floods_2017",
+   "text": "RT @vishiru: 2.3K+ Houses fully and 12.5K+ partially damaged. 24.9K+ people in 7K+ Families are still in safe locations. #FloodSL #FloodRe",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "870702356672921604",
+   "event": "srilanka_floods_2017",
+   "text": "Pahiyangala, Bulathsinhala this morning, 26 houses completely destroyed due to floods It was like a tsunami says residents #FloodSL",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "871321483536203779",
+   "event": "srilanka_floods_2017",
+   "text": "RT @SRIshanu: Mudslides and #floods cause devastation in #SriLanka – in pictures  #FloodReliefLKA #FloodSL #lka",
+   "label": "infrastructure_and_utility_damage",
+   "split": "test"
+  },
+  {
+   "id": "871683608284717056",
+   "event": "srilanka_floods_2017",
+   "text": "RT @fonthillcharity: Devastated for our Charity Partner in Sri Lanka - Extra Cover. Schools severely damaged in the recent flooding. ὢ2 #su",
+   "label": "infrastructure_and_utility_damage",
+   "split": "dev_train"
+  },
+  {
+   "id": "871227702845591553",
+   "event": "srilanka_floods_2017",
+   "text": "RT @ItsYakin: The Road &amp; Development Authority (RDA) estimates that over Rs 6 billion would be required to rebuild damaged road networks #F",
+   "label": "infrastructure_and_utility_damage",
+   "split": "dev_train"
+  },
+  {
+   "id": "877915336632279040",
+   "event": "srilanka_floods_2017",
+   "text": "RT @Uraidah44: 13 of out of 25 districts in #SriLanka have been affected by #flooding and 3,000 buildings destroyed.",
+   "label": "infrastructure_and_utility_damage",
+   "split": "dev_train"
+  },
+  {
+   "id": "869970009493196800",
+   "event": "srilanka_floods_2017",
+   "text": "#SriLankan Government reconstruct the houses destroyed and damaged by the devastating floods and landslides in the countr #FloodSL",
+   "label": "infrastructure_and_utility_damage",
+   "split": "dev_train"
+  },
+  {
+   "id": "873386361189007364",
+   "event": "srilanka_floods_2017",
+   "text": "total damage caused by the recent floods and landslides owing to Cyclone Mora was around 8 billion rupees",
+   "label": "infrastructure_and_utility_damage",
+   "split": "dev_train"
+  },
+  {
+   "id": "874647579631517698",
+   "event": "srilanka_floods_2017",
+   "text": "RT @ItsYakin: There were 20 floods in #Colombo from 1977 to 2013. 926 houses were damaged, 413,433 people were affected #Fact #FloodSL #lka",
+   "label": "infrastructure_and_utility_damage",
+   "split": "dev_train"
+  },
+  {
+   "id": "870589481862258688",
+   "event": "srilanka_floods_2017",
+   "text": "Cyclone Mora: Snapped power lines, poor network in several North-Eastern states  via @scroll_in #lka #srilanka",
+   "label": "infrastructure_and_utility_damage",
+   "split": "dev_train"
+  },
+  {
+   "id": "873525428136415232",
+   "event": "srilanka_floods_2017",
+   "text": "Rs.8 bn &amp;more needed to repair damage caused by floods &amp;landslides in #SriLanka Disaster Management Minister #Priyadharashna in Parliament.",
+   "label": "infrastructure_and_utility_damage",
+   "split": "dev_train"
+  },
+  {
+   "id": "876228965010198532",
+   "event": "srilanka_floods_2017",
+   "text": "RT @ItsYakin: Rs 450 million worth of damage has been caused to schools, affecting 25,000 students &amp; 3,200 teachers in the South by the #Fl",
+   "label": "infrastructure_and_utility_damage",
+   "split": "dev_train"
+  },
+  {
+   "id": "870165306840428544",
+   "event": "srilanka_floods_2017",
+   "text": "RT @JChapagain: Rohingya camps in Bangladesh destroyed by Cyclone Mora - suffering gets worse! @Federation",
+   "label": "infrastructure_and_utility_damage",
+   "split": "dev_train"
+  },
+  {
+   "id": "871709803881607168",
+   "event": "srilanka_floods_2017",
+   "text": "Cyclone Mora then smashed into Bangladesh &amp; Myanmar, where it destroyed camps housing Rohingya refugees and IDPs",
+   "label": "infrastructure_and_utility_damage",
+   "split": "dev_train"
+  },
+  {
+   "id": "871036939679309824",
+   "event": "srilanka_floods_2017",
+   "text": "ECPAT Sri Lanka - PEaCE has taken all measures to launch special medical camps to help flood victims followed by",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "870193083316490240",
+   "event": "srilanka_floods_2017",
+   "text": "RT @maritall: Norway provide NOK 10 million (USD 1,2 million) in flood and landslide relief to Sri Lanka #SLfloods #SriLankaFloods /",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "871333149816438785",
+   "event": "srilanka_floods_2017",
+   "text": ".@ArmyROTC cadets &amp; @PacificCommand Augmentation Team disaster relief experts assist w/#FloodSL clean-up &amp; repairs at schools in Kalutara",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "871650174073884672",
+   "event": "srilanka_floods_2017",
+   "text": "Working with @sarvodayalanka, 400 families from remote villages in Bulathsinhala, Kalutara receive needed hygiene/cooking kits #FloodSL",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "872765972289138688",
+   "event": "srilanka_floods_2017",
+   "text": "How much of #FloodSL relief &amp; recovery funding go into @UNSriLankas admin overheads? Isnt it better to donate direct to local charities?",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "870259920695734272",
+   "event": "srilanka_floods_2017",
+   "text": "Thailand donates B2m to help flood-stricken Sri Lanka  #srilanka #news #lka",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "870476406009942016",
+   "event": "srilanka_floods_2017",
+   "text": "RT @ChandruLk: China announces emergency humanitarian disaster relief goods worth about USD 2.2 million to SriLanka flood victims #SriLanka",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "871669889920102400",
+   "event": "srilanka_floods_2017",
+   "text": "#EU #humanitarian partners are distributing #emergency relief items &amp; assessing further needs after #SriLanka #floods #FloodSL",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "871133957106139136",
+   "event": "srilanka_floods_2017",
+   "text": "USTPAC Commends #Tamils in the #North_East donating relief supply to the #FloodSL victims in Southern #SriLanka. #Humanity knows no borders.",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "870237860821164032",
+   "event": "srilanka_floods_2017",
+   "text": "Visiting Chinese navy fleet donates relief materials to flood-stricken Sri Lanka Photos: 81.cn",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "870200332349054976",
+   "event": "srilanka_floods_2017",
+   "text": "Half a million affected in #lka floods. Devlpmnt. arm of NCEASL now collecting relief. Visit  for more info. #floodsl",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "872045221365854208",
+   "event": "srilanka_floods_2017",
+   "text": "With the worst floods hitting Colombo, Robins flung into action to distribute meals to the families affected. Great efforts RHA #SriLanka :)",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "871042730356465664",
+   "event": "srilanka_floods_2017",
+   "text": "RT @colombogazette: US provides Rs. 350 million for flood relief  via @colombogazette @USAmbKeshap #srilanka #lka #us",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "870395098927964160",
+   "event": "srilanka_floods_2017",
+   "text": "RT @IsraelandStufff: #Israel Sends Team to Flood-Stricken Sri Lanka With Emergency Aid Israel’s Ambassador to #SriLanka delivered",
+   "label": "rescue_volunteering_or_donation_effort",
+   "split": "test"
+  },
+  {
+   "id": "872541913991217152",
+   "event": "srilanka_floods_2017",
+   "text": "RT @sanjanah: Using Data to Help Communities Recover &amp; Rebuild  via @Facebook Can it help w/ future #floodsl situ? #",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "870155426435702784",
+   "event": "srilanka_floods_2017",
+   "text": "RT @FT_SriLanka: Floods and droughts – An endless Sri Lankan loop?  #lka #srilanka",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "871751436278927360",
+   "event": "srilanka_floods_2017",
+   "text": "RT @HeysannaHosanna: Noise Reduction and Isolation #GenBeyond #European #FloodSL #SriLanka",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "872119332221980673",
+   "event": "srilanka_floods_2017",
+   "text": "RT @Panhinda: #Amateur #Radio Provides #Communication Link Following #SriLanka Flooding.  #lka #SLFloods2017 #FloodS",
+   "label": "not_humanitarian",
+   "split": "test"
+  },
+  {
+   "id": "870981888386650112",
+   "event": "srilanka_floods_2017",
+   "text": "RT @Sthumoe: Authorities and #NGOs were not present in the camp and refugees had to repair the damage themselves.  #",
+   "label": "not_humanitarian",
+   "split": "dev_train"
+  },
+  {
+   "id": "871708649433030656",
+   "event": "srilanka_floods_2017",
+   "text": "Is this the maximum relief?! @MaithripalaS @RW_UNP is this the simplicity you talk of @HarshadeSilvaMP? #lka #SriLanka #FloodSL",
+   "label": "not_humanitarian",
+   "split": "dev_train"
+  },
+  {
+   "id": "871726459651543040",
+   "event": "srilanka_floods_2017",
+   "text": "RT @cartoonlka: Mawbima cartoon by MD Weeraratne #lka #SriLanka #FloodSL #FloodReliefLKA #FloodRelief",
+   "label": "not_humanitarian",
+   "split": "dev_train"
+  },
+  {
+   "id": "879639683424243712",
+   "event": "srilanka_floods_2017",
+   "text": "Latest snapshot features update on #Marawi conflict #Philippines, #China, #Bangladesh #SriLanka #landslides #floods-",
+   "label": "not_humanitarian",
+   "split": "dev_train"
+  },
+  {
+   "id": "870230338634739712",
+   "event": "srilanka_floods_2017",
+   "text": "#Muslims from Porvai, a village near the #Akuressa cleaned the #Buddhist temple in the area which affected by recent #floodSL #AntiRacismlk",
+   "label": "not_humanitarian",
+   "split": "dev_train"
+  },
+  {
+   "id": "870595707811528705",
+   "event": "srilanka_floods_2017",
+   "text": "3/3 Tks @billmckibben Barely heard about it in #AUS. Too busy mistreating refugees from these areas to worry #CycloneMora #climatechange",
+   "label": "not_humanitarian",
+   "split": "dev_train"
+  },
+  {
+   "id": "872099197562101760",
+   "event": "srilanka_floods_2017",
+   "text": "#WHO Country Office  : Floods in #SriLanka Situation Report No. 4 (6 June 2017)  #lka #SLFloods2017 #FloodSL",
+   "label": "not_humanitarian",
+   "split": "dev_train"
+  },
+  {
+   "id": "870523179776618496",
+   "event": "srilanka_floods_2017",
+   "text": "Recurring #SriLanka floods, landslide highlight lack of preparation  #lka #colombo",
+   "label": "not_humanitarian",
+   "split": "dev_train"
+  },
+  {
+   "id": "871393537249734660",
+   "event": "srilanka_floods_2017",
+   "text": "Surely, highly profitable @dialoglk can absorb 12% service charge? WHY must telco profit from public donations for #FloodSL #FloodRelief?",
+   "label": "not_humanitarian",
+   "split": "dev_train"
+  },
+  {
+   "id": "872065485680119808",
+   "event": "srilanka_floods_2017",
+   "text": "Now where is the Aid for these people? Is our SL govt &amp; the people blind to the hardships these people face? #FloodSL @Pami1090",
+   "label": "not_humanitarian",
+   "split": "dev_train"
+  }
+ ]
+}

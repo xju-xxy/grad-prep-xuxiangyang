@@ -1,0 +1,4880 @@
+{
+ "zero": {
+  "901831517307101184": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "903582036086149120": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "901714166443982849": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "901767350185320448": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "901679762829185024": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "901779543316467713": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "901830961310167040": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "901696559372480512": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "901859372925542400": {
+   "pred": "caution_and_advice",
+   "raw": "**Caution and advice**"
+  },
+  "901775429064941568": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "901437328585084928": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "901751540637192192": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "901717912410607617": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "902907401472499712": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "902633473122422784": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902859838245535745": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902904907270938627": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902644645351579649": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "902653689122443265": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902642691535552516": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902649253964652544": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902664783568232450": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902661989616332800": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902640304796209152": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902606939544281088": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902869531584073728": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902638973733961729": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902913539920232448": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902903254698401793": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "903048427164065792": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "903655375395807233": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902635196524240896": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "903645650088275969": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "903450788906848256": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "902850483974483968": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "903380653189677056": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902803324289863680": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902852645630726144": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "903361103660367872": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902893489582735360": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "902686067979157505": {
+   "pred": "not_humanitarian",
+   "raw": "**Not humanitarian**"
+  },
+  "903664732015603712": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "903628191356649472": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902680430842871810": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902658787080900609": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902880933354889217": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "903731844545466368": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "902662770902147072": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "903674558456180737": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "903671278544064512": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902650446254399488": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "902858483510386688": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "902896387771301888": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902758687860772865": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "903480967590903808": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902620391583211521": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "902851684115861506": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "902897589758066688": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "901704958361444352": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "903585222263963648": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "902912419231649792": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "901796296847237120": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "902879074208632837": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "903543412435156992": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "901776369696116736": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "903456790880239616": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "901735471432257536": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "902851241683943424": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "901667951396478977": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "903597579329515520": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "903387842616987648": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "901295469527224320": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "903703980898967554": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "902827195009290240": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "903761325838520320": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "903749496630370305": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "903359701747937281": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "903352997530542081": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "902915536673280000": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "902652906574368768": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "903053310629994497": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "903743667189448704": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "903456210153873408": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "901655186015481858": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "903384161876049921": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902656444260126732": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902652835229257728": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "903057823461933056": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902727480146087936": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "902634046210973696": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902899570329485315": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902682769414909952": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "903049130951536640": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902607046427725826": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902881985714147328": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902839371388387330": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "903483037928665088": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "903448331317325825": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902853252739469312": {
+   "pred": "not_humanitarian",
+   "raw": "**Not humanitarian**"
+  },
+  "902854781584023552": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "903602236281978881": {
+   "pred": "not_humanitarian",
+   "raw": "**Not humanitarian**"
+  },
+  "903715163412381696": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "902896920116568066": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "902645386116042761": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "902918355497177088": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "902601044047351808": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "902663748854456321": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "902908720815984641": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "903631211393937408": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "902643423303176192": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "901796825044267008": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "903456996652810241": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910646414136537088": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910643441821872129": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910715265339375616": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "911897735426723844": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910707407197818880": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910524897218019329": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "911634262641831936": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "912206487249965056": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "910525007742214144": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "911902281007865856": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "911625354212716544": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910579377859026944": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "911709367099170816": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910812289334423553": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910546356132913152": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "910680618073300992": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "910610220522409984": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "910611363243859969": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "910567620151205889": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "910701617866989569": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "911643241245634560": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "912127610695516161": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910644201947197440": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "911698224783622144": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "911905322985390081": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "910580391823728640": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "910719063831334917": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "914883695202455552": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "911747535760429056": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910657068591235074": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "**Requests or urgent needs**"
+  },
+  "910575552091885568": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "914886555327545344": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910706558090252288": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910697449219661825": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "911673570241236992": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "910560031744999424": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "915972307063005184": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "911844707642347520": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "910658975015747584": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "912051045668409344": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "**Requests or urgent needs**"
+  },
+  "915078943157346304": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "910645250342871040": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "910628219296129025": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "911807709724282880": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910617776431042560": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910542081742995456": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "911964226549362688": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910576006787825665": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910709012978716672": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910627471929872384": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910525883579998208": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910617265007202305": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910546863207657472": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "913635912445071360": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910687076537876480": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910715277289037824": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "912364624426672128": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "914186594550247425": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "912124233525944321": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "912391622381506561": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "911974830479757312": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "912282659258228736": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "911729839224131585": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "910644412429955072": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "911726268118392833": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910554973594779649": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "**Infrastructure and utility damage**"
+  },
+  "911910483661385728": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "910706529711673345": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "912130208089755649": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "910577630012829696": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "913878322769268738": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "913183487531786241": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910693040339210240": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910576613862944768": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910764274091483136": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "913622973256491009": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910524590740275200": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "913156300909023232": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "914994931592134656": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910764354525638657": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "912284655147249664": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "913594621812293632": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "911988176415281152": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910771978415439872": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "914945742275514368": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "911759157417725958": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "911635152597651458": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "911622251166015489": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910555202616520707": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "913117870145654786": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "911715104676335617": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910631238557253632": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "911766479368056832": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "913412495196299264": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "914194499500478465": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910817169566502913": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "914462666785247236": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910572509795196928": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "730155477519106048": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "732047761365929985": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "729854302898913281": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "734066329578143746": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "733750628137066497": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "728981598159282177": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "728911108623372288": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "733903030660173825": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "728738932909875204": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "729380845606207488": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "729741279840473089": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "729096029241413632": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "734120563782733824": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "732934635450064897": {
+   "pred": "PARSE_FAIL",
+   "raw": "**Not humanitarian**\n\nThis tweet is a factual news update about the wildfire's behavior (wind pushing the fire back onto previously burned areas) and does not convey any humanitarian aid-related information such as warnings, needs, damage reports, casualties, or support efforts."
+  },
+  "728782837856378880": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "732797815248850945": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "729445190411255808": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "729284197441933312": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "729017990797242370": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "728897194896535552": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "728647946527350784": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "729698610384764928": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "730144153107988480": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "729058501687836672": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "728659696962314241": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728956062817128449": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "729183782796988416": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "729132904521990144": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "729435253660631041": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728623409022783488": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "733008216766828546": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "**Requests or urgent needs**"
+  },
+  "729734692837023745": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728831267353956352": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "729772213184827392": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "730051986465263617": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "729064820704612352": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "729706052866842624": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "729875009565396992": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "730049540426850305": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "728574937770934272": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "730052359049580544": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "730082528435052545": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "732352369816702979": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "730504661401096192": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "728613019119288320": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "732348737926766593": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "728757379479691264": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "733391781627371521": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "728567272386772992": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "728547747515731968": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "732458886259707904": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "732341876934598656": {
+   "pred": "caution_and_advice",
+   "raw": "**Caution and advice**"
+  },
+  "732556743641731072": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "730818214096195585": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "732568763397115905": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "733374229819822080": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "731940349506002944": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "730625079143342082": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "728834409470803968": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "728870660508770304": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "729138696021139457": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "732619220647710720": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "734142193653403648": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "730606066023665665": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "732962661785346049": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "728625710630371330": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728672411906805760": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "729674196817686528": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "729291439369273344": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "732688427381051392": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "730868410763116545": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "730790332036579329": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728606798282919936": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728909922331721728": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "729704696273883138": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728674116773904384": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "729723341439836160": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "733520151077773313": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "735879768839589890": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "729153892911583234": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728637742716956672": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728586123581239296": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728789317540184065": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "730485317673746434": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "735882990916632576": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "733692223422910466": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "729969608669724672": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "731811403175202821": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "728965334384844800": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "729415905638121472": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "733317393863188481": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "729322309056499712": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "730534536258289664": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "734814182818750464": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "728616974406823936": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "728749890570838016": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "732691300420440064": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "**Rescue volunteering or donation effort**"
+  },
+  "729154799115984896": {
+   "pred": "caution_and_advice",
+   "raw": "**Caution and advice**"
+  },
+  "871048667888734209": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870662381864538115": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "870267486062735360": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "870599076223401984": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "870427829045010432": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "870198325898878976": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "871653148196315136": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "870604487056076800": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "878858722373709825": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "870938655971573760": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "870265394237513728": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "870241412851408897": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "874694400504283137": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "870589965834608640": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "876132870527623168": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "870878734957633537": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "874731211935141888": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870447164660600833": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "875255095419691008": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "870136463723085825": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "871948740709335040": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870285573583273984": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "881390420760174592": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "871218302319775744": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "870097524551331840": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "870515836947120129": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "870040060888010752": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "870942928482467841": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "870904365577453568": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "877254326460272640": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "871416115213324292": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870186795547471872": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "874922877560270848": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "875623043497738240": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870812532109344768": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "874576084863471617": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870561572938231808": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "871235989552873473": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870600107049222144": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "870492535658913792": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "870500162879102976": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "871042444460032000": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "870420529022423041": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "871007108162093056": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "873586632011788288": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "870325729241726976": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "870395005386584064": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "870252389672116224": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "876024256894824448": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "870535125099884544": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "870318925841551363": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "870184188342829056": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "870524744184905731": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "870245570039996416": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "871941959799246849": {
+   "pred": "injured_or_dead_people",
+   "raw": "**Injured or dead people**"
+  },
+  "870256276869181440": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "871935416194215938": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "870702356672921604": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "871321483536203779": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "871683608284717056": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "871227702845591553": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "877915336632279040": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "869970009493196800": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "873386361189007364": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "874647579631517698": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "870589481862258688": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "873525428136415232": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "876228965010198532": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "870165306840428544": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "871709803881607168": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "871036939679309824": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870193083316490240": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "871333149816438785": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "871650174073884672": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "872765972289138688": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870259920695734272": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870476406009942016": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "871669889920102400": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "871133957106139136": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870237860821164032": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870200332349054976": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "**Rescue volunteering or donation effort**"
+  },
+  "872045221365854208": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "871042730356465664": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870395098927964160": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "872541913991217152": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870155426435702784": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "871751436278927360": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "872119332221980673": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870981888386650112": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "871708649433030656": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "871726459651543040": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "879639683424243712": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "870230338634739712": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870595707811528705": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "872099197562101760": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "870523179776618496": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "871393537249734660": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "872065485680119808": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  }
+ },
+ "few3": {
+  "901831517307101184": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "903582036086149120": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "901714166443982849": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "901767350185320448": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "901679762829185024": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "901779543316467713": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "901830961310167040": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "901696559372480512": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "901859372925542400": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "901775429064941568": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "901437328585084928": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "901751540637192192": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "901717912410607617": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "902907401472499712": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "902633473122422784": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902859838245535745": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902904907270938627": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902644645351579649": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "902653689122443265": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902642691535552516": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902649253964652544": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902664783568232450": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902661989616332800": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902640304796209152": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902606939544281088": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902869531584073728": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902638973733961729": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902913539920232448": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902903254698401793": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "903048427164065792": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "903655375395807233": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902635196524240896": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "903645650088275969": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "903450788906848256": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "902850483974483968": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "903380653189677056": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902803324289863680": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902852645630726144": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "903361103660367872": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902893489582735360": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "902686067979157505": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "903664732015603712": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "903628191356649472": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902680430842871810": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902658787080900609": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902880933354889217": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "903731844545466368": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "902662770902147072": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "903674558456180737": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "903671278544064512": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902650446254399488": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "902858483510386688": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "902896387771301888": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "902758687860772865": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "903480967590903808": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902620391583211521": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "902851684115861506": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "902897589758066688": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "901704958361444352": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "903585222263963648": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "902912419231649792": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "901796296847237120": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "902879074208632837": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "903543412435156992": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "901776369696116736": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "903456790880239616": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "901735471432257536": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "902851241683943424": {
+   "pred": "injured_or_dead_people",
+   "raw": "**Injured or dead people**"
+  },
+  "901667951396478977": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "903597579329515520": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "903387842616987648": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "901295469527224320": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "903703980898967554": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "902827195009290240": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "903761325838520320": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "903749496630370305": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "903359701747937281": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "903352997530542081": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "902915536673280000": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "902652906574368768": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "903053310629994497": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "903743667189448704": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "903456210153873408": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "901655186015481858": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "903384161876049921": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902656444260126732": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902652835229257728": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "903057823461933056": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902727480146087936": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "902634046210973696": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902899570329485315": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902682769414909952": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "903049130951536640": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902607046427725826": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902881985714147328": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902839371388387330": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "903483037928665088": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "903448331317325825": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902853252739469312": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "902854781584023552": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "903602236281978881": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "903715163412381696": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "902896920116568066": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "902645386116042761": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "902918355497177088": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "902601044047351808": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "902663748854456321": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "902908720815984641": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "903631211393937408": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "902643423303176192": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "901796825044267008": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "903456996652810241": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "910646414136537088": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910643441821872129": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910715265339375616": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "911897735426723844": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910707407197818880": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910524897218019329": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "911634262641831936": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "912206487249965056": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "910525007742214144": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "911902281007865856": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "911625354212716544": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910579377859026944": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "911709367099170816": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910812289334423553": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910546356132913152": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "910680618073300992": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "910610220522409984": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "910611363243859969": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "910567620151205889": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "910701617866989569": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "911643241245634560": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "912127610695516161": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "910644201947197440": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "911698224783622144": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "911905322985390081": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "910580391823728640": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "910719063831334917": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "914883695202455552": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "911747535760429056": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910657068591235074": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "910575552091885568": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "914886555327545344": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910706558090252288": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "**Requests or urgent needs**"
+  },
+  "910697449219661825": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "911673570241236992": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "910560031744999424": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "915972307063005184": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "911844707642347520": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "910658975015747584": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "912051045668409344": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "915078943157346304": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "910645250342871040": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "910628219296129025": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "911807709724282880": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910617776431042560": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910542081742995456": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "911964226549362688": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910576006787825665": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910709012978716672": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910627471929872384": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910525883579998208": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910617265007202305": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910546863207657472": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "913635912445071360": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910687076537876480": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910715277289037824": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "912364624426672128": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "914186594550247425": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "912124233525944321": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "912391622381506561": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "911974830479757312": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "912282659258228736": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "911729839224131585": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "910644412429955072": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "911726268118392833": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "910554973594779649": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "911910483661385728": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910706529711673345": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "912130208089755649": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "910577630012829696": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "913878322769268738": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "913183487531786241": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910693040339210240": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910576613862944768": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "910764274091483136": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "913622973256491009": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910524590740275200": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "913156300909023232": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "914994931592134656": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910764354525638657": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "912284655147249664": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "913594621812293632": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "911988176415281152": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910771978415439872": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "914945742275514368": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "911759157417725958": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "911635152597651458": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "911622251166015489": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910555202616520707": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "913117870145654786": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "911715104676335617": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910631238557253632": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "911766479368056832": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "913412495196299264": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "914194499500478465": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910817169566502913": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "914462666785247236": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910572509795196928": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "730155477519106048": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "732047761365929985": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "729854302898913281": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "734066329578143746": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "733750628137066497": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "728981598159282177": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "728911108623372288": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "733903030660173825": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "728738932909875204": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "729380845606207488": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "729741279840473089": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "729096029241413632": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "734120563782733824": {
+   "pred": "not_humanitarian",
+   "raw": "**Not humanitarian**"
+  },
+  "732934635450064897": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "728782837856378880": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "732797815248850945": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "729445190411255808": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "729284197441933312": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "729017990797242370": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "728897194896535552": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "728647946527350784": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "729698610384764928": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "730144153107988480": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "729058501687836672": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "728659696962314241": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728956062817128449": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "729183782796988416": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "729132904521990144": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "729435253660631041": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728623409022783488": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "733008216766828546": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "729734692837023745": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "728831267353956352": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "729772213184827392": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "730051986465263617": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "729064820704612352": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "729706052866842624": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "729875009565396992": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "730049540426850305": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "728574937770934272": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "730052359049580544": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "730082528435052545": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "732352369816702979": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "730504661401096192": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "728613019119288320": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "732348737926766593": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "728757379479691264": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "733391781627371521": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "728567272386772992": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "728547747515731968": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "732458886259707904": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "732341876934598656": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "732556743641731072": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "730818214096195585": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "732568763397115905": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "733374229819822080": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "731940349506002944": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "730625079143342082": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "728834409470803968": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "728870660508770304": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "729138696021139457": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "732619220647710720": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "734142193653403648": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "730606066023665665": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "732962661785346049": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "728625710630371330": {
+   "pred": "not_humanitarian",
+   "raw": "**Not humanitarian**"
+  },
+  "728672411906805760": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "729674196817686528": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "729291439369273344": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "732688427381051392": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "730868410763116545": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "730790332036579329": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728606798282919936": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728909922331721728": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "729704696273883138": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728674116773904384": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "729723341439836160": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "733520151077773313": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "735879768839589890": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "729153892911583234": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728637742716956672": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728586123581239296": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728789317540184065": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "730485317673746434": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "735882990916632576": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "733692223422910466": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "729969608669724672": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "731811403175202821": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "728965334384844800": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "729415905638121472": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "733317393863188481": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "729322309056499712": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "730534536258289664": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "734814182818750464": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "728616974406823936": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "728749890570838016": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "732691300420440064": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "729154799115984896": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "871048667888734209": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870662381864538115": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "870267486062735360": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "870599076223401984": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "870427829045010432": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "870198325898878976": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "871653148196315136": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "870604487056076800": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "878858722373709825": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "870938655971573760": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "870265394237513728": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "870241412851408897": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "874694400504283137": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "870589965834608640": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "876132870527623168": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "870878734957633537": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "874731211935141888": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870447164660600833": {
+   "pred": "injured_or_dead_people",
+   "raw": "**Injured or dead people**"
+  },
+  "875255095419691008": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "870136463723085825": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "871948740709335040": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870285573583273984": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "881390420760174592": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "871218302319775744": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "870097524551331840": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "870515836947120129": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "870040060888010752": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "870942928482467841": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "870904365577453568": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "877254326460272640": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "871416115213324292": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870186795547471872": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "874922877560270848": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "875623043497738240": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "870812532109344768": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "874576084863471617": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870561572938231808": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "871235989552873473": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870600107049222144": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "870492535658913792": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "870500162879102976": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "871042444460032000": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "870420529022423041": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "871007108162093056": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "873586632011788288": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "870325729241726976": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "870395005386584064": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "870252389672116224": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "876024256894824448": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "870535125099884544": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "870318925841551363": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "870184188342829056": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "870524744184905731": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "870245570039996416": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "871941959799246849": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "870256276869181440": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "871935416194215938": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "870702356672921604": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "871321483536203779": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "871683608284717056": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "871227702845591553": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "877915336632279040": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "869970009493196800": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "873386361189007364": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "874647579631517698": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "870589481862258688": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "873525428136415232": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "876228965010198532": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "870165306840428544": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "871709803881607168": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "871036939679309824": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870193083316490240": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "871333149816438785": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "871650174073884672": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "872765972289138688": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "870259920695734272": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870476406009942016": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "871669889920102400": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "871133957106139136": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870237860821164032": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870200332349054976": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "872045221365854208": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "871042730356465664": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870395098927964160": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "872541913991217152": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870155426435702784": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "871751436278927360": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "872119332221980673": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870981888386650112": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "871708649433030656": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "871726459651543040": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "879639683424243712": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "870230338634739712": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870595707811528705": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "872099197562101760": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "870523179776618496": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "871393537249734660": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "872065485680119808": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  }
+ },
+ "typo": {
+  "901831517307101184": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "903582036086149120": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "901714166443982849": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "901767350185320448": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "901679762829185024": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "901779543316467713": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "901830961310167040": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "901696559372480512": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "901859372925542400": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "901775429064941568": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "901437328585084928": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "901751540637192192": {
+   "pred": "PARSE_FAIL",
+   "raw": "**Caution and advice**\n\nThe tweet reports an urgent weather event (a tornado striking northwest Harris County during Hurricane Harvey), which functions as an alert/warning to people in the affected area rather than a report of casualties, damage details, or aid efforts."
+  },
+  "901717912410607617": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "902907401472499712": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "902633473122422784": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902859838245535745": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902904907270938627": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902644645351579649": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "902653689122443265": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902642691535552516": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902649253964652544": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902664783568232450": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902661989616332800": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902640304796209152": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902606939544281088": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902869531584073728": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902638973733961729": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902913539920232448": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "902903254698401793": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "903048427164065792": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "903655375395807233": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902635196524240896": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "903645650088275969": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "903450788906848256": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "902850483974483968": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "903380653189677056": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902803324289863680": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902852645630726144": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "903361103660367872": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902893489582735360": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "902686067979157505": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "903664732015603712": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "903628191356649472": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902680430842871810": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902658787080900609": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902880933354889217": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "903731844545466368": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902662770902147072": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "903674558456180737": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "903671278544064512": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902650446254399488": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "902858483510386688": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "902896387771301888": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902758687860772865": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "903480967590903808": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "902620391583211521": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "902851684115861506": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "902897589758066688": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "901704958361444352": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "903585222263963648": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "902912419231649792": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "901796296847237120": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "902879074208632837": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "903543412435156992": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "901776369696116736": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "903456790880239616": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "901735471432257536": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "902851241683943424": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "901667951396478977": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "903597579329515520": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "903387842616987648": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "901295469527224320": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "903703980898967554": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "902827195009290240": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "903761325838520320": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "903749496630370305": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "903359701747937281": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "903352997530542081": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "902915536673280000": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "902652906574368768": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "903053310629994497": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "903743667189448704": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "903456210153873408": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "901655186015481858": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "903384161876049921": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902656444260126732": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902652835229257728": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "903057823461933056": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902727480146087936": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "902634046210973696": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902899570329485315": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902682769414909952": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "903049130951536640": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902607046427725826": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902881985714147328": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902839371388387330": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "903483037928665088": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "903448331317325825": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "902853252739469312": {
+   "pred": "not_humanitarian",
+   "raw": "**Not humanitarian**"
+  },
+  "902854781584023552": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "903602236281978881": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "903715163412381696": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "902896920116568066": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "902645386116042761": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "902918355497177088": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "902601044047351808": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "902663748854456321": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "902908720815984641": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "903631211393937408": {
+   "pred": "PARSE_FAIL",
+   "raw": "**Not humanitarian**\n\nThe tweet is a vague commentary (\"A very timely topic. Thousands of patients disrupted by Harvey\") that does not convey specific humanitarian aid-related information — it reports no warnings, requests, damage, casualties, evacuations, or relief efforts."
+  },
+  "902643423303176192": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "901796825044267008": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "903456996652810241": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "910646414136537088": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910643441821872129": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910715265339375616": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "911897735426723844": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910707407197818880": {
+   "pred": "not_humanitarian",
+   "raw": "**Not humanitarian**"
+  },
+  "910524897218019329": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "911634262641831936": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "912206487249965056": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "910525007742214144": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "911902281007865856": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "911625354212716544": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910579377859026944": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "911709367099170816": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910812289334423553": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910546356132913152": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "910680618073300992": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "910610220522409984": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "910611363243859969": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "910567620151205889": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "910701617866989569": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "911643241245634560": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "912127610695516161": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910644201947197440": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "911698224783622144": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "911905322985390081": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "910580391823728640": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "910719063831334917": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "914883695202455552": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "911747535760429056": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910657068591235074": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "**Requests or urgent needs**"
+  },
+  "910575552091885568": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "914886555327545344": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910706558090252288": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "**Rescue volunteering or donation effort**"
+  },
+  "910697449219661825": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "911673570241236992": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "910560031744999424": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "915972307063005184": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "911844707642347520": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "910658975015747584": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "912051045668409344": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "915078943157346304": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "910645250342871040": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "910628219296129025": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "911807709724282880": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910617776431042560": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910542081742995456": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "911964226549362688": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910576006787825665": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910709012978716672": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910627471929872384": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910525883579998208": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910617265007202305": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910546863207657472": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "913635912445071360": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910687076537876480": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910715277289037824": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "912364624426672128": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "914186594550247425": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "912124233525944321": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "912391622381506561": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "911974830479757312": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "912282659258228736": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "911729839224131585": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "910644412429955072": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "911726268118392833": {
+   "pred": "injured_or_dead_people",
+   "raw": "**Injured or dead people**"
+  },
+  "910554973594779649": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "911910483661385728": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "910706529711673345": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "912130208089755649": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "910577630012829696": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "913878322769268738": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "913183487531786241": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910693040339210240": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910576613862944768": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910764274091483136": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "913622973256491009": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910524590740275200": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "913156300909023232": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "914994931592134656": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910764354525638657": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "912284655147249664": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "913594621812293632": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "911988176415281152": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "910771978415439872": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "914945742275514368": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "911759157417725958": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "911635152597651458": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "911622251166015489": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910555202616520707": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "913117870145654786": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "911715104676335617": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910631238557253632": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "911766479368056832": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "913412495196299264": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "914194499500478465": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "910817169566502913": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "914462666785247236": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "910572509795196928": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "730155477519106048": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "732047761365929985": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "729854302898913281": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "734066329578143746": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "733750628137066497": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "728981598159282177": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "728911108623372288": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "733903030660173825": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "728738932909875204": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "729380845606207488": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "729741279840473089": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "729096029241413632": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "**Rescue volunteering or donation effort**"
+  },
+  "734120563782733824": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "732934635450064897": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "728782837856378880": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "732797815248850945": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "729445190411255808": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "729284197441933312": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "729017990797242370": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "728897194896535552": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "728647946527350784": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "729698610384764928": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "730144153107988480": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "729058501687836672": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "728659696962314241": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728956062817128449": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "729183782796988416": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "729132904521990144": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "729435253660631041": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728623409022783488": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "733008216766828546": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "729734692837023745": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728831267353956352": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "729772213184827392": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "730051986465263617": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "729064820704612352": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "729706052866842624": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "729875009565396992": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "**Requests or urgent needs**"
+  },
+  "730049540426850305": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "728574937770934272": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "730052359049580544": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "730082528435052545": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "732352369816702979": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "730504661401096192": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "728613019119288320": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "732348737926766593": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "728757379479691264": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "733391781627371521": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "728567272386772992": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "728547747515731968": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "732458886259707904": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "732341876934598656": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "732556743641731072": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "730818214096195585": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "732568763397115905": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "733374229819822080": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "731940349506002944": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "730625079143342082": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "728834409470803968": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "728870660508770304": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "729138696021139457": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "732619220647710720": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "734142193653403648": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "730606066023665665": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "732962661785346049": {
+   "pred": "PARSE_FAIL",
+   "raw": "**Not humanitarian**\n\nThe tweet merely shares a link to an article where a Fort McMurray native reflects on the damage to his hometown. It does not report any specific damage, provide warnings, express support, or convey any actionable humanitarian information—it is simply a mention of a personal reflection piece."
+  },
+  "728625710630371330": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "**Rescue volunteering or donation effort**"
+  },
+  "728672411906805760": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "729674196817686528": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "729291439369273344": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "732688427381051392": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "730868410763116545": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "730790332036579329": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728606798282919936": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728909922331721728": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "729704696273883138": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728674116773904384": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "729723341439836160": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "733520151077773313": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "735879768839589890": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "729153892911583234": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728637742716956672": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728586123581239296": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728789317540184065": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "730485317673746434": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "735882990916632576": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "733692223422910466": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "729969608669724672": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "731811403175202821": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "728965334384844800": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "729415905638121472": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "733317393863188481": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "729322309056499712": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "730534536258289664": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "734814182818750464": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "728616974406823936": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "728749890570838016": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "732691300420440064": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "729154799115984896": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "871048667888734209": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870662381864538115": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "870267486062735360": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "870599076223401984": {
+   "pred": "PARSE_FAIL",
+   "raw": "**Not humanitarian**\n\nThe tweet contains political commentary about the government needing to learn lessons and low public trust in systems, rather than conveying actionable humanitarian aid information such as warnings, needs, damage reports, or support efforts."
+  },
+  "870427829045010432": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "870198325898878976": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "871653148196315136": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "870604487056076800": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "878858722373709825": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "870938655971573760": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "870265394237513728": {
+   "pred": "caution_and_advice",
+   "raw": "**Caution and advice**"
+  },
+  "870241412851408897": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "874694400504283137": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "870589965834608640": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "876132870527623168": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "870878734957633537": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "874731211935141888": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870447164660600833": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "875255095419691008": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "870136463723085825": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "871948740709335040": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870285573583273984": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "881390420760174592": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "871218302319775744": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "870097524551331840": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "870515836947120129": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "870040060888010752": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "870942928482467841": {
+   "pred": "sympathy_and_support",
+   "raw": "**Sympathy and support**"
+  },
+  "870904365577453568": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "877254326460272640": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "871416115213324292": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870186795547471872": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "874922877560270848": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "875623043497738240": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "870812532109344768": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "874576084863471617": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870561572938231808": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "871235989552873473": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870600107049222144": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "870492535658913792": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "870500162879102976": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "871042444460032000": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  },
+  "870420529022423041": {
+   "pred": "injured_or_dead_people",
+   "raw": "**Injured or dead people**"
+  },
+  "871007108162093056": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "873586632011788288": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "870325729241726976": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "870395005386584064": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "870252389672116224": {
+   "pred": "sympathy_and_support",
+   "raw": "Sympathy and support"
+  },
+  "876024256894824448": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "870535125099884544": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "870318925841551363": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "870184188342829056": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "870524744184905731": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "870245570039996416": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "871941959799246849": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "870256276869181440": {
+   "pred": "injured_or_dead_people",
+   "raw": "Injured or dead people"
+  },
+  "871935416194215938": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "870702356672921604": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "871321483536203779": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "871683608284717056": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "871227702845591553": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "877915336632279040": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "869970009493196800": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "873386361189007364": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "874647579631517698": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "870589481862258688": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "873525428136415232": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "876228965010198532": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "870165306840428544": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "871709803881607168": {
+   "pred": "infrastructure_and_utility_damage",
+   "raw": "Infrastructure and utility damage"
+  },
+  "871036939679309824": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870193083316490240": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "871333149816438785": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "871650174073884672": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "872765972289138688": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870259920695734272": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870476406009942016": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "871669889920102400": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "871133957106139136": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870237860821164032": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870200332349054976": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "872045221365854208": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "871042730356465664": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870395098927964160": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "872541913991217152": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870155426435702784": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "871751436278927360": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "872119332221980673": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870981888386650112": {
+   "pred": "displaced_people_and_evacuations",
+   "raw": "Displaced people and evacuations"
+  },
+  "871708649433030656": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "871726459651543040": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "879639683424243712": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "870230338634739712": {
+   "pred": "rescue_volunteering_or_donation_effort",
+   "raw": "Rescue volunteering or donation effort"
+  },
+  "870595707811528705": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "872099197562101760": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "870523179776618496": {
+   "pred": "caution_and_advice",
+   "raw": "Caution and advice"
+  },
+  "871393537249734660": {
+   "pred": "not_humanitarian",
+   "raw": "Not humanitarian"
+  },
+  "872065485680119808": {
+   "pred": "requests_or_urgent_needs",
+   "raw": "Requests or urgent needs"
+  }
+ }
+}

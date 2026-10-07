@@ -38,6 +38,8 @@ logs/
 *.h5
 *.pkl
 data/
+# 第4篇复现的评测样本很小且复现必需，单独放行（原始大数据集 events_set1 仍忽略）
+!research/reproduction/llm-crisis-demo/data/
 datasets/
 checkpoints/
 outputs/

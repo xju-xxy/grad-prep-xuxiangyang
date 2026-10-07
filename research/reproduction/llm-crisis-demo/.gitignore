@@ -1,0 +1,13 @@
+# 虚拟环境文件夹（里面是装好的库，体积大，不用传到 git）
+.venv/
+
+# 存放 API Key 的文件（重点！绝不能上传，否则 Key 会泄露）
+.env
+
+# Python 运行时自动生成的缓存文件
+__pycache__/
+*.pyc
+
+# 原始数据集体积大，不入库；去 crisisnlp.qcri.org/humaid_dataset.html 下载
+data/events_set1/
+data/HumAID_set1.tar.gz
