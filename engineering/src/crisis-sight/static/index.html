@@ -7,58 +7,117 @@
   <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-  <header class="hero">
-    <h1>危机慧眼 · Crisis Sight</h1>
-    <p class="subtitle">知识增强的多Agent灾害态势推理与辅助决策系统</p>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="brand-logo">危</div>
+        <div>
+          <h1>危机慧眼 · Crisis Sight</h1>
+          <p>知识增强的多 Agent 灾害态势推理与辅助决策系统</p>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <span class="clock" id="clock">--:--:--</span>
+      </div>
+    </div>
   </header>
 
-  <main class="container">
-    <section class="form-card">
-      <label for="disaster-type">灾害类型</label>
-      <select id="disaster-type">
-        <option value="地震" selected>地震</option>
-        <option value="洪涝">洪涝</option>
-        <option value="台风">台风</option>
-        <option value="山火">山火</option>
-        <option value="滑坡">滑坡</option>
-        <option value="泥石流">泥石流</option>
-        <option value="化工泄漏">化工泄漏</option>
-        <option value="城市内涝">城市内涝</option>
-        <option value="寒潮">寒潮</option>
-        <option value="其他">其他</option>
-      </select>
+  <div class="shell">
+    <aside class="side">
+      <section class="card input-card">
+        <h2 class="card-title">灾情录入</h2>
 
-      <label for="scene">灾情描述</label>
-      <textarea id="scene" rows="6" placeholder="请描述灾情现场情况，例如：四川某山区发生里氏6.8级地震，震中距县城约20公里，当地有水库和在建隧道……">四川某山区发生里氏6.8级地震，震中距县城约20公里，当地有水库和在建隧道</textarea>
+        <label for="scene-template">示例场景</label>
+        <select id="scene-template">
+          <option value="">-- 手动输入 --</option>
+          <option value="四川某山区发生里氏6.8级地震，震中距县城约20公里，当地有水库和在建隧道，多个乡镇通讯中断，有人员被埋压">地震 · 山区强震（水库+隧道威胁）</option>
+          <option value="河南某市连降暴雨48小时，城区低洼路段严重积水，多处下穿隧道被淹，周边农田大面积受灾，有群众被困待转移">洪涝 · 城市内涝（隧道积水）</option>
+          <option value="云南某林区突发山火，火线借助大风快速蔓延，已威胁附近村寨和高压输电线路，过火面积仍在扩大，扑救人员正在集结">山火 · 林火蔓延（威胁村寨）</option>
+          <option value="某化工园区储罐区发生苯泄漏，现场有刺激性气味，下风向约2公里处有居民区，当时风向东南，风速3级">化工泄漏 · 园区事故（下风向居民）</option>
+        </select>
 
-      <button id="analyze-btn" type="button">开始推演</button>
-      <div id="status" class="status"></div>
-    </section>
+        <label for="disaster-type">灾害类型</label>
+        <select id="disaster-type">
+          <option value="地震" selected>地震</option>
+          <option value="洪涝">洪涝</option>
+          <option value="台风">台风</option>
+          <option value="山火">山火</option>
+          <option value="滑坡">滑坡</option>
+          <option value="泥石流">泥石流</option>
+          <option value="化工泄漏">化工泄漏</option>
+          <option value="城市内涝">城市内涝</option>
+          <option value="寒潮">寒潮</option>
+          <option value="其他">其他</option>
+        </select>
 
-    <section id="result" class="result hidden">
-      <!-- 四段式决策建议报告 -->
-      <div class="block report-block">
-        <h2 class="block-title">决策建议报告</h2>
-        <div id="report"></div>
-      </div>
+        <label for="scene">灾情描述</label>
+        <textarea id="scene" rows="7" placeholder="请描述灾情现场情况，例如：四川某山区发生里氏6.8级地震，震中距县城约20公里，当地有水库和在建隧道……">四川某山区发生里氏6.8级地震，震中距县城约20公里，当地有水库和在建隧道，多个乡镇通讯中断，有人员被埋压</textarea>
 
-      <!-- 各 Agent 完整发言 -->
-      <div class="block">
-        <h2 class="block-title">各 Agent 完整发言</h2>
-        <div id="messages"></div>
-      </div>
+        <button id="analyze-btn" class="btn-primary" type="button">
+          <span class="spinner hidden" id="btn-spinner"></span>
+          <span id="btn-text">开始推演</span>
+        </button>
+        <div id="status" class="status" hidden></div>
+      </section>
 
-      <!-- 知识库命中条目 -->
-      <div class="block">
-        <h2 class="block-title">知识库命中条目来源</h2>
-        <div id="kb-hits"></div>
-      </div>
-    </section>
-  </main>
+      <section class="card history-card">
+        <div class="card-head-row">
+          <h2 class="card-title">推演记录</h2>
+          <button id="clear-history" class="btn-ghost" type="button">清空</button>
+        </div>
+        <ul id="history-list" class="history-list"></ul>
+        <p id="history-empty" class="muted">还没有推演记录，跑一次就会有</p>
+      </section>
+    </aside>
 
-  <footer class="footer">
-    <span>研究生考核项目 · 工程实践演示</span>
-  </footer>
+    <main class="main">
+      <section id="empty-tip" class="empty-tip">
+        <div class="empty-tip-inner">
+          <p class="empty-tip-title">等待推演任务</p>
+          <p>输入灾情描述后点击「开始推演」，四个智能体将按 <strong>情报官 → 研判官 → 决策官 → 审核官</strong> 的顺序各发言两轮，结合灾害知识库完成态势推演并生成决策建议报告。</p>
+        </div>
+      </section>
+
+      <section id="result" class="result hidden">
+        <div class="card result-head">
+          <div class="result-title-row">
+            <h2 id="report-title"></h2>
+            <div class="badges">
+              <span id="risk-badge" class="badge badge-risk">风险：待评估</span>
+              <span id="mode-badge" class="badge"></span>
+            </div>
+          </div>
+          <p id="report-summary" class="summary"></p>
+          <div class="head-actions">
+            <button id="copy-btn" class="btn-ghost" type="button">复制报告</button>
+            <button id="download-btn" class="btn-ghost" type="button">下载 Markdown</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2 class="card-title">推演流程</h2>
+          <ol id="timeline" class="timeline"></ol>
+        </div>
+
+        <div class="card">
+          <h2 class="card-title">决策建议报告</h2>
+          <div id="report"></div>
+        </div>
+
+        <div class="card">
+          <h2 class="card-title">各 Agent 完整发言</h2>
+          <div id="messages"></div>
+        </div>
+
+        <details class="card kb-card">
+          <summary class="kb-summary">知识库命中条目来源 <span class="kb-type" id="kb-type"></span></summary>
+          <div id="kb-hits"></div>
+        </details>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">研究生考核项目 · 工程实践演示</footer>
 
   <script src="/static/app.js"></script>
 </body>
