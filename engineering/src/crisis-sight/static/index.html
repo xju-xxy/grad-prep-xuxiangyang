@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>危机慧眼 · 多Agent灾害态势推演系统</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>危机慧眼 · Crisis Sight</h1>
+    <p class="subtitle">知识增强的多Agent灾害态势推理与辅助决策系统</p>
+  </header>
+
+  <main class="container">
+    <section class="form-card">
+      <label for="disaster-type">灾害类型</label>
+      <select id="disaster-type">
+        <option value="地震" selected>地震</option>
+        <option value="洪涝">洪涝</option>
+        <option value="台风">台风</option>
+        <option value="山火">山火</option>
+        <option value="滑坡">滑坡</option>
+        <option value="泥石流">泥石流</option>
+        <option value="化工泄漏">化工泄漏</option>
+        <option value="城市内涝">城市内涝</option>
+        <option value="寒潮">寒潮</option>
+        <option value="其他">其他</option>
+      </select>
+
+      <label for="scene">灾情描述</label>
+      <textarea id="scene" rows="6" placeholder="请描述灾情现场情况，例如：四川某山区发生里氏6.8级地震，震中距县城约20公里，当地有水库和在建隧道……">四川某山区发生里氏6.8级地震，震中距县城约20公里，当地有水库和在建隧道</textarea>
+
+      <button id="analyze-btn" type="button">开始推演</button>
+      <div id="status" class="status"></div>
+    </section>
+
+    <section id="result" class="result hidden">
+      <!-- 四段式决策建议报告 -->
+      <div class="block report-block">
+        <h2 class="block-title">决策建议报告</h2>
+        <div id="report"></div>
+      </div>
+
+      <!-- 各 Agent 完整发言 -->
+      <div class="block">
+        <h2 class="block-title">各 Agent 完整发言</h2>
+        <div id="messages"></div>
+      </div>
+
+      <!-- 知识库命中条目 -->
+      <div class="block">
+        <h2 class="block-title">知识库命中条目来源</h2>
+        <div id="kb-hits"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>研究生考核项目 · 工程实践演示</span>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
