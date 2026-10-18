@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-CrisisBench 阶段0 实验脚本（试水版）
+CrisisBench 实验脚本（v0.4 全量版）
 干什么：挑一个/全部场景，让"研判员"（被测智能体）作答，再用两种方式打分。
 用法：
   python run_experiment.py --scene S001                     # 单Agent跑单个场景
@@ -8,10 +8,15 @@ CrisisBench 阶段0 实验脚本（试水版）
   python run_experiment.py --scene S001 --judge rule        # 只做规则打分（免费，快）
 可选参数：
   --model  glm-4-flash（默认）| glm-4-plus ...
-  --config single（单研判员，默认）| multi（情报官→研判官→决策官→审核官 串行）
+  --config single（单研判员，默认）
+           multi（情报官→研判官→决策官→审核官 串行）
+           multi-noaudit（A3 消融：去掉审核官，以决策官发言为打分对象）
+           multi-verify（A4 对照：审核官出最终报告前注入 Verifier 违规清单）
   --judge  both（规则+LLM，默认）| rule | llm
 环境变量：ZHIPUAI_API_KEY（智谱平台 Key）。不设置也能跑，退化为空回答占位（demo），
 方便先验证流水线；正式实验必须设置。
+A8 成本统计：每次 API 调用记录 usage（prompt/completion/total tokens）与耗时，
+汇总写进每条 record 的 usage 字段。
 """
 import argparse
 import datetime
@@ -21,6 +26,11 @@ import sys
 import time
 
 import requests
+
+from verifier import load_specs, run_on_answer
+
+# 全进程 API 用量日志（A8）：[(model, prompt, completion, total, 耗时秒), ...]
+USAGE_LOG = []
 
 # ---------------- 路径准备 ----------------
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -38,14 +48,15 @@ def load_scenarios():
 
 def call_glm(messages, model="glm-4-flash", temperature=0.1):
     """
-    调一次智谱 API。
+    调一次智谱 API，返回 (内容, usage) 并把 usage 记入全局 USAGE_LOG。
     网络错误/超时重试 2 次；仍失败抛异常，由上层决定（demo 占位 / 报错退出）。
     """
     key = os.environ.get("ZHIPUAI_API_KEY")
     if not key:
-        return None  # 没配 Key，返回 None 表示用 demo 占位
+        return None, None  # 没配 Key，返回 None 表示用 demo 占位
     last_err = None
     for attempt in range(3):
+        t0 = time.time()
         try:
             resp = requests.post(
                 API_URL,
@@ -58,13 +69,39 @@ def call_glm(messages, model="glm-4-flash", temperature=0.1):
                 timeout=120,
             )
             if resp.status_code == 200:
-                return resp.json()["choices"][0]["message"]["content"]
+                js = resp.json()
+                u = js.get("usage", {}) or {}
+                usage = {
+                    "model": model,
+                    "prompt_tokens": u.get("prompt_tokens", 0),
+                    "completion_tokens": u.get("completion_tokens", 0),
+                    "total_tokens": u.get("total_tokens", 0),
+                    "耗时秒": round(time.time() - t0, 1),
+                }
+                USAGE_LOG.append(usage)
+                return js["choices"][0]["message"]["content"], usage
             last_err = RuntimeError("API 调用失败：" + resp.text[:200])
         except Exception as e:
             last_err = e
         if attempt < 2:
             time.sleep(6)
     raise last_err
+
+
+def _sum_usage(logs):
+    """把一段 usage 日志汇总成一个字典（A8）。"""
+    if not logs:
+        return {"调用数": 0, "prompt_tokens": 0, "completion_tokens": 0,
+                "total_tokens": 0, "耗时秒": 0.0}
+    return {
+        "调用数": len(logs),
+        "prompt_tokens": sum(x["prompt_tokens"] for x in logs),
+        "completion_tokens": sum(x["completion_tokens"] for x in logs),
+        "total_tokens": sum(x["total_tokens"] for x in logs),
+        "耗时秒": round(sum(x["耗时秒"] for x in logs), 1),
+        "模型分布": {m: sum(1 for x in logs if x["model"] == m)
+                    for m in sorted({x["model"] for x in logs})},
+    }
 
 
 def build_scene_context(scene):
@@ -109,15 +146,20 @@ AGENT_ROLES = [
 ]
 
 
-def run_multi_agent(scene, model):
+def run_multi_agent(scene, model, config="multi"):
     """
-    multi 配置：四个角色串行发言，除情报官外都能看到前面角色的发言，
-    最后以审核官的最终报告作为打分对象。返回（各角色发言列表，最终报告）。
+    multi 系配置：角色串行发言，除情报官外都能看到前面角色的发言。
+      multi        ：四角色，以审核官的最终报告作为打分对象。
+      multi-noaudit ：三角色（A3 消融），以决策官发言作为打分对象。
+      multi-verify  ：审核官出报告前注入 Verifier 违规清单（A4 对照）。
+    返回（各角色发言列表，最终报告，注入的校验文本 or None）。
     """
     context = build_scene_context(scene)
     history = []
     final_answer = ""
-    for name, duty, output_req in AGENT_ROLES:
+    verify_notes = None
+    roles = AGENT_ROLES if config != "multi-noaudit" else AGENT_ROLES[:3]
+    for name, duty, output_req in roles:
         lines = []
         lines.append("你是灾害应急多智能体协作系统中的" + name + "。" + duty)
         lines.append("")
@@ -129,14 +171,42 @@ def run_multi_agent(scene, model):
             for h_name, h_text in history:
                 lines.append("—— " + h_name + " 说：")
                 lines.append(h_text)
+        if name == "审核官" and config == "multi-verify":
+            verify_notes = build_verifier_notes(scene, history)
+            if verify_notes:
+                lines.append("")
+                lines.append("【系统约束校验提醒（确定性规则检查，逐条核查后修正）】")
+                lines.append(verify_notes)
+                lines.append("请逐条核查上述提醒：确认属实的必须在最终报告中修正；若判定为误报，也请在报告中说明理由。")
         lines.append("")
         lines.append(output_req)
-        text = call_glm([{"role": "user", "content": "\n".join(lines)}], model=model)
+        text, _ = call_glm([{"role": "user", "content": "\n".join(lines)}], model=model)
         if text is None:
             text = "（demo 占位：未配置 API Key）"
         history.append((name, text))
         final_answer = text
-    return history, final_answer
+    return history, final_answer, verify_notes
+
+
+def build_verifier_notes(scene, history):
+    """
+    A4：对前序发言（情报官+研判官+决策官）跑 Verifier，把违规项转成给审核官的中文提醒。
+    只报「哪里违反了什么约束」，不报期望数值（不泄答案，V2 推算仅做事后交叉统计）。
+    """
+    specs = load_specs().get(scene["id"], {})
+    draft = "\n\n".join("%s 发言：\n%s" % (n, t) for n, t in history)
+    vr = run_on_answer(scene, specs, draft)
+    lines = []
+    if vr["resource_violations"]:
+        for r in vr["resource_violations"]:
+            lines.append("- 【资源超配】疑似动用了本区域资源清单之外的「%s」；清单里没有这项资源，若确需调用必须写明外部调援来源。" % r)
+    if vr["trap_violations"]:
+        for t in vr["trap_violations"]:
+            lines.append("- 【处置风险】「%s」这一错误做法在建议中出现；必须明确否决并给出正确做法，而不是照做。" % t)
+    if vr["capacity_violations"]:
+        for c in vr["capacity_violations"]:
+            lines.append("- 【运力缺口】「%s」存在缺口，建议必须写明如何弥补（如提请外部增援），不能默认够用。" % c)
+    return "\n".join(lines) if lines else None
 
 
 def build_judge_prompt(scene, answer):
@@ -211,8 +281,8 @@ def llm_score(scene, answer, model):
     """
     for attempt in range(2):
         try:
-            text = call_glm([{"role": "user", "content": build_judge_prompt(scene, answer)}],
-                            model=model, temperature=0)
+            text, _ = call_glm([{"role": "user", "content": build_judge_prompt(scene, answer)}],
+                               model=model, temperature=0)
             if text is None:
                 return None
             # 裁判可能输出 ```json ... ``` 包裹，剥掉代码块围栏再解析
@@ -269,15 +339,17 @@ def fill_llm_judge_record(record, scene, details, key="llm"):
 def run_one(scene, model, judge_mode, config, judge_model=None):
     """对单个场景跑一遍：推演 + 打分，返回结果字典。judge_model 为 None 时与被测模型相同。"""
     print("== 场景 %s（%s/%s，配置 %s）==" % (scene["id"], scene["类别"], scene["灾种"], config))
+    usage_start = len(USAGE_LOG)
 
     # 1) 推演（被测智能体）
-    if config == "multi":
-        history, answer = run_multi_agent(scene, model)
+    verify_notes = None
+    if config in ("multi", "multi-noaudit", "multi-verify"):
+        history, answer, verify_notes = run_multi_agent(scene, model, config)
         if answer == "（demo 占位：未配置 API Key）":
             print("  [demo] 未配置 ZHIPUAI_API_KEY，使用占位回答")
     else:
         history = []
-        answer = call_glm([{"role": "user", "content": build_analyst_prompt(scene)}], model=model)
+        answer, _ = call_glm([{"role": "user", "content": build_analyst_prompt(scene)}], model=model)
         if answer is None:
             answer = "（demo 占位：未配置 API Key，回答为空）"
             print("  [demo] 未配置 ZHIPUAI_API_KEY，使用空回答占位")
@@ -285,6 +357,7 @@ def run_one(scene, model, judge_mode, config, judge_model=None):
     record = {
         "scene_id": scene["id"], "model": model, "config": config,
         "judge_mode": judge_mode, "answer": answer, "dialog": history,
+        "verify_notes": verify_notes,
         "rule": {}, "llm": {},
     }
 
@@ -305,6 +378,7 @@ def run_one(scene, model, judge_mode, config, judge_model=None):
             print("  [LLM裁判] 失败（无 Key 或解析错误）")
         else:
             fill_llm_judge_record(record, scene, details)
+    record["usage"] = _sum_usage(USAGE_LOG[usage_start:])
     return record
 
 
@@ -323,6 +397,7 @@ def rescore_file(path, judge_model):
             print("跳过 %s：场景不存在" % rec["scene_id"])
             continue
         print("== 重裁判 %s（config=%s，裁判模型=%s）==" % (rec["scene_id"], rec.get("config"), judge_model))
+        usage_start = len(USAGE_LOG)
         new_rec = {
             "scene_id": rec["scene_id"], "model": rec.get("model"), "config": rec.get("config"),
             "judge_mode": "llm", "answer": rec["answer"], "dialog": rec.get("dialog", []),
@@ -335,6 +410,7 @@ def rescore_file(path, judge_model):
             print("  [LLM裁判] 失败（无 Key 或解析错误）")
         else:
             fill_llm_judge_record(new_rec, scene, details)
+        new_rec["usage"] = _sum_usage(USAGE_LOG[usage_start:])
         out_records.append(new_rec)
     stamp = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
     tag = os.path.splitext(os.path.basename(path))[0]
@@ -352,7 +428,8 @@ def main():
     parser.add_argument("--scene", default="S001", help="场景编号或 all")
     parser.add_argument("--model", default="glm-4-flash")
     parser.add_argument("--judge", default="both", choices=["rule", "llm", "both"])
-    parser.add_argument("--config", default="single", choices=["single", "multi"])
+    parser.add_argument("--config", default="single",
+                        choices=["single", "multi", "multi-noaudit", "multi-verify"])
     parser.add_argument("--judge-model", default=None, help="裁判模型（默认与被测模型相同）")
     parser.add_argument("--rescore", default=None, help="只重裁判：传入历史结果 JSON 路径，跳过推演")
     parser.add_argument("--resume", default=None, help="从 partial 文件恢复继续跑（断点续跑）")
