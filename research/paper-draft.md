@@ -39,11 +39,11 @@
 
 **灾害信息入口。** 从碎片信息到结构化要素是决策的前置环节。早期监督分类模型依赖标注且跨灾种泛化差；近期工作系统评测了 LLM 零样本分类在危机推文上的表现，发现其仍低于监督基线，且洪水类别、求助类信息、错别字文本是三类显著软肋 [危机推文评测, WWW'25]。地名落图与遥感综合解读等工作把 LLM 感知能力推进到定位层面 [DisasterTD; RescueADI]，但都止步于感知层，未进入决策层。
 
-**知识增强推理。** KG 增强 LLM、GraphRAG、闭环自修正与时序演化是该链段的发展主线 [RAG; E-KELL; GraphRAG 综述; CogMG; 时空 KGQA]。代表性的灾害领域工作是 E-KELL：将历史灾害事件三元组构成知识图谱供 LLM 查询，问答 F1 从 59.31% 提升至 65.63%，但其形态是静态问答，对冷门领域问题会拒答，且并非多智能体结构。通用知识增强技术已相当成熟，"拼装"难度不大；空白在于灾害领域的定制（因果链表示、时空约束与决策挂钩）与评测。
+**知识增强推理。** KG 增强 LLM、GraphRAG、闭环自修正与时序演化是该链段的发展主线 [RAG; E-KELL; GraphRAG 综述; CogMG; 时空 KGQA]。代表性的灾害领域工作是 E-KELL：以知识图谱与 LLM 支撑危化品泄漏应急决策，改进以专家主观评分衡量的决策辅助形态，并非多智能体研判结构。通用知识增强技术已相当成熟，"拼装"难度不大；空白在于灾害领域的定制（因果链表示、时空约束与决策挂钩）与评测。
 
-**多智能体协作。** 从 ReAct 的单智能体"想一步做一步"，到 AutoGen 的对话式多角色协作、自动编排与成本调度、以及带验证函数与程序性记忆的闭环框架 [ReAct; AutoGen; MetaAgent; VERIMAP; LEGOMem; PMC]，协作范式已经由"提示词工程"变成"系统工程"：状态机、验证函数、记忆库齐备。**但这些机制的评测全部位于数学、代码、旅行、办公域，没有一项针对灾害决策的独特约束**（致命后果、时间压力、信息残缺、链式次生灾害）进行过建模与评测。
+**多智能体协作。** 从 ReAct 的单智能体"想一步做一步"，到 AutoGen 的对话式多角色协作、自动编排与成本调度、以及带验证函数、程序性记忆与多约束规划的闭环框架 [ReAct; AutoGen; MetaAgent; VeriMAP; LEGOMem; PMC]，协作范式已经由"提示词工程"变成"系统工程"：状态机、验证函数、记忆库齐备。**但这些机制的评测全部位于数学、代码、旅行、办公域，没有一项针对灾害决策的独特约束**（致命后果、时间压力、信息残缺、链式次生灾害）进行过建模与评测。
 
-**灾害领域落地。** 已有四个分散的脚印：Sim911 用 LLM 扮演 911 调度员做培训模拟，其评测口径是学员表现而非系统决策质量 [Sim911, AAAI'25]；LogiDebrief 把演练复盘需求转成时序逻辑公式自动判定，属于事后评估 [LogiDebrief, IJCAI'25]；E-KELL 面向问答；DisasterTD/RescueADI 面向感知。"多智能体协作研判决策"这一段是空的——本文的 CrisisBench 正是填补这一空白，而约束校验组件则承接 VERIMAP"每子任务配可执行验证函数"的思路，将其灾害化：把资源守恒、数值推算、情报一致性写成验收规则。
+**灾害领域落地。** 已有四个分散的脚印：Sim911 用 LLM 扮演 911 调度员做培训模拟，其评测口径是学员表现而非系统决策质量 [Sim911, AAAI'25]；LogiDebrief 把演练复盘需求转成信号时序逻辑公式自动判定，属于事后评估 [LogiDebrief, IJCAI'25]；E-KELL 面向问答；DisasterTD/RescueADI 面向感知。"多智能体协作研判决策"这一段是空的——本文的 CrisisBench 正是填补这一空白，而约束校验组件则承接 VeriMAP"每子任务配可执行验证函数"的思路，将其灾害化：把资源守恒、数值推算、情报一致性写成验收规则。
 
 ---
 
@@ -144,7 +144,7 @@ v0.4 新增场景（S006~S036）均沿用同一层分解规范：事实层 8~9�
 
 ### 5.1 动机
 
-§6.5 表明：把 checklist 核对交给 LLM 裁判，代价是饱和、方差与近乎随机的裁判间一致性。而灾害决策中真正需要核对的许多事项——资源是否超配、数量是否对得上、推算数值是否正确、建议是否与已确认事实冲突——**天然是可形式化的确定性检查**。因此本工作设计一个确定性约束校验组件（VERIMAP 灾害化），置于 multi 流水线中审核官之前：对前序发言（或最终报告）运行规则校验，输出违规清单，交由审核官修正后再出最终报告。组件不替代 LLM 裁判，而承担"最容易出错的核对工作"。
+§6.5 表明：把 checklist 核对交给 LLM 裁判，代价是饱和、方差与近乎随机的裁判间一致性。而灾害决策中真正需要核对的许多事项——资源是否超配、数量是否对得上、推算数值是否正确、建议是否与已确认事实冲突——**天然是可形式化的确定性检查**。因此本工作设计一个确定性约束校验组件（VeriMAP 灾害化），置于 multi 流水线中审核官之前：对前序发言（或最终报告）运行规则校验，输出违规清单，交由审核官修正后再出最终报告。组件不替代 LLM 裁判，而承担"最容易出错的核对工作"。
 
 ### 5.2 规则表
 
@@ -338,17 +338,17 @@ def verify(answer, scene) -> list[Issue]:
 5. CogMG：知识缺口捕获→补全→审核→写回的问答知识闭环.（14）
 6. 多智能体综述（环境接口/角色画像/通信/能力习得）. IJCAI 2024.（41）
 7. MetaAgent：设计者 LLM 自动生成最少必要智能体与有限状态机控制流.（42）
-8. VERIMAP：Planner 拆解 DAG + 每子任务可执行验证函数.（52）
-9. PMC：多约束任务的有向子任务图与约束改写.（50）
-10. E-KELL：灾害事件知识图谱 + LLM 问答（F1 59.31%→65.63%）. IJDRR 2023.（05）
+8. VeriMAP: Verification-Aware Planning for Multi-Agent Systems（Planner 拆解 DAG + 每子任务可执行验证函数）. arXiv:2510.17109.（52）
+9. PMC: Planning with Multi-Constraints via Collaborative Language Agents（多约束任务的有向子任务图与约束改写）. COLING 2025, arXiv:2405.16510.（50）
+10. E-KELL: Enhancing Emergency Decision-Making with Knowledge Graphs and Large Language Models（危化品泄漏应急决策支持，专家评分量化改进）. IJDRR 2024, Vol. 113: 104804.（05）
 11. Sim911：LLM 扮演 911 调度员的培训模拟与评测. AAAI 2025.（63）
 12. LogiDebrief：STL 时序逻辑 + LLM 的演练复盘自动判定. IJCAI 2025.（62）
-13. DisasterTD：地名落图（MLLM 候选 + 跨视角视觉裁决）.（60）
+13. DisasterTD：灾害图像地名消歧/落图（MLLM 候选 + 跨视角视觉裁决）.（60）
 14. RescueADI：自适应灾害解读智能体（检测/分割/VQA 按需调度）.（61）
-15. GraphRAG 综述（建图索引→图引导检索→生成）.（11）
+15. Edge et al. From Local to Global: A Graph RAG Approach to Query-Focused Summarization. arXiv:2404.16130.（11）
 
-> 说明：括号内编号为综述 `domain-review.md` 中的编号；正式稿将替换为完整文献条目。
-> 拟补充引用（投稿前逐条核实，勿直接编号纳入正文）：LLM-as-a-judge（Zheng et al. 等）、基准代表作（HELM / BIG-bench / AgentBench）、灾害 LLM 应用、（AutoGen 已列第 2 条）。
+> 说明：括号内编号为综述 `domain-review.md` 中的编号；正式稿将替换为完整文献条目（作者/卷期/DOI）。
+> 全部条目已于 2026-10-18 经 WebSearch 逐条核实（见 `crisis-bench/references-verified.md`）；待并入正式列表的已核实条目：LLM-as-a-judge（Zheng et al., MT-Bench, NeurIPS 2023 D&B）、HELM（Liang et al., TMLR 2023）、BIG-bench、AgentBench（ICLR 2024）、AutoGen（COLM 2024，已列第 2 条）、ReAct（ICLR 2023）、RAG（NeurIPS 2020）、CogMG（arXiv:2406.17231）、MetaAgent（ICML 2025）、LEGOMem（arXiv:2510.04851）、Sim911（arXiv:2412.16844）、LogiDebrief（arXiv:2505.03985）、危机推文评测（WWW 2025, DOI:10.1145/3696410.3714511）、RescueADI（arXiv:2410.13384）。
 
 ---
 
