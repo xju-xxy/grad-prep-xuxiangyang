@@ -135,24 +135,32 @@ def build_judge_prompt(scene, answer):
     拼给"裁判模型"的题目：把该场景的评分要点清单 + 研判员回答交给它，
     要求按唯一编号逐条输出 0/1 和一句理由。
     编号约定：事实层 F1..Fn、推理层 R1..Rn、决策层 D1..Dn（解析时不依赖裁判写的层名）。
+    裁判可以看到情报原文，用于核对数值型要点是否推算正确。
     """
     lines = []
-    lines.append("你是灾害应急决策评测的裁判。下面是场景的评分要点（每条有唯一编号）和一个研判员的回答。")
+    lines.append("你是灾害应急决策评测的独立裁判。下面是场景的评分要点（每条有唯一编号）和一个研判员的回答。")
     lines.append("请逐条判断要点是否在回答中被满足，只输出 JSON 数组，格式：")
     lines.append('[{"编号":"F1","得分":0或1,"理由":"一句话"}]')
     lines.append("")
     lines.append("判定规则：")
-    lines.append("- 事实层（F编号）：回答中提到该要素（同义表达可）得1；")
-    lines.append("- 推理层（R编号）：回答完整呈现该链条的起点-机制-终点得1，缺要素得0；")
-    lines.append("- 决策层（D编号）：该建议被明确给出得1；若出现目标对象缺失、动用了资源清单之外的资源、与情报事实冲突，得0；")
-    lines.append("- 每条要点都必须给出判定，不得漏条；只判断要点是否被满足，不评判回答的其他内容。")
+    lines.append("- 事实层（F编号）：回答中准确陈述该要素（关键数值与情报一致或推算正确）得1；未提及或被错误陈述得0；要点注明“推算”的，回答必须给出推算出的数值或数值区间，只复述原始情报里的数字不算满足；")
+    lines.append("- 推理层（R编号）：回答中明确表达出该条目的结论（表述可以不同，意思到位即可）且与情报一致得1；结论未出现或与情报矛盾得0；起点/机制/终点仅作参考，不要求逐字对应；")
+    lines.append("- 决策层（D编号）：回答中明确给出该条措施、写明具体对象与动作得1；仅笼统表述（如“加强力量”“做好工作”）得0；若目标对象完全缺失、动用了资源清单之外的资源、或与情报事实冲突，得0；")
+    lines.append("- 每条要点都必须给出判定，不得漏条；只判断要点是否被满足，不评判回答的其他内容；")
+    lines.append("- 你对所有回答按统一标准打分，不因措辞风格而放宽或收紧。")
+    lines.append("")
+    lines.append("【场景情报原文（核对数值与事实用）】")
+    lines.append(build_scene_context(scene))
     lines.append("")
     lines.append("【评分要点清单】")
     prefix = {"事实层": "F", "推理层": "R", "决策层": "D"}
     for layer in ["事实层", "推理层", "决策层"]:
         items = scene["rubric"][layer]
         for i, it in enumerate(items, 1):
-            lines.append("- %s%d：%s" % (prefix[layer], i, it["要点"]))
+            tip = it["要点"]
+            if layer == "推理层" and all(k in it for k in ("起点", "机制", "终点")):
+                tip += "（起点：%s | 机制：%s | 终点：%s）" % (it["起点"], it["机制"], it["终点"])
+            lines.append("- %s%d：%s" % (prefix[layer], i, tip))
     lines.append("")
     lines.append("【研判员回答】")
     lines.append(answer)
@@ -236,9 +244,21 @@ def summarize(details, scene, layer):
     return got, total
 
 
+def fill_llm_judge_record(record, scene, details, key="llm"):
+    """把 llm_score 返回的明细写进 record 的指定键下（含各层得分率汇总）。"""
+    for d in details:
+        d["要点"] = scene["rubric"][d["层"]][d["序号"] - 1]["要点"]
+    record[key]["details"] = details
+    for layer in ["事实层", "推理层", "决策层"]:
+        got, total = summarize(details, scene, layer)
+        record[key][layer] = {"得分": got, "总数": total,
+                              "命中率": round(got / total, 3) if total else 0}
+        print("  [LLM] %s：%d/%d" % (layer, got, total))
+
+
 # ---------------- 主流程 ----------------
-def run_one(scene, model, judge_mode, config):
-    """对单个场景跑一遍：推演 + 打分，返回结果字典。"""
+def run_one(scene, model, judge_mode, config, judge_model=None):
+    """对单个场景跑一遍：推演 + 打分，返回结果字典。judge_model 为 None 时与被测模型相同。"""
     print("== 场景 %s（%s/%s，配置 %s）==" % (scene["id"], scene["类别"], scene["灾种"], config))
 
     # 1) 推演（被测智能体）
@@ -269,21 +289,53 @@ def run_one(scene, model, judge_mode, config):
                                      "命中率": round(got / total, 3) if total else 0}
             print("  [规则] %s：%d/%d" % (layer, got, total))
     if judge_mode in ("llm", "both"):
-        details = llm_score(scene, answer, model)
+        jm = judge_model or model
+        details = llm_score(scene, answer, jm)
         if details is None:
             record["llm"]["error"] = "解析失败"
             print("  [LLM裁判] 失败（无 Key 或解析错误）")
         else:
-            # 把 LLM 判定的要点文本按序号补回去（裁判只回了序号）
-            for d in details:
-                d["要点"] = scene["rubric"][d["层"]][d["序号"] - 1]["要点"]
-            record["llm"]["details"] = details
-            for layer in ["事实层", "推理层", "决策层"]:
-                got, total = summarize(details, scene, layer)
-                record["llm"][layer] = {"得分": got, "总数": total,
-                                        "命中率": round(got / total, 3) if total else 0}
-                print("  [LLM] %s：%d/%d" % (layer, got, total))
+            fill_llm_judge_record(record, scene, details)
     return record
+
+
+def rescore_file(path, judge_model):
+    """
+    只重打分不重推演：读入一份历史结果文件，用（更严格的）裁判对已有回答重新打 LLM 分。
+    用于裁判一致性/裁判模型消融——同样的回答，换裁判或换裁判模型后得分变化多少。
+    """
+    with open(path, encoding="utf-8") as f:
+        data = json.load(f)
+    scenarios = {s["id"]: s for s in load_scenarios()}
+    out_records = []
+    for rec in data["records"]:
+        scene = scenarios.get(rec["scene_id"])
+        if scene is None:
+            print("跳过 %s：场景不存在" % rec["scene_id"])
+            continue
+        print("== 重裁判 %s（config=%s，裁判模型=%s）==" % (rec["scene_id"], rec.get("config"), judge_model))
+        new_rec = {
+            "scene_id": rec["scene_id"], "model": rec.get("model"), "config": rec.get("config"),
+            "judge_mode": "llm", "answer": rec["answer"], "dialog": rec.get("dialog", []),
+            "orig_rule": rec.get("rule", {}), "rescore_judge": judge_model,
+            "rule": {}, "llm": {},
+        }
+        details = llm_score(scene, rec["answer"], judge_model)
+        if details is None:
+            new_rec["llm"]["error"] = "解析失败"
+            print("  [LLM裁判] 失败（无 Key 或解析错误）")
+        else:
+            fill_llm_judge_record(new_rec, scene, details)
+        out_records.append(new_rec)
+    stamp = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+    tag = os.path.splitext(os.path.basename(path))[0]
+    out_file = os.path.join(RESULTS_DIR, "%s-rescore-%s-%s.json" % (tag, judge_model, stamp))
+    with open(out_file, "w", encoding="utf-8") as f:
+        json.dump({"meta": {"时间": stamp, "来源文件": os.path.basename(path),
+                            "judge": "llm", "judge_model": judge_model,
+                            "note": "只重打分未重推演（严格裁判提示词）"},
+                   "records": out_records}, f, ensure_ascii=False, indent=2)
+    print("\n重裁判结果已保存：%s" % out_file)
 
 
 def main():
@@ -292,7 +344,13 @@ def main():
     parser.add_argument("--model", default="glm-4-flash")
     parser.add_argument("--judge", default="both", choices=["rule", "llm", "both"])
     parser.add_argument("--config", default="single", choices=["single", "multi"])
+    parser.add_argument("--judge-model", default=None, help="裁判模型（默认与被测模型相同）")
+    parser.add_argument("--rescore", default=None, help="只重裁判：传入历史结果 JSON 路径，跳过推演")
     args = parser.parse_args()
+
+    if args.rescore:
+        rescore_file(args.rescore, args.judge_model or args.model)
+        sys.exit(0)
 
     scenarios = load_scenarios()
     if args.scene != "all":
@@ -304,14 +362,15 @@ def main():
     all_records = []
     for scene in scenarios:
         # 有空回答也无所谓：打分照样跑，验证流水线完整性
-        all_records.append(run_one(scene, args.model, args.judge, args.config))
+        all_records.append(run_one(scene, args.model, args.judge, args.config, args.judge_model))
 
     # 3) 落盘（文件名带时间戳，避免覆盖历史结果）
     stamp = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
     out_file = os.path.join(RESULTS_DIR, "exp-%s-%s-%s.json" % (args.scene, args.config, stamp))
     with open(out_file, "w", encoding="utf-8") as f:
         json.dump({"meta": {"时间": stamp, "model": args.model,
-                            "judge": args.judge, "config": args.config},
+                            "judge": args.judge, "config": args.config,
+                            "judge_model": args.judge_model},
                    "records": all_records}, f, ensure_ascii=False, indent=2)
     print("\n结果已保存：%s" % out_file)
 
