@@ -133,7 +133,7 @@ def mcnemar(b, c):
     if n == 0:
         return None, "无不一致对"
     if n < 25:
-        p = 2 * sum(math.comb(n, i) for i in range(0, min(b, c) + 1)) * 0.5 ** n
+        p = min(2 * sum(math.comb(n, i) for i in range(0, min(b, c) + 1)) * 0.5 ** n, 1.0)
         return p, "二项精确"
     chi = (abs(b - c) - 1) ** 2 / n
     p = math.erfc(math.sqrt(chi / 2))  # 1 自由度卡方 → erfc(z/√2)
@@ -245,7 +245,7 @@ def main():
         matrix, maj_layer = {}, {}
         for sid in sorted(recs):
             jm = combined(recs[sid], {"plus_recs": plus_recs, "recs_by_id": plus_recs})
-            matrix[sid] = layer_rates(jm, scenarios[sid])
+            matrix[sid] = layer_rates({p: v["maj"] for p, v in jm.items()}, scenarios[sid])
             maj_layer[sid] = {k: v for k, v in matrix[sid].items()}
         configs[cfg + "@" + model] = {
             "file": name, "rescore_plus": pair["plus"], "rescore_flash": pair["flash"],
@@ -335,7 +335,7 @@ def main():
             is_contra = scene.get("类别") == "信息矛盾"
             for layer in ["事实层", "推理层", "决策层"]:
                 for i, pt in enumerate(scene["rubric"][layer], 1):
-                    pid = PREFIX[layer] + str(i + 1)
+                    pid = PREFIX[layer] + str(i)
                     if jm[pid]["maj"] == 0:
                         total_loss += 1
                         cls = classify_error(pid, pt["要点"], layer, scene, viols, reasons, is_contra)
@@ -365,7 +365,7 @@ def main():
             jm = combined(ref["recs"][sid], {"plus_recs": ref["plus_recs"], "recs_by_id": ref["plus_recs"]})
             for layer in ["事实层", "推理层", "决策层"]:
                 for i, pt in enumerate(scenarios[sid]["rubric"][layer], 1):
-                    pid = PREFIX[layer] + str(i + 1)
+                    pid = PREFIX[layer] + str(i)
                     v = jm[pid]
                     if v["rule"] != v["flash"] or v["flash"] != v["plus"]:
                         rows.append({"场景": sid, "编号": pid, "要点": pt["要点"],
