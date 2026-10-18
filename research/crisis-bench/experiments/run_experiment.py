@@ -18,6 +18,7 @@ import datetime
 import json
 import os
 import sys
+import time
 
 import requests
 
@@ -38,24 +39,32 @@ def load_scenarios():
 def call_glm(messages, model="glm-4-flash", temperature=0.1):
     """
     调一次智谱 API。
-    失败时抛出异常，由上层决定怎么办（demo 占位 / 报错退出）。
+    网络错误/超时重试 2 次；仍失败抛异常，由上层决定（demo 占位 / 报错退出）。
     """
     key = os.environ.get("ZHIPUAI_API_KEY")
     if not key:
         return None  # 没配 Key，返回 None 表示用 demo 占位
-    resp = requests.post(
-        API_URL,
-        headers={"Authorization": "Bearer " + key},
-        json={
-            "model": model,
-            "messages": messages,
-            "temperature": temperature,
-        },
-        timeout=120,
-    )
-    if resp.status_code != 200:
-        raise RuntimeError("API 调用失败：" + resp.text[:200])
-    return resp.json()["choices"][0]["message"]["content"]
+    last_err = None
+    for attempt in range(3):
+        try:
+            resp = requests.post(
+                API_URL,
+                headers={"Authorization": "Bearer " + key},
+                json={
+                    "model": model,
+                    "messages": messages,
+                    "temperature": temperature,
+                },
+                timeout=120,
+            )
+            if resp.status_code == 200:
+                return resp.json()["choices"][0]["message"]["content"]
+            last_err = RuntimeError("API 调用失败：" + resp.text[:200])
+        except Exception as e:
+            last_err = e
+        if attempt < 2:
+            time.sleep(6)
+    raise last_err
 
 
 def build_scene_context(scene):
@@ -346,6 +355,7 @@ def main():
     parser.add_argument("--config", default="single", choices=["single", "multi"])
     parser.add_argument("--judge-model", default=None, help="裁判模型（默认与被测模型相同）")
     parser.add_argument("--rescore", default=None, help="只重裁判：传入历史结果 JSON 路径，跳过推演")
+    parser.add_argument("--resume", default=None, help="从 partial 文件恢复继续跑（断点续跑）")
     args = parser.parse_args()
 
     if args.rescore:
@@ -359,19 +369,42 @@ def main():
             print("找不到场景 " + args.scene)
             sys.exit(1)
 
+    # 断点续跑：读 partial 文件里已完成的场景，跳过；没 --resume 就新建 partial
+    stamp = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
     all_records = []
+    done_ids = set()
+    if args.resume:
+        partial_path = args.resume
+        with open(partial_path, encoding="utf-8") as f:
+            all_records = json.load(f)["records"]
+        done_ids = {r["scene_id"] for r in all_records}
+        print("恢复运行：已跳过 %d 个已完成场景" % len(done_ids))
+    else:
+        partial_path = os.path.join(RESULTS_DIR, "exp-%s-%s-%s.partial.json" % (args.scene, args.config, stamp))
+
     for scene in scenarios:
+        if scene["id"] in done_ids:
+            print("== 跳过已完成场景 %s ==" % scene["id"])
+            continue
         # 有空回答也无所谓：打分照样跑，验证流水线完整性
         all_records.append(run_one(scene, args.model, args.judge, args.config, args.judge_model))
+        # 每跑完一个场景就落盘 partial，防止长跑中断丢进度
+        with open(partial_path, "w", encoding="utf-8") as f:
+            json.dump({"meta": {"时间": stamp, "model": args.model,
+                                "judge": args.judge, "config": args.config,
+                                "judge_model": args.judge_model, "partial": True},
+                       "records": all_records}, f, ensure_ascii=False, indent=2)
+        print("  [进度] 已完成 %d/%d" % (len(all_records), len(scenarios)))
 
     # 3) 落盘（文件名带时间戳，避免覆盖历史结果）
-    stamp = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
     out_file = os.path.join(RESULTS_DIR, "exp-%s-%s-%s.json" % (args.scene, args.config, stamp))
     with open(out_file, "w", encoding="utf-8") as f:
         json.dump({"meta": {"时间": stamp, "model": args.model,
                             "judge": args.judge, "config": args.config,
                             "judge_model": args.judge_model},
                    "records": all_records}, f, ensure_ascii=False, indent=2)
+    if os.path.exists(partial_path):
+        os.remove(partial_path)
     print("\n结果已保存：%s" % out_file)
 
 
