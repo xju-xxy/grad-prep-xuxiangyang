@@ -219,7 +219,7 @@ The experimental list below is taken from Section 8 of the roadmap (the EMNLP 20
 | A7 | Judge stability (re-score the same batch of answers twice to report self-consistency) | "Judge variance is fully quantified" | Completed (§6.5) |
 | A8 | Cost and latency table (API call counts / tokens / time / cost) | "Multi-agent is not free" | Completed (call/token/time measured; cost conversion pending, §6.8) |
 | A9 | Error-typology quantification (distribution statistics of 8 error types) | "Error analysis is supported by data structure" | Completed (§7.2) |
-| A10 (optional) | Small-scale human baseline (3~5 annotators for comparison) | "Human-level reference" | Planned |
+| A10 (optional) | Small-scale human baseline (3~5 annotators for comparison) | "Human-level reference" | Not done (optional; not reported in this paper) |
 
 ### 6.2 Experimental setup (v0.3 pilot + v0.4 full set)
 
@@ -265,6 +265,10 @@ On the 36-scenario full set, multi and single are compared (both models under te
 
 **Conclusion.** On the v0.4 full set, the "multi > single" conclusion is directionally consistent and highly significant: overall score 90.7% vs 83.5%, a scenario-level mean difference of +7.05pp (p=2.96×10⁻⁹, CI [+3.26, +11.04] pp excluding 0). Relative to the v0.3 pilot's +5.2pp under the majority-vote criterion the magnitude is comparable (the pilot has 5 scenarios × 96 rubric points while the full set has 36 scenarios × 709 rubric points, so the two are not directly comparable after subtraction): following the scenario expansion (numerical-inference rubric points 3→48, information-contradiction scenarios 1→8) the proportion of "hard rubric points" rose, and multi-agent's completion advantage in the reasoning/decision layers and on hard points is expressed more stably. Layer-wise (Figure 1, `crisis-bench/figures/fig1_radar.png`): multi's gain is concentrated in the reasoning/decision layers (multi: reasoning 90.2%, decision 90.6%; single: 87.2%, 78.3% respectively) and a few hard points, with the factual layer nearly full-score for both (multi 91.0%, single 85.5%); the full heatmap of scenario × configuration is shown in Figure 2 (`crisis-bench/figures/fig2_heatmap.png`).
 
+![Figure 1: Three-layer score radar chart (single / multi / multi+verify @glm-4-flash)](crisis-bench/figures/fig1_radar.png)
+
+![Figure 2: Overall-score heatmap over 36 scenarios × configurations](crisis-bench/figures/fig2_heatmap.png)
+
 ### 6.4 RQ2: Which role does the gain come from (auditor ablation)? (v0.4 full set, glm-4-flash, majority-vote criterion)
 
 To locate the source of the multi-agent gain, on the v0.4 full set we compare multi with the ablation configuration without the auditor, **multi-noaudit** (intelligence officer → analyst → decision officer, no final audit closing):
@@ -306,6 +310,10 @@ On the v0.4 full set, the Cohen's kappa between the flash and plus judges in eac
 | multi-noaudit@glm-4-flash | −0.008 |
 | multi-verify@glm-4-flash | −0.005 |
 | single@glm-4-plus | −0.008 |
+
+The item-by-item confusion matrix for each configuration is shown in Figure 3 (`crisis-bench/figures/fig3_kappa_matrix.png`; each of the six configurations pairs 709 rubric points). Taking multi@glm-4-flash as an example: both judges say 1 on 431 items, flash says 1 while plus says 0 on 256 items, flash says 0 while plus says 1 on only 2 items, and both say 0 on 20 items — the two judges' "agreement" exists almost only on the "both say 1" side, and the ratio of plus's unilateral 0s (256) to genuine cross-corroboration (2) is about 128:1. This shows the two are not interchangeable independent evidence but rather two systematic biases: one lenient judge plus one conservative judge; the nearly empty "both judges say 0" cell (20 items) also explains why the numeric-inference rubric points on this benchmark are almost always carried through by the flash side under the majority-vote criterion.
+
+![Figure 3: Judge agreement — item-by-item flash-vs-plus confusion matrices for the six configurations (with Cohen's kappa)](crisis-bench/figures/fig3_kappa_matrix.png)
 
 A7 self-consistency test (the same flash judge re-scores the same batch of answers once more):
 
@@ -390,6 +398,8 @@ Before any large-scale deployment, one must answer "multi-agent is not free". Th
 
 **Conclusion.** Multi-agent incurs a substantial but controlled cost: multi uses about **1.86×** the tokens of single, 2.0× the calls, and about 2.06× the time, while raising the scenario-level score by 7.05pp (§6.3) — i.e., about 0.86× extra tokens buys a 7.05pp gain in decision quality. The constraint verification component makes zero API calls (pure deterministic rules) and raises tokens only slightly from multi's 10,823 to 11,098 (+2.5%, from the prompt increment of the injected violation list and correction instructions), yet yields a 2.81pp gain and eliminates resource/trap errors, giving better cost-effectiveness than adding another LLM role. The auditor ablation (multi-noaudit) reduces tokens to 0.75× of multi but drops the score by 7.32pp — **the auditor is a "cheap and critical" step**. The stronger model glm-4-plus raises tokens by about another 1.47× (multi@plus 574k vs multi@flash 390k) yet is already near the ceiling (§6.7), suggesting diminishing marginal returns from simply switching to a larger model. The full cost breakdown (by run unit) is in `crisis-bench/results/RESULTS-cost.md`; the cost-score scatter is in Figure 5 (`crisis-bench/figures/fig5_cost.png`). Cost in currency is not converted from vendor price lists (API pricing differs) and will be recorded in the official version.
 
+![Figure 5: Cost-score scatter (each point = one scenario; x-axis tokens per scenario, y-axis overall score)](crisis-bench/figures/fig5_cost.png)
+
 ---
 
 ## 7 Analysis: Error Typology
@@ -417,6 +427,8 @@ Interpretation:
 4. Trap-type rubric points (tent shortfall, adjacent-tank cooling, priority order) lose points only under single; the multi audit step has a correcting effect on "resource-constraint-type" traps.
 
 Under the full-set criterion, the discrimination of each type of "hard rubric point" across configurations is shown in Figure 4 (`crisis-bench/figures/fig4_hardpoints.png`).
+
+![Figure 4: Constraint-verification contrast — Verifier violation counts for multi vs multi+verify](crisis-bench/figures/fig4_hardpoints.png)
 
 ### 7.2 Eight error types (A9 quantitative statistics, v0.4 full set, majority-vote-criterion loss-point counts)
 
@@ -502,10 +514,10 @@ This paper presents CrisisBench, the first Chinese benchmark for evaluating mult
 
 ---
 
-*Draft v3 complete (2026-10-19). To-dos for the next version: item-by-item review by the annotator of the A6 final-adjudication drafts, A8 cost-latency, A10 human baseline, v0.5 difficulty expansion, reference normalization, English abstract.*
+*Draft v3.1 complete (2026-10-19). To-dos for the next version: item-by-item review by the annotator of the A6 final-adjudication drafts, v0.5 difficulty expansion (using the "hard rubric-point subset" to raise discrimination), merging verified entries into the formal reference list, ARR two-column formatting, and finalizing the English abstract.*
 
 ---
 
 ## Appendix Note (Editorial, not part of the submission)
 
-> **Important statement (submission red line; must be retained): this paper's draft was drawn up by an AI assistant based on the completed experiments and the literature survey; before submission or submission for the assessment, it must be reviewed and revised item by item by the author (Xu Xiangyang), in particular: scenario annotation (all rubric points in scenarios.json), the wording of the experimental conclusions, and the reference entries. All numbers are taken from the v0.3 experimental results (`research/crisis-bench/results/RESULTS.md` and `results/*.json`) and the v0.4 scenario table (`crisis-bench/scenarios/rubric.md` §5); nothing was fabricated.**
+> **Important statement (submission red line; must be retained): this paper's draft was drawn up by an AI assistant based on the completed experiments and the literature survey; before submission or submission for the assessment, it must be reviewed and revised item by item by the author (Xu Xiangyang), in particular: scenario annotation (all rubric points in scenarios.json), the wording of the experimental conclusions, and the reference entries. All numbers are taken from the v0.3 pilot results (`research/crisis-bench/results/RESULTS.md`) and the v0.4 full-set results (`results/RESULTS-v0.4.md`, `results/v0.4-analysis.json`, `results/RESULTS-cost.md`, `results/adjudication*.json`, and the raw records in `results/exp-all-*.json`); scenarios and rubric points are taken from `crisis-bench/scenarios/scenarios.json` and `rubric.md` §5; the figures are generated directly from those result files by `experiments/make_figures.py` and can be recomputed; nothing was fabricated.**

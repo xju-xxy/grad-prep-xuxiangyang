@@ -219,7 +219,7 @@ def verify(answer, scene) -> list[Issue]:
 | A7 | 裁判稳定性（同批答案重打分 2 次报自一致率） | "裁判方差被完整量化" | 已完成（§6.5） |
 | A8 | 成本与延迟表（API 调用数 / token / 耗时 / 费用） | "多 Agent 不是白贵的" | 已完成（调用数/token/耗时实测；费用待折算，§6.8） |
 | A9 | 错误类型学定量（8 类错误分布统计） | "错误分析有数据结构支撑" | 已完成（§7.2） |
-| A10（可选） | 小规模人类基线（3~5 名作答对照） | "人类水平参照" | 计划中 |
+| A10（可选） | 小规模人类基线（3~5 名作答对照） | "人类水平参照" | 未做（可选项，本文不报告） |
 
 ### 6.2 实验设置（v0.3 试点 + v0.4 全量）
 
@@ -265,6 +265,10 @@ def verify(answer, scene) -> list[Issue]:
 
 **结论。** v0.4 全量下"multi > single"结论方向一致且高度显著：综合得分 90.7% vs 83.5%，场景级均值差 +7.05pp（p=2.96×10⁻⁹，CI [+3.26, +11.04] pp 不含 0）。与 v0.3 试点多数票口径的 +5.2pp 相比量级相当（试点为 5 场景 × 96 要点、全量为 36 场景 × 709 要点，场景集不同，二者不宜直接相减）：场景扩容（数值推算要点 3→48 条、信息矛盾场景 1→8 个）后"硬要点"占比上升，多智能体在推理/决策层与硬要点上的补全优势更稳定地体现出来。分层看（图 1，`crisis-bench/figures/fig1_radar.png`）：multi 的增益集中在推理/决策层（multi 推理层 90.2%、决策层 90.6%，single 分别仅 87.2%、78.3%）与个别硬要点，事实层两者都接近满分（multi 91.0%、single 85.5%）；场景×配置的完整热图见图 2（`crisis-bench/figures/fig2_heatmap.png`）。
 
+![图 1　三层得分雷达图（single / multi / multi+verify @glm-4-flash）](crisis-bench/figures/fig1_radar.png)
+
+![图 2　36 场景 × 配置 综合得分热图](crisis-bench/figures/fig2_heatmap.png)
+
 ### 6.4 RQ2：增益来自哪个角色（审核官消融）（v0.4 全量，glm-4-flash，多数票口径）
 
 为定位多智能体增益来源，在 v0.4 全量上比较 multi 与去掉审核官的消融配置 **multi-noaudit**（情报官→研判官→决策官，无最终审核收口）：
@@ -306,6 +310,10 @@ v0.4 全量上，flash 与 plus 两裁判在各配置下的 Cohen's kappa 如下
 | multi-noaudit@glm-4-flash | −0.008 |
 | multi-verify@glm-4-flash | −0.005 |
 | single@glm-4-plus | −0.008 |
+
+各配置的逐要点混淆矩阵见图 3（`crisis-bench/figures/fig3_kappa_matrix.png`，六配置各 709 要点两两配对）。以 multi@glm-4-flash 为例：两裁判同为 1 的 431 条、flash 判 1 而 plus 判 0 的 256 条、flash 判 0 而 plus 判 1 的仅 2 条、同为 0 的 20 条——两裁判的"共识"几乎只存在于"都判 1"一侧，plus 的单方面判 0（256 条）与真正的"交叉印证"（2 条）之比约 128:1。这说明二者并非可互相替代的独立证据，而是"一个宽松裁判 + 一个保守裁判"两个系统性偏差；矩阵中近乎空白的"两裁判都判 0"格（20 条）也解释了为何基准上的数值推算型要点在多数票口径下几乎全被 flash 一侧抬过。
+
+![图 3　裁判一致性：六配置 flash vs plus 逐要点判分混淆矩阵（叠加 Cohen's kappa）](crisis-bench/figures/fig3_kappa_matrix.png)
 
 A7 自一致测试（同一 flash 裁判对同一批答案重打一次）：
 
@@ -390,6 +398,8 @@ A7 自一致测试（同一 flash 裁判对同一批答案重打一次）：
 
 **结论。** 多智能体带来可观但可控的成本：multi 的 token 约为 single 的 **1.86 倍**、调用数 2.0 倍、耗时约 2.06 倍，而场景级得分提升 7.05pp（§6.3）——即约 0.86 倍额外 token 换得 7.05pp 的决策质量增益。约束校验组件为零 API 调用（纯确定性规则），把 token 从 multi 的 10,823 微升至 11,098（+2.5%，源于注入违规清单与修正指令的提示词增量），却带来 2.81pp 增益并消除资源/陷阱类错误，单位成本性价比高于再加一个 LLM 角色。审核官消融（multi-noaudit）token 降至 multi 的 0.75 倍，但得分回落 7.32pp——**审核官是"便宜且关键"的一环**。更强模型 glm-4-plus 使 token 再升约 1.47 倍（multi@plus 574k vs multi@flash 390k）却已接近天花板（§6.7），提示单靠换大模型边际收益递减。完整成本明细（分运行单元）见 `crisis-bench/results/RESULTS-cost.md`；成本-得分散点见图 5（`crisis-bench/figures/fig5_cost.png`）。费用未按厂商价目表折算（各 API 定价不同），正式版补录。
 
+![图 5　成本-得分散点（每点 = 1 个场景，横轴为每场景 token、纵轴为综合得分率）](crisis-bench/figures/fig5_cost.png)
+
 ---
 
 ## 7 分析：错误类型学
@@ -417,6 +427,8 @@ A7 自一致测试（同一 flash 裁判对同一批答案重打一次）：
 4. 陷阱型要点（帐篷缺口、邻近储罐冷却、优先级次序）只在 single 下失分，multi 的审核环节对"资源约束类"陷阱有纠正作用。
 
 全量口径下各类"硬要点"在不同配置下的区分度见图 4（`crisis-bench/figures/fig4_hardpoints.png`）。
+
+![图 4　约束校验对照：multi 与 multi+verify 的 Verifier 违规检出数变化](crisis-bench/figures/fig4_hardpoints.png)
 
 ### 7.2 八类错误类型学（A9 定量统计，v0.4 全量，多数票口径失分要点计数）
 
@@ -502,10 +514,10 @@ A7 自一致测试（同一 flash 裁判对同一批答案重打一次）：
 
 ---
 
-*初稿 v3 完（2026-10-19）。下一版待办：A6 终裁底稿的标注人逐条复核、A8 成本延迟、A10 人类基线、v0.5 难度扩充、参考文献规范化、摘要英文版。*
+*初稿 v3.1 完（2026-10-19）。下一版待办：A6 终裁底稿的标注人逐条复核、v0.5 难度扩充（以"硬要点子集"提升区分度）、参考文献并入正式条目、ARR 双栏排版与英文摘要定稿。*
 
 ---
 
 ## 附记（编务说明：不随投稿正文提交，投稿清样时整段删除）
 
-> **重要声明（投稿红线，务必保留）：本文初稿由 AI 助手基于已完成的实验与文献综述代拟；投稿或提交考核前必须由本人（徐向阳）逐条审改，特别是：场景标注（scenarios.json 全部要点）、实验结论的表述、参考文献条目。所有数字均引自 v0.3 实验结果（`research/crisis-bench/results/RESULTS.md` 与 `results/*.json`）与 v0.4 场景表（`crisis-bench/scenarios/rubric.md` §五），未编造。**
+> **重要声明（投稿红线，务必保留）：本文初稿由 AI 助手基于已完成的实验与文献综述代拟；投稿或提交考核前必须由本人（徐向阳）逐条审改，特别是：场景标注（scenarios.json 全部要点）、实验结论的表述、参考文献条目。所有数字均引自 v0.3 试点结果（`research/crisis-bench/results/RESULTS.md`）与 v0.4 全量结果（`results/RESULTS-v0.4.md`、`results/v0.4-analysis.json`、`results/RESULTS-cost.md`、`results/adjudication*.json` 及 `results/exp-all-*.json` 原始记录），场景与要点引自 `crisis-bench/scenarios/scenarios.json` 与 `rubric.md` §五，因图表由 `experiments/make_figures.py` 从上述结果文件直接生成、可复算，未编造。**
