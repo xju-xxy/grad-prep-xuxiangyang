@@ -1,17 +1,8 @@
 # grad-prep-xuxiangyang
 
-> 个人简介 + 两项任务的进度总览
+徐向阳，医工专业。这个仓库放我备考研究生期间的两摊事：一摊是读论文、做复现，在 `research/`；一摊是练手写的小工程，在 `engineering/`。研究方向是知识增强的多 Agent 灾害态势推理与辅助决策，深度学习（神经网络、PyTorch、MuJoCo 仿真）还在一点点补。
 
-## 个人简介
-
-- 姓名：徐向阳（xuxiangyang）
-- 专业：医学工程
-- 研究方向：知识增强的多 Agent 灾害态势推理与辅助决策
-- 基础：正在系统学习深度学习（神经网络、PyTorch、MuJoCo 仿真）
-
-## 任务进度总览
-
-### 📚 科研部分（research/）
+## 科研部分（research/）
 
 精读论文 65 篇（CCF-A 会议 25 篇、CCF-B 14 篇、中科院一区期刊 9 篇），完成笔记 12 篇、复现 12 篇：
 
@@ -32,7 +23,7 @@
 
 另有 DeCrisisMB 论文 PDF（EMNLP Findings'23）待读。研究想法 3 篇（见 research/ideas/）。
 
-### 🛠 工程部分（engineering/）
+## 工程部分（engineering/）
 
 三个项目：
 
