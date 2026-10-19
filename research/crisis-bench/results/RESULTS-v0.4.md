@@ -1,6 +1,6 @@
 # CrisisBench v0.4 全量实验结果（36 场景）
 
-> 生成时间 2026-10-19 06:06:48；口径：三裁判多数票（规则 / glm-4-flash / glm-4-plus，2-of-3）
+> 生成时间 2026-10-19 15:02:14；口径：三裁判多数票（规则 / glm-4-flash / glm-4-plus，2-of-3）
 
 ## single@glm-4-flash
 
