@@ -47,7 +47,7 @@
 
 | 序号 | 论文标题 | 会议 | 链接 | 笔记 | 复现 |
 |------|----------|------|------|------|------|
-| 01 | Deep Residual Learning for Image Recognition (ResNet)（深度学习基础） | CVPR 2016 | https://arxiv.org/abs/1512.03385 | ✅ | ⬜ |
+| 01 | Deep Residual Learning for Image Recognition (ResNet)（深度学习基础） | CVPR 2016 | https://arxiv.org/abs/1512.03385 | ✅ | ✅ |
 | 06 | Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks | NeurIPS 2020 | https://arxiv.org/abs/2005.11401 | ⬜ | ⬜ |
 | 07 | ReAct: Synergizing Reasoning and Acting in Language Models | ICLR 2023（视同A） | https://arxiv.org/abs/2210.03629 | ✅ | ✅ |
 | 09 | Evaluating Robustness of LLMs on Crisis-Related Microblogs across Events, Information Types, and Linguistic Features | WWW 2025 | https://arxiv.org/abs/2412.10413 | ✅ | ✅ |
@@ -59,7 +59,7 @@
 | 18 | KnowFormer: Revisiting Transformers for Knowledge Graph Reasoning | ICML 2024 | https://arxiv.org/abs/2409.12865 | ⬜ | ⬜ |
 | 19 | Large Language Models-guided Dynamic Adaptation for Temporal Knowledge Graph Reasoning | NeurIPS 2024 | https://arxiv.org/abs/2405.14170 | ⬜ | ⬜ |
 | 20 | RAG vs. GraphRAG: A Systematic Evaluation and Key Insights | KDD 2026（数据与基准赛道） | https://arxiv.org/abs/2502.11371 | ⬜ | ⬜ |
-| 21 | SSTKG: Simple Spatio-Temporal Knowledge Graph for Interpretable and Versatile Dynamic Information Embedding | WWW 2024 | https://arxiv.org/abs/2402.12132 | ✅ | ⬜ |
+| 21 | SSTKG: Simple Spatio-Temporal Knowledge Graph for Interpretable and Versatile Dynamic Information Embedding | WWW 2024 | https://arxiv.org/abs/2402.12132 | ✅ | ✅ |
 | 22 | Simple but Effective Compound Geometric Operations for Temporal Knowledge Graph Completion | ACL 2024 | https://arxiv.org/abs/2408.06603 | ⬜ | ⬜ |
 | 23 | Taming the Untamed: Graph-Based Knowledge Retrieval and Reasoning for MLLMs to Conquer the Unknown | ICCV 2025 | https://arxiv.org/abs/2506.17589 | ⬜ | ⬜ |
 | 24 | Towards Self-cognitive Exploration: Metacognitive Knowledge Graph Retrieval Augmented Generation | KDD 2026 | https://arxiv.org/abs/2508.09460 | ⬜ | ⬜ |
@@ -69,20 +69,20 @@
 | 37 | Towards Meta-Cognitive Knowledge Editing for Multimodal LLMs | WWW 2026 | https://arxiv.org/abs/2509.05714 | ⬜ | ⬜ |
 | 38 | Unified Hallucination Detection for Multimodal Large Language Models | ACL 2024 | https://arxiv.org/abs/2402.03190 | ⬜ | ⬜ |
 | 40 | Agentic Plan Caching: Test-Time Memory for Fast and Cost-Efficient LLM Agents | NeurIPS 2025 | https://arxiv.org/abs/2506.14852 | ⬜ | ⬜ |
-| 41 | Large Language Model based Multi-Agents: A Survey of Progress and Challenges | IJCAI 2024（Survey Track） | https://arxiv.org/abs/2402.01680 | ✅ | — |
+| 41 | Large Language Model based Multi-Agents: A Survey of Progress and Challenges | IJCAI 2024（Survey Track） | https://arxiv.org/abs/2402.01680 | ✅ | ✅ |
 | 42 | MetaAgent: Automatically Constructing Multi-Agent Systems Based on Finite State Machines | ICML 2025 | https://arxiv.org/abs/2507.22606 | ⬜ | ⬜ |
 | 43 | Robotouille: An Asynchronous Planning Benchmark for LLM Agents | ICLR 2025（视同A） | https://arxiv.org/abs/2502.05227 | ⬜ | ⬜ |
 | 44 | SYMPHONY: Synergistic Multi-agent Planning with Heterogeneous Language Model Assembly | NeurIPS 2025 | https://arxiv.org/abs/2601.22623 | ⬜ | ⬜ |
 | 59 | Learning Optimal Lattice Vector Quantizers for End-to-end Neural Image Compression | NeurIPS 2024 | https://arxiv.org/abs/2411.16119 | ⬜ | ⬜ |
-| 62 | LogiDebrief: A Signal-Temporal Logic based Automated Debriefing Approach with Large Language Models Integration | IJCAI 2025 | https://arxiv.org/abs/2505.03985 | ✅ | ⬜ |
-| 63 | Sim911: Towards Effective and Equitable 9-1-1 Dispatcher Training with an LLM-Enabled Simulation | AAAI 2025 | https://arxiv.org/abs/2412.16844 | ✅ | ⬜ |
+| 62 | LogiDebrief: A Signal-Temporal Logic based Automated Debriefing Approach with Large Language Models Integration | IJCAI 2025 | https://arxiv.org/abs/2505.03985 | ✅ | ✅ |
+| 63 | Sim911: Towards Effective and Equitable 9-1-1 Dispatcher Training with an LLM-Enabled Simulation | AAAI 2025 | https://arxiv.org/abs/2412.16844 | ✅ | ✅ |
 
 ### CCF-B 会议 / 会议附属赛道
 
 | 序号 | 论文标题 | 会议 | 链接 | 笔记 | 复现 |
 |------|----------|------|------|------|------|
-| 02 | U-Net: Convolutional Networks for Biomedical Image Segmentation（深度学习基础） | MICCAI 2015 | https://arxiv.org/abs/1505.04597 | ✅ | ⬜ |
-| 03 | Harnessing Large Language Models for Disaster Management: A Survey | ACL 2025 Findings | https://arxiv.org/abs/2501.06932 | ✅ | — |
+| 02 | U-Net: Convolutional Networks for Biomedical Image Segmentation（深度学习基础） | MICCAI 2015 | https://arxiv.org/abs/1505.04597 | ✅ | ✅ |
+| 03 | Harnessing Large Language Models for Disaster Management: A Survey | ACL 2025 Findings | https://arxiv.org/abs/2501.06932 | ✅ | ✅ |
 | 25 | Augmenting Knowledge Graph Hierarchies Using Neural Transformers | ECIR 2024（CCF-C） | https://arxiv.org/abs/2404.08020 | ⬜ | ⬜ |
 | 26 | CoT-RAG: Integrating Chain of Thought and Retrieval-Augmented Generation to Enhance Reasoning in Large Language Models | EMNLP 2025 Findings | https://arxiv.org/abs/2504.13534 | ⬜ | ⬜ |
 | 27 | GRAG: Graph Retrieval-Augmented Generation | NAACL 2025 Findings | https://arxiv.org/abs/2405.16506 | ⬜ | ⬜ |
@@ -103,7 +103,7 @@
 
 | 序号 | 论文标题 | 出处 | 链接 | 笔记 | 复现 |
 |------|----------|------|------|------|------|
-| 04 | A RAG-Based Multi-Agent LLM System for Natural Hazard Resilience and Adaptation（WildfireGPT） | arXiv 2024 | https://arxiv.org/abs/2402.07877 | ✅ | ⬜ |
+| 04 | A RAG-Based Multi-Agent LLM System for Natural Hazard Resilience and Adaptation（WildfireGPT） | arXiv 2024 | https://arxiv.org/abs/2402.07877 | ✅ | ✅ |
 | 08 | AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation | COLM 2024（CCF未收录） | https://arxiv.org/abs/2308.08155 | ✅ | ✅ |
 | 52 | Verification-Aware Planning for Multi-Agent Systems | arXiv 2025（投稿中） | https://arxiv.org/abs/2510.17109 | ⬜ | ⬜ |
 | DeCrisisMB | DeCrisisMB: Debiased Semi-Supervised Learning for Crisis Tweet Classification via Memory Bank | EMNLP 2023 Findings | https://arxiv.org/abs/2310.14577 | ⬜ | ⬜ |
@@ -123,15 +123,24 @@
 
 ## 复现进度
 
+一共 12 篇有笔记的论文已经全部复现完，每个都在 `reproduction/` 下有独立目录。
+
 | 序号 | 论文 | 环境 | 状态 | 备注 |
 |------|------|------|------|------|
+| 01 | ResNet | PyTorch（CPU） | ✅ | CIFAR-10 上跑通残差网络，8 轮 58.4%（resnet-demo） |
+| 02 | U-Net | PyTorch（CPU） | ✅ | 合成形状分割，跳跃连接跑通（unet-demo） |
+| 03 | LLM 灾害管理综述 | 智谱 GLM | ✅ | 把综述分类框架做成结构化抽取工具 + 12 条小评测（disaster-survey-demo） |
+| 04 | WildfireGPT | 智谱 GLM + 向量检索 | ✅ | 画像→规划→分析三阶段 + RAG 带引用（wildfiregpt-demo） |
 | 05 | E-KELL | 智谱 GLM + 本地 KG | ✅ | KG 问答，10 题对照评测（e-kell-demo） |
 | 07 | ReAct | 智谱 GLM | ✅ | 联网搜索 + 计算器，解决"假装调用工具"问题（react-demo） |
 | 08 | AutoGen | 智谱 GLM | ✅ | 三 Agent 应急会议（autogen-demo） |
 | 09 | 危机推文鲁棒性 | 智谱 GLM | ✅ | HumAID 零样本/3-shot/错别字对照（llm-crisis-demo） |
-| DeCrisisMB | 危机推文去偏分类 | 待定 | ⬜ | Memory Bank 半监督去偏（计划中） |
-| 04 | WildfireGPT | 待定 | ⬜ | RAG+多 Agent，需准备野火领域文档 |
-| 06 | RAG | 待定 | ⬜ | 应急预案问答机器人（计划中） |
+| 21 | SSTKG | numpy / torch | ✅ | 时空影响力建模，合成网络 acc@10 0.732（sstkg-demo） |
+| 41 | LLM 多智能体综述 | 智谱 GLM | ✅ | 四维坐标系给 12 个系统打标（multiagent-survey-demo） |
+| 62 | LogiDebrief | 智谱 GLM + 时间窗规则 | ✅ | 12 通模拟通话自动复盘，违规 F1 58.8%（logidebrief-demo） |
+| 63 | Sim911 | 智谱 GLM | ✅ | 画像注入仿真陪练，知识库消融地址真实率 85%→0%（sim911-demo） |
+
+待办：DeCrisisMB（危机推文去偏分类）还没开始；06 RAG 的应急预案问答在计划里。
 
 ## 研究想法（ideas/）
 
