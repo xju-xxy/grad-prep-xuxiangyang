@@ -58,3 +58,5 @@ wandb/
 # 个人材料本地留档，不往公开仓库传
 research/专家成长档案.md
 research/组会报告-*.md
+research/domain-review.md
+research/paper-draft*

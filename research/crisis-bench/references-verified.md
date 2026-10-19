@@ -1,6 +1,6 @@
 # CrisisBench「相关工作」参考文献核实表
 
-> 核实方式：英文/中文关键词逐条 WebSearch，并与本仓库 `paper-notes/`、`domain-review.md`、`paper-draft.md` 内已有笔记交叉比对。
+> 核实方式：英文/中文关键词逐条 WebSearch，并与本仓库 `paper-notes/` 内已有笔记交叉比对。
 > 结论速览：**20 项中无一项纯虚构**，全部能找到真实对应工作；但有 3 项需要改名/改描述（#8 VERIMAP 拼写、#10 PMC 的全称、#14 E-KELL 的内容描述），详见建议。
 
 | 论文中称呼 | 核实结果 | 真实标题 | 出处(arXiv/ACL/DOI/会议) | 建议 |
