@@ -7,7 +7,7 @@
 
 ## Abstract
 
-Large language model (LLM)-driven multi-agent collaboration has shown advantages in open-domain tasks like office work and coding, yet high-stakes disaster emergency decision-making still lacks both a benchmark for evaluating multi-agent decision quality and a mechanism for trustworthy verification of decision outputs. We introduce CrisisBench, a Chinese benchmark for disaster situation reasoning and decision support, together with a constraint verification component. CrisisBench v0.4 contains 36 disaster scenarios (14 single-hazard, 14 chained secondary disasters, 8 information-contradiction) and 709 rubric points, 48 of which are numerical-inference points, organized into factual, reasoning, and decision layers with objective 0/1 checklist scoring. A pilot study with glm-4-flash shows multi-agent (four roles) outperforms single-agent by 5.2 percentage points under 2-of-3 majority vote (95.8% vs 90.6%) and by 20.9 points under the stricter judge; two LLM judges reach a Cohen's kappa of 0.03~0.08, making them non-interchangeable. v0.4 full experiments confirm this: multi-agent gains 7.05 points over single-agent (90.7% vs 83.5%; p=3.0×10⁻⁹, 95% CI [+3.3, +11.0] pp), removing the auditor costs 7.32 pp (p=6.5×10⁻⁷), and the verifier adds 2.81 pp (p=2.7×10⁻³, 95% CI [+0.1, +6.1] pp); glm-4-plus nearly saturates the benchmark (9.11 pp above flash, p=2.1×10⁻¹⁵). After annotator review, adjudication on 71 true three-judge disagreements agrees 90.1% with the majority vote and 80.3% with the flash judge — the majority vote is closer to the human criterion than any single judge — and multi-agent costs about 1.86× the tokens of single-agent. Our contribution is a reproducible benchmark, a majority-vote protocol, and a validated verifier.
+Large language model (LLM)-driven multi-agent collaboration has shown advantages in open-domain tasks like office work and coding, yet high-stakes disaster emergency decision-making still lacks both a benchmark for evaluating multi-agent decision quality and a mechanism for trustworthy verification of decision outputs. We introduce CrisisBench, a Chinese benchmark for disaster situation reasoning and decision support, together with a constraint verification component. CrisisBench v0.4 contains 36 disaster scenarios (14 single-hazard, 14 chained secondary disasters, 8 information-contradiction) and 709 rubric points, 48 of which are numerical-inference points, organized into factual, reasoning, and decision layers with objective 0/1 checklist scoring. A pilot study with glm-4-flash shows multi-agent (four roles) outperforms single-agent by 5.2 percentage points under 2-of-3 majority vote (95.8% vs 90.6%) and by 20.9 points under the stricter judge; two LLM judges reach a Cohen's kappa of 0.03~0.08, making them non-interchangeable. v0.4 full experiments confirm this: multi-agent gains 7.20 points over single-agent (90.5% vs 83.3%; p=1.9×10⁻⁹, 95% CI [+3.4, +11.2] pp), removing the auditor costs 7.04 pp (p=1.8×10⁻⁶), and the verifier adds 2.81 pp (p=2.7×10⁻³, 95% CI [+0.1, +6.1] pp); glm-4-plus nearly saturates the benchmark (9.39 pp above flash, p=7.4×10⁻¹⁶). After annotator review, adjudication on 71 true three-judge disagreements agrees 90.1% with the majority vote and 80.3% with the flash judge — the majority vote is closer to the human criterion than any single judge — and multi-agent costs about 1.86× the tokens of single-agent. Our contribution is a reproducible benchmark, a majority-vote protocol, and a validated verifier.
 
 **Keywords**: disaster emergency decision-making; multi-agent; benchmark; large language models; constraint verification; three-layer scoring
 
@@ -33,9 +33,9 @@ Pilot experimental findings (model under test glm-4-flash; v0.3 setting: 96 rubr
 
 On this basis, this paper has completed the v0.4 full experiments (36 scenarios × 709 rubric points × 6 configurations: single / multi / multi-noaudit / multi-verify @glm-4-flash, single / multi @glm-4-plus), following the three-judge majority-vote criterion, with the following core results:
 
-- **The multi-agent gain is directionally consistent and comparable in magnitude to the pilot**: multi is 7.05pp higher than single at the scenario level (overall score 90.7% vs 83.5%; McNemar p=3.0×10⁻⁹, Wilcoxon p=0.0008, 95% CI [+3.3, +11.0] pp), on the same order as the v0.3 pilot's +5.2pp (5 pilot scenarios vs 36 full-set scenarios, so the two are not directly comparable) (§6.3).
-- **The auditor and the constraint verification component each yield a quantifiable gain**: removing the auditor makes multi drop by 7.32pp (p=6.5×10⁻⁷, §6.4); adding the Verifier on top of the full multi yields a further +2.81pp (p=2.7×10⁻³, §6.6), mainly suppressing resource over-allocation, trap, and capacity-shortfall errors.
-- **The stronger model approaches the ceiling**: glm-4-plus under the multi configuration is 9.11pp higher than flash (p=2.1×10⁻¹⁵), with 35 of 36 scenarios at full score, and multi and single show no significant difference (McNemar exact binomial p=1.0) — suggesting that this benchmark's discrimination for strong models is saturating, requiring v0.5 to introduce harder scenarios or a more discriminative hard-rubric-point subset.
+- **The multi-agent gain is directionally consistent and comparable in magnitude to the pilot**: multi is 7.20pp higher than single at the scenario level (overall score 90.5% vs 83.3%; McNemar p=1.9×10⁻⁹, Wilcoxon p=0.0007, 95% CI [+3.4, +11.2] pp), on the same order as the v0.3 pilot's +5.2pp (5 pilot scenarios vs 36 full-set scenarios, so the two are not directly comparable) (§6.3).
+- **The auditor and the constraint verification component each yield a quantifiable gain**: removing the auditor makes multi drop by 7.04pp (p=1.8×10⁻⁶, §6.4); adding the Verifier on top of the full multi yields a further +2.81pp (p=2.7×10⁻³, §6.6), mainly suppressing resource over-allocation, trap, and capacity-shortfall errors.
+- **The stronger model approaches the ceiling**: glm-4-plus under the multi configuration is 9.39pp higher than flash (p=7.4×10⁻¹⁶), with 35 of 36 scenarios at full score, and multi and single show no significant difference (McNemar exact binomial p=1.0) — suggesting that this benchmark's discrimination for strong models is saturating, requiring v0.5 to introduce harder scenarios or a more discriminative hard-rubric-point subset.
 - **The judge-reliability conclusion replicates on the full set**: the two judges have kappa near 0 throughout (multi@flash 0.081, single@flash 0.079, others −0.008~−0.003), and the flash judge's self-consistency is 0.99 for single and 1.00 for multi (§6.5).
 - **A6 adjudication and A8 cost accounting are complete**: on 71 true three-judge disagreements from 8 scenarios, after item-by-item review by the annotator (8 items re-judged) human-machine agreement is 90.1% vs the majority vote and 80.3% vs the single flash judge — the majority vote beats any single judge (§6.5); multi-agent costs about 1.86× the tokens of single-agent (§6.8).
 
@@ -257,13 +257,13 @@ On the 36-scenario full set, multi and single are compared (both models under te
 
 | Metric | Value |
 |---|---|
-| Overall score (multi / single) | **90.7% / 83.5%** |
-| Scenario-level mean-score difference (multi − single) | **+7.05 pp** (multi higher than single) |
-| Point-level McNemar test | 61 rubric points where multi is correct and single is wrong, 10 where multi is wrong and single is correct; **p = 2.96×10⁻⁹** |
-| Scenario-level paired Wilcoxon test | **p = 0.0008** |
-| Bootstrap 95% CI (multi − single) | **[+3.26, +11.04] pp** |
+| Overall score (multi / single) | **90.5% / 83.3%** |
+| Scenario-level mean-score difference (multi − single) | **+7.20 pp** (multi higher than single) |
+| Point-level McNemar test | 62 rubric points where multi is correct and single is wrong, 10 where multi is wrong and single is correct; **p = 1.85×10⁻⁹** |
+| Scenario-level paired Wilcoxon test | **p = 0.0007** |
+| Bootstrap 95% CI (multi − single) | **[+3.39, +11.16] pp** |
 
-**Conclusion.** On the v0.4 full set, the "multi > single" conclusion is directionally consistent and highly significant: overall score 90.7% vs 83.5%, a scenario-level mean difference of +7.05pp (p=2.96×10⁻⁹, CI [+3.26, +11.04] pp excluding 0). Relative to the v0.3 pilot's +5.2pp under the majority-vote criterion the magnitude is comparable (the pilot has 5 scenarios × 96 rubric points while the full set has 36 scenarios × 709 rubric points, so the two are not directly comparable after subtraction): following the scenario expansion (numerical-inference rubric points 3→48, information-contradiction scenarios 1→8) the proportion of "hard rubric points" rose, and multi-agent's completion advantage in the reasoning/decision layers and on hard points is expressed more stably. Layer-wise (Figure 1, `crisis-bench/figures/fig1_radar.png`): multi's gain is concentrated in the reasoning/decision layers (multi: reasoning 90.2%, decision 90.6%; single: 87.2%, 78.3% respectively) and a few hard points, with the factual layer nearly full-score for both (multi 91.0%, single 85.5%); the full heatmap of scenario × configuration is shown in Figure 2 (`crisis-bench/figures/fig2_heatmap.png`).
+**Conclusion.** On the v0.4 full set, the "multi > single" conclusion is directionally consistent and highly significant: overall score 90.5% vs 83.3%, a scenario-level mean difference of +7.20pp (p=1.85×10⁻⁹, CI [+3.39, +11.16] pp excluding 0). Relative to the v0.3 pilot's +5.2pp under the majority-vote criterion the magnitude is comparable (the pilot has 5 scenarios × 96 rubric points while the full set has 36 scenarios × 709 rubric points, so the two are not directly comparable after subtraction): following the scenario expansion (numerical-inference rubric points 3→48, information-contradiction scenarios 1→8) the proportion of "hard rubric points" rose, and multi-agent's completion advantage in the reasoning/decision layers and on hard points is expressed more stably. Layer-wise (Figure 1, `crisis-bench/figures/fig1_radar.png`): multi's gain is concentrated in the reasoning/decision layers (multi: reasoning 89.6%, decision 90.6%; single: 86.6%, 78.3% respectively) and a few hard points, with the factual layer nearly full-score for both (multi 90.6%, single 84.8%); the full heatmap of scenario × configuration is shown in Figure 2 (`crisis-bench/figures/fig2_heatmap.png`).
 
 ![Figure 1: Three-layer score radar chart (single / multi / multi+verify @glm-4-flash)](crisis-bench/figures/fig1_radar.png)
 
@@ -275,11 +275,11 @@ To locate the source of the multi-agent gain, on the v0.4 full set we compare mu
 
 | Comparison | Scenario-level mean difference | McNemar (b / c) | Wilcoxon | Bootstrap 95% CI |
 |---|---|---|---|---|
-| multi vs multi-noaudit | **+7.32 pp** (multi higher; overall 90.7% vs 83.5%) | b=76, c=25, **p=6.52×10⁻⁷** | **p=0.0006** | **[+2.32, +11.78] pp** |
+| multi vs multi-noaudit | **+7.04 pp** (multi higher; overall 90.5% vs 83.4%) | b=75, c=26, **p=1.79×10⁻⁶** | **p=0.0008** | **[+2.10, +11.49] pp** |
 
-(McNemar table meaning: 76 rubric points where multi is correct and noaudit is wrong, 25 where multi is wrong and noaudit is correct.)
+(McNemar table meaning: 75 rubric points where multi is correct and noaudit is wrong, 26 where multi is wrong and noaudit is correct.)
 
-**Conclusion.** Removing the auditor makes multi-agent drop significantly by 7.32pp under the majority-vote criterion (p=6.52×10⁻⁷, CI [+2.32, +11.78] pp excluding 0), showing that a considerable part of multi's gain over single comes from the audit step. Combined with §7.2: noaudit shows chained deterioration of the three error types "fact loss → reasoning loss → decision underperformance" (19 / 20 / 19, far higher than multi's 0 / 7 / 10); the auditor's value lies mainly in completion and fact-checking at closing, not only in correcting resource-type traps.
+**Conclusion.** Removing the auditor makes multi-agent drop significantly by 7.04pp under the majority-vote criterion (p=1.79×10⁻⁶, CI [+2.10, +11.49] pp excluding 0), showing that a considerable part of multi's gain over single comes from the audit step. Combined with §7.2: noaudit shows chained deterioration of the three error types "fact loss → reasoning loss → decision underperformance" (19 / 20 / 19, far higher than multi's 0 / 8 / 10); the auditor's value lies mainly in completion and fact-checking at closing, not only in correcting resource-type traps.
 
 ### 6.5 RQ3: Are LLM judges reliable? (v0.3 pilot + v0.4 full set)
 
@@ -351,7 +351,7 @@ In summary: the official criterion continues to use the majority vote, while the
 
 | Comparison | Scenario-level mean difference | McNemar (b / c) | Wilcoxon | Bootstrap 95% CI |
 |---|---|---|---|---|
-| multi-verify vs multi | **+2.81 pp** (verify higher; overall 93.5% vs 90.7%) | b=10, c=30, **p=0.0027** | **p=0.0298** | **[+0.07, +6.10] pp** |
+| multi-verify vs multi | **+2.81 pp** (verify higher; overall 93.3% vs 90.5%) | b=10, c=30, **p=0.0027** | **p=0.0285** | **[+0.07, +6.10] pp** |
 
 (McNemar table meaning: 30 rubric points where verify is correct and multi is wrong, 10 where verify is wrong and multi is correct.)
 
@@ -363,7 +363,7 @@ In summary: the official criterion continues to use the majority vote, while the
 | multi-verify@glm-4-flash | 12/49 | 46 | 0 | 0 |
 | multi-noaudit@glm-4-flash | 0/49 | 8 | 6 | 1 |
 
-**Conclusion.** After plugging in the Verifier, multi improves by a further 2.81pp under the majority-vote criterion (p=2.7×10⁻³, CI [+0.07, +6.10] pp excluding 0; overall 93.5% vs 90.7%), a clear and significant gain. The deterministic detection shows: the Verifier mainly suppresses **resource over-allocation / trap / capacity** type errors — traps 6→0 and capacity shortfall 1→0 both drop to zero, and resource over-allocation drops from multi's 7 items to multi-verify's 0 items under the error-typology criterion (§7.2), while total loss drops from multi's 66 to 46; and "inference compliance" is 12/49 for both multi and multi-verify (noaudit only 0/49), showing that **numerical-inference rubric points are still determined by model capability**, and the deterministic rules handle accounting but cannot compute the numbers for the model. Contrasting with the LLM judges with kappa≈0 in §6.5: the Verifier's repeated runs on the same answer produce a constant output, naturally solving the judge-variance problem (the comparison design is in §5.4).
+**Conclusion.** After plugging in the Verifier, multi improves by a further 2.81pp under the majority-vote criterion (p=2.7×10⁻³, CI [+0.07, +6.10] pp excluding 0; overall 93.3% vs 90.5%), a clear and significant gain. The deterministic detection shows: the Verifier mainly suppresses **resource over-allocation / trap / capacity** type errors — traps 6→0 and capacity shortfall 1→0 both drop to zero, and resource over-allocation drops from multi's 7 items to multi-verify's 0 items under the error-typology criterion (§7.2), while total loss drops from multi's 68 to 48; and "inference compliance" is 12/49 for both multi and multi-verify (noaudit only 0/49), showing that **numerical-inference rubric points are still determined by model capability**, and the deterministic rules handle accounting but cannot compute the numbers for the model. Contrasting with the LLM judges with kappa≈0 in §6.5: the Verifier's repeated runs on the same answer produce a constant output, naturally solving the judge-variance problem (the comparison design is in §5.4).
 
 ### 6.7 A2: Dual-model comparison (glm-4-plus, approaching the ceiling)
 
@@ -371,17 +371,17 @@ The second model under test, glm-4-plus (a stronger model on the same API), perf
 
 | Comparison | Scenario-level mean difference | McNemar | Bootstrap 95% CI |
 |---|---|---|---|
-| multi vs single (both @glm-4-plus) | 0.01 pp | exact binomial **p=1.0** | [−0.40, +0.44] pp |
+| multi vs single (both @glm-4-plus) | 0.13 pp | exact binomial **p=1.0** | [−0.58, +0.31] pp |
 
 Next, the cross-model comparison (multi configuration):
 
 | Comparison | Scenario-level mean difference | McNemar | Wilcoxon | Bootstrap 95% CI |
 |---|---|---|---|---|
-| plus vs flash (both multi configuration) | **+9.11 pp** (plus higher) | **p=2.05×10⁻¹⁵** (plus correct & flash wrong 65 points; flash correct & plus wrong 0) | p≈0 | [+6.11, +12.57] pp |
+| plus vs flash (both multi configuration) | **+9.39 pp** (plus higher) | **p=7.43×10⁻¹⁶** (plus correct & flash wrong 67 points; flash correct & plus wrong 0) | p≈0 | [+6.45, +12.78] pp |
 
-Full-score scenario statistics (majority-vote criterion): single@plus has **35 full-score scenarios** among 36 (the only non-full-score is S031 at 95.2%); multi@plus also has **35 full-score scenarios** (the only non-full-score is S009 at 94.7%).
+Full-score scenario statistics (majority-vote criterion): single@plus has **34 full-score scenarios** among 36 (the non-full-score ones are S020 at 94.7% and S031 at 95.2%); multi@plus also has **35 full-score scenarios** (the only non-full-score is S009 at 94.7%).
 
-**Discussion.** plus is close to the ceiling on this benchmark: 9.11pp higher than flash (p=2.05×10⁻¹⁵), and multi and single are no longer significantly different (mean difference 0.01pp, CI [−0.40, +0.44] pp crossing 0, McNemar exact binomial p=1.0). This suggests that CrisisBench v0.4's discrimination for strong models is saturating: in §7.2, for plus's two configurations all error types are 0 except 1 item each of "numerical-inference failure"; and both non-full-score scenarios differ by only 1 rubric point. **We recommend that v0.5 add harder scenarios, or switch to a "hard rubric-point subset" (numerical-inference / contradiction / trap) as a more discriminative metric.**
+**Discussion.** plus is close to the ceiling on this benchmark: 9.39pp higher than flash (p=7.43×10⁻¹⁶), and multi and single are no longer significantly different (mean difference 0.13pp, CI [−0.58, +0.31] pp crossing 0, McNemar exact binomial p=1.0). This suggests that CrisisBench v0.4's discrimination for strong models is saturating: in §7.2, for plus's two configurations all error types are 0 except "numerical-inference failure" (1 item in multi@plus, 2 in single@plus); and the non-full-score scenarios differ by only 1 rubric point. **We recommend that v0.5 add harder scenarios, or switch to a "hard rubric-point subset" (numerical-inference / contradiction / trap) as a more discriminative metric.**
 
 ### 6.8 A8: Cost and Latency (v0.4 full-set measurement)
 
@@ -396,7 +396,7 @@ Before any large-scale deployment, one must answer "multi-agent is not free". Th
 | single (single analyst) | glm-4-plus | 3.0 | 8,173 | 66.6 | 294,245 | 1.40 |
 | multi (four roles, serial) | glm-4-plus | 6.0 | 15,956 | 104.9 | 574,419 | 2.74 |
 
-**Conclusion.** Multi-agent incurs a substantial but controlled cost: multi uses about **1.86×** the tokens of single, 2.0× the calls, and about 2.06× the time, while raising the scenario-level score by 7.05pp (§6.3) — i.e., about 0.86× extra tokens buys a 7.05pp gain in decision quality. The constraint verification component makes zero API calls (pure deterministic rules) and raises tokens only slightly from multi's 10,823 to 11,098 (+2.5%, from the prompt increment of the injected violation list and correction instructions), yet yields a 2.81pp gain and eliminates resource/trap errors, giving better cost-effectiveness than adding another LLM role. The auditor ablation (multi-noaudit) reduces tokens to 0.75× of multi but drops the score by 7.32pp — **the auditor is a "cheap and critical" step**. The stronger model glm-4-plus raises tokens by about another 1.47× (multi@plus 574k vs multi@flash 390k) yet is already near the ceiling (§6.7), suggesting diminishing marginal returns from simply switching to a larger model. The full cost breakdown (by run unit) is in `crisis-bench/results/RESULTS-cost.md`; the cost-score scatter is in Figure 5 (`crisis-bench/figures/fig5_cost.png`). Cost in currency is not converted from vendor price lists (API pricing differs) and will be recorded in the official version.
+**Conclusion.** Multi-agent incurs a substantial but controlled cost: multi uses about **1.86×** the tokens of single, 2.0× the calls, and about 2.06× the time, while raising the scenario-level score by 7.20pp (§6.3) — i.e., about 0.86× extra tokens buys a 7.20pp gain in decision quality. The constraint verification component makes zero API calls (pure deterministic rules) and raises tokens only slightly from multi's 10,823 to 11,098 (+2.5%, from the prompt increment of the injected violation list and correction instructions), yet yields a 2.81pp gain and eliminates resource/trap errors, giving better cost-effectiveness than adding another LLM role. The auditor ablation (multi-noaudit) reduces tokens to 0.75× of multi but drops the score by 7.04pp — **the auditor is a "cheap and critical" step**. The stronger model glm-4-plus raises tokens by about another 1.47× (multi@plus 574k vs multi@flash 390k) yet is already near the ceiling (§6.7), suggesting diminishing marginal returns from simply switching to a larger model. The full cost breakdown (by run unit) is in `crisis-bench/results/RESULTS-cost.md`; the cost-score scatter is in Figure 5 (`crisis-bench/figures/fig5_cost.png`). Cost in currency is not converted from vendor price lists (API pricing differs) and will be recorded in the official version.
 
 ![Figure 5: Cost-score scatter (each point = one scenario; x-axis tokens per scenario, y-axis overall score)](crisis-bench/figures/fig5_cost.png)
 
@@ -450,23 +450,23 @@ Full-set loss-point counts (majority-vote criterion, 36 scenarios):
 | Error class | multi@flash | single@flash | multi-noaudit@flash | multi-verify@flash | multi@plus | single@plus |
 |---|---|---|---|---|---|---|
 | Fact loss | 0 | 9 | 19 | 0 | 0 | 0 |
-| Numerical-inference failure | 28 | 35 | 39 | 26 | 1 | 1 |
+| Numerical-inference failure | 29 | 37 | 39 | 27 | 1 | 2 |
 | Resource over-allocation | 7 | 8 | 2 | 0 | 0 | 0 |
 | Intelligence conflict | 0 | 0 | 0 | 0 | 0 | 0 |
 | Trap not seen through | 4 | 6 | 5 | 3 | 0 | 0 |
 | Vague decision | 0 | 0 | 0 | 0 | 0 | 0 |
 | Missing target | 0 | 0 | 0 | 0 | 0 | 0 |
 | Improper contradiction handling | 10 | 16 | 13 | 6 | 0 | 0 |
-| Reasoning loss (other) | 7 | 8 | 20 | 4 | 0 | 0 |
+| Reasoning loss (other) | 8 | 9 | 20 | 5 | 0 | 0 |
 | Decision underperformance (other) | 10 | 35 | 19 | 7 | 0 | 0 |
-| **Total lost rubric points** | **66** | **117** | **117** | **46** | **1** | **1** |
+| **Total lost rubric points** | **68** | **120** | **117** | **48** | **1** | **2** |
 
 Core findings:
 
-1. **Numerical-inference rubric points are the largest source of error**: multi 28, single 35, noaudit 39 items; the Verifier can only reduce multi's 28 to 26 — deterministic rules can do accounting but cannot infer for the model.
+1. **Numerical-inference rubric points are the largest source of error**: multi 29, single 37, noaudit 39 items; the Verifier can only reduce multi's 29 to 27 — deterministic rules can do accounting but cannot infer for the model.
 2. **Improper contradiction handling is the second most persistent error type**: single 16, multi 10, noaudit 13 items.
-3. **The absence of the auditor (noaudit) brings chained deterioration of "fact loss → reasoning loss → decision underperformance"** (compared with multi): fact loss 0→19, reasoning loss 7→20, decision underperformance 10→19.
-4. **The Verifier substantially reduces resource-type and trap-type errors** (compared with multi): resource over-allocation 7→0 (to zero), trap not seen through 4→3; total loss drops from multi's 66 to 46.
+3. **The absence of the auditor (noaudit) brings chained deterioration of "fact loss → reasoning loss → decision underperformance"** (compared with multi): fact loss 0→19, reasoning loss 8→20, decision underperformance 10→19.
+4. **The Verifier substantially reduces resource-type and trap-type errors** (compared with multi): resource over-allocation 7→0 (to zero), trap not seen through 4→3; total loss drops from multi's 68 to 48.
 
 This typology is both an error portrait of the system under test and a checklist for the rule coverage of the constraint verification component (§5): V1~V5 anchor the five classes resource over-allocation, quantity accounting, numerical inference, intelligence conflict, and traps, corresponding one-to-one with error types 2/3/4/5; types 6/7 (vague decision, missing target) are handled by semi-automatic V6; types 1/8 rely on full information collection and contradiction reporting, and at this stage are mainly backed by the checklist and manual spot-checking. (The error-typology distribution is authoritative in this table; no separate figure was produced — if visualization is desired, the Figure 2 heatmap can be reused.)
 
@@ -487,7 +487,7 @@ This typology is both an error portrait of the system under test and a checklist
 
 ## 9 Conclusion
 
-This paper presents CrisisBench, the first Chinese benchmark for evaluating multi-agent decision-making in disasters. The dataset is upgraded to v0.4 (36 scenarios, 709 rubric points, 48 numerical-inference rubric points; three classes single-hazard / chained / information-contradiction; 8 disaster types), and is accompanied by three-layer checklist annotation and a three-judge majority-vote evaluation protocol. Combining the results of the v0.3 pilot (96 rubric points) and the v0.4 full set (6 configurations), the experiments demonstrate: four-role serial multi-agent consistently outperforms single-agent (v0.3 majority vote +5.2pp, strict criterion +20.9pp; v0.4 full set +7.05pp, p=3.0×10⁻⁹); the auditor is a key source of the gain (ablation drop of 7.32pp, p=6.5×10⁻⁷); the constraint verification component yields a further 2.81pp gain (p=2.7×10⁻³) and pushes resource over-allocation, trap, and capacity-shortfall errors to near zero; LLM judges are not interchangeable in the disaster decision-making setting (kappa≈0, self-consistency 0.99~1.00), so the majority vote and deterministic verification are necessary remedies; discrimination is concentrated in numerical-inference rubric points, the largest source of error. The stronger model glm-4-plus is already close to the ceiling (9.11pp above flash, 35 of 36 scenarios at full score), suggesting that the benchmark needs to evolve toward harder scenarios and a "hard rubric-point subset". A6 manual adjudication (71 true disagreements from 8 scenarios, reviewed item by item by the annotator with 8 items re-judged, 90.1% agreement with the majority vote, higher than any single judge) and A8 cost-latency accounting (multi at about 1.86× the tokens of single) are complete. Next steps: v0.5 difficulty expansion (the "hard rubric-point subset") and English submission (ARR); A10's human baseline is optional and this paper does not report its numbers.
+This paper presents CrisisBench, the first Chinese benchmark for evaluating multi-agent decision-making in disasters. The dataset is upgraded to v0.4 (36 scenarios, 709 rubric points, 48 numerical-inference rubric points; three classes single-hazard / chained / information-contradiction; 8 disaster types), and is accompanied by three-layer checklist annotation and a three-judge majority-vote evaluation protocol. Combining the results of the v0.3 pilot (96 rubric points) and the v0.4 full set (6 configurations), the experiments demonstrate: four-role serial multi-agent consistently outperforms single-agent (v0.3 majority vote +5.2pp, strict criterion +20.9pp; v0.4 full set +7.20pp, p=1.9×10⁻⁹); the auditor is a key source of the gain (ablation drop of 7.04pp, p=1.8×10⁻⁶); the constraint verification component yields a further 2.81pp gain (p=2.7×10⁻³) and pushes resource over-allocation, trap, and capacity-shortfall errors to near zero; LLM judges are not interchangeable in the disaster decision-making setting (kappa≈0, self-consistency 0.99~1.00), so the majority vote and deterministic verification are necessary remedies; discrimination is concentrated in numerical-inference rubric points, the largest source of error. The stronger model glm-4-plus is already close to the ceiling (9.39pp above flash, 35 of 36 scenarios at full score), suggesting that the benchmark needs to evolve toward harder scenarios and a "hard rubric-point subset". A6 manual adjudication (71 true disagreements from 8 scenarios, reviewed item by item by the annotator with 8 items re-judged, 90.1% agreement with the majority vote, higher than any single judge) and A8 cost-latency accounting (multi at about 1.86× the tokens of single) are complete. Next steps: v0.5 difficulty expansion (the "hard rubric-point subset") and English submission (ARR); A10's human baseline is optional and this paper does not report its numbers.
 
 ---
 

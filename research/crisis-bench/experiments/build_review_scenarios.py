@@ -287,14 +287,14 @@ def main():
         "",
         "| # | 论文结论 | 真值依据 | 判定 |",
         "|---|---|---|---|",
-        "| 1 | 多智能体较单智能体高 7.05pp（综合 90.7%% vs 83.5%%） | mean_diff_pp=%.2f；McNemar b=%d/c=%d p=%.2e；Wilcoxon p=%.4f；CI=[%.4f,%.4f] | 支撑 |" % (
+        "| 1 | 多智能体较单智能体高 7.20pp（综合 90.5%% vs 83.3%%） | mean_diff_pp=%.2f；McNemar b=%d/c=%d p=%.2e；Wilcoxon p=%.4f；CI=[%.4f,%.4f] | 支撑 |" % (
             rq1["mean_diff_pp"], rq1["mcnemar"]["b(A0B1)"], rq1["mcnemar"]["c(A1B0)"],
             rq1["mcnemar"]["p"], rq1["wilcoxon"]["p"], rq1["bootstrap_ci_95"][0], rq1["bootstrap_ci_95"][1]),
-        "| 2 | 去掉审核官使 multi 回落 7.32pp | mean_diff_pp=%.2f；McNemar p=%.2e | 支撑 |" % (
+        "| 2 | 去掉审核官使 multi 回落 7.04pp | mean_diff_pp=%.2f；McNemar p=%.2e | 支撑 |" % (
             rq2["mean_diff_pp"], rq2["mcnemar"]["p"]),
         "| 3 | 约束校验组件再带来 2.81pp 增益 | mean_diff_pp=%.2f；McNemar p=%.2e；CI=[%.4f, %.4f] | 支撑（CI 下界贴近 0，需保留 CI 表述） |" % (
             rq4["mean_diff_pp"], rq4["mcnemar"]["p"], rq4["bootstrap_ci_95"][0], rq4["bootstrap_ci_95"][1]),
-        "| 4 | glm-4-plus 较 flash 高 9.11pp（p=2.1e-15） | %s | %s |" % (
+        "| 4 | glm-4-plus 较 flash 高 9.39pp（p=7.4e-16） | %s | %s |" % (
             json.dumps(a2mf, ensure_ascii=False) if a2mf else "见 tests",
             "需核对" if not a2mf else "支撑"),
         "| 5 | plus 下 multi 与 single 已无显著差异 | mean_diff_pp=%.2f；McNemar p=%.4f（二项精确） | 支撑 |" % (
