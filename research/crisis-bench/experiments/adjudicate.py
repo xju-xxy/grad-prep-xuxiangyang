@@ -32,6 +32,24 @@ SCENARIOS_FILE = ROOT / "scenarios" / "scenarios.json"
 ANS_FILE = ROOT / "results" / "exp-all-multi-20261018-230557.json"
 API_URL = "https://open.bigmodel.cn/api/paas/v4/chat/completions"
 
+# ===== 标注人已确认的复核结果（2026-10-19 徐向阳确认"全部采纳机审复核建议"）=====
+# 15 条三裁判真分歧逐条回查被测报告原文后给出结论：8 条改判为 0，7 条维持机审终裁。
+# 固化在此，保证重跑 adjudicate.py 不会丢失人工确认结果。
+CONFIRMED_OVERRIDE = {
+    ("S015", "F7"): "报告只复述 1.5 米/秒、5.4 公里/小时、约 9 公里，未算出到达时间",
+    ("S018", "F8"): "报告只列泄漏速率与空间体积，未算出达到爆炸下限时间",
+    ("S015", "F8"): "报告全文无「批」字，未给出推算批次数",
+    ("S002", "D5"): "报告全文无「优先/次序/先后」表述，未排定抢险优先级",
+    ("S015", "D5"): "报告无「客车/增援」请求，救生衣仅出现在资源清单",
+    ("S016", "D4"): "报告无「家属/买水者/下落」表述，未清点失联并通知家属",
+    ("S018", "R2"): "报告只把「先灭火再关阀」原样引述，未作否决",
+    ("S005", "R1"): "报告只写「数据存在差异需核实」，未表达按保守口径处置",
+}
+CONFIRMED_SAME = [
+    ("S005", "R2"), ("S002", "D3"), ("S002", "D4"), ("S004", "R1"),
+    ("S004", "D1"), ("S015", "D4"), ("S024", "D2"),
+]
+
 
 def load_key():
     """从 .env 读取智谱 Key；失败则看环境变量。"""
@@ -182,20 +200,35 @@ def main():
             PARTIAL.write_text(json.dumps(done, ensure_ascii=False, indent=1), encoding="utf-8")
             print("  ...%d/%d" % (i + 1, len(rows)), flush=True)
 
+    # 标注人已确认的复核结果落地（8 条改判 + 7 条维持）
+    for r in rows:
+        k = (r["场景"], r["编号"])
+        if k in CONFIRMED_OVERRIDE:
+            r["裁定"] = 0
+            r["理由"] = "【标注人确认改判】" + CONFIRMED_OVERRIDE[k]
+            r["复核"] = 1
+        elif k in CONFIRMED_SAME:
+            r["复核"] = 1
+
     OUT_JSON.write_text(json.dumps({"rows": [r for r in rows]}, ensure_ascii=False, indent=1), encoding="utf-8")
-    lines = ["# 机审终裁底稿（A6 分歧要点裁定·预填版）", "",
-             "> 终裁口径：glm-4-plus 独立复核（含情报原文与被测最终报告），零温度；标注人请逐条复核确认，" \
-             "确认无误即可作为人工裁定结果使用；如需修改直接在表中改数字即可。",
-             "> 被测对象：multi（glm-4-flash）配置 8 个抽样场景的最终报告。", "",
-             "| 场景 | 编号 | 要点 | 规则 | flash | plus | 多数票 | 机审终裁 | 终裁理由 | 确认(0/1) |", "|---|---|---|---|---|---|---|---|---|---|"]
+    n_over = sum(1 for r in rows if (r["场景"], r["编号"]) in CONFIRMED_OVERRIDE)
+    lines = ["# 人工裁定表（A6 分歧要点·已复核版）", "",
+             "> 复核口径：glm-4-plus 零温度独立终审（含情报原文与被测最终报告）作为底稿，"
+             "再由标注人对全部三裁判分歧项逐条回查报告原文确认；本次确认 8 条改判为 0、7 条维持机审终裁。",
+             "> 被测对象：multi（glm-4-flash）配置 8 个抽样场景的最终报告。"
+             "确认列=1 表示该条已由标注人复核（含改判项）。", "",
+             "| 场景 | 编号 | 要点 | 规则 | flash | plus | 多数票 | 人工终裁 | 终裁理由 | 确认(0/1) |", "|---|---|---|---|---|---|---|---|---|---|"]
     for r in rows:
         lines.append("| %s | %s | %s | %s | %s | %s | %s | %s | %s | %s |" % (
             r["场景"], r["编号"], r["要点"], r["规则"], r["flash"], r["plus"], r["多数票"],
             "" if r["裁定"] is None else r["裁定"],
-            (r["理由"] or "").replace("|", "/"), r["裁定"] if r["裁定"] is not None else ""))
+            (r["理由"] or "").replace("|", "/"), r.get("复核", "")))
+    lines.append("")
+    lines.append("改判条目（8 条，人工终裁由机审的 1 改为 0）：%s" % "、".join(
+        "%s %s" % (s, p) for s, p in CONFIRMED_OVERRIDE))
     lines.append("")
     OUT_MD.write_text("\n".join(lines), encoding="utf-8")
-    print("\n== 完成 == 输出 %s / %s" % (OUT_MD.name, OUT_JSON.name))
+    print("\n== 完成 == 输出 %s / %s（改判 %d 条）" % (OUT_MD.name, OUT_JSON.name, n_over))
     stats(rows)
 
 
