@@ -1,0 +1,233 @@
+{
+  "id": "C10",
+  "title": "居民楼火灾、老人被烟呛晕（没做危险源警告）",
+  "duration": 230,
+  "classify": {
+    "call_type": "FIRE",
+    "event_type": "火灾伤员",
+    "fatal_category": "气道阻塞",
+    "response_unit": "救护+消防"
+  },
+  "classify_gt": {
+    "call_type": "FIRE",
+    "event_type": "火灾",
+    "fatal_category": "气道"
+  },
+  "rows": [
+    {
+      "id": "R01",
+      "title": "确认详细地址",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 60]s 内出现（实际 8s）",
+      "evidence": {
+        "action": "ask_address",
+        "turn": 2,
+        "time": 8,
+        "quote": "哪一栋楼，几层？"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R02",
+      "title": "记录回拨电话",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 120]s 内出现（实际 34s）",
+      "evidence": {
+        "action": "ask_callback",
+        "turn": 5,
+        "time": 34,
+        "quote": "你电话给我"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R03",
+      "title": "告知已派出救护车",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 90]s 内出现（实际 25s）",
+      "evidence": {
+        "action": "dispatch",
+        "turn": 4,
+        "time": 25,
+        "quote": "好，消防和救护车都派出去了"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R04",
+      "title": "确认现场安全",
+      "fatal_tag": null,
+      "verdict": "No",
+      "reason": "通话中未出现要求动作「ask_scene_safety」，违反「确认现场安全」",
+      "evidence": null,
+      "gt": "Yes"
+    },
+    {
+      "id": "R05",
+      "title": "询问患者基本信息",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 150]s 内出现（实际 58s）",
+      "evidence": {
+        "action": "ask_patient_basic",
+        "turn": 8,
+        "time": 58,
+        "quote": "那个老人多大年纪，是男的还是女的？"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R06",
+      "title": "询问发病/受伤时间",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 150]s 内出现（实际 73s）",
+      "evidence": {
+        "action": "ask_onset_time",
+        "turn": 10,
+        "time": 73,
+        "quote": "他大概是什么时候被烟呛晕的？"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R07",
+      "title": "安抚并提示保持通话",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 180]s 内出现（实际 158s）",
+      "evidence": {
+        "action": "reassure",
+        "turn": 18,
+        "time": 158,
+        "quote": "继续按，别停，医生马上到，坚持住"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R08",
+      "title": "结束前复述地址",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [170, 230]s 内出现（实际 220s）",
+      "evidence": {
+        "action": "repeat_address",
+        "turn": 20,
+        "time": 220,
+        "quote": "我确认一下，你们是仙林大道12号7栋对吧？"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R09",
+      "title": "判断患者意识",
+      "fatal_tag": null,
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CARDIAC，本通话类型为 FIRE",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R10",
+      "title": "判断患者呼吸",
+      "fatal_tag": "气道",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CARDIAC，本通话类型为 FIRE",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R11",
+      "title": "无呼吸时指导胸外按压",
+      "fatal_tag": "CPR",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CARDIAC，本通话类型为 FIRE",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R12",
+      "title": "无呼吸时指导使用 AED",
+      "fatal_tag": "AED",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CARDIAC，本通话类型为 FIRE",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R13",
+      "title": "询问出血情况",
+      "fatal_tag": null,
+      "verdict": "NA",
+      "reason": "该需求仅适用于 TRAUMA，本通话类型为 FIRE",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R14",
+      "title": "出血时指导止血",
+      "fatal_tag": "止血",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 TRAUMA，本通话类型为 FIRE",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R15",
+      "title": "询问是否气道异物梗阻",
+      "fatal_tag": "气道阻塞",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CHOKING，本通话类型为 FIRE",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R16",
+      "title": "异物梗阻时指导解阻",
+      "fatal_tag": "气道阻塞",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CHOKING，本通话类型为 FIRE",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R17",
+      "title": "询问宫缩间隔/是否破水",
+      "fatal_tag": null,
+      "verdict": "NA",
+      "reason": "该需求仅适用于 OBSTETRIC，本通话类型为 FIRE",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R18",
+      "title": "临产时指导分娩",
+      "fatal_tag": "分娩",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 OBSTETRIC，本通话类型为 FIRE",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R19",
+      "title": "危险源警告",
+      "fatal_tag": null,
+      "verdict": "No",
+      "reason": "通话中未出现要求动作「warning_danger」，违反「危险源警告」",
+      "evidence": null,
+      "gt": "No"
+    },
+    {
+      "id": "R20",
+      "title": "询问既往病史/过敏",
+      "fatal_tag": null,
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CARDIAC/TRAUMA/GENERAL，本通话类型为 FIRE",
+      "evidence": null,
+      "gt": "NA"
+    }
+  ]
+}

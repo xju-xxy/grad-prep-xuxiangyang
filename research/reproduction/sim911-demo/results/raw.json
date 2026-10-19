@@ -1,0 +1,6442 @@
+{
+ "full": {
+  "E01|P1": {
+   "event_id": "E01",
+   "event_type": "心脏骤停",
+   "profile_id": "P1",
+   "profile_name": "非母语者",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】我……喊，没人，门，关着。阳光花园，5栋，101。\n【求助要点】请快来，有人倒地，不动了。",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】我……喊，没人，门，关着。阳光花园，5栋，101。\n【求助要点】请快来，有人倒地，不动了。",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "我……喊，没人，门，关着。阳光花园，5栋，101。",
+      "求助要点": "请快来，有人倒地，不动了。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P1"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】建设路45号和平里2单元601\n【呼救者原话】我……门，开，不，里头，倒，人，不……动，快，救……\n【求助要点】老人在家突然倒地，不动，需要紧急救援",
+     "parsed": {
+      "raw": "【地点】建设路45号和平里2单元601\n【呼救者原话】我……门，开，不，里头，倒，人，不……动，快，救……\n【求助要点】老人在家突然倒地，不动，需要紧急救援",
+      "地点": "建设路45号和平里2单元601",
+      "呼救者原话": "我……门，开，不，里头，倒，人，不……动，快，救……",
+      "求助要点": "老人在家突然倒地，不动，需要紧急救援"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地址『建设路45号和平里2单元601』没有出现在呼救者原话里",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地址『建设路45号和平里2单元601』没有出现在呼救者原话里",
+      "画像对不上：裁判判定为 P4（80%），目标是 P1"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】我……门，开不了。阿姨，倒地，不动。阳光花园，5栋，101。\n【求助要点】阿姨倒地不动，急需急救。",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】我……门，开不了。阿姨，倒地，不动。阳光花园，5栋，101。\n【求助要点】阿姨倒地不动，急需急救。",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "我……门，开不了。阿姨，倒地，不动。阳光花园，5栋，101。",
+      "求助要点": "阿姨倒地不动，急需急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P1"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E03|P2": {
+   "event_id": "E03",
+   "event_type": "癫痫发作",
+   "profile_id": "P2",
+   "profile_name": "低收入社区居民",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": true,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：光明街12号幸福小区1栋804",
+    "profile_guess": "P2",
+    "profile_conf": 90,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地址『建设路45号和平里2单元601』没有出现在呼救者原话里",
+    "profile_guess": "P2",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】建设路45号和平里2单元601\n【呼救者原话】喂，你们快来啊，就那个卖早餐的旁边那栋楼，有人突然抽起来，口吐白沫，车上的乘客都围着看，司机也不敢动他。\n【求助要点】有人癫痫发作，口吐白沫，急需救治。",
+     "parsed": {
+      "raw": "【地点】建设路45号和平里2单元601\n【呼救者原话】喂，你们快来啊，就那个卖早餐的旁边那栋楼，有人突然抽起来，口吐白沫，车上的乘客都围着看，司机也不敢动他。\n【求助要点】有人癫痫发作，口吐白沫，急需救治。",
+      "地点": "建设路45号和平里2单元601",
+      "呼救者原话": "喂，你们快来啊，就那个卖早餐的旁边那栋楼，有人突然抽起来，口吐白沫，车上的乘客都围着看，司机也不敢动他。",
+      "求助要点": "有人癫痫发作，口吐白沫，急需救治。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地址『建设路45号和平里2单元601』没有出现在呼救者原话里",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地址『建设路45号和平里2单元601』没有出现在呼救者原话里"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】喂，师傅，急死人了，就在那个卖早餐的旁边那栋楼，有人癫痫发作了，现在车上的人都围着他看呢，你们快来啊！\n【求助要点】有人癫痫发作，需要急救。",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】喂，师傅，急死人了，就在那个卖早餐的旁边那栋楼，有人癫痫发作了，现在车上的人都围着他看呢，你们快来啊！\n【求助要点】有人癫痫发作，需要急救。",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "喂，师傅，急死人了，就在那个卖早餐的旁边那栋楼，有人癫痫发作了，现在车上的人都围着他看呢，你们快来啊！",
+      "求助要点": "有人癫痫发作，需要急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】光明街12号幸福小区1栋804\n【呼救者原话】喂，120吗？俺们这可出大事了，就那个卖早餐的旁边，幸福小区那块，有人突然抽搐起来，口吐白沫的。\n【求助要点】有人癫痫发作，需要急救。",
+     "parsed": {
+      "raw": "【地点】光明街12号幸福小区1栋804\n【呼救者原话】喂，120吗？俺们这可出大事了，就那个卖早餐的旁边，幸福小区那块，有人突然抽搐起来，口吐白沫的。\n【求助要点】有人癫痫发作，需要急救。",
+      "地点": "光明街12号幸福小区1栋804",
+      "呼救者原话": "喂，120吗？俺们这可出大事了，就那个卖早餐的旁边，幸福小区那块，有人突然抽搐起来，口吐白沫的。",
+      "求助要点": "有人癫痫发作，需要急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：光明街12号幸福小区1栋804",
+      "profile_guess": "P2",
+      "profile_conf": 90,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  "E04|P3": {
+   "event_id": "E04",
+   "event_type": "癫痫发作",
+   "profile_id": "P3",
+   "profile_name": "独居老人",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 2,
+   "passed": true,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：光明街12号幸福小区1栋804",
+    "profile_guess": "P3",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：建设路47号和平里4单元203",
+    "profile_guess": "P1",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】建设路47号和平里4单元203\n【呼救者原话】喂，是我啊，我在和平里，一个小孩……哦，对对对，就在和平里4单元，我说话不利索，你们快来，快来。\n【求助要点】一个小孩高烧后抽搐，第一次发作。",
+     "parsed": {
+      "raw": "【地点】建设路47号和平里4单元203\n【呼救者原话】喂，是我啊，我在和平里，一个小孩……哦，对对对，就在和平里4单元，我说话不利索，你们快来，快来。\n【求助要点】一个小孩高烧后抽搐，第一次发作。",
+      "地点": "建设路47号和平里4单元203",
+      "呼救者原话": "喂，是我啊，我在和平里，一个小孩……哦，对对对，就在和平里4单元，我说话不利索，你们快来，快来。",
+      "求助要点": "一个小孩高烧后抽搐，第一次发作。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：建设路47号和平里4单元203",
+      "profile_guess": "P1",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P1（80%），目标是 P3"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】光明街12号幸福小区1栋804\n【呼救者原话】喂，喂？是我，我住在这幸福小区，我孙子他突然抽搐了，你们快来呀，快来救救他。\n【求助要点】孙子突然抽搐，需要紧急救治。",
+     "parsed": {
+      "raw": "【地点】光明街12号幸福小区1栋804\n【呼救者原话】喂，喂？是我，我住在这幸福小区，我孙子他突然抽搐了，你们快来呀，快来救救他。\n【求助要点】孙子突然抽搐，需要紧急救治。",
+      "地点": "光明街12号幸福小区1栋804",
+      "呼救者原话": "喂，喂？是我，我住在这幸福小区，我孙子他突然抽搐了，你们快来呀，快来救救他。",
+      "求助要点": "孙子突然抽搐，需要紧急救治。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：光明街12号幸福小区1栋804",
+      "profile_guess": "P3",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  "E05|P4": {
+   "event_id": "E05",
+   "event_type": "火灾",
+   "profile_id": "P4",
+   "profile_name": "情绪崩溃者",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 1,
+   "passed": true,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：光明街12号幸福小区1栋804",
+    "profile_guess": "P4",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：光明街12号幸福小区1栋804",
+    "profile_guess": "P4",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】光明街12号幸福小区1栋804\n【呼救者原话】哎呀，我…我在幸福小区，3楼着火了，烟…烟太大，我…我…我怎么办啊，我奶奶还在屋里呢，快…快来人啊！\n【求助要点】奶奶还在屋里，情况紧急",
+     "parsed": {
+      "raw": "【地点】光明街12号幸福小区1栋804\n【呼救者原话】哎呀，我…我在幸福小区，3楼着火了，烟…烟太大，我…我…我怎么办啊，我奶奶还在屋里呢，快…快来人啊！\n【求助要点】奶奶还在屋里，情况紧急",
+      "地点": "光明街12号幸福小区1栋804",
+      "呼救者原话": "哎呀，我…我在幸福小区，3楼着火了，烟…烟太大，我…我…我怎么办啊，我奶奶还在屋里呢，快…快来人啊！",
+      "求助要点": "奶奶还在屋里，情况紧急"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：光明街12号幸福小区1栋804",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  "E06|P5": {
+   "event_id": "E06",
+   "event_type": "火灾",
+   "profile_id": "P5",
+   "profile_name": "心理疾病来访者",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地址『光明街12号幸福小区1栋804』没有出现在呼救者原话里",
+    "profile_guess": "P4",
+    "profile_conf": 90,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：建设路45号和平里2单元601",
+    "profile_guess": "P4",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】建设路45号和平里2单元601\n【呼救者原话】我……我在和平里，后厨油锅起火了，店里有人被烫伤，疼得直叫，我……我可能处理不了了，都是我的错……\n【求助要点】店里有人被烫伤，疼得直叫",
+     "parsed": {
+      "raw": "【地点】建设路45号和平里2单元601\n【呼救者原话】我……我在和平里，后厨油锅起火了，店里有人被烫伤，疼得直叫，我……我可能处理不了了，都是我的错……\n【求助要点】店里有人被烫伤，疼得直叫",
+      "地点": "建设路45号和平里2单元601",
+      "呼救者原话": "我……我在和平里，后厨油锅起火了，店里有人被烫伤，疼得直叫，我……我可能处理不了了，都是我的错……",
+      "求助要点": "店里有人被烫伤，疼得直叫"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：建设路45号和平里2单元601",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P4（80%），目标是 P5"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】我……这里发生了火灾，阳光花园5栋101，后厨油锅起火了，我……我不想活了，都是我的错，你们别过来，我真的受不了了……\n【求助要点】后厨油锅起火，有人被热油烫伤，疼得直叫",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】我……这里发生了火灾，阳光花园5栋101，后厨油锅起火了，我……我不想活了，都是我的错，你们别过来，我真的受不了了……\n【求助要点】后厨油锅起火，有人被热油烫伤，疼得直叫",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "我……这里发生了火灾，阳光花园5栋101，后厨油锅起火了，我……我不想活了，都是我的错，你们别过来，我真的受不了了……",
+      "求助要点": "后厨油锅起火，有人被热油烫伤，疼得直叫"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P4",
+      "profile_conf": 90,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P4（90%），目标是 P5"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】光明街12号幸福小区1栋804\n【呼救者原话】我……我这里出大事了，阳光花园的餐馆后厨着火了，热油烫伤了好几个人，我……我看着都疼得不行，都是我的错，我不想活了，你们快来吧。\n【求助要点】餐馆后厨油锅起火，有人被烫伤，情况紧急，请求救援。",
+     "parsed": {
+      "raw": "【地点】光明街12号幸福小区1栋804\n【呼救者原话】我……我这里出大事了，阳光花园的餐馆后厨着火了，热油烫伤了好几个人，我……我看着都疼得不行，都是我的错，我不想活了，你们快来吧。\n【求助要点】餐馆后厨油锅起火，有人被烫伤，情况紧急，请求救援。",
+      "地点": "光明街12号幸福小区1栋804",
+      "呼救者原话": "我……我这里出大事了，阳光花园的餐馆后厨着火了，热油烫伤了好几个人，我……我看着都疼得不行，都是我的错，我不想活了，你们快来吧。",
+      "求助要点": "餐馆后厨油锅起火，有人被烫伤，情况紧急，请求救援。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地址『光明街12号幸福小区1栋804』没有出现在呼救者原话里",
+      "profile_guess": "P4",
+      "profile_conf": 90,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地址『光明街12号幸福小区1栋804』没有出现在呼救者原话里",
+      "画像对不上：裁判判定为 P4（90%），目标是 P5"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E07|P6": {
+   "event_id": "E07",
+   "event_type": "交通事故",
+   "profile_id": "P6",
+   "profile_name": "听障人士代拨",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 2,
+   "passed": true,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：建设路45号和平里2单元601",
+    "profile_guess": "P6",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：光明街12号幸福小区1栋804",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】光明街12号幸福小区1栋804\n【呼救者原话】您好，我是幸福小区的，我问他一下啊——他说前面十字路口出事了，两辆车撞上了，有人被卡在驾驶座上，车门打不开。\n【求助要点】有人被卡在驾驶座，需要救援。",
+     "parsed": {
+      "raw": "【地点】光明街12号幸福小区1栋804\n【呼救者原话】您好，我是幸福小区的，我问他一下啊——他说前面十字路口出事了，两辆车撞上了，有人被卡在驾驶座上，车门打不开。\n【求助要点】有人被卡在驾驶座，需要救援。",
+      "地点": "光明街12号幸福小区1栋804",
+      "呼救者原话": "您好，我是幸福小区的，我问他一下啊——他说前面十字路口出事了，两辆车撞上了，有人被卡在驾驶座上，车门打不开。",
+      "求助要点": "有人被卡在驾驶座，需要救援。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：光明街12号幸福小区1栋804",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P6"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】建设路45号和平里2单元601\n【呼救者原话】您好，我隔壁的出了点事，在建设路和平里这边，我问他一下啊——他说驾驶座有人卡住了，车门也打不开。\n【求助要点】驾驶座有人被卡住，车门打不开。",
+     "parsed": {
+      "raw": "【地点】建设路45号和平里2单元601\n【呼救者原话】您好，我隔壁的出了点事，在建设路和平里这边，我问他一下啊——他说驾驶座有人卡住了，车门也打不开。\n【求助要点】驾驶座有人被卡住，车门打不开。",
+      "地点": "建设路45号和平里2单元601",
+      "呼救者原话": "您好，我隔壁的出了点事，在建设路和平里这边，我问他一下啊——他说驾驶座有人卡住了，车门也打不开。",
+      "求助要点": "驾驶座有人被卡住，车门打不开。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：建设路45号和平里2单元601",
+      "profile_guess": "P6",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  "E09|P7": {
+   "event_id": "E09",
+   "event_type": "跌倒受伤",
+   "profile_id": "P7",
+   "profile_name": "儿童代拨",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+    "profile_guess": "P2",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】喂，阿姨，我奶奶在浴室摔倒了，她躺在地上起不来，疼得厉害，我们小区的地址是江城路130号阳光花园5栋101。\n【求助要点】奶奶摔倒了，疼得厉害，请快来帮忙。",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】喂，阿姨，我奶奶在浴室摔倒了，她躺在地上起不来，疼得厉害，我们小区的地址是江城路130号阳光花园5栋101。\n【求助要点】奶奶摔倒了，疼得厉害，请快来帮忙。",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "喂，阿姨，我奶奶在浴室摔倒了，她躺在地上起不来，疼得厉害，我们小区的地址是江城路130号阳光花园5栋101。",
+      "求助要点": "奶奶摔倒了，疼得厉害，请快来帮忙。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P7"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】喂，阿姨在浴室摔倒了，她现在起不来，电话很难打，你们快来吧，就在阳光花园。\n【求助要点】阿姨在浴室摔倒了，现在起不来。",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】喂，阿姨在浴室摔倒了，她现在起不来，电话很难打，你们快来吧，就在阳光花园。\n【求助要点】阿姨在浴室摔倒了，现在起不来。",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "喂，阿姨在浴室摔倒了，她现在起不来，电话很难打，你们快来吧，就在阳光花园。",
+      "求助要点": "阿姨在浴室摔倒了，现在起不来。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P2（80%），目标是 P7"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】喂，阿姨在浴室摔倒了，好疼啊，她在地上爬不动了，小区里，快帮帮她吧。\n【求助要点】阿姨在浴室摔倒了，需要急救。",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】喂，阿姨在浴室摔倒了，好疼啊，她在地上爬不动了，小区里，快帮帮她吧。\n【求助要点】阿姨在浴室摔倒了，需要急救。",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "喂，阿姨在浴室摔倒了，好疼啊，她在地上爬不动了，小区里，快帮帮她吧。",
+      "求助要点": "阿姨在浴室摔倒了，需要急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+      "画像对不上：裁判判定为 P2（80%），目标是 P7"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E10|P8": {
+   "event_id": "E10",
+   "event_type": "跌倒受伤",
+   "profile_id": "P8",
+   "profile_name": "普通路人",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 1,
+   "passed": true,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】您好，我在阳光花园，刚才有个小孩从床上翻下来，头磕到桌角了，出血挺多的。\n【求助要点】小孩头出血了，需要急救。",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】您好，我在阳光花园，刚才有个小孩从床上翻下来，头磕到桌角了，出血挺多的。\n【求助要点】小孩头出血了，需要急救。",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "您好，我在阳光花园，刚才有个小孩从床上翻下来，头磕到桌角了，出血挺多的。",
+      "求助要点": "小孩头出血了，需要急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  "E11|P1": {
+   "event_id": "E11",
+   "event_type": "燃气泄漏",
+   "profile_id": "P1",
+   "profile_name": "非母语者",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+    "profile_guess": "P2",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】我……闻到，很浓的煤气味，整个楼都有，不敢开灯，不敢开电器，怎么办？\n【求助要点】整栋楼都有煤气味，不敢开灯、不敢开电器",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】我……闻到，很浓的煤气味，整个楼都有，不敢开灯，不敢开电器，怎么办？\n【求助要点】整栋楼都有煤气味，不敢开灯、不敢开电器",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "我……闻到，很浓的煤气味，整个楼都有，不敢开灯，不敢开电器，怎么办？",
+      "求助要点": "整栋楼都有煤气味，不敢开灯、不敢开电器"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+      "画像对不上：裁判判定为 P2（80%），目标是 P1"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】建设路45号和平里2单元601\n【呼救者原话】喂，是……救……吗？这……这栋楼……都是……都是气……气味，很……很浓，我……我们……我们……不敢开灯，不敢开电器，求……求你们……快……快来啊！\n【求助要点】整栋楼都有浓重的燃气气味，请求尽快来处理。",
+     "parsed": {
+      "raw": "【地点】建设路45号和平里2单元601\n【呼救者原话】喂，是……救……吗？这……这栋楼……都是……都是气……气味，很……很浓，我……我们……我们……不敢开灯，不敢开电器，求……求你们……快……快来啊！\n【求助要点】整栋楼都有浓重的燃气气味，请求尽快来处理。",
+      "地点": "建设路45号和平里2单元601",
+      "呼救者原话": "喂，是……救……吗？这……这栋楼……都是……都是气……气味，很……很浓，我……我们……我们……不敢开灯，不敢开电器，求……求你们……快……快来啊！",
+      "求助要点": "整栋楼都有浓重的燃气气味，请求尽快来处理。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地址『建设路45号和平里2单元601』没有出现在呼救者原话里",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地址『建设路45号和平里2单元601』没有出现在呼救者原话里",
+      "画像对不上：裁判判定为 P4（80%），目标是 P1"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】我……在阳光花园，5栋101，有……有气味，很浓，不敢开灯，不敢开电器。\n【求助要点】整栋楼都有味，不敢开灯、不敢开电器。",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】我……在阳光花园，5栋101，有……有气味，很浓，不敢开灯，不敢开电器。\n【求助要点】整栋楼都有味，不敢开灯、不敢开电器。",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "我……在阳光花园，5栋101，有……有气味，很浓，不敢开灯，不敢开电器。",
+      "求助要点": "整栋楼都有味，不敢开灯、不敢开电器。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P1"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E13|P2": {
+   "event_id": "E13",
+   "event_type": "一氧化碳中毒",
+   "profile_id": "P2",
+   "profile_name": "低收入社区居民",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 2,
+   "passed": true,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：光明街18号幸福小区6栋302",
+    "profile_guess": "P2",
+    "profile_conf": 90,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地址『河滨路39号红星家园4栋908』没有出现在呼救者原话里",
+    "profile_guess": "P2",
+    "profile_conf": 90,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】河滨路39号红星家园4栋908\n【呼救者原话】喂，120啊，紧急情况！就那个卖早餐的旁边那栋楼，有人一氧化碳中毒，已经昏迷了，你们快来看看啊！\n【求助要点】有人一氧化碳中毒，已经昏迷了，需要立刻救援！",
+     "parsed": {
+      "raw": "【地点】河滨路39号红星家园4栋908\n【呼救者原话】喂，120啊，紧急情况！就那个卖早餐的旁边那栋楼，有人一氧化碳中毒，已经昏迷了，你们快来看看啊！\n【求助要点】有人一氧化碳中毒，已经昏迷了，需要立刻救援！",
+      "地点": "河滨路39号红星家园4栋908",
+      "呼救者原话": "喂，120啊，紧急情况！就那个卖早餐的旁边那栋楼，有人一氧化碳中毒，已经昏迷了，你们快来看看啊！",
+      "求助要点": "有人一氧化碳中毒，已经昏迷了，需要立刻救援！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地址『河滨路39号红星家园4栋908』没有出现在呼救者原话里",
+      "profile_guess": "P2",
+      "profile_conf": 90,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地址『河滨路39号红星家园4栋908』没有出现在呼救者原话里"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】光明街18号幸福小区6栋302\n【呼救者原话】哎哟喂，120吗？我们这边出大事了，就在光明街那边的幸福小区，就那个卖早餐的旁边，有人头晕得厉害，快帮忙看看吧！\n【求助要点】有人头晕得厉害，快帮忙看看！",
+     "parsed": {
+      "raw": "【地点】光明街18号幸福小区6栋302\n【呼救者原话】哎哟喂，120吗？我们这边出大事了，就在光明街那边的幸福小区，就那个卖早餐的旁边，有人头晕得厉害，快帮忙看看吧！\n【求助要点】有人头晕得厉害，快帮忙看看！",
+      "地点": "光明街18号幸福小区6栋302",
+      "呼救者原话": "哎哟喂，120吗？我们这边出大事了，就在光明街那边的幸福小区，就那个卖早餐的旁边，有人头晕得厉害，快帮忙看看吧！",
+      "求助要点": "有人头晕得厉害，快帮忙看看！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：光明街18号幸福小区6栋302",
+      "profile_guess": "P2",
+      "profile_conf": 90,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  "E15|P3": {
+   "event_id": "E15",
+   "event_type": "溺水",
+   "profile_id": "P3",
+   "profile_name": "独居老人",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：河滨路33号红星家园1栋506",
+    "profile_guess": "P2",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：河滨路33号红星家园1栋506",
+    "profile_guess": "P4",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】河滨路33号红星家园1栋506\n【呼救者原话】喂，是我，我……我在这儿，河滨路红星家园，一个人在这儿，我……我看着河边，有个年轻人跳下去，一直没上来，水里的泡冒了好久了，你们快来吧，快来。\n【求助要点】河边有人跳下去，一直没上来，水面冒泡。",
+     "parsed": {
+      "raw": "【地点】河滨路33号红星家园1栋506\n【呼救者原话】喂，是我，我……我在这儿，河滨路红星家园，一个人在这儿，我……我看着河边，有个年轻人跳下去，一直没上来，水里的泡冒了好久了，你们快来吧，快来。\n【求助要点】河边有人跳下去，一直没上来，水面冒泡。",
+      "地点": "河滨路33号红星家园1栋506",
+      "呼救者原话": "喂，是我，我……我在这儿，河滨路红星家园，一个人在这儿，我……我看着河边，有个年轻人跳下去，一直没上来，水里的泡冒了好久了，你们快来吧，快来。",
+      "求助要点": "河边有人跳下去，一直没上来，水面冒泡。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：河滨路33号红星家园1栋506",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P4（80%），目标是 P3"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】河滨路33号红星家园1栋506\n【呼救者原话】喂，喂？是我，我在红星家园，我看到河边有人跳下去了，一直没上来，你们快来啊，快来救救他。\n【求助要点】有人溺水，需要紧急救援。",
+     "parsed": {
+      "raw": "【地点】河滨路33号红星家园1栋506\n【呼救者原话】喂，喂？是我，我在红星家园，我看到河边有人跳下去了，一直没上来，你们快来啊，快来救救他。\n【求助要点】有人溺水，需要紧急救援。",
+      "地点": "河滨路33号红星家园1栋506",
+      "呼救者原话": "喂，喂？是我，我在红星家园，我看到河边有人跳下去了，一直没上来，你们快来啊，快来救救他。",
+      "求助要点": "有人溺水，需要紧急救援。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：河滨路33号红星家园1栋506",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P3"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】河滨路33号红星家园1栋506\n【呼救者原话】喂，喂？是我，我在红星家园，河边的，有人掉下去了，你们快来，快来啊，我看着水面上冒泡，不知道具体位置。\n【求助要点】有人掉河里了，冒泡，不知道具体位置。",
+     "parsed": {
+      "raw": "【地点】河滨路33号红星家园1栋506\n【呼救者原话】喂，喂？是我，我在红星家园，河边的，有人掉下去了，你们快来，快来啊，我看着水面上冒泡，不知道具体位置。\n【求助要点】有人掉河里了，冒泡，不知道具体位置。",
+      "地点": "河滨路33号红星家园1栋506",
+      "呼救者原话": "喂，喂？是我，我在红星家园，河边的，有人掉下去了，你们快来，快来啊，我看着水面上冒泡，不知道具体位置。",
+      "求助要点": "有人掉河里了，冒泡，不知道具体位置。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：河滨路33号红星家园1栋506",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P2（80%），目标是 P3"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E17|P4": {
+   "event_id": "E17",
+   "event_type": "触电",
+   "profile_id": "P4",
+   "profile_name": "情绪崩溃者",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 1,
+   "passed": true,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：光明街12号幸福小区1栋804",
+    "profile_guess": "P4",
+    "profile_conf": 95,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：光明街12号幸福小区1栋804",
+    "profile_guess": "P4",
+    "profile_conf": 95,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】光明街12号幸福小区1栋804\n【呼救者原话】哎呀，快来人啊，我在幸福小区，我朋友触电了，他现在躺在地上，不动了，怎么办啊，我真的不知道怎么办了，呜呜……\n【求助要点】请快来救救他，他在地上不动了！",
+     "parsed": {
+      "raw": "【地点】光明街12号幸福小区1栋804\n【呼救者原话】哎呀，快来人啊，我在幸福小区，我朋友触电了，他现在躺在地上，不动了，怎么办啊，我真的不知道怎么办了，呜呜……\n【求助要点】请快来救救他，他在地上不动了！",
+      "地点": "光明街12号幸福小区1栋804",
+      "呼救者原话": "哎呀，快来人啊，我在幸福小区，我朋友触电了，他现在躺在地上，不动了，怎么办啊，我真的不知道怎么办了，呜呜……",
+      "求助要点": "请快来救救他，他在地上不动了！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：光明街12号幸福小区1栋804",
+      "profile_guess": "P4",
+      "profile_conf": 95,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  "E19|P5": {
+   "event_id": "E19",
+   "event_type": "异物卡喉",
+   "profile_id": "P5",
+   "profile_name": "心理疾病来访者",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P4",
+    "profile_conf": 90,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P4",
+    "profile_conf": 90,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】我……我真的不知道该怎么办了，孩子吃坚果噎住了，脸都紫了，我……我都没法正常说话了，就是……阳光花园5栋……\n【求助要点】孩子噎住了，脸都紫了，急需帮助！",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】我……我真的不知道该怎么办了，孩子吃坚果噎住了，脸都紫了，我……我都没法正常说话了，就是……阳光花园5栋……\n【求助要点】孩子噎住了，脸都紫了，急需帮助！",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "我……我真的不知道该怎么办了，孩子吃坚果噎住了，脸都紫了，我……我都没法正常说话了，就是……阳光花园5栋……",
+      "求助要点": "孩子噎住了，脸都紫了，急需帮助！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P4",
+      "profile_conf": 90,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P4（90%），目标是 P5"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】建设路45号和平里2单元601\n【呼救者原话】我……我女儿她吃了个小核桃，现在脸都紫了，怎么办啊？都是我不好，不会海姆立克……\n【求助要点】孩子吃坚果噎住，脸都发紫了，需要急救。",
+     "parsed": {
+      "raw": "【地点】建设路45号和平里2单元601\n【呼救者原话】我……我女儿她吃了个小核桃，现在脸都紫了，怎么办啊？都是我不好，不会海姆立克……\n【求助要点】孩子吃坚果噎住，脸都发紫了，需要急救。",
+      "地点": "建设路45号和平里2单元601",
+      "呼救者原话": "我……我女儿她吃了个小核桃，现在脸都紫了，怎么办啊？都是我不好，不会海姆立克……",
+      "求助要点": "孩子吃坚果噎住，脸都发紫了，需要急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地址『建设路45号和平里2单元601』没有出现在呼救者原话里",
+      "profile_guess": "P4",
+      "profile_conf": 90,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地址『建设路45号和平里2单元601』没有出现在呼救者原话里",
+      "画像对不上：裁判判定为 P4（90%），目标是 P5"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】我……我真的不知道该怎么办了，这里阳光花园5栋101，我的孩子……他……他吃了个坚果，现在脸都紫了，我……我……\n【求助要点】孩子异物卡喉，脸色发紫，情况紧急",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】我……我真的不知道该怎么办了，这里阳光花园5栋101，我的孩子……他……他吃了个坚果，现在脸都紫了，我……我……\n【求助要点】孩子异物卡喉，脸色发紫，情况紧急",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "我……我真的不知道该怎么办了，这里阳光花园5栋101，我的孩子……他……他吃了个坚果，现在脸都紫了，我……我……",
+      "求助要点": "孩子异物卡喉，脸色发紫，情况紧急"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P4",
+      "profile_conf": 90,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P4（90%），目标是 P5"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E20|P6": {
+   "event_id": "E20",
+   "event_type": "异物卡喉",
+   "profile_id": "P6",
+   "profile_name": "听障人士代拨",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 1,
+   "passed": true,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：光明街12号幸福小区1栋804",
+    "profile_guess": "P6",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：光明街12号幸福小区1栋804",
+    "profile_guess": "P6",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】光明街12号幸福小区1栋804\n【呼救者原话】您好，我是幸福小区的，我问他一下啊——他家里有个老人，吃年糕卡住了，说不出话来，只能指喉咙，我问他一下啊——他家人只会拍背，我问他一下啊——他家人说老人现在好像有点意识不清了。\n【求助要点】老人吃年糕卡住，意识不清，需要急救。",
+     "parsed": {
+      "raw": "【地点】光明街12号幸福小区1栋804\n【呼救者原话】您好，我是幸福小区的，我问他一下啊——他家里有个老人，吃年糕卡住了，说不出话来，只能指喉咙，我问他一下啊——他家人只会拍背，我问他一下啊——他家人说老人现在好像有点意识不清了。\n【求助要点】老人吃年糕卡住，意识不清，需要急救。",
+      "地点": "光明街12号幸福小区1栋804",
+      "呼救者原话": "您好，我是幸福小区的，我问他一下啊——他家里有个老人，吃年糕卡住了，说不出话来，只能指喉咙，我问他一下啊——他家人只会拍背，我问他一下啊——他家人说老人现在好像有点意识不清了。",
+      "求助要点": "老人吃年糕卡住，意识不清，需要急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：光明街12号幸福小区1栋804",
+      "profile_guess": "P6",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  "E21|P7": {
+   "event_id": "E21",
+   "event_type": "过敏性休克",
+   "profile_id": "P7",
+   "profile_name": "儿童代拨",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 2,
+   "passed": true,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P7",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P2",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】喂，阿姨，我妈妈在家里吃了个花生，嘴唇肿了，她现在喘不上气了，在阳光花园5栋101。\n【求助要点】妈妈喘不上气了，有过敏史，我给她打针了。",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】喂，阿姨，我妈妈在家里吃了个花生，嘴唇肿了，她现在喘不上气了，在阳光花园5栋101。\n【求助要点】妈妈喘不上气了，有过敏史，我给她打针了。",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "喂，阿姨，我妈妈在家里吃了个花生，嘴唇肿了，她现在喘不上气了，在阳光花园5栋101。",
+      "求助要点": "妈妈喘不上气了，有过敏史，我给她打针了。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P2（80%），目标是 P7"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】妈妈，我姐姐她吃了花生，嘴唇现在好大哦，好像喘不上气了，在阳光花园5栋101，你们快来吧。\n【求助要点】姐姐吃了花生，嘴唇肿，喘不上气。",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】妈妈，我姐姐她吃了花生，嘴唇现在好大哦，好像喘不上气了，在阳光花园5栋101，你们快来吧。\n【求助要点】姐姐吃了花生，嘴唇肿，喘不上气。",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "妈妈，我姐姐她吃了花生，嘴唇现在好大哦，好像喘不上气了，在阳光花园5栋101，你们快来吧。",
+      "求助要点": "姐姐吃了花生，嘴唇肿，喘不上气。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P7",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  "E23|P8": {
+   "event_id": "E23",
+   "event_type": "分娩",
+   "profile_id": "P8",
+   "profile_name": "普通路人",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 1,
+   "passed": true,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：建设路99号康乐小区6栋209",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：建设路99号康乐小区6栋209",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】建设路99号康乐小区6栋209\n【呼救者原话】您好，我在康乐小区，有人家里羊水破了，情况紧急。\n【求助要点】羊水破了，需要急救。",
+     "parsed": {
+      "raw": "【地点】建设路99号康乐小区6栋209\n【呼救者原话】您好，我在康乐小区，有人家里羊水破了，情况紧急。\n【求助要点】羊水破了，需要急救。",
+      "地点": "建设路99号康乐小区6栋209",
+      "呼救者原话": "您好，我在康乐小区，有人家里羊水破了，情况紧急。",
+      "求助要点": "羊水破了，需要急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：建设路99号康乐小区6栋209",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  "E25|P1": {
+   "event_id": "E25",
+   "event_type": "中风",
+   "profile_id": "P1",
+   "profile_name": "非母语者",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：光明街18号幸福小区6栋302",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+    "profile_guess": "P3",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】我……这……这里，不好了。老……老人，倒……倒下了，说话……说不清楚。\n【求助要点】老人说话说不清楚，需要急救。",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】我……这……这里，不好了。老……老人，倒……倒下了，说话……说不清楚。\n【求助要点】老人说话说不清楚，需要急救。",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "我……这……这里，不好了。老……老人，倒……倒下了，说话……说不清楚。",
+      "求助要点": "老人说话说不清楚，需要急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+      "profile_guess": "P3",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+      "画像对不上：裁判判定为 P3（80%），目标是 P1"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】我……人，倒地，不动了，说话不好，快……快……阳光花园。\n【求助要点】说话不好，快派车。",
+     "parsed": {
+      "raw": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】我……人，倒地，不动了，说话不好，快……快……阳光花园。\n【求助要点】说话不好，快派车。",
+      "地点": "江城路128号阳光花园3栋502",
+      "呼救者原话": "我……人，倒地，不动了，说话不好，快……快……阳光花园。",
+      "求助要点": "说话不好，快派车。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路128号阳光花园3栋502",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P4（80%），目标是 P1"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】光明街18号幸福小区6栋302\n【呼救者原话】我……说话，不好。人，倒下了，不动了。这是幸福小区，六栋三零二。\n【求助要点】家属想喂水，不知道能不能喂",
+     "parsed": {
+      "raw": "【地点】光明街18号幸福小区6栋302\n【呼救者原话】我……说话，不好。人，倒下了，不动了。这是幸福小区，六栋三零二。\n【求助要点】家属想喂水，不知道能不能喂",
+      "地点": "光明街18号幸福小区6栋302",
+      "呼救者原话": "我……说话，不好。人，倒下了，不动了。这是幸福小区，六栋三零二。",
+      "求助要点": "家属想喂水，不知道能不能喂"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：光明街18号幸福小区6栋302",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P1"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E27|P2": {
+   "event_id": "E27",
+   "event_type": "化学品泄漏",
+   "profile_id": "P2",
+   "profile_name": "低收入社区居民",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地址『光明街60号翠湖山庄B栋903』没有出现在呼救者原话里",
+    "profile_guess": "P2",
+    "profile_conf": 90,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地址『建设路45号和平里2单元601』没有出现在呼救者原话里",
+    "profile_guess": "P2",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】建设路45号和平里2单元601\n【呼救者原话】喂，120吗？就那个卖早餐的旁边，我们这里出大事了，两个桶倒了，漏出来的液体味道特别刺鼻，有个工人眼睛被熏得疼得睁不开，快来人啊！\n【求助要点】工人眼睛被熏得疼得睁不开",
+     "parsed": {
+      "raw": "【地点】建设路45号和平里2单元601\n【呼救者原话】喂，120吗？就那个卖早餐的旁边，我们这里出大事了，两个桶倒了，漏出来的液体味道特别刺鼻，有个工人眼睛被熏得疼得睁不开，快来人啊！\n【求助要点】工人眼睛被熏得疼得睁不开",
+      "地点": "建设路45号和平里2单元601",
+      "呼救者原话": "喂，120吗？就那个卖早餐的旁边，我们这里出大事了，两个桶倒了，漏出来的液体味道特别刺鼻，有个工人眼睛被熏得疼得睁不开，快来人啊！",
+      "求助要点": "工人眼睛被熏得疼得睁不开"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地址『建设路45号和平里2单元601』没有出现在呼救者原话里",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地址『建设路45号和平里2单元601』没有出现在呼救者原话里"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】喂，120吗？就那个卖早餐的旁边，我们这出大事了，两个桶倒了，漏出那种刺鼻的液体，有个工人眼睛被熏得刺痛，睁不开眼了，你们快来啊！\n【求助要点】工人眼睛被刺鼻液体熏得刺痛，睁不开眼了",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】喂，120吗？就那个卖早餐的旁边，我们这出大事了，两个桶倒了，漏出那种刺鼻的液体，有个工人眼睛被熏得刺痛，睁不开眼了，你们快来啊！\n【求助要点】工人眼睛被刺鼻液体熏得刺痛，睁不开眼了",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "喂，120吗？就那个卖早餐的旁边，我们这出大事了，两个桶倒了，漏出那种刺鼻的液体，有个工人眼睛被熏得刺痛，睁不开眼了，你们快来啊！",
+      "求助要点": "工人眼睛被刺鼻液体熏得刺痛，睁不开眼了"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+      "profile_guess": "P2",
+      "profile_conf": 90,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】光明街60号翠湖山庄B栋903\n【呼救者原话】喂，急死人了！就那个卖早餐的旁边那栋楼，仓库里两个桶倒了，漏出来那种很臭的液体，有个工人眼睛被熏得睁不开，你们快来帮忙啊！\n【求助要点】工人眼睛被熏得睁不开",
+     "parsed": {
+      "raw": "【地点】光明街60号翠湖山庄B栋903\n【呼救者原话】喂，急死人了！就那个卖早餐的旁边那栋楼，仓库里两个桶倒了，漏出来那种很臭的液体，有个工人眼睛被熏得睁不开，你们快来帮忙啊！\n【求助要点】工人眼睛被熏得睁不开",
+      "地点": "光明街60号翠湖山庄B栋903",
+      "呼救者原话": "喂，急死人了！就那个卖早餐的旁边那栋楼，仓库里两个桶倒了，漏出来那种很臭的液体，有个工人眼睛被熏得睁不开，你们快来帮忙啊！",
+      "求助要点": "工人眼睛被熏得睁不开"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地址『光明街60号翠湖山庄B栋903』没有出现在呼救者原话里",
+      "profile_guess": "P2",
+      "profile_conf": 90,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地址『光明街60号翠湖山庄B栋903』没有出现在呼救者原话里"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E29|P3": {
+   "event_id": "E29",
+   "event_type": "电梯困人",
+   "profile_id": "P3",
+   "profile_name": "独居老人",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路128号阳光花园3栋502",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路128号阳光花园3栋502",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】喂，喂？是我，我住在阳光花园，3栋502，我这边电梯里头有个老人，他……他好像有点喘不上气了。\n【求助要点】里面有位老人胸闷、喘不上气。",
+     "parsed": {
+      "raw": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】喂，喂？是我，我住在阳光花园，3栋502，我这边电梯里头有个老人，他……他好像有点喘不上气了。\n【求助要点】里面有位老人胸闷、喘不上气。",
+      "地点": "江城路128号阳光花园3栋502",
+      "呼救者原话": "喂，喂？是我，我住在阳光花园，3栋502，我这边电梯里头有个老人，他……他好像有点喘不上气了。",
+      "求助要点": "里面有位老人胸闷、喘不上气。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路128号阳光花园3栋502",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P3"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】光明街18号幸福小区6栋302\n【呼救者原话】喂，喂？是我啊，我住在幸福小区，6栋302，电梯里头，一个人，有个老人，他……他好像不舒服，胸闷得厉害，喘不上气，你们快来，快来啊！\n【求助要点】老人胸闷，喘不上气",
+     "parsed": {
+      "raw": "【地点】光明街18号幸福小区6栋302\n【呼救者原话】喂，喂？是我啊，我住在幸福小区，6栋302，电梯里头，一个人，有个老人，他……他好像不舒服，胸闷得厉害，喘不上气，你们快来，快来啊！\n【求助要点】老人胸闷，喘不上气",
+      "地点": "光明街18号幸福小区6栋302",
+      "呼救者原话": "喂，喂？是我啊，我住在幸福小区，6栋302，电梯里头，一个人，有个老人，他……他好像不舒服，胸闷得厉害，喘不上气，你们快来，快来啊！",
+      "求助要点": "老人胸闷，喘不上气"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：光明街18号幸福小区6栋302",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P2（80%），目标是 P3"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】喂，喂？是我，我……我住在阳光花园，3栋502，电梯里头，我有点儿……有点儿喘不上气了，你们快来吧。\n【求助要点】里面有个老人，他现在胸闷，喘不上气。",
+     "parsed": {
+      "raw": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】喂，喂？是我，我……我住在阳光花园，3栋502，电梯里头，我有点儿……有点儿喘不上气了，你们快来吧。\n【求助要点】里面有个老人，他现在胸闷，喘不上气。",
+      "地点": "江城路128号阳光花园3栋502",
+      "呼救者原话": "喂，喂？是我，我……我住在阳光花园，3栋502，电梯里头，我有点儿……有点儿喘不上气了，你们快来吧。",
+      "求助要点": "里面有个老人，他现在胸闷，喘不上气。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路128号阳光花园3栋502",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P3"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E30|P4": {
+   "event_id": "E30",
+   "event_type": "心理危机",
+   "profile_id": "P4",
+   "profile_name": "情绪崩溃者",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 2,
+   "passed": true,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：建设路47号和平里4单元203",
+    "profile_guess": "P4",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+    "profile_guess": "P4",
+    "profile_conf": 90,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】我...我站在这里，他...他就在楼下，你们...你们快来，我...我...我真的不知道该怎么办了，呜...呜...\n【求助要点】他就在楼下，我快撑不下去了，快来救救他！",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】我...我站在这里，他...他就在楼下，你们...你们快来，我...我...我真的不知道该怎么办了，呜...呜...\n【求助要点】他就在楼下，我快撑不下去了，快来救救他！",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "我...我站在这里，他...他就在楼下，你们...你们快来，我...我...我真的不知道该怎么办了，呜...呜...",
+      "求助要点": "他就在楼下，我快撑不下去了，快来救救他！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+      "profile_guess": "P4",
+      "profile_conf": 90,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】建设路47号和平里4单元203\n【呼救者原话】我……我在这儿，建设路，和平里，他……他在这儿，他在这儿，你们……你们快来啊，救救他，救救他！\n【求助要点】求求你们快点儿来，他在4单元203，快！",
+     "parsed": {
+      "raw": "【地点】建设路47号和平里4单元203\n【呼救者原话】我……我在这儿，建设路，和平里，他……他在这儿，他在这儿，你们……你们快来啊，救救他，救救他！\n【求助要点】求求你们快点儿来，他在4单元203，快！",
+      "地点": "建设路47号和平里4单元203",
+      "呼救者原话": "我……我在这儿，建设路，和平里，他……他在这儿，他在这儿，你们……你们快来啊，救救他，救救他！",
+      "求助要点": "求求你们快点儿来，他在4单元203，快！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：建设路47号和平里4单元203",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  }
+ },
+ "no_profile": {
+  "E01|P1": {
+   "event_id": "E01",
+   "event_type": "心脏骤停",
+   "profile_id": "P1",
+   "profile_name": "非母语者",
+   "use_profile": false,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：光明街12号幸福小区1栋804",
+    "profile_guess": "P2",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路128号阳光花园3栋502",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】你好，我这边是阳光花园的，有一位老人突然倒地，没有呼吸，家属不在家，只有我在门外，门是锁着的。\n【求助要点】请尽快派救护车来，老人可能心脏骤停了。",
+     "parsed": {
+      "raw": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】你好，我这边是阳光花园的，有一位老人突然倒地，没有呼吸，家属不在家，只有我在门外，门是锁着的。\n【求助要点】请尽快派救护车来，老人可能心脏骤停了。",
+      "地点": "江城路128号阳光花园3栋502",
+      "呼救者原话": "你好，我这边是阳光花园的，有一位老人突然倒地，没有呼吸，家属不在家，只有我在门外，门是锁着的。",
+      "求助要点": "请尽快派救护车来，老人可能心脏骤停了。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路128号阳光花园3栋502",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P1"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】光明街12号幸福小区1栋804\n【呼救者原话】你好，我是幸福小区的邻居，刚才听到804有人喊救命，我敲门没人应，现在屋里好像没人了，我怀疑有人心脏骤停了。\n【求助要点】请尽快派救护车，804号门打不开，屋里可能有人心脏骤停。",
+     "parsed": {
+      "raw": "【地点】光明街12号幸福小区1栋804\n【呼救者原话】你好，我是幸福小区的邻居，刚才听到804有人喊救命，我敲门没人应，现在屋里好像没人了，我怀疑有人心脏骤停了。\n【求助要点】请尽快派救护车，804号门打不开，屋里可能有人心脏骤停。",
+      "地点": "光明街12号幸福小区1栋804",
+      "呼救者原话": "你好，我是幸福小区的邻居，刚才听到804有人喊救命，我敲门没人应，现在屋里好像没人了，我怀疑有人心脏骤停了。",
+      "求助要点": "请尽快派救护车，804号门打不开，屋里可能有人心脏骤停。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：光明街12号幸福小区1栋804",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P1"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】光明街12号幸福小区1栋804\n【呼救者原话】您好，我这边是幸福小区的，刚才有个老人在家突然倒地，没有呼吸，家属不在家，只有我在门外，门是反锁的，求求你们快过来帮忙！\n【求助要点】老人心脏骤停，需要紧急救治！",
+     "parsed": {
+      "raw": "【地点】光明街12号幸福小区1栋804\n【呼救者原话】您好，我这边是幸福小区的，刚才有个老人在家突然倒地，没有呼吸，家属不在家，只有我在门外，门是反锁的，求求你们快过来帮忙！\n【求助要点】老人心脏骤停，需要紧急救治！",
+      "地点": "光明街12号幸福小区1栋804",
+      "呼救者原话": "您好，我这边是幸福小区的，刚才有个老人在家突然倒地，没有呼吸，家属不在家，只有我在门外，门是反锁的，求求你们快过来帮忙！",
+      "求助要点": "老人心脏骤停，需要紧急救治！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：光明街12号幸福小区1栋804",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P2（80%），目标是 P1"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E03|P2": {
+   "event_id": "E03",
+   "event_type": "癫痫发作",
+   "profile_id": "P2",
+   "profile_name": "低收入社区居民",
+   "use_profile": false,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：建设路47号和平里4单元203",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】建设路47号和平里4单元203\n【呼救者原话】您好，我在建设路上，和平里小区4单元，一辆公交车上有位乘客突然癫痫发作，口吐白沫，司机不敢动他，乘客们都围在旁边看。\n【求助要点】请快来帮忙，有乘客癫痫发作，情况紧急。",
+     "parsed": {
+      "raw": "【地点】建设路47号和平里4单元203\n【呼救者原话】您好，我在建设路上，和平里小区4单元，一辆公交车上有位乘客突然癫痫发作，口吐白沫，司机不敢动他，乘客们都围在旁边看。\n【求助要点】请快来帮忙，有乘客癫痫发作，情况紧急。",
+      "地点": "建设路47号和平里4单元203",
+      "呼救者原话": "您好，我在建设路上，和平里小区4单元，一辆公交车上有位乘客突然癫痫发作，口吐白沫，司机不敢动他，乘客们都围在旁边看。",
+      "求助要点": "请快来帮忙，有乘客癫痫发作，情况紧急。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：建设路47号和平里4单元203",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P2"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】您好，我是阳光花园5栋的，现在我们这里有人突然癫痫发作，口吐白沫，司机不敢动他，大家都在围观。\n【求助要点】请尽快派救护车来，现在情况紧急。",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】您好，我是阳光花园5栋的，现在我们这里有人突然癫痫发作，口吐白沫，司机不敢动他，大家都在围观。\n【求助要点】请尽快派救护车来，现在情况紧急。",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "您好，我是阳光花园5栋的，现在我们这里有人突然癫痫发作，口吐白沫，司机不敢动他，大家都在围观。",
+      "求助要点": "请尽快派救护车来，现在情况紧急。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P2"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】您好，我是阳光花园的，我们这里有人突然癫痫发作，情况紧急，求您快来帮忙！\n【求助要点】请尽快派救护车来，有乘客癫痫发作，现在车上没人敢动他。",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】您好，我是阳光花园的，我们这里有人突然癫痫发作，情况紧急，求您快来帮忙！\n【求助要点】请尽快派救护车来，有乘客癫痫发作，现在车上没人敢动他。",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "您好，我是阳光花园的，我们这里有人突然癫痫发作，情况紧急，求您快来帮忙！",
+      "求助要点": "请尽快派救护车来，有乘客癫痫发作，现在车上没人敢动他。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P2"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E04|P3": {
+   "event_id": "E04",
+   "event_type": "癫痫发作",
+   "profile_id": "P3",
+   "profile_name": "独居老人",
+   "use_profile": false,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路128号阳光花园3栋502",
+    "profile_guess": "P4",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：建设路47号和平里4单元203",
+    "profile_guess": "P4",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】建设路47号和平里4单元203\n【呼救者原话】阿姨，我家孩子发癫痫了，就在和平里，您快派人来啊，我慌死了，会不会死啊？\n【求助要点】孩子高烧后抽搐，第一次发作",
+     "parsed": {
+      "raw": "【地点】建设路47号和平里4单元203\n【呼救者原话】阿姨，我家孩子发癫痫了，就在和平里，您快派人来啊，我慌死了，会不会死啊？\n【求助要点】孩子高烧后抽搐，第一次发作",
+      "地点": "建设路47号和平里4单元203",
+      "呼救者原话": "阿姨，我家孩子发癫痫了，就在和平里，您快派人来啊，我慌死了，会不会死啊？",
+      "求助要点": "孩子高烧后抽搐，第一次发作"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：建设路47号和平里4单元203",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P4（80%），目标是 P3"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】喂，你好，我是阳光花园的，我孩子刚才突然开始抽搐了，这是第一次，我特别慌张，不知道怎么办，会不会死啊？\n【求助要点】我孩子高烧后抽搐，这是第一次发作，请快来帮忙！",
+     "parsed": {
+      "raw": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】喂，你好，我是阳光花园的，我孩子刚才突然开始抽搐了，这是第一次，我特别慌张，不知道怎么办，会不会死啊？\n【求助要点】我孩子高烧后抽搐，这是第一次发作，请快来帮忙！",
+      "地点": "江城路128号阳光花园3栋502",
+      "呼救者原话": "喂，你好，我是阳光花园的，我孩子刚才突然开始抽搐了，这是第一次，我特别慌张，不知道怎么办，会不会死啊？",
+      "求助要点": "我孩子高烧后抽搐，这是第一次发作，请快来帮忙！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路128号阳光花园3栋502",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P4（80%），目标是 P3"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】你好，我孩子现在正在我这里发病了，我害怕他会死，他刚才发高烧，现在突然开始抽搐，你们能快来吗？我在阳光花园，3栋502。\n【求助要点】孩子发高烧后突然抽搐，需要紧急救治。",
+     "parsed": {
+      "raw": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】你好，我孩子现在正在我这里发病了，我害怕他会死，他刚才发高烧，现在突然开始抽搐，你们能快来吗？我在阳光花园，3栋502。\n【求助要点】孩子发高烧后突然抽搐，需要紧急救治。",
+      "地点": "江城路128号阳光花园3栋502",
+      "呼救者原话": "你好，我孩子现在正在我这里发病了，我害怕他会死，他刚才发高烧，现在突然开始抽搐，你们能快来吗？我在阳光花园，3栋502。",
+      "求助要点": "孩子发高烧后突然抽搐，需要紧急救治。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路128号阳光花园3栋502",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P4（80%），目标是 P3"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E05|P4": {
+   "event_id": "E05",
+   "event_type": "火灾",
+   "profile_id": "P4",
+   "profile_name": "情绪崩溃者",
+   "use_profile": false,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：建设路45号和平里2单元601",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：建设路47号和平里4单元203",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】建设路47号和平里4单元203\n【呼救者原话】你好，我是建设路和平里的，我们这里4单元203着火了，浓烟很大，可能还有老人没出来。\n【求助要点】楼里可能还有老人没撤离。",
+     "parsed": {
+      "raw": "【地点】建设路47号和平里4单元203\n【呼救者原话】你好，我是建设路和平里的，我们这里4单元203着火了，浓烟很大，可能还有老人没出来。\n【求助要点】楼里可能还有老人没撤离。",
+      "地点": "建设路47号和平里4单元203",
+      "呼救者原话": "你好，我是建设路和平里的，我们这里4单元203着火了，浓烟很大，可能还有老人没出来。",
+      "求助要点": "楼里可能还有老人没撤离。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：建设路47号和平里4单元203",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P4"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】建设路47号和平里4单元203\n【呼救者原话】喂，我是和平里4单元203的，我家里着火了，火势很大，窗户都在冒烟，可能还有老人没出来！\n【求助要点】火势很大，可能有老人被困！",
+     "parsed": {
+      "raw": "【地点】建设路47号和平里4单元203\n【呼救者原话】喂，我是和平里4单元203的，我家里着火了，火势很大，窗户都在冒烟，可能还有老人没出来！\n【求助要点】火势很大，可能有老人被困！",
+      "地点": "建设路47号和平里4单元203",
+      "呼救者原话": "喂，我是和平里4单元203的，我家里着火了，火势很大，窗户都在冒烟，可能还有老人没出来！",
+      "求助要点": "火势很大，可能有老人被困！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：建设路47号和平里4单元203",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P4"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】建设路45号和平里2单元601\n【呼救者原话】您好，我这边是建设路和平里的，现在我们小区2单元601发生了火灾，火势很大，浓烟都冒出来了，可能还有老人没撤离。\n【求助要点】请尽快派消防队来，可能还有老人被困。",
+     "parsed": {
+      "raw": "【地点】建设路45号和平里2单元601\n【呼救者原话】您好，我这边是建设路和平里的，现在我们小区2单元601发生了火灾，火势很大，浓烟都冒出来了，可能还有老人没撤离。\n【求助要点】请尽快派消防队来，可能还有老人被困。",
+      "地点": "建设路45号和平里2单元601",
+      "呼救者原话": "您好，我这边是建设路和平里的，现在我们小区2单元601发生了火灾，火势很大，浓烟都冒出来了，可能还有老人没撤离。",
+      "求助要点": "请尽快派消防队来，可能还有老人被困。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：建设路45号和平里2单元601",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P4"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E06|P5": {
+   "event_id": "E06",
+   "event_type": "火灾",
+   "profile_id": "P5",
+   "profile_name": "心理疾病来访者",
+   "use_profile": false,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：建设路47号和平里4单元203",
+    "profile_guess": "P2",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P4",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】你好，我这里出大事了，阳光花园5栋101的餐馆后厨油锅起火了，有人被烫伤，疼得直叫，快来人啊！\n【求助要点】有人被烫伤，疼得直叫",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】你好，我这里出大事了，阳光花园5栋101的餐馆后厨油锅起火了，有人被烫伤，疼得直叫，快来人啊！\n【求助要点】有人被烫伤，疼得直叫",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "你好，我这里出大事了，阳光花园5栋101的餐馆后厨油锅起火了，有人被烫伤，疼得直叫，快来人啊！",
+      "求助要点": "有人被烫伤，疼得直叫"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P4（80%），目标是 P5"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】您好，我是阳光花园5栋101的住户，我们这里后厨油锅起火了，情况紧急，有人被热油烫伤，疼得直叫！\n【求助要点】后厨油锅起火，有人烫伤，情况紧急！",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】您好，我是阳光花园5栋101的住户，我们这里后厨油锅起火了，情况紧急，有人被热油烫伤，疼得直叫！\n【求助要点】后厨油锅起火，有人烫伤，情况紧急！",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "您好，我是阳光花园5栋101的住户，我们这里后厨油锅起火了，情况紧急，有人被热油烫伤，疼得直叫！",
+      "求助要点": "后厨油锅起火，有人烫伤，情况紧急！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P5"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】建设路47号和平里4单元203\n【呼救者原话】建设路47号和平里4单元后厨油锅起火了，有人被热油烫伤了，疼得直叫，快来帮忙啊！\n【求助要点】有人被烫伤，急需急救！",
+     "parsed": {
+      "raw": "【地点】建设路47号和平里4单元203\n【呼救者原话】建设路47号和平里4单元后厨油锅起火了，有人被热油烫伤了，疼得直叫，快来帮忙啊！\n【求助要点】有人被烫伤，急需急救！",
+      "地点": "建设路47号和平里4单元203",
+      "呼救者原话": "建设路47号和平里4单元后厨油锅起火了，有人被热油烫伤了，疼得直叫，快来帮忙啊！",
+      "求助要点": "有人被烫伤，急需急救！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：建设路47号和平里4单元203",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P2（80%），目标是 P5"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E07|P6": {
+   "event_id": "E07",
+   "event_type": "交通事故",
+   "profile_id": "P6",
+   "profile_name": "听障人士代拨",
+   "use_profile": false,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：光明街18号幸福小区6栋302",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】光明街18号幸福小区6栋302\n【呼救者原话】你好，我这里发生交通事故，光明街幸福小区，两辆车相撞，有人被卡在驾驶座，车门打不开。\n【求助要点】有人被卡在驾驶座，需要救援。",
+     "parsed": {
+      "raw": "【地点】光明街18号幸福小区6栋302\n【呼救者原话】你好，我这里发生交通事故，光明街幸福小区，两辆车相撞，有人被卡在驾驶座，车门打不开。\n【求助要点】有人被卡在驾驶座，需要救援。",
+      "地点": "光明街18号幸福小区6栋302",
+      "呼救者原话": "你好，我这里发生交通事故，光明街幸福小区，两辆车相撞，有人被卡在驾驶座，车门打不开。",
+      "求助要点": "有人被卡在驾驶座，需要救援。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：光明街18号幸福小区6栋302",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P6"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】喂，你好，我这边是阳光花园5栋，刚刚十字路口发生车祸，两辆车撞在一起了，有人被卡在驾驶座上，车门打不开。\n【求助要点】有人被卡在驾驶座，需要救援。",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】喂，你好，我这边是阳光花园5栋，刚刚十字路口发生车祸，两辆车撞在一起了，有人被卡在驾驶座上，车门打不开。\n【求助要点】有人被卡在驾驶座，需要救援。",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "喂，你好，我这边是阳光花园5栋，刚刚十字路口发生车祸，两辆车撞在一起了，有人被卡在驾驶座上，车门打不开。",
+      "求助要点": "有人被卡在驾驶座，需要救援。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P6"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】喂，您好，我是阳光花园的，我这里出大事了，两辆车在路口撞上了，有人被卡在驾驶座上，车门打不开！\n【求助要点】有人被卡在驾驶座，需要救援！",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】喂，您好，我是阳光花园的，我这里出大事了，两辆车在路口撞上了，有人被卡在驾驶座上，车门打不开！\n【求助要点】有人被卡在驾驶座，需要救援！",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "喂，您好，我是阳光花园的，我这里出大事了，两辆车在路口撞上了，有人被卡在驾驶座上，车门打不开！",
+      "求助要点": "有人被卡在驾驶座，需要救援！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P6"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E09|P7": {
+   "event_id": "E09",
+   "event_type": "跌倒受伤",
+   "profile_id": "P7",
+   "profile_name": "儿童代拨",
+   "use_profile": false,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路128号阳光花园3栋502",
+    "profile_guess": "P3",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】喂，你好，我是阳光花园的，我奶奶在浴室摔倒了，现在起不来，髋部疼得厉害，请快来帮忙。\n【求助要点】奶奶髋部剧痛，请尽快派救护车来。",
+     "parsed": {
+      "raw": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】喂，你好，我是阳光花园的，我奶奶在浴室摔倒了，现在起不来，髋部疼得厉害，请快来帮忙。\n【求助要点】奶奶髋部剧痛，请尽快派救护车来。",
+      "地点": "江城路128号阳光花园3栋502",
+      "呼救者原话": "喂，你好，我是阳光花园的，我奶奶在浴室摔倒了，现在起不来，髋部疼得厉害，请快来帮忙。",
+      "求助要点": "奶奶髋部剧痛，请尽快派救护车来。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路128号阳光花园3栋502",
+      "profile_guess": "P3",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P3（80%），目标是 P7"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】建设路45号和平里2单元601\n【呼救者原话】你好，我是建设路的，我妈妈在浴室摔倒了，现在爬不起来，髋部特别疼，请您快来帮忙。\n【求助要点】我妈妈髋部疼得厉害，可能骨折了，需要急救。",
+     "parsed": {
+      "raw": "【地点】建设路45号和平里2单元601\n【呼救者原话】你好，我是建设路的，我妈妈在浴室摔倒了，现在爬不起来，髋部特别疼，请您快来帮忙。\n【求助要点】我妈妈髋部疼得厉害，可能骨折了，需要急救。",
+      "地点": "建设路45号和平里2单元601",
+      "呼救者原话": "你好，我是建设路的，我妈妈在浴室摔倒了，现在爬不起来，髋部特别疼，请您快来帮忙。",
+      "求助要点": "我妈妈髋部疼得厉害，可能骨折了，需要急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：建设路45号和平里2单元601",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P7"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】您好，我在阳光花园5栋101，我…我…我…我摔倒了，现在起不了身，髋部好痛。\n【求助要点】请快来人，我需要急救。",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】您好，我在阳光花园5栋101，我…我…我…我摔倒了，现在起不了身，髋部好痛。\n【求助要点】请快来人，我需要急救。",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "您好，我在阳光花园5栋101，我…我…我…我摔倒了，现在起不了身，髋部好痛。",
+      "求助要点": "请快来人，我需要急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P7"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E10|P8": {
+   "event_id": "E10",
+   "event_type": "跌倒受伤",
+   "profile_id": "P8",
+   "profile_name": "普通路人",
+   "use_profile": false,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": true,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路128号阳光花园3栋502",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地址『建设路47号和平里4单元203』没有出现在呼救者原话里",
+    "profile_guess": "P4",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】建设路47号和平里4单元203\n【呼救者原话】喂，您好，我孩子刚才从床上翻了下来，头磕到了桌角，出血了，现在有点迷糊，不知道要不要送医院。\n【求助要点】孩子头受伤出血，需要医生处理。",
+     "parsed": {
+      "raw": "【地点】建设路47号和平里4单元203\n【呼救者原话】喂，您好，我孩子刚才从床上翻了下来，头磕到了桌角，出血了，现在有点迷糊，不知道要不要送医院。\n【求助要点】孩子头受伤出血，需要医生处理。",
+      "地点": "建设路47号和平里4单元203",
+      "呼救者原话": "喂，您好，我孩子刚才从床上翻了下来，头磕到了桌角，出血了，现在有点迷糊，不知道要不要送医院。",
+      "求助要点": "孩子头受伤出血，需要医生处理。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地址『建设路47号和平里4单元203』没有出现在呼救者原话里",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地址『建设路47号和平里4单元203』没有出现在呼救者原话里",
+      "画像对不上：裁判判定为 P4（80%），目标是 P8"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】您好，我女儿从床上翻下来了，头磕到桌角出血了，现在不知道怎么办，请问需要送医院吗？\n【求助要点】孩子头出血了，需要紧急处理。",
+     "parsed": {
+      "raw": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】您好，我女儿从床上翻下来了，头磕到桌角出血了，现在不知道怎么办，请问需要送医院吗？\n【求助要点】孩子头出血了，需要紧急处理。",
+      "地点": "江城路128号阳光花园3栋502",
+      "呼救者原话": "您好，我女儿从床上翻下来了，头磕到桌角出血了，现在不知道怎么办，请问需要送医院吗？",
+      "求助要点": "孩子头出血了，需要紧急处理。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地址『江城路128号阳光花园3栋502』没有出现在呼救者原话里",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地址『江城路128号阳光花园3栋502』没有出现在呼救者原话里",
+      "画像对不上：裁判判定为 P4（80%），目标是 P8"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】你好，120吗？我这里有个小孩从床上翻下来了，头磕到桌角了，出血了，现在不知道怎么办好，地址是江城路128号阳光花园。\n【求助要点】小孩头出血了，需要急救。",
+     "parsed": {
+      "raw": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】你好，120吗？我这里有个小孩从床上翻下来了，头磕到桌角了，出血了，现在不知道怎么办好，地址是江城路128号阳光花园。\n【求助要点】小孩头出血了，需要急救。",
+      "地点": "江城路128号阳光花园3栋502",
+      "呼救者原话": "你好，120吗？我这里有个小孩从床上翻下来了，头磕到桌角了，出血了，现在不知道怎么办好，地址是江城路128号阳光花园。",
+      "求助要点": "小孩头出血了，需要急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路128号阳光花园3栋502",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  "E11|P1": {
+   "event_id": "E11",
+   "event_type": "燃气泄漏",
+   "profile_id": "P1",
+   "profile_name": "非母语者",
+   "use_profile": false,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】你好，我是阳光花园的，5栋101的，现在厨房里闻到很浓的煤气味，整个楼道都有，我们不敢开灯、不敢开电器，请快来帮忙！\n【求助要点】整栋楼都有煤气味，我们不敢开灯、不敢开电器，请尽快来处理！",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】你好，我是阳光花园的，5栋101的，现在厨房里闻到很浓的煤气味，整个楼道都有，我们不敢开灯、不敢开电器，请快来帮忙！\n【求助要点】整栋楼都有煤气味，我们不敢开灯、不敢开电器，请尽快来处理！",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "你好，我是阳光花园的，5栋101的，现在厨房里闻到很浓的煤气味，整个楼道都有，我们不敢开灯、不敢开电器，请快来帮忙！",
+      "求助要点": "整栋楼都有煤气味，我们不敢开灯、不敢开电器，请尽快来处理！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P1"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】喂，您好！我是阳光花园5栋101的住户，我们家里现在闻到浓烈的煤气味，整个楼栋好像都有，我现在不敢开灯，也不敢开电器，求求你们快来帮忙！\n【求助要点】整栋楼都有煤气味，不敢开灯、不敢开电器。",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】喂，您好！我是阳光花园5栋101的住户，我们家里现在闻到浓烈的煤气味，整个楼栋好像都有，我现在不敢开灯，也不敢开电器，求求你们快来帮忙！\n【求助要点】整栋楼都有煤气味，不敢开灯、不敢开电器。",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "喂，您好！我是阳光花园5栋101的住户，我们家里现在闻到浓烈的煤气味，整个楼栋好像都有，我现在不敢开灯，也不敢开电器，求求你们快来帮忙！",
+      "求助要点": "整栋楼都有煤气味，不敢开灯、不敢开电器。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P1"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】你好，120吗？我在江城路130号阳光花园，厨房里闻到很浓的煤气味，整个楼里都有味，我们都担心是燃气泄漏，现在不敢开灯、不敢开电器。\n【求助要点】整个楼都有煤气味，情况紧急，请求救援。",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】你好，120吗？我在江城路130号阳光花园，厨房里闻到很浓的煤气味，整个楼里都有味，我们都担心是燃气泄漏，现在不敢开灯、不敢开电器。\n【求助要点】整个楼都有煤气味，情况紧急，请求救援。",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "你好，120吗？我在江城路130号阳光花园，厨房里闻到很浓的煤气味，整个楼里都有味，我们都担心是燃气泄漏，现在不敢开灯、不敢开电器。",
+      "求助要点": "整个楼都有煤气味，情况紧急，请求救援。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P1"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E13|P2": {
+   "event_id": "E13",
+   "event_type": "一氧化碳中毒",
+   "profile_id": "P2",
+   "profile_name": "低收入社区居民",
+   "use_profile": false,
+   "use_kb": true,
+   "n_rounds": 1,
+   "passed": true,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P2",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P2",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】喂，我是阳光花园的，我这里有人一氧化碳中毒了，现在门窗都关得死死的，人已经开始犯迷糊了，快来帮忙！\n【求助要点】门窗都关得死死的，人已经开始犯迷糊了",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】喂，我是阳光花园的，我这里有人一氧化碳中毒了，现在门窗都关得死死的，人已经开始犯迷糊了，快来帮忙！\n【求助要点】门窗都关得死死的，人已经开始犯迷糊了",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "喂，我是阳光花园的，我这里有人一氧化碳中毒了，现在门窗都关得死死的，人已经开始犯迷糊了，快来帮忙！",
+      "求助要点": "门窗都关得死死的，人已经开始犯迷糊了"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  "E15|P3": {
+   "event_id": "E15",
+   "event_type": "溺水",
+   "profile_id": "P3",
+   "profile_name": "独居老人",
+   "use_profile": false,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：河滨路33号红星家园1栋506",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：河滨路33号红星家园1栋506",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】河滨路33号红星家园1栋506\n【呼救者原话】你好，我是红星家园的，有人跳河了，就在我们小区河边，水面上一直冒泡，但是不确定具体位置。\n【求助要点】请赶快派人来救人，有人溺水了！",
+     "parsed": {
+      "raw": "【地点】河滨路33号红星家园1栋506\n【呼救者原话】你好，我是红星家园的，有人跳河了，就在我们小区河边，水面上一直冒泡，但是不确定具体位置。\n【求助要点】请赶快派人来救人，有人溺水了！",
+      "地点": "河滨路33号红星家园1栋506",
+      "呼救者原话": "你好，我是红星家园的，有人跳河了，就在我们小区河边，水面上一直冒泡，但是不确定具体位置。",
+      "求助要点": "请赶快派人来救人，有人溺水了！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：河滨路33号红星家园1栋506",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P3"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】河滨路39号红星家园4栋908\n【呼救者原话】喂，你好，我是红星家园的居民，刚刚有人从河边跳下去，一直没上来，水面上一直有冒泡，但不确定具体位置，现在怎么办？\n【求助要点】有人溺水，需要紧急救援。",
+     "parsed": {
+      "raw": "【地点】河滨路39号红星家园4栋908\n【呼救者原话】喂，你好，我是红星家园的居民，刚刚有人从河边跳下去，一直没上来，水面上一直有冒泡，但不确定具体位置，现在怎么办？\n【求助要点】有人溺水，需要紧急救援。",
+      "地点": "河滨路39号红星家园4栋908",
+      "呼救者原话": "喂，你好，我是红星家园的居民，刚刚有人从河边跳下去，一直没上来，水面上一直有冒泡，但不确定具体位置，现在怎么办？",
+      "求助要点": "有人溺水，需要紧急救援。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：河滨路39号红星家园4栋908",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P3"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】河滨路33号红星家园1栋506\n【呼救者原话】喂，我是红星家园的，这边有人跳河了，水面上一直在冒泡，但不知道具体位置。\n【求助要点】有人跳河了，求赶快派人过来救！",
+     "parsed": {
+      "raw": "【地点】河滨路33号红星家园1栋506\n【呼救者原话】喂，我是红星家园的，这边有人跳河了，水面上一直在冒泡，但不知道具体位置。\n【求助要点】有人跳河了，求赶快派人过来救！",
+      "地点": "河滨路33号红星家园1栋506",
+      "呼救者原话": "喂，我是红星家园的，这边有人跳河了，水面上一直在冒泡，但不知道具体位置。",
+      "求助要点": "有人跳河了，求赶快派人过来救！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：河滨路33号红星家园1栋506",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P3"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E17|P4": {
+   "event_id": "E17",
+   "event_type": "触电",
+   "profile_id": "P4",
+   "profile_name": "情绪崩溃者",
+   "use_profile": false,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：建设路47号和平里4单元203",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：光明街12号幸福小区1栋804",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】光明街12号幸福小区1栋804\n【呼救者原话】喂，120吗？我在幸福小区，有工人触电了，情况紧急！\n【求助要点】请快派救护车，有人触电昏迷了！",
+     "parsed": {
+      "raw": "【地点】光明街12号幸福小区1栋804\n【呼救者原话】喂，120吗？我在幸福小区，有工人触电了，情况紧急！\n【求助要点】请快派救护车，有人触电昏迷了！",
+      "地点": "光明街12号幸福小区1栋804",
+      "呼救者原话": "喂，120吗？我在幸福小区，有工人触电了，情况紧急！",
+      "求助要点": "请快派救护车，有人触电昏迷了！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：光明街12号幸福小区1栋804",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P4"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】建设路47号和平里4单元203\n【呼救者原话】喂，120吗？我们工地有人触电，现在在建设路47号和平里，人昏迷了，赶紧来！\n【求助要点】请快来，有人触电昏迷！",
+     "parsed": {
+      "raw": "【地点】建设路47号和平里4单元203\n【呼救者原话】喂，120吗？我们工地有人触电，现在在建设路47号和平里，人昏迷了，赶紧来！\n【求助要点】请快来，有人触电昏迷！",
+      "地点": "建设路47号和平里4单元203",
+      "呼救者原话": "喂，120吗？我们工地有人触电，现在在建设路47号和平里，人昏迷了，赶紧来！",
+      "求助要点": "请快来，有人触电昏迷！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：建设路47号和平里4单元203",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P4"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】建设路47号和平里4单元203\n【呼救者原话】喂，是120吗？我这里有人触电，在建设路47号和平里4单元203，情况紧急，请快来！\n【求助要点】有人触电，请尽快派救护车！",
+     "parsed": {
+      "raw": "【地点】建设路47号和平里4单元203\n【呼救者原话】喂，是120吗？我这里有人触电，在建设路47号和平里4单元203，情况紧急，请快来！\n【求助要点】有人触电，请尽快派救护车！",
+      "地点": "建设路47号和平里4单元203",
+      "呼救者原话": "喂，是120吗？我这里有人触电，在建设路47号和平里4单元203，情况紧急，请快来！",
+      "求助要点": "有人触电，请尽快派救护车！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：建设路47号和平里4单元203",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P4"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E19|P5": {
+   "event_id": "E19",
+   "event_type": "异物卡喉",
+   "profile_id": "P5",
+   "profile_name": "心理疾病来访者",
+   "use_profile": false,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：光明街12号幸福小区1栋804",
+    "profile_guess": "P4",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路128号阳光花园3栋502",
+    "profile_guess": "P4",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】您好，我家的孩子吃坚果噎住了，脸都发紫了，急得我手都抖了，快来帮忙啊，江城路128号阳光花园3栋502。\n【求助要点】孩子异物卡喉，急需急救。",
+     "parsed": {
+      "raw": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】您好，我家的孩子吃坚果噎住了，脸都发紫了，急得我手都抖了，快来帮忙啊，江城路128号阳光花园3栋502。\n【求助要点】孩子异物卡喉，急需急救。",
+      "地点": "江城路128号阳光花园3栋502",
+      "呼救者原话": "您好，我家的孩子吃坚果噎住了，脸都发紫了，急得我手都抖了，快来帮忙啊，江城路128号阳光花园3栋502。",
+      "求助要点": "孩子异物卡喉，急需急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路128号阳光花园3栋502",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P4（80%），目标是 P5"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】你好，我是阳光花园的，我女儿吃坚果噎住了，现在脸都发紫了，快帮忙啊！\n【求助要点】我女儿噎住了，急需救援！",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】你好，我是阳光花园的，我女儿吃坚果噎住了，现在脸都发紫了，快帮忙啊！\n【求助要点】我女儿噎住了，急需救援！",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "你好，我是阳光花园的，我女儿吃坚果噎住了，现在脸都发紫了，快帮忙啊！",
+      "求助要点": "我女儿噎住了，急需救援！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P4（80%），目标是 P5"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】光明街12号幸福小区1栋804\n【呼救者原话】阿姨，我家宝宝吃坚果噎住了，现在脸都发紫了，您快来帮帮我，就在光明街12号幸福小区1栋804。\n【求助要点】请赶快来救救我的孩子！",
+     "parsed": {
+      "raw": "【地点】光明街12号幸福小区1栋804\n【呼救者原话】阿姨，我家宝宝吃坚果噎住了，现在脸都发紫了，您快来帮帮我，就在光明街12号幸福小区1栋804。\n【求助要点】请赶快来救救我的孩子！",
+      "地点": "光明街12号幸福小区1栋804",
+      "呼救者原话": "阿姨，我家宝宝吃坚果噎住了，现在脸都发紫了，您快来帮帮我，就在光明街12号幸福小区1栋804。",
+      "求助要点": "请赶快来救救我的孩子！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：光明街12号幸福小区1栋804",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P4（80%），目标是 P5"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E20|P6": {
+   "event_id": "E20",
+   "event_type": "异物卡喉",
+   "profile_id": "P6",
+   "profile_name": "听障人士代拨",
+   "use_profile": false,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：光明街12号幸福小区1栋804",
+    "profile_guess": "P4",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：光明街12号幸福小区1栋804",
+    "profile_guess": "P4",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】光明街12号幸福小区1栋804\n【呼救者原话】阿姨，我妈妈在家吃年糕卡住了，她说不出话来，只有咳嗽，您快来帮帮我们，在幸福小区，真的很难受。\n【求助要点】妈妈吃年糕卡住了，请尽快来处理。",
+     "parsed": {
+      "raw": "【地点】光明街12号幸福小区1栋804\n【呼救者原话】阿姨，我妈妈在家吃年糕卡住了，她说不出话来，只有咳嗽，您快来帮帮我们，在幸福小区，真的很难受。\n【求助要点】妈妈吃年糕卡住了，请尽快来处理。",
+      "地点": "光明街12号幸福小区1栋804",
+      "呼救者原话": "阿姨，我妈妈在家吃年糕卡住了，她说不出话来，只有咳嗽，您快来帮帮我们，在幸福小区，真的很难受。",
+      "求助要点": "妈妈吃年糕卡住了，请尽快来处理。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：光明街12号幸福小区1栋804",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P4（80%），目标是 P6"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】阿姨，我妈妈吃年糕卡住了，说不出话，只能指喉咙，我们也不知道怎么办，快来帮忙吧，就在江城路130号阳光花园5栋101。\n【求助要点】请快派救护车来，我妈妈吃年糕卡住，说不出话。",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】阿姨，我妈妈吃年糕卡住了，说不出话，只能指喉咙，我们也不知道怎么办，快来帮忙吧，就在江城路130号阳光花园5栋101。\n【求助要点】请快派救护车来，我妈妈吃年糕卡住，说不出话。",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "阿姨，我妈妈吃年糕卡住了，说不出话，只能指喉咙，我们也不知道怎么办，快来帮忙吧，就在江城路130号阳光花园5栋101。",
+      "求助要点": "请快派救护车来，我妈妈吃年糕卡住，说不出话。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P4（80%），目标是 P6"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】光明街12号幸福小区1栋804\n【呼救者原话】你好，我在幸福小区，我妈妈吃年糕卡住了，她现在说不出话来，只能指着自己的喉咙，我们家人都慌了，快来帮忙啊！\n【求助要点】我妈妈异物卡喉，需要紧急救治！",
+     "parsed": {
+      "raw": "【地点】光明街12号幸福小区1栋804\n【呼救者原话】你好，我在幸福小区，我妈妈吃年糕卡住了，她现在说不出话来，只能指着自己的喉咙，我们家人都慌了，快来帮忙啊！\n【求助要点】我妈妈异物卡喉，需要紧急救治！",
+      "地点": "光明街12号幸福小区1栋804",
+      "呼救者原话": "你好，我在幸福小区，我妈妈吃年糕卡住了，她现在说不出话来，只能指着自己的喉咙，我们家人都慌了，快来帮忙啊！",
+      "求助要点": "我妈妈异物卡喉，需要紧急救治！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：光明街12号幸福小区1栋804",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P4（80%），目标是 P6"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E21|P7": {
+   "event_id": "E21",
+   "event_type": "过敏性休克",
+   "profile_id": "P7",
+   "profile_name": "儿童代拨",
+   "use_profile": false,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：建设路45号和平里2单元601",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】你好，我这边在阳光花园5栋，有人聚餐后吃了花生，现在嘴唇肿得厉害，喘不上气，我本人有过敏史，现在正给他注射肾上腺素笔。\n【求助要点】请快来，他现在呼吸困难，情况紧急！",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】你好，我这边在阳光花园5栋，有人聚餐后吃了花生，现在嘴唇肿得厉害，喘不上气，我本人有过敏史，现在正给他注射肾上腺素笔。\n【求助要点】请快来，他现在呼吸困难，情况紧急！",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "你好，我这边在阳光花园5栋，有人聚餐后吃了花生，现在嘴唇肿得厉害，喘不上气，我本人有过敏史，现在正给他注射肾上腺素笔。",
+      "求助要点": "请快来，他现在呼吸困难，情况紧急！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P7"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】你好，我这里有人聚餐后吃了花生，嘴唇肿得厉害，喘不上气，我本人有过敏史，现在正在给他注射肾上腺素笔，请快来帮忙！\n【求助要点】请尽快派救护车来，我现在正在给他注射肾上腺素笔。",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】你好，我这里有人聚餐后吃了花生，嘴唇肿得厉害，喘不上气，我本人有过敏史，现在正在给他注射肾上腺素笔，请快来帮忙！\n【求助要点】请尽快派救护车来，我现在正在给他注射肾上腺素笔。",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "你好，我这里有人聚餐后吃了花生，嘴唇肿得厉害，喘不上气，我本人有过敏史，现在正在给他注射肾上腺素笔，请快来帮忙！",
+      "求助要点": "请尽快派救护车来，我现在正在给他注射肾上腺素笔。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+      "画像对不上：裁判判定为 P8（80%），目标是 P7"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】建设路45号和平里2单元601\n【呼救者原话】调度员同志，紧急情况！我老婆在建设路45号和平里2单元601，她有严重的花生过敏史，现在嘴唇肿得厉害，喘不上气，我手头有肾上腺素笔，马上给她注射。\n【求助要点】请尽快派救护车，我老婆可能正在过敏性休克。",
+     "parsed": {
+      "raw": "【地点】建设路45号和平里2单元601\n【呼救者原话】调度员同志，紧急情况！我老婆在建设路45号和平里2单元601，她有严重的花生过敏史，现在嘴唇肿得厉害，喘不上气，我手头有肾上腺素笔，马上给她注射。\n【求助要点】请尽快派救护车，我老婆可能正在过敏性休克。",
+      "地点": "建设路45号和平里2单元601",
+      "呼救者原话": "调度员同志，紧急情况！我老婆在建设路45号和平里2单元601，她有严重的花生过敏史，现在嘴唇肿得厉害，喘不上气，我手头有肾上腺素笔，马上给她注射。",
+      "求助要点": "请尽快派救护车，我老婆可能正在过敏性休克。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：建设路45号和平里2单元601",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P7"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E23|P8": {
+   "event_id": "E23",
+   "event_type": "分娩",
+   "profile_id": "P8",
+   "profile_name": "普通路人",
+   "use_profile": false,
+   "use_kb": true,
+   "n_rounds": 1,
+   "passed": true,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】你好，我老婆羊水破了，我们在这里，江城路阳光花园，情况紧急，快来帮忙！\n【求助要点】羊水破了，需要紧急救护！",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】你好，我老婆羊水破了，我们在这里，江城路阳光花园，情况紧急，快来帮忙！\n【求助要点】羊水破了，需要紧急救护！",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "你好，我老婆羊水破了，我们在这里，江城路阳光花园，情况紧急，快来帮忙！",
+      "求助要点": "羊水破了，需要紧急救护！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  "E25|P1": {
+   "event_id": "E25",
+   "event_type": "中风",
+   "profile_id": "P1",
+   "profile_name": "非母语者",
+   "use_profile": false,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路128号阳光花园3栋502",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路128号阳光花园3栋502",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】阿姨，我妈妈现在说话不清楚，口角歪斜，好像中风了，我们现在在阳光花园3栋502，您快派救护车来吧！\n【求助要点】阿姨中风了，需要紧急救护。",
+     "parsed": {
+      "raw": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】阿姨，我妈妈现在说话不清楚，口角歪斜，好像中风了，我们现在在阳光花园3栋502，您快派救护车来吧！\n【求助要点】阿姨中风了，需要紧急救护。",
+      "地点": "江城路128号阳光花园3栋502",
+      "呼救者原话": "阿姨，我妈妈现在说话不清楚，口角歪斜，好像中风了，我们现在在阳光花园3栋502，您快派救护车来吧！",
+      "求助要点": "阿姨中风了，需要紧急救护。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路128号阳光花园3栋502",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P1"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】建设路45号和平里2单元601\n【呼救者原话】阿姨，我妈妈在和平里小区突然口角歪斜，说话也含糊不清，现在不知道怎么办，你们快来吧！\n【求助要点】阿姨突然中风，需要急救。",
+     "parsed": {
+      "raw": "【地点】建设路45号和平里2单元601\n【呼救者原话】阿姨，我妈妈在和平里小区突然口角歪斜，说话也含糊不清，现在不知道怎么办，你们快来吧！\n【求助要点】阿姨突然中风，需要急救。",
+      "地点": "建设路45号和平里2单元601",
+      "呼救者原话": "阿姨，我妈妈在和平里小区突然口角歪斜，说话也含糊不清，现在不知道怎么办，你们快来吧！",
+      "求助要点": "阿姨突然中风，需要急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：建设路45号和平里2单元601",
+      "profile_guess": "P3",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P3（80%），目标是 P1"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】喂，你好，我妈妈突然口角歪斜，说话也含糊不清，现在在江城路阳光花园3栋502，不知道该怎么办？\n【求助要点】我妈妈可能中风了，需要急救。",
+     "parsed": {
+      "raw": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】喂，你好，我妈妈突然口角歪斜，说话也含糊不清，现在在江城路阳光花园3栋502，不知道该怎么办？\n【求助要点】我妈妈可能中风了，需要急救。",
+      "地点": "江城路128号阳光花园3栋502",
+      "呼救者原话": "喂，你好，我妈妈突然口角歪斜，说话也含糊不清，现在在江城路阳光花园3栋502，不知道该怎么办？",
+      "求助要点": "我妈妈可能中风了，需要急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路128号阳光花园3栋502",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P1"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E27|P2": {
+   "event_id": "E27",
+   "event_type": "化学品泄漏",
+   "profile_id": "P2",
+   "profile_name": "低收入社区居民",
+   "use_profile": false,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": true,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：光明街18号幸福小区6栋302",
+    "profile_guess": "P2",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】你好，我是阳光花园的，我们这里仓库发生化学品泄漏，两个桶倒了，漏出的液体很刺鼻，有工人眼睛被熏得刺痛，睁不开。\n【求助要点】请尽快派救护车来，工人眼睛被化学品熏伤了。",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】你好，我是阳光花园的，我们这里仓库发生化学品泄漏，两个桶倒了，漏出的液体很刺鼻，有工人眼睛被熏得刺痛，睁不开。\n【求助要点】请尽快派救护车来，工人眼睛被化学品熏伤了。",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "你好，我是阳光花园的，我们这里仓库发生化学品泄漏，两个桶倒了，漏出的液体很刺鼻，有工人眼睛被熏得刺痛，睁不开。",
+      "求助要点": "请尽快派救护车来，工人眼睛被化学品熏伤了。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P2"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】建设路47号和平里4单元203\n【呼救者原话】您好，我在这边建设路47号和平里，我们仓库里的化学品桶倒了，漏出的液体特别刺鼻，我这边工人眼睛被熏得刺痛，睁不开眼了。\n【求助要点】请赶快派急救人员过来，工人眼睛被化学品熏伤了。",
+     "parsed": {
+      "raw": "【地点】建设路47号和平里4单元203\n【呼救者原话】您好，我在这边建设路47号和平里，我们仓库里的化学品桶倒了，漏出的液体特别刺鼻，我这边工人眼睛被熏得刺痛，睁不开眼了。\n【求助要点】请赶快派急救人员过来，工人眼睛被化学品熏伤了。",
+      "地点": "建设路47号和平里4单元203",
+      "呼救者原话": "您好，我在这边建设路47号和平里，我们仓库里的化学品桶倒了，漏出的液体特别刺鼻，我这边工人眼睛被熏得刺痛，睁不开眼了。",
+      "求助要点": "请赶快派急救人员过来，工人眼睛被化学品熏伤了。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：建设路47号和平里4单元203",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P2"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】光明街18号幸福小区6栋302\n【呼救者原话】喂，你好，我是幸福小区的，我们这里有个化学品泄漏，两个桶倒了，液体漏出来了，很刺鼻，我眼睛都熏得睁不开啦！\n【求助要点】工人眼睛被熏得刺痛、睁不开",
+     "parsed": {
+      "raw": "【地点】光明街18号幸福小区6栋302\n【呼救者原话】喂，你好，我是幸福小区的，我们这里有个化学品泄漏，两个桶倒了，液体漏出来了，很刺鼻，我眼睛都熏得睁不开啦！\n【求助要点】工人眼睛被熏得刺痛、睁不开",
+      "地点": "光明街18号幸福小区6栋302",
+      "呼救者原话": "喂，你好，我是幸福小区的，我们这里有个化学品泄漏，两个桶倒了，液体漏出来了，很刺鼻，我眼睛都熏得睁不开啦！",
+      "求助要点": "工人眼睛被熏得刺痛、睁不开"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：光明街18号幸福小区6栋302",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  "E29|P3": {
+   "event_id": "E29",
+   "event_type": "电梯困人",
+   "profile_id": "P3",
+   "profile_name": "独居老人",
+   "use_profile": false,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】您好，我是阳光花园5栋101的住户，我们家的电梯困人已经一个小时了，里面有位老人胸闷、喘不上气，请快来帮忙！\n【求助要点】电梯困人，有老人胸闷、喘不上气，需要紧急救援！",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】您好，我是阳光花园5栋101的住户，我们家的电梯困人已经一个小时了，里面有位老人胸闷、喘不上气，请快来帮忙！\n【求助要点】电梯困人，有老人胸闷、喘不上气，需要紧急救援！",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "您好，我是阳光花园5栋101的住户，我们家的电梯困人已经一个小时了，里面有位老人胸闷、喘不上气，请快来帮忙！",
+      "求助要点": "电梯困人，有老人胸闷、喘不上气，需要紧急救援！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P3"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】你好，我这里在阳光花园的3栋502，电梯里困了一个人，还是个老人，他现在胸闷、喘不上气，情况紧急，请快来帮忙！\n【求助要点】电梯困人，老人胸闷、喘不上气，情况紧急！",
+     "parsed": {
+      "raw": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】你好，我这里在阳光花园的3栋502，电梯里困了一个人，还是个老人，他现在胸闷、喘不上气，情况紧急，请快来帮忙！\n【求助要点】电梯困人，老人胸闷、喘不上气，情况紧急！",
+      "地点": "江城路128号阳光花园3栋502",
+      "呼救者原话": "你好，我这里在阳光花园的3栋502，电梯里困了一个人，还是个老人，他现在胸闷、喘不上气，情况紧急，请快来帮忙！",
+      "求助要点": "电梯困人，老人胸闷、喘不上气，情况紧急！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路128号阳光花园3栋502",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P3"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】你好，我这边是阳光花园5栋的，我们家的电梯困了一个人，一个小时了，里面有个老人说胸闷、喘不上气，情况很紧急。\n【求助要点】请快来救救我们，老人胸闷得很厉害。",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】你好，我这边是阳光花园5栋的，我们家的电梯困了一个人，一个小时了，里面有个老人说胸闷、喘不上气，情况很紧急。\n【求助要点】请快来救救我们，老人胸闷得很厉害。",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "你好，我这边是阳光花园5栋的，我们家的电梯困了一个人，一个小时了，里面有个老人说胸闷、喘不上气，情况很紧急。",
+      "求助要点": "请快来救救我们，老人胸闷得很厉害。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P3"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E30|P4": {
+   "event_id": "E30",
+   "event_type": "心理危机",
+   "profile_id": "P4",
+   "profile_name": "情绪崩溃者",
+   "use_profile": false,
+   "use_kb": true,
+   "n_rounds": 1,
+   "passed": true,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P4",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P4",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】调度员您好，我在江城路阳光花园，我哥哥站在五栋101的楼顶，他情绪很激动，楼下我妈妈在喊他，但是他越喊越激动，请您快点来！\n【求助要点】我哥哥在天台上情绪激动，家属在楼下喊话越喊越激动，请快来帮忙。",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】调度员您好，我在江城路阳光花园，我哥哥站在五栋101的楼顶，他情绪很激动，楼下我妈妈在喊他，但是他越喊越激动，请您快点来！\n【求助要点】我哥哥在天台上情绪激动，家属在楼下喊话越喊越激动，请快来帮忙。",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "调度员您好，我在江城路阳光花园，我哥哥站在五栋101的楼顶，他情绪很激动，楼下我妈妈在喊他，但是他越喊越激动，请您快点来！",
+      "求助要点": "我哥哥在天台上情绪激动，家属在楼下喊话越喊越激动，请快来帮忙。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  }
+ },
+ "no_kb": {
+  "E01|P1": {
+   "event_id": "E01",
+   "event_type": "心脏骤停",
+   "profile_id": "P1",
+   "profile_name": "非母语者",
+   "use_profile": true,
+   "use_kb": false,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『XX市XX区XX路XX号』不在地址表里（地址瞎编了）",
+    "profile_guess": "P2",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『XX市XX区XX路XX号』不在地址表里（地址瞎编了）",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】XX市XX区XX路XX号\n【呼救者原话】我……这里，XX路，XX号，有人，倒地，不动，门，关着。\n【求助要点】有人倒地，不动，门关着",
+     "parsed": {
+      "raw": "【地点】XX市XX区XX路XX号\n【呼救者原话】我……这里，XX路，XX号，有人，倒地，不动，门，关着。\n【求助要点】有人倒地，不动，门关着",
+      "地点": "XX市XX区XX路XX号",
+      "呼救者原话": "我……这里，XX路，XX号，有人，倒地，不动，门，关着。",
+      "求助要点": "有人倒地，不动，门关着"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『XX市XX区XX路XX号』不在地址表里（地址瞎编了）",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『XX市XX区XX路XX号』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P8（80%），目标是 P1"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】XX市XX区XX路XX号\n【呼救者原话】我……邻居……喊……门，不……开。老人……倒地，不动，快……救……\n【求助要点】老人倒地，不动，需要紧急救援",
+     "parsed": {
+      "raw": "【地点】XX市XX区XX路XX号\n【呼救者原话】我……邻居……喊……门，不……开。老人……倒地，不动，快……救……\n【求助要点】老人倒地，不动，需要紧急救援",
+      "地点": "XX市XX区XX路XX号",
+      "呼救者原话": "我……邻居……喊……门，不……开。老人……倒地，不动，快……救……",
+      "求助要点": "老人倒地，不动，需要紧急救援"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『XX市XX区XX路XX号』不在地址表里（地址瞎编了）",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『XX市XX区XX路XX号』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P4（80%），目标是 P1"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】XX市XX区XX路XX号\n【呼救者原话】我……这里，XX小区，有人，不动了，快，快来。\n【求助要点】有人不动了，快来。",
+     "parsed": {
+      "raw": "【地点】XX市XX区XX路XX号\n【呼救者原话】我……这里，XX小区，有人，不动了，快，快来。\n【求助要点】有人不动了，快来。",
+      "地点": "XX市XX区XX路XX号",
+      "呼救者原话": "我……这里，XX小区，有人，不动了，快，快来。",
+      "求助要点": "有人不动了，快来。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『XX市XX区XX路XX号』不在地址表里（地址瞎编了）",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『XX市XX区XX路XX号』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P2（80%），目标是 P1"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E03|P2": {
+   "event_id": "E03",
+   "event_type": "癫痫发作",
+   "profile_id": "P2",
+   "profile_name": "低收入社区居民",
+   "use_profile": true,
+   "use_kb": false,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『和平小区18栋』不在地址表里（地址瞎编了）",
+    "profile_guess": "P2",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『就那个卖早餐的旁边那栋楼』不在地址表里（地址瞎编了）",
+    "profile_guess": "P2",
+    "profile_conf": 90,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】就那个卖早餐的旁边那栋楼\n【呼救者原话】哎哟喂，120吗？我们这边出了点急事，就在那个卖早餐的旁边那栋楼，有个人突然就犯病了，抽搐得厉害，口里还吐白沫呢。\n【求助要点】赶紧来人看看，有个人犯癫痫了。",
+     "parsed": {
+      "raw": "【地点】就那个卖早餐的旁边那栋楼\n【呼救者原话】哎哟喂，120吗？我们这边出了点急事，就在那个卖早餐的旁边那栋楼，有个人突然就犯病了，抽搐得厉害，口里还吐白沫呢。\n【求助要点】赶紧来人看看，有个人犯癫痫了。",
+      "地点": "就那个卖早餐的旁边那栋楼",
+      "呼救者原话": "哎哟喂，120吗？我们这边出了点急事，就在那个卖早餐的旁边那栋楼，有个人突然就犯病了，抽搐得厉害，口里还吐白沫呢。",
+      "求助要点": "赶紧来人看看，有个人犯癫痫了。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『就那个卖早餐的旁边那栋楼』不在地址表里（地址瞎编了）",
+      "profile_guess": "P2",
+      "profile_conf": 90,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『就那个卖早餐的旁边那栋楼』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】东大街23号\n【呼救者原话】喂，120吗？就在东大街23号，我们这儿的公交车上有个人突然就犯病了，抽搐得厉害，嘴里还冒白沫，大家都不敢动他。\n【求助要点】快点儿来，人犯病了，情况紧急！",
+     "parsed": {
+      "raw": "【地点】东大街23号\n【呼救者原话】喂，120吗？就在东大街23号，我们这儿的公交车上有个人突然就犯病了，抽搐得厉害，嘴里还冒白沫，大家都不敢动他。\n【求助要点】快点儿来，人犯病了，情况紧急！",
+      "地点": "东大街23号",
+      "呼救者原话": "喂，120吗？就在东大街23号，我们这儿的公交车上有个人突然就犯病了，抽搐得厉害，嘴里还冒白沫，大家都不敢动他。",
+      "求助要点": "快点儿来，人犯病了，情况紧急！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『东大街23号』不在地址表里（地址瞎编了）",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『东大街23号』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P8（80%），目标是 P2"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】和平小区18栋\n\n【呼救者原话】喂，师傅，大事不好了，就在那个卖早餐的旁边那栋，有人突然犯病了，嘴巴里吐白沫，浑身抽搐得厉害。\n\n【求助要点】快派人来，这事儿挺急的，得赶紧的。",
+     "parsed": {
+      "raw": "【地点】和平小区18栋\n\n【呼救者原话】喂，师傅，大事不好了，就在那个卖早餐的旁边那栋，有人突然犯病了，嘴巴里吐白沫，浑身抽搐得厉害。\n\n【求助要点】快派人来，这事儿挺急的，得赶紧的。",
+      "地点": "和平小区18栋",
+      "呼救者原话": "喂，师傅，大事不好了，就在那个卖早餐的旁边那栋，有人突然犯病了，嘴巴里吐白沫，浑身抽搐得厉害。",
+      "求助要点": "快派人来，这事儿挺急的，得赶紧的。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『和平小区18栋』不在地址表里（地址瞎编了）",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『和平小区18栋』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E04|P3": {
+   "event_id": "E04",
+   "event_type": "癫痫发作",
+   "profile_id": "P3",
+   "profile_name": "独居老人",
+   "use_profile": true,
+   "use_kb": false,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『丰台区莲花池东路8号院』不在地址表里（地址瞎编了）",
+    "profile_guess": "P2",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『金水区黄河路123号小区5号楼2单元101室』不在地址表里（地址瞎编了）",
+    "profile_guess": "P2",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】金水区黄河路123号小区5号楼2单元101室\n【呼救者原话】喂，喂？是我，我在金水区黄河路123号小区，我家里有个小孩，他……他刚才发烧抽搐了，这是第一次，我也不懂怎么办，你们快来吧。\n【求助要点】小孩发烧后抽搐，第一次发作，情况紧急。",
+     "parsed": {
+      "raw": "【地点】金水区黄河路123号小区5号楼2单元101室\n【呼救者原话】喂，喂？是我，我在金水区黄河路123号小区，我家里有个小孩，他……他刚才发烧抽搐了，这是第一次，我也不懂怎么办，你们快来吧。\n【求助要点】小孩发烧后抽搐，第一次发作，情况紧急。",
+      "地点": "金水区黄河路123号小区5号楼2单元101室",
+      "呼救者原话": "喂，喂？是我，我在金水区黄河路123号小区，我家里有个小孩，他……他刚才发烧抽搐了，这是第一次，我也不懂怎么办，你们快来吧。",
+      "求助要点": "小孩发烧后抽搐，第一次发作，情况紧急。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『金水区黄河路123号小区5号楼2单元101室』不在地址表里（地址瞎编了）",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『金水区黄河路123号小区5号楼2单元101室』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P2（80%），目标是 P3"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】金水区黄河路123号小区\n【呼救者原话】喂，喂？是我，我住在黄河路123号小区，我这边有个小孩儿，他刚才突然抽搐起来，这是第一次发作，我有点儿慌，不知道怎么办，你们快来吧。\n【求助要点】小孩儿癫痫发作，第一次发作，情况紧急。",
+     "parsed": {
+      "raw": "【地点】金水区黄河路123号小区\n【呼救者原话】喂，喂？是我，我住在黄河路123号小区，我这边有个小孩儿，他刚才突然抽搐起来，这是第一次发作，我有点儿慌，不知道怎么办，你们快来吧。\n【求助要点】小孩儿癫痫发作，第一次发作，情况紧急。",
+      "地点": "金水区黄河路123号小区",
+      "呼救者原话": "喂，喂？是我，我住在黄河路123号小区，我这边有个小孩儿，他刚才突然抽搐起来，这是第一次发作，我有点儿慌，不知道怎么办，你们快来吧。",
+      "求助要点": "小孩儿癫痫发作，第一次发作，情况紧急。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『金水区黄河路123号小区』不在地址表里（地址瞎编了）",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『金水区黄河路123号小区』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P2（80%），目标是 P3"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】丰台区莲花池东路8号院\n【呼救者原话】喂，喂？是我，我住在这莲花池东路8号院，我有个孙子，他刚才突然开始抽搐，这是第一次，我也不知道怎么办，你们快来吧。\n【求助要点】孙子癫痫发作，第一次发作，需要急救。",
+     "parsed": {
+      "raw": "【地点】丰台区莲花池东路8号院\n【呼救者原话】喂，喂？是我，我住在这莲花池东路8号院，我有个孙子，他刚才突然开始抽搐，这是第一次，我也不知道怎么办，你们快来吧。\n【求助要点】孙子癫痫发作，第一次发作，需要急救。",
+      "地点": "丰台区莲花池东路8号院",
+      "呼救者原话": "喂，喂？是我，我住在这莲花池东路8号院，我有个孙子，他刚才突然开始抽搐，这是第一次，我也不知道怎么办，你们快来吧。",
+      "求助要点": "孙子癫痫发作，第一次发作，需要急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『丰台区莲花池东路8号院』不在地址表里（地址瞎编了）",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『丰台区莲花池东路8号院』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P2（80%），目标是 P3"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E05|P4": {
+   "event_id": "E05",
+   "event_type": "火灾",
+   "profile_id": "P4",
+   "profile_name": "情绪崩溃者",
+   "use_profile": true,
+   "use_kb": false,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『和平路5号小区13栋3楼』不在地址表里（地址瞎编了）",
+    "profile_guess": "P4",
+    "profile_conf": 90,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『光明小区11栋3楼』不在地址表里（地址瞎编了）",
+    "profile_guess": "P4",
+    "profile_conf": 90,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】光明小区11栋3楼\n【呼救者原话】\"啊，三楼着火了，三楼，三楼啊，烟太大，我快喘不过气了，楼里还有老人没出来，求求你们快来救救他们，救救他们啊——\"\n【求助要点】楼里还有老人没出来",
+     "parsed": {
+      "raw": "【地点】光明小区11栋3楼\n【呼救者原话】\"啊，三楼着火了，三楼，三楼啊，烟太大，我快喘不过气了，楼里还有老人没出来，求求你们快来救救他们，救救他们啊——\"\n【求助要点】楼里还有老人没出来",
+      "地点": "光明小区11栋3楼",
+      "呼救者原话": "\"啊，三楼着火了，三楼，三楼啊，烟太大，我快喘不过气了，楼里还有老人没出来，求求你们快来救救他们，救救他们啊——\"",
+      "求助要点": "楼里还有老人没出来"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『光明小区11栋3楼』不在地址表里（地址瞎编了）",
+      "profile_guess": "P4",
+      "profile_conf": 90,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『光明小区11栋3楼』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】光明小区11栋3楼\n【呼救者原话】三楼…三楼…啊，三楼起火了，浓烟…浓烟…你们快来啊，楼里还有老人没出来，求求你们快来救救他们啊，我…我怎么办…怎么办啊！\n【求助要点】楼里还有老人没出来",
+     "parsed": {
+      "raw": "【地点】光明小区11栋3楼\n【呼救者原话】三楼…三楼…啊，三楼起火了，浓烟…浓烟…你们快来啊，楼里还有老人没出来，求求你们快来救救他们啊，我…我怎么办…怎么办啊！\n【求助要点】楼里还有老人没出来",
+      "地点": "光明小区11栋3楼",
+      "呼救者原话": "三楼…三楼…啊，三楼起火了，浓烟…浓烟…你们快来啊，楼里还有老人没出来，求求你们快来救救他们啊，我…我怎么办…怎么办啊！",
+      "求助要点": "楼里还有老人没出来"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『光明小区11栋3楼』不在地址表里（地址瞎编了）",
+      "profile_guess": "P4",
+      "profile_conf": 95,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『光明小区11栋3楼』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】和平路5号小区13栋3楼\n【呼救者原话】救...救救我...三楼...三楼着火了，火好大，好多烟...呜呜...可能有...可能有老人...\n【求助要点】请快来救火，可能有老人还困在里面",
+     "parsed": {
+      "raw": "【地点】和平路5号小区13栋3楼\n【呼救者原话】救...救救我...三楼...三楼着火了，火好大，好多烟...呜呜...可能有...可能有老人...\n【求助要点】请快来救火，可能有老人还困在里面",
+      "地点": "和平路5号小区13栋3楼",
+      "呼救者原话": "救...救救我...三楼...三楼着火了，火好大，好多烟...呜呜...可能有...可能有老人...",
+      "求助要点": "请快来救火，可能有老人还困在里面"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『和平路5号小区13栋3楼』不在地址表里（地址瞎编了）",
+      "profile_guess": "P4",
+      "profile_conf": 90,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『和平路5号小区13栋3楼』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E06|P5": {
+   "event_id": "E06",
+   "event_type": "火灾",
+   "profile_id": "P5",
+   "profile_name": "心理疾病来访者",
+   "use_profile": true,
+   "use_kb": false,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『新市南路18号』不在地址表里（地址瞎编了）",
+    "profile_guess": "P4",
+    "profile_conf": 90,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『新市南路18号』不在地址表里（地址瞎编了）",
+    "profile_guess": "P4",
+    "profile_conf": 90,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】新市南路18号\n【呼救者原话】我……我刚才在后厨炒菜，锅里的油突然就着火了，店里的人都被烫到了，疼得直叫，都是我的错，我不想活了，你们快来吧，新市南路18号，求求你们了……\n【求助要点】店里有人被热油烫伤，疼得直叫",
+     "parsed": {
+      "raw": "【地点】新市南路18号\n【呼救者原话】我……我刚才在后厨炒菜，锅里的油突然就着火了，店里的人都被烫到了，疼得直叫，都是我的错，我不想活了，你们快来吧，新市南路18号，求求你们了……\n【求助要点】店里有人被热油烫伤，疼得直叫",
+      "地点": "新市南路18号",
+      "呼救者原话": "我……我刚才在后厨炒菜，锅里的油突然就着火了，店里的人都被烫到了，疼得直叫，都是我的错，我不想活了，你们快来吧，新市南路18号，求求你们了……",
+      "求助要点": "店里有人被热油烫伤，疼得直叫"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『新市南路18号』不在地址表里（地址瞎编了）",
+      "profile_guess": "P4",
+      "profile_conf": 90,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『新市南路18号』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P4（90%），目标是 P5"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】新市南路18号\n【呼救者原话】我……这里出了大事，新市南路18号，后厨油锅起火了，都是我的错，我……我不想活了，店里有人被烫伤了，疼得直叫，你们快来啊……\n【求助要点】店里有人被烫伤，疼得直叫",
+     "parsed": {
+      "raw": "【地点】新市南路18号\n【呼救者原话】我……这里出了大事，新市南路18号，后厨油锅起火了，都是我的错，我……我不想活了，店里有人被烫伤了，疼得直叫，你们快来啊……\n【求助要点】店里有人被烫伤，疼得直叫",
+      "地点": "新市南路18号",
+      "呼救者原话": "我……这里出了大事，新市南路18号，后厨油锅起火了，都是我的错，我……我不想活了，店里有人被烫伤了，疼得直叫，你们快来啊……",
+      "求助要点": "店里有人被烫伤，疼得直叫"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『新市南路18号』不在地址表里（地址瞎编了）",
+      "profile_guess": "P4",
+      "profile_conf": 90,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『新市南路18号』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P4（90%），目标是 P5"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】新市南路18号\n【呼救者原话】我……这里好像出大事了，新市南路18号，后厨的油锅……我……我不知道该怎么办了，都是我的错，我……我不想活了……\n【求助要点】后厨油锅起火，有人被烫伤，疼得直叫",
+     "parsed": {
+      "raw": "【地点】新市南路18号\n【呼救者原话】我……这里好像出大事了，新市南路18号，后厨的油锅……我……我不知道该怎么办了，都是我的错，我……我不想活了……\n【求助要点】后厨油锅起火，有人被烫伤，疼得直叫",
+      "地点": "新市南路18号",
+      "呼救者原话": "我……这里好像出大事了，新市南路18号，后厨的油锅……我……我不知道该怎么办了，都是我的错，我……我不想活了……",
+      "求助要点": "后厨油锅起火，有人被烫伤，疼得直叫"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『新市南路18号』不在地址表里（地址瞎编了）",
+      "profile_guess": "P4",
+      "profile_conf": 90,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『新市南路18号』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P4（90%），目标是 P5"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E07|P6": {
+   "event_id": "E07",
+   "event_type": "交通事故",
+   "profile_id": "P6",
+   "profile_name": "听障人士代拨",
+   "use_profile": true,
+   "use_kb": false,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『和平小区门口』不在地址表里（地址瞎编了）",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『和平大道与解放路交叉口』不在地址表里（地址瞎编了）",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】和平大道与解放路交叉口\n【呼救者原话】您好，我是XX小区的，我问他一下啊——他说那边十字路口两辆车撞上了，有人被卡在驾驶座上，车门打不开。\n【求助要点】有人被卡在驾驶座上，需要紧急救援。",
+     "parsed": {
+      "raw": "【地点】和平大道与解放路交叉口\n【呼救者原话】您好，我是XX小区的，我问他一下啊——他说那边十字路口两辆车撞上了，有人被卡在驾驶座上，车门打不开。\n【求助要点】有人被卡在驾驶座上，需要紧急救援。",
+      "地点": "和平大道与解放路交叉口",
+      "呼救者原话": "您好，我是XX小区的，我问他一下啊——他说那边十字路口两辆车撞上了，有人被卡在驾驶座上，车门打不开。",
+      "求助要点": "有人被卡在驾驶座上，需要紧急救援。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『和平大道与解放路交叉口』不在地址表里（地址瞎编了）",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『和平大道与解放路交叉口』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P8（80%），目标是 P6"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】和平大道与解放路交叉口\n【呼救者原话】您好，我是XX小区的，我问他一下啊——他说十字路口两车相撞了，安全气囊都弹出来了，有人被卡在驾驶座上，车门打不开。\n【求助要点】有人被卡在驾驶座上，需要紧急救援。",
+     "parsed": {
+      "raw": "【地点】和平大道与解放路交叉口\n【呼救者原话】您好，我是XX小区的，我问他一下啊——他说十字路口两车相撞了，安全气囊都弹出来了，有人被卡在驾驶座上，车门打不开。\n【求助要点】有人被卡在驾驶座上，需要紧急救援。",
+      "地点": "和平大道与解放路交叉口",
+      "呼救者原话": "您好，我是XX小区的，我问他一下啊——他说十字路口两车相撞了，安全气囊都弹出来了，有人被卡在驾驶座上，车门打不开。",
+      "求助要点": "有人被卡在驾驶座上，需要紧急救援。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『和平大道与解放路交叉口』不在地址表里（地址瞎编了）",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『和平大道与解放路交叉口』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P8（80%），目标是 P6"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】和平小区门口\n【呼救者原话】您好，我是和平小区的，我问他一下啊——他说那边十字路口两车相撞了，安全气囊都弹出来了。\n【求助要点】有人被卡在驾驶座，车门打不开。",
+     "parsed": {
+      "raw": "【地点】和平小区门口\n【呼救者原话】您好，我是和平小区的，我问他一下啊——他说那边十字路口两车相撞了，安全气囊都弹出来了。\n【求助要点】有人被卡在驾驶座，车门打不开。",
+      "地点": "和平小区门口",
+      "呼救者原话": "您好，我是和平小区的，我问他一下啊——他说那边十字路口两车相撞了，安全气囊都弹出来了。",
+      "求助要点": "有人被卡在驾驶座，车门打不开。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『和平小区门口』不在地址表里（地址瞎编了）",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『和平小区门口』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P8（80%），目标是 P6"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E09|P7": {
+   "event_id": "E09",
+   "event_type": "跌倒受伤",
+   "profile_id": "P7",
+   "profile_name": "儿童代拨",
+   "use_profile": true,
+   "use_kb": false,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『XX市XX区XX路XX小区』不在地址表里（地址瞎编了）",
+    "profile_guess": "P2",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『XX市XX区XX小区12号楼1单元102室』不在地址表里（地址瞎编了）",
+    "profile_guess": "P2",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】XX市XX区XX小区12号楼1单元102室\n【呼救者原话】阿姨，我爷爷在浴室摔倒了，疼得他直哼哼，就在XX小区，他起不来了，怎么办啊？\n【求助要点】爷爷在浴室摔倒了，起不来了。",
+     "parsed": {
+      "raw": "【地点】XX市XX区XX小区12号楼1单元102室\n【呼救者原话】阿姨，我爷爷在浴室摔倒了，疼得他直哼哼，就在XX小区，他起不来了，怎么办啊？\n【求助要点】爷爷在浴室摔倒了，起不来了。",
+      "地点": "XX市XX区XX小区12号楼1单元102室",
+      "呼救者原话": "阿姨，我爷爷在浴室摔倒了，疼得他直哼哼，就在XX小区，他起不来了，怎么办啊？",
+      "求助要点": "爷爷在浴室摔倒了，起不来了。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『XX市XX区XX小区12号楼1单元102室』不在地址表里（地址瞎编了）",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『XX市XX区XX小区12号楼1单元102室』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P2（80%），目标是 P7"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】XX市XX区XX小区\n【呼救者原话】喂，阿姨，我奶奶在浴室摔倒了，她躺在地上，叫她也不答应，就在我们小区的浴室里。\n【求助要点】奶奶躺在浴室里，需要急救。",
+     "parsed": {
+      "raw": "【地点】XX市XX区XX小区\n【呼救者原话】喂，阿姨，我奶奶在浴室摔倒了，她躺在地上，叫她也不答应，就在我们小区的浴室里。\n【求助要点】奶奶躺在浴室里，需要急救。",
+      "地点": "XX市XX区XX小区",
+      "呼救者原话": "喂，阿姨，我奶奶在浴室摔倒了，她躺在地上，叫她也不答应，就在我们小区的浴室里。",
+      "求助要点": "奶奶躺在浴室里，需要急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『XX市XX区XX小区』不在地址表里（地址瞎编了）",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『XX市XX区XX小区』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P2（80%），目标是 P7"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】XX市XX区XX路XX小区\n【呼救者原话】喂，阿姨，我奶奶在浴室里摔倒了，她疼得不能动，就在我们小区里，阿姨你们快来帮忙吧。\n【求助要点】奶奶在浴室摔倒了，疼得不能动。",
+     "parsed": {
+      "raw": "【地点】XX市XX区XX路XX小区\n【呼救者原话】喂，阿姨，我奶奶在浴室里摔倒了，她疼得不能动，就在我们小区里，阿姨你们快来帮忙吧。\n【求助要点】奶奶在浴室摔倒了，疼得不能动。",
+      "地点": "XX市XX区XX路XX小区",
+      "呼救者原话": "喂，阿姨，我奶奶在浴室里摔倒了，她疼得不能动，就在我们小区里，阿姨你们快来帮忙吧。",
+      "求助要点": "奶奶在浴室摔倒了，疼得不能动。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『XX市XX区XX路XX小区』不在地址表里（地址瞎编了）",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『XX市XX区XX路XX小区』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P2（80%），目标是 P7"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E10|P8": {
+   "event_id": "E10",
+   "event_type": "跌倒受伤",
+   "profile_id": "P8",
+   "profile_name": "普通路人",
+   "use_profile": true,
+   "use_kb": false,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『龙山路98号附近』不在地址表里（地址瞎编了）",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『XX小区18栋2单元』不在地址表里（地址瞎编了）",
+    "profile_guess": "P2",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】XX小区18栋2单元\n【呼救者原话】您好，我在XX小区，刚才有个小孩从床上翻下来，头磕到了桌角，出血了，家长不太确定要不要送医院。\n【求助要点】小孩头出血了，家长拿不定主意要不要送医院。",
+     "parsed": {
+      "raw": "【地点】XX小区18栋2单元\n【呼救者原话】您好，我在XX小区，刚才有个小孩从床上翻下来，头磕到了桌角，出血了，家长不太确定要不要送医院。\n【求助要点】小孩头出血了，家长拿不定主意要不要送医院。",
+      "地点": "XX小区18栋2单元",
+      "呼救者原话": "您好，我在XX小区，刚才有个小孩从床上翻下来，头磕到了桌角，出血了，家长不太确定要不要送医院。",
+      "求助要点": "小孩头出血了，家长拿不定主意要不要送医院。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『XX小区18栋2单元』不在地址表里（地址瞎编了）",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『XX小区18栋2单元』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P2（80%），目标是 P8"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】XX小区门口\n【呼救者原话】您好，我在XX小区门口，刚才有个小孩从床上翻下来，头磕到桌角了，现在头上在出血。\n【求助要点】小孩头上有出血，情况紧急，需要救护车。",
+     "parsed": {
+      "raw": "【地点】XX小区门口\n【呼救者原话】您好，我在XX小区门口，刚才有个小孩从床上翻下来，头磕到桌角了，现在头上在出血。\n【求助要点】小孩头上有出血，情况紧急，需要救护车。",
+      "地点": "XX小区门口",
+      "呼救者原话": "您好，我在XX小区门口，刚才有个小孩从床上翻下来，头磕到桌角了，现在头上在出血。",
+      "求助要点": "小孩头上有出血，情况紧急，需要救护车。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『XX小区门口』不在地址表里（地址瞎编了）",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『XX小区门口』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】龙山路98号附近\n【呼救者原话】您好，我在龙山路98号附近，刚刚看到一个小孩从床上摔下来，头碰到了桌角，现在头上在出血，家长有点犹豫要不要送医院。\n【求助要点】小孩头上有出血，家长拿不定主意要不要送医院。",
+     "parsed": {
+      "raw": "【地点】龙山路98号附近\n【呼救者原话】您好，我在龙山路98号附近，刚刚看到一个小孩从床上摔下来，头碰到了桌角，现在头上在出血，家长有点犹豫要不要送医院。\n【求助要点】小孩头上有出血，家长拿不定主意要不要送医院。",
+      "地点": "龙山路98号附近",
+      "呼救者原话": "您好，我在龙山路98号附近，刚刚看到一个小孩从床上摔下来，头碰到了桌角，现在头上在出血，家长有点犹豫要不要送医院。",
+      "求助要点": "小孩头上有出血，家长拿不定主意要不要送医院。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『龙山路98号附近』不在地址表里（地址瞎编了）",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『龙山路98号附近』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E11|P1": {
+   "event_id": "E11",
+   "event_type": "燃气泄漏",
+   "profile_id": "P1",
+   "profile_name": "非母语者",
+   "use_profile": true,
+   "use_kb": false,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『北京市朝阳区朝阳北路12号』不在地址表里（地址瞎编了）",
+    "profile_guess": "P2",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『北京市朝阳区朝阳北路123号』不在地址表里（地址瞎编了）",
+    "profile_guess": "P4",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】北京市朝阳区朝阳北路123号\n【呼救者原话】啊，这里，这边，煤，气味，很浓，整个楼都有，不敢开灯，不敢开电器，啊，快，快救……\n【求助要点】整栋楼都有煤气味，不敢开灯、不敢开电器",
+     "parsed": {
+      "raw": "【地点】北京市朝阳区朝阳北路123号\n【呼救者原话】啊，这里，这边，煤，气味，很浓，整个楼都有，不敢开灯，不敢开电器，啊，快，快救……\n【求助要点】整栋楼都有煤气味，不敢开灯、不敢开电器",
+      "地点": "北京市朝阳区朝阳北路123号",
+      "呼救者原话": "啊，这里，这边，煤，气味，很浓，整个楼都有，不敢开灯，不敢开电器，啊，快，快救……",
+      "求助要点": "整栋楼都有煤气味，不敢开灯、不敢开电器"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『北京市朝阳区朝阳北路123号』不在地址表里（地址瞎编了）",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『北京市朝阳区朝阳北路123号』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P4（80%），目标是 P1"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】北京市朝阳区朝阳北路12号\n\n【呼救者原话】我……这边，朝阳北，有，很大的味儿，像煤……气，不敢开灯，不敢开，电器，全楼都……有味儿。\n\n【求助要点】全楼都有煤气味，不敢开灯和电器。",
+     "parsed": {
+      "raw": "【地点】北京市朝阳区朝阳北路12号\n\n【呼救者原话】我……这边，朝阳北，有，很大的味儿，像煤……气，不敢开灯，不敢开，电器，全楼都……有味儿。\n\n【求助要点】全楼都有煤气味，不敢开灯和电器。",
+      "地点": "北京市朝阳区朝阳北路12号",
+      "呼救者原话": "我……这边，朝阳北，有，很大的味儿，像煤……气，不敢开灯，不敢开，电器，全楼都……有味儿。",
+      "求助要点": "全楼都有煤气味，不敢开灯和电器。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『北京市朝阳区朝阳北路12号』不在地址表里（地址瞎编了）",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『北京市朝阳区朝阳北路12号』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P2（80%），目标是 P1"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】北京市朝阳区朝阳北路12号\n\n【呼救者原话】喂，我……这，这里，煤气……很多，整个楼……都……有味道，不敢开灯，不敢开电器，怎么办？\n\n【求助要点】整个楼都有煤气味，不敢开灯和电器。",
+     "parsed": {
+      "raw": "【地点】北京市朝阳区朝阳北路12号\n\n【呼救者原话】喂，我……这，这里，煤气……很多，整个楼……都……有味道，不敢开灯，不敢开电器，怎么办？\n\n【求助要点】整个楼都有煤气味，不敢开灯和电器。",
+      "地点": "北京市朝阳区朝阳北路12号",
+      "呼救者原话": "喂，我……这，这里，煤气……很多，整个楼……都……有味道，不敢开灯，不敢开电器，怎么办？",
+      "求助要点": "整个楼都有煤气味，不敢开灯和电器。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『北京市朝阳区朝阳北路12号』不在地址表里（地址瞎编了）",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『北京市朝阳区朝阳北路12号』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P2（80%），目标是 P1"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E13|P2": {
+   "event_id": "E13",
+   "event_type": "一氧化碳中毒",
+   "profile_id": "P2",
+   "profile_name": "低收入社区居民",
+   "use_profile": true,
+   "use_kb": false,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『和平路2号附近，就那个卖早餐的旁边』不在地址表里（地址瞎编了）",
+    "profile_guess": "P2",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『和平路23号旁边那栋楼』不在地址表里（地址瞎编了）",
+    "profile_guess": "P2",
+    "profile_conf": 90,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】和平路23号旁边那栋楼\n【呼救者原话】喂，调度员啊，俺们小区就那个卖早餐的旁边那栋楼，有人头晕得厉害，快来看看吧，门窗都关得死死的。\n【求助要点】有人头晕得厉害，需要急救。",
+     "parsed": {
+      "raw": "【地点】和平路23号旁边那栋楼\n【呼救者原话】喂，调度员啊，俺们小区就那个卖早餐的旁边那栋楼，有人头晕得厉害，快来看看吧，门窗都关得死死的。\n【求助要点】有人头晕得厉害，需要急救。",
+      "地点": "和平路23号旁边那栋楼",
+      "呼救者原话": "喂，调度员啊，俺们小区就那个卖早餐的旁边那栋楼，有人头晕得厉害，快来看看吧，门窗都关得死死的。",
+      "求助要点": "有人头晕得厉害，需要急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『和平路23号旁边那栋楼』不在地址表里（地址瞎编了）",
+      "profile_guess": "P2",
+      "profile_conf": 90,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『和平路23号旁边那栋楼』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】和平小区4号楼\n\n【呼救者原话】喂，同志啊，俺们小区就那个卖早餐的旁边，4号楼里头，有人头晕得厉害，好像是一氧化碳中毒了，得赶紧来人啊！\n\n【求助要点】有人头晕得厉害，可能是一氧化碳中毒，得赶紧来人处理。",
+     "parsed": {
+      "raw": "【地点】和平小区4号楼\n\n【呼救者原话】喂，同志啊，俺们小区就那个卖早餐的旁边，4号楼里头，有人头晕得厉害，好像是一氧化碳中毒了，得赶紧来人啊！\n\n【求助要点】有人头晕得厉害，可能是一氧化碳中毒，得赶紧来人处理。",
+      "地点": "和平小区4号楼",
+      "呼救者原话": "喂，同志啊，俺们小区就那个卖早餐的旁边，4号楼里头，有人头晕得厉害，好像是一氧化碳中毒了，得赶紧来人啊！",
+      "求助要点": "有人头晕得厉害，可能是一氧化碳中毒，得赶紧来人处理。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『和平小区4号楼』不在地址表里（地址瞎编了）",
+      "profile_guess": "P2",
+      "profile_conf": 90,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『和平小区4号楼』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】和平路2号附近，就那个卖早餐的旁边\n【呼救者原话】喂，120吗？俺们这儿出大事了，就在和平路那边的出租屋里，两个亲戚都头晕得厉害，人都开始犯迷糊了，门窗都关得死死的。\n【求助要点】两个人头晕犯迷糊，门窗关得死死，求快来救人！",
+     "parsed": {
+      "raw": "【地点】和平路2号附近，就那个卖早餐的旁边\n【呼救者原话】喂，120吗？俺们这儿出大事了，就在和平路那边的出租屋里，两个亲戚都头晕得厉害，人都开始犯迷糊了，门窗都关得死死的。\n【求助要点】两个人头晕犯迷糊，门窗关得死死，求快来救人！",
+      "地点": "和平路2号附近，就那个卖早餐的旁边",
+      "呼救者原话": "喂，120吗？俺们这儿出大事了，就在和平路那边的出租屋里，两个亲戚都头晕得厉害，人都开始犯迷糊了，门窗都关得死死的。",
+      "求助要点": "两个人头晕犯迷糊，门窗关得死死，求快来救人！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『和平路2号附近，就那个卖早餐的旁边』不在地址表里（地址瞎编了）",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『和平路2号附近，就那个卖早餐的旁边』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E15|P3": {
+   "event_id": "E15",
+   "event_type": "溺水",
+   "profile_id": "P3",
+   "profile_name": "独居老人",
+   "use_profile": true,
+   "use_kb": false,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『西城区翠微路2号院』不在地址表里（地址瞎编了）",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『东城区和平小区』不在地址表里（地址瞎编了）",
+    "profile_guess": "P4",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】东城区和平小区\n【呼救者原话】喂，喂？是我，我……我在这儿，和平小区，河边，有人……有人跳河了，一直没上来，水面上冒泡，你们快来，快来啊！\n【求助要点】有人跳河了，水面上冒泡",
+     "parsed": {
+      "raw": "【地点】东城区和平小区\n【呼救者原话】喂，喂？是我，我……我在这儿，和平小区，河边，有人……有人跳河了，一直没上来，水面上冒泡，你们快来，快来啊！\n【求助要点】有人跳河了，水面上冒泡",
+      "地点": "东城区和平小区",
+      "呼救者原话": "喂，喂？是我，我……我在这儿，和平小区，河边，有人……有人跳河了，一直没上来，水面上冒泡，你们快来，快来啊！",
+      "求助要点": "有人跳河了，水面上冒泡"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『东城区和平小区』不在地址表里（地址瞎编了）",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『东城区和平小区』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P4（80%），目标是 P3"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】东城区和平小区附近河边\n【呼救者原话】喂，喂？是我，我住在和平小区，傍晚的时候，我看到有人从河边跳下去，一直没上来，水面一直冒泡，我年纪大了，听不太清楚具体位置，你们快来，快来救救他。\n【求助要点】有人跳河，水面冒泡，需要急救。",
+     "parsed": {
+      "raw": "【地点】东城区和平小区附近河边\n【呼救者原话】喂，喂？是我，我住在和平小区，傍晚的时候，我看到有人从河边跳下去，一直没上来，水面一直冒泡，我年纪大了，听不太清楚具体位置，你们快来，快来救救他。\n【求助要点】有人跳河，水面冒泡，需要急救。",
+      "地点": "东城区和平小区附近河边",
+      "呼救者原话": "喂，喂？是我，我住在和平小区，傍晚的时候，我看到有人从河边跳下去，一直没上来，水面一直冒泡，我年纪大了，听不太清楚具体位置，你们快来，快来救救他。",
+      "求助要点": "有人跳河，水面冒泡，需要急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『东城区和平小区附近河边』不在地址表里（地址瞎编了）",
+      "profile_guess": "P3",
+      "profile_conf": 90,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『东城区和平小区附近河边』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】西城区翠微路2号院\n【呼救者原话】喂，你好啊，我是翠微路2号院的老张，刚才我看到河边有人跳下去了，一直没上来，水面上老冒泡的，你们快来啊，快来啊。\n【求助要点】河边有人跳下去了，水面上老冒泡的。",
+     "parsed": {
+      "raw": "【地点】西城区翠微路2号院\n【呼救者原话】喂，你好啊，我是翠微路2号院的老张，刚才我看到河边有人跳下去了，一直没上来，水面上老冒泡的，你们快来啊，快来啊。\n【求助要点】河边有人跳下去了，水面上老冒泡的。",
+      "地点": "西城区翠微路2号院",
+      "呼救者原话": "喂，你好啊，我是翠微路2号院的老张，刚才我看到河边有人跳下去了，一直没上来，水面上老冒泡的，你们快来啊，快来啊。",
+      "求助要点": "河边有人跳下去了，水面上老冒泡的。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『西城区翠微路2号院』不在地址表里（地址瞎编了）",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『西城区翠微路2号院』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P8（80%），目标是 P3"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E17|P4": {
+   "event_id": "E17",
+   "event_type": "触电",
+   "profile_id": "P4",
+   "profile_name": "情绪崩溃者",
+   "use_profile": true,
+   "use_kb": false,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『上海市浦东新区张江高科技园区金科路699号』不在地址表里（地址瞎编了）",
+    "profile_guess": "P4",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『上海市浦东新区东方路1234号』不在地址表里（地址瞎编了）",
+    "profile_guess": "P4",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】上海市浦东新区东方路1234号\n【呼救者原话】哎，我，我这边工地有人触电了，就在，就在东方路那，我，我…我朋友他…他…他…\n【求助要点】快来人啊，有人触电了！",
+     "parsed": {
+      "raw": "【地点】上海市浦东新区东方路1234号\n【呼救者原话】哎，我，我这边工地有人触电了，就在，就在东方路那，我，我…我朋友他…他…他…\n【求助要点】快来人啊，有人触电了！",
+      "地点": "上海市浦东新区东方路1234号",
+      "呼救者原话": "哎，我，我这边工地有人触电了，就在，就在东方路那，我，我…我朋友他…他…他…",
+      "求助要点": "快来人啊，有人触电了！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『上海市浦东新区东方路1234号』不在地址表里（地址瞎编了）",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『上海市浦东新区东方路1234号』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】上海市浦东新区世纪大道2000号\n【呼救者原话】师傅，师傅，我...我在世纪大道，我...我朋友触电了，他...他不动了，你们...你们快来啊，我...我该怎么办啊，呜呜——\n【求助要点】朋友触电昏迷，急需救援",
+     "parsed": {
+      "raw": "【地点】上海市浦东新区世纪大道2000号\n【呼救者原话】师傅，师傅，我...我在世纪大道，我...我朋友触电了，他...他不动了，你们...你们快来啊，我...我该怎么办啊，呜呜——\n【求助要点】朋友触电昏迷，急需救援",
+      "地点": "上海市浦东新区世纪大道2000号",
+      "呼救者原话": "师傅，师傅，我...我在世纪大道，我...我朋友触电了，他...他不动了，你们...你们快来啊，我...我该怎么办啊，呜呜——",
+      "求助要点": "朋友触电昏迷，急需救援"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『上海市浦东新区世纪大道2000号』不在地址表里（地址瞎编了）",
+      "profile_guess": "P4",
+      "profile_conf": 90,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『上海市浦东新区世纪大道2000号』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】上海市浦东新区张江高科技园区金科路699号\n【呼救者原话】师傅，师傅，我...我在...在金科路这边，有人...有人触电了，他...他...他不动了，我...我...\n【求助要点】有人触电，需要急救！",
+     "parsed": {
+      "raw": "【地点】上海市浦东新区张江高科技园区金科路699号\n【呼救者原话】师傅，师傅，我...我在...在金科路这边，有人...有人触电了，他...他...他不动了，我...我...\n【求助要点】有人触电，需要急救！",
+      "地点": "上海市浦东新区张江高科技园区金科路699号",
+      "呼救者原话": "师傅，师傅，我...我在...在金科路这边，有人...有人触电了，他...他...他不动了，我...我...",
+      "求助要点": "有人触电，需要急救！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『上海市浦东新区张江高科技园区金科路699号』不在地址表里（地址瞎编了）",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『上海市浦东新区张江高科技园区金科路699号』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E19|P5": {
+   "event_id": "E19",
+   "event_type": "异物卡喉",
+   "profile_id": "P5",
+   "profile_name": "心理疾病来访者",
+   "use_profile": true,
+   "use_kb": false,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『金桥小区3号楼1单元101室』不在地址表里（地址瞎编了）",
+    "profile_guess": "P4",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『阳光花园小区15栋3单元202室』不在地址表里（地址瞎编了）",
+    "profile_guess": "P4",
+    "profile_conf": 95,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】阳光花园小区15栋3单元202室\n【呼救者原话】我……我女儿她吃坚果噎住了，脸色都紫了，我不知道怎么办，都是我的错，我太笨了，你们快来，她现在在阳光花园小区，我……我真的不想活了……\n【求助要点】女儿异物卡喉，急需急救",
+     "parsed": {
+      "raw": "【地点】阳光花园小区15栋3单元202室\n【呼救者原话】我……我女儿她吃坚果噎住了，脸色都紫了，我不知道怎么办，都是我的错，我太笨了，你们快来，她现在在阳光花园小区，我……我真的不想活了……\n【求助要点】女儿异物卡喉，急需急救",
+      "地点": "阳光花园小区15栋3单元202室",
+      "呼救者原话": "我……我女儿她吃坚果噎住了，脸色都紫了，我不知道怎么办，都是我的错，我太笨了，你们快来，她现在在阳光花园小区，我……我真的不想活了……",
+      "求助要点": "女儿异物卡喉，急需急救"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『阳光花园小区15栋3单元202室』不在地址表里（地址瞎编了）",
+      "profile_guess": "P4",
+      "profile_conf": 95,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『阳光花园小区15栋3单元202室』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P4（95%），目标是 P5"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】东升路阳光花园小区\n【呼救者原话】我……我家的孩子，他……他吃坚果噎住了，脸都发紫了，我……我都不会急救，都是我的错，我不想活了，你们快来吧，就在东升路阳光花园小区，求求你们了……\n【求助要点】孩子吃坚果噎住，急需急救。",
+     "parsed": {
+      "raw": "【地点】东升路阳光花园小区\n【呼救者原话】我……我家的孩子，他……他吃坚果噎住了，脸都发紫了，我……我都不会急救，都是我的错，我不想活了，你们快来吧，就在东升路阳光花园小区，求求你们了……\n【求助要点】孩子吃坚果噎住，急需急救。",
+      "地点": "东升路阳光花园小区",
+      "呼救者原话": "我……我家的孩子，他……他吃坚果噎住了，脸都发紫了，我……我都不会急救，都是我的错，我不想活了，你们快来吧，就在东升路阳光花园小区，求求你们了……",
+      "求助要点": "孩子吃坚果噎住，急需急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『东升路阳光花园小区』不在地址表里（地址瞎编了）",
+      "profile_guess": "P4",
+      "profile_conf": 90,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『东升路阳光花园小区』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P4（90%），目标是 P5"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】金桥小区3号楼1单元101室\n【呼救者原话】我……我真的不知道该怎么办了，这里是金桥小区，孩子……孩子他……他……\n【求助要点】孩子噎住了，脸色都发紫了，我……我……我完全不知道该怎么做。",
+     "parsed": {
+      "raw": "【地点】金桥小区3号楼1单元101室\n【呼救者原话】我……我真的不知道该怎么办了，这里是金桥小区，孩子……孩子他……他……\n【求助要点】孩子噎住了，脸色都发紫了，我……我……我完全不知道该怎么做。",
+      "地点": "金桥小区3号楼1单元101室",
+      "呼救者原话": "我……我真的不知道该怎么办了，这里是金桥小区，孩子……孩子他……他……",
+      "求助要点": "孩子噎住了，脸色都发紫了，我……我……我完全不知道该怎么做。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『金桥小区3号楼1单元101室』不在地址表里（地址瞎编了）",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『金桥小区3号楼1单元101室』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P4（80%），目标是 P5"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E20|P6": {
+   "event_id": "E20",
+   "event_type": "异物卡喉",
+   "profile_id": "P6",
+   "profile_name": "听障人士代拨",
+   "use_profile": true,
+   "use_kb": false,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『新市南路88号阳光小区』不在地址表里（地址瞎编了）",
+    "profile_guess": "P6",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『XX小区1栋3单元502室』不在地址表里（地址瞎编了）",
+    "profile_guess": "P6",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】XX小区1栋3单元502室\n【呼救者原话】您好，我是XX小区的邻居，我问他一下啊——他说他妈妈吃年糕卡住喉咙了，家里还有其他人在帮忙拍背。\n【求助要点】老人喉咙卡住，需要急救。",
+     "parsed": {
+      "raw": "【地点】XX小区1栋3单元502室\n【呼救者原话】您好，我是XX小区的邻居，我问他一下啊——他说他妈妈吃年糕卡住喉咙了，家里还有其他人在帮忙拍背。\n【求助要点】老人喉咙卡住，需要急救。",
+      "地点": "XX小区1栋3单元502室",
+      "呼救者原话": "您好，我是XX小区的邻居，我问他一下啊——他说他妈妈吃年糕卡住喉咙了，家里还有其他人在帮忙拍背。",
+      "求助要点": "老人喉咙卡住，需要急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『XX小区1栋3单元502室』不在地址表里（地址瞎编了）",
+      "profile_guess": "P6",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『XX小区1栋3单元502室』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】XX路XX号XX小区\n【呼救者原话】您好，我是XX小区的，我问他一下啊——他说家里有个老人，吃年糕卡住了，说不出话来，只会指喉咙。\n【求助要点】老人吃年糕卡住了，需要急救。",
+     "parsed": {
+      "raw": "【地点】XX路XX号XX小区\n【呼救者原话】您好，我是XX小区的，我问他一下啊——他说家里有个老人，吃年糕卡住了，说不出话来，只会指喉咙。\n【求助要点】老人吃年糕卡住了，需要急救。",
+      "地点": "XX路XX号XX小区",
+      "呼救者原话": "您好，我是XX小区的，我问他一下啊——他说家里有个老人，吃年糕卡住了，说不出话来，只会指喉咙。",
+      "求助要点": "老人吃年糕卡住了，需要急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『XX路XX号XX小区』不在地址表里（地址瞎编了）",
+      "profile_guess": "P6",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『XX路XX号XX小区』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】新市南路88号阳光小区\n【呼救者原话】您好，我是阳光小区的，我问他一下啊——他说家里有个老人，吃年糕卡住了，现在说不出话来，只会指喉咙。\n【求助要点】老人吃年糕卡喉咙，说不出话来。",
+     "parsed": {
+      "raw": "【地点】新市南路88号阳光小区\n【呼救者原话】您好，我是阳光小区的，我问他一下啊——他说家里有个老人，吃年糕卡住了，现在说不出话来，只会指喉咙。\n【求助要点】老人吃年糕卡喉咙，说不出话来。",
+      "地点": "新市南路88号阳光小区",
+      "呼救者原话": "您好，我是阳光小区的，我问他一下啊——他说家里有个老人，吃年糕卡住了，现在说不出话来，只会指喉咙。",
+      "求助要点": "老人吃年糕卡喉咙，说不出话来。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『新市南路88号阳光小区』不在地址表里（地址瞎编了）",
+      "profile_guess": "P6",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『新市南路88号阳光小区』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E21|P7": {
+   "event_id": "E21",
+   "event_type": "过敏性休克",
+   "profile_id": "P7",
+   "profile_name": "儿童代拨",
+   "use_profile": true,
+   "use_kb": false,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『和平小区2栋3单元202室』不在地址表里（地址瞎编了）",
+    "profile_guess": "P2",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『东大街68号』不在地址表里（地址瞎编了）",
+    "profile_guess": "P2",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】东大街68号\n【呼救者原话】喂，阿姨，我妈妈刚才吃了个花生，嘴唇现在肿得像猪八戒的，她喘不上气了，我们住在东大街68号，妈妈有过敏史，你们快来吧。\n【求助要点】妈妈吃了花生嘴唇肿，喘不上气，有过敏史。",
+     "parsed": {
+      "raw": "【地点】东大街68号\n【呼救者原话】喂，阿姨，我妈妈刚才吃了个花生，嘴唇现在肿得像猪八戒的，她喘不上气了，我们住在东大街68号，妈妈有过敏史，你们快来吧。\n【求助要点】妈妈吃了花生嘴唇肿，喘不上气，有过敏史。",
+      "地点": "东大街68号",
+      "呼救者原话": "喂，阿姨，我妈妈刚才吃了个花生，嘴唇现在肿得像猪八戒的，她喘不上气了，我们住在东大街68号，妈妈有过敏史，你们快来吧。",
+      "求助要点": "妈妈吃了花生嘴唇肿，喘不上气，有过敏史。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『东大街68号』不在地址表里（地址瞎编了）",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『东大街68号』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P2（80%），目标是 P7"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】和平小区2栋3单元202室\n【呼救者原话】喂，阿姨，我妈妈吃了花生以后嘴唇都肿起来了，还一直喘不上气，我们住和平小区，妈妈有过敏史，她身上有那个笔，可是现在好像不管用了。\n【求助要点】妈妈吃了花生过敏了，嘴唇肿，喘不上气，身上有肾上腺素笔。",
+     "parsed": {
+      "raw": "【地点】和平小区2栋3单元202室\n【呼救者原话】喂，阿姨，我妈妈吃了花生以后嘴唇都肿起来了，还一直喘不上气，我们住和平小区，妈妈有过敏史，她身上有那个笔，可是现在好像不管用了。\n【求助要点】妈妈吃了花生过敏了，嘴唇肿，喘不上气，身上有肾上腺素笔。",
+      "地点": "和平小区2栋3单元202室",
+      "呼救者原话": "喂，阿姨，我妈妈吃了花生以后嘴唇都肿起来了，还一直喘不上气，我们住和平小区，妈妈有过敏史，她身上有那个笔，可是现在好像不管用了。",
+      "求助要点": "妈妈吃了花生过敏了，嘴唇肿，喘不上气，身上有肾上腺素笔。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『和平小区2栋3单元202室』不在地址表里（地址瞎编了）",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『和平小区2栋3单元202室』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P2（80%），目标是 P7"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】和平小区2栋3单元202室\n【呼救者原话】喂，阿姨，我妈妈吃了花生，嘴唇都肿起来了，她现在喘不上气，我们住在和平小区，快帮帮我们吧。\n【求助要点】妈妈吃了花生，嘴唇肿，喘不上气",
+     "parsed": {
+      "raw": "【地点】和平小区2栋3单元202室\n【呼救者原话】喂，阿姨，我妈妈吃了花生，嘴唇都肿起来了，她现在喘不上气，我们住在和平小区，快帮帮我们吧。\n【求助要点】妈妈吃了花生，嘴唇肿，喘不上气",
+      "地点": "和平小区2栋3单元202室",
+      "呼救者原话": "喂，阿姨，我妈妈吃了花生，嘴唇都肿起来了，她现在喘不上气，我们住在和平小区，快帮帮我们吧。",
+      "求助要点": "妈妈吃了花生，嘴唇肿，喘不上气"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『和平小区2栋3单元202室』不在地址表里（地址瞎编了）",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『和平小区2栋3单元202室』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P2（80%），目标是 P7"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E23|P8": {
+   "event_id": "E23",
+   "event_type": "分娩",
+   "profile_id": "P8",
+   "profile_name": "普通路人",
+   "use_profile": true,
+   "use_kb": false,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『翠园小区附近』不在地址表里（地址瞎编了）",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『金域花园小区2栋3单元』不在地址表里（地址瞎编了）",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】金域花园小区2栋3单元\n【呼救者原话】您好，我在金域花园小区门口，刚才看到有一位孕妇在家里羊水破了，现在情况紧急，她丈夫完全不知道怎么办。\n【求助要点】孕妇羊水破了，急需急救。",
+     "parsed": {
+      "raw": "【地点】金域花园小区2栋3单元\n【呼救者原话】您好，我在金域花园小区门口，刚才看到有一位孕妇在家里羊水破了，现在情况紧急，她丈夫完全不知道怎么办。\n【求助要点】孕妇羊水破了，急需急救。",
+      "地点": "金域花园小区2栋3单元",
+      "呼救者原话": "您好，我在金域花园小区门口，刚才看到有一位孕妇在家里羊水破了，现在情况紧急，她丈夫完全不知道怎么办。",
+      "求助要点": "孕妇羊水破了，急需急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『金域花园小区2栋3单元』不在地址表里（地址瞎编了）",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『金域花园小区2栋3单元』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】翠园路123号\n【呼救者原话】您好，我在翠园路这边，刚才看到一位孕妇在家里羊水破了，她现在情况不太好，家里只有她丈夫一个人，完全不知道怎么办。\n【求助要点】孕妇羊水破了，急需急救。",
+     "parsed": {
+      "raw": "【地点】翠园路123号\n【呼救者原话】您好，我在翠园路这边，刚才看到一位孕妇在家里羊水破了，她现在情况不太好，家里只有她丈夫一个人，完全不知道怎么办。\n【求助要点】孕妇羊水破了，急需急救。",
+      "地点": "翠园路123号",
+      "呼救者原话": "您好，我在翠园路这边，刚才看到一位孕妇在家里羊水破了，她现在情况不太好，家里只有她丈夫一个人，完全不知道怎么办。",
+      "求助要点": "孕妇羊水破了，急需急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『翠园路123号』不在地址表里（地址瞎编了）",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『翠园路123号』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】翠园小区附近\n【呼救者原话】您好，我在翠园小区附近，刚才看到一位孕妇羊水破了，她现在正在家里，情况看起来很紧急。\n【求助要点】孕妇羊水破了，在家无法去医院，需要紧急救助。",
+     "parsed": {
+      "raw": "【地点】翠园小区附近\n【呼救者原话】您好，我在翠园小区附近，刚才看到一位孕妇羊水破了，她现在正在家里，情况看起来很紧急。\n【求助要点】孕妇羊水破了，在家无法去医院，需要紧急救助。",
+      "地点": "翠园小区附近",
+      "呼救者原话": "您好，我在翠园小区附近，刚才看到一位孕妇羊水破了，她现在正在家里，情况看起来很紧急。",
+      "求助要点": "孕妇羊水破了，在家无法去医院，需要紧急救助。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『翠园小区附近』不在地址表里（地址瞎编了）",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『翠园小区附近』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E25|P1": {
+   "event_id": "E25",
+   "event_type": "中风",
+   "profile_id": "P1",
+   "profile_name": "非母语者",
+   "use_profile": true,
+   "use_kb": false,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『海淀区清华园路1号清华园小区6号楼2单元302室』不在地址表里（地址瞎编了）",
+    "profile_guess": "P4",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『东城区和平里小区15号楼1单元202室』不在地址表里（地址瞎编了）",
+    "profile_guess": "P4",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】东城区和平里小区15号楼1单元202室\n【呼救者原话】哎，我……人，在……和平里小区，不好了，不动了，说话……不清楚，快……\n【求助要点】人不动了，说话不清楚，快救命啊！",
+     "parsed": {
+      "raw": "【地点】东城区和平里小区15号楼1单元202室\n【呼救者原话】哎，我……人，在……和平里小区，不好了，不动了，说话……不清楚，快……\n【求助要点】人不动了，说话不清楚，快救命啊！",
+      "地点": "东城区和平里小区15号楼1单元202室",
+      "呼救者原话": "哎，我……人，在……和平里小区，不好了，不动了，说话……不清楚，快……",
+      "求助要点": "人不动了，说话不清楚，快救命啊！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『东城区和平里小区15号楼1单元202室』不在地址表里（地址瞎编了）",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『东城区和平里小区15号楼1单元202室』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P4（80%），目标是 P1"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】海淀区清华园路1号清华园小区6号楼2单元302室\n【呼救者原话】我……人……倒……这里……清华园路，小区……6号楼……\n【求助要点】我……人……不……动……快来……",
+     "parsed": {
+      "raw": "【地点】海淀区清华园路1号清华园小区6号楼2单元302室\n【呼救者原话】我……人……倒……这里……清华园路，小区……6号楼……\n【求助要点】我……人……不……动……快来……",
+      "地点": "海淀区清华园路1号清华园小区6号楼2单元302室",
+      "呼救者原话": "我……人……倒……这里……清华园路，小区……6号楼……",
+      "求助要点": "我……人……不……动……快来……"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『海淀区清华园路1号清华园小区6号楼2单元302室』不在地址表里（地址瞎编了）",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『海淀区清华园路1号清华园小区6号楼2单元302室』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P2（80%），目标是 P1"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】海淀区清华园路1号清华园小区6号楼2单元302室\n【呼救者原话】我……家里，有人，不……好了。小区，6号楼，302室，快……来。\n【求助要点】家里有人中风了，快……来。",
+     "parsed": {
+      "raw": "【地点】海淀区清华园路1号清华园小区6号楼2单元302室\n【呼救者原话】我……家里，有人，不……好了。小区，6号楼，302室，快……来。\n【求助要点】家里有人中风了，快……来。",
+      "地点": "海淀区清华园路1号清华园小区6号楼2单元302室",
+      "呼救者原话": "我……家里，有人，不……好了。小区，6号楼，302室，快……来。",
+      "求助要点": "家里有人中风了，快……来。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『海淀区清华园路1号清华园小区6号楼2单元302室』不在地址表里（地址瞎编了）",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『海淀区清华园路1号清华园小区6号楼2单元302室』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P4（80%），目标是 P1"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E27|P2": {
+   "event_id": "E27",
+   "event_type": "化学品泄漏",
+   "profile_id": "P2",
+   "profile_name": "低收入社区居民",
+   "use_profile": true,
+   "use_kb": false,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『北环路23号仓库』不在地址表里（地址瞎编了）",
+    "profile_guess": "P2",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『南郊工业区A号仓库』不在地址表里（地址瞎编了）",
+    "profile_guess": "P2",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】南郊工业区A号仓库\n【呼救者原话】哎哟，120啊，你们快来啊，就那个卖早餐的旁边，仓库里两个桶倒了，漏出那种刺鼻的液体，有个工人眼睛疼得睁不开啊！\n【求助要点】工人眼睛被化学品熏得疼得睁不开",
+     "parsed": {
+      "raw": "【地点】南郊工业区A号仓库\n【呼救者原话】哎哟，120啊，你们快来啊，就那个卖早餐的旁边，仓库里两个桶倒了，漏出那种刺鼻的液体，有个工人眼睛疼得睁不开啊！\n【求助要点】工人眼睛被化学品熏得疼得睁不开",
+      "地点": "南郊工业区A号仓库",
+      "呼救者原话": "哎哟，120啊，你们快来啊，就那个卖早餐的旁边，仓库里两个桶倒了，漏出那种刺鼻的液体，有个工人眼睛疼得睁不开啊！",
+      "求助要点": "工人眼睛被化学品熏得疼得睁不开"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『南郊工业区A号仓库』不在地址表里（地址瞎编了）",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『南郊工业区A号仓库』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】南郊工业区A号仓库\n【呼救者原话】哎，调度啊，就在那卖早餐的旁边那栋，两个桶倒了，漏出来那种味道特别大的液体，现在有几个工人眼睛都熏得疼得睁不开眼了，你们快来啊！\n【求助要点】工人眼睛被熏得疼得睁不开眼了，快派人来！",
+     "parsed": {
+      "raw": "【地点】南郊工业区A号仓库\n【呼救者原话】哎，调度啊，就在那卖早餐的旁边那栋，两个桶倒了，漏出来那种味道特别大的液体，现在有几个工人眼睛都熏得疼得睁不开眼了，你们快来啊！\n【求助要点】工人眼睛被熏得疼得睁不开眼了，快派人来！",
+      "地点": "南郊工业区A号仓库",
+      "呼救者原话": "哎，调度啊，就在那卖早餐的旁边那栋，两个桶倒了，漏出来那种味道特别大的液体，现在有几个工人眼睛都熏得疼得睁不开眼了，你们快来啊！",
+      "求助要点": "工人眼睛被熏得疼得睁不开眼了，快派人来！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『南郊工业区A号仓库』不在地址表里（地址瞎编了）",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『南郊工业区A号仓库』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】北环路23号仓库\n【呼救者原话】哎哟，喂，帮帮忙啊，就那个卖早餐的旁边那仓库，两个桶倒了，漏出来那种怪怪的东西，辣眼睛啊，我同事的眼睛都熏得疼得睁不开啦，快来人啊！\n【求助要点】工人眼睛被熏得刺痛，睁不开",
+     "parsed": {
+      "raw": "【地点】北环路23号仓库\n【呼救者原话】哎哟，喂，帮帮忙啊，就那个卖早餐的旁边那仓库，两个桶倒了，漏出来那种怪怪的东西，辣眼睛啊，我同事的眼睛都熏得疼得睁不开啦，快来人啊！\n【求助要点】工人眼睛被熏得刺痛，睁不开",
+      "地点": "北环路23号仓库",
+      "呼救者原话": "哎哟，喂，帮帮忙啊，就那个卖早餐的旁边那仓库，两个桶倒了，漏出来那种怪怪的东西，辣眼睛啊，我同事的眼睛都熏得疼得睁不开啦，快来人啊！",
+      "求助要点": "工人眼睛被熏得刺痛，睁不开"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『北环路23号仓库』不在地址表里（地址瞎编了）",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『北环路23号仓库』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E29|P3": {
+   "event_id": "E29",
+   "event_type": "电梯困人",
+   "profile_id": "P3",
+   "profile_name": "独居老人",
+   "use_profile": true,
+   "use_kb": false,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『和平区南京路98号』不在地址表里（地址瞎编了）",
+    "profile_guess": "P3",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『金水区黄河路88号金水花园小区』不在地址表里（地址瞎编了）",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】金水区黄河路88号金水花园小区\n【呼救者原话】喂，你好啊，我住在金水花园小区，电梯里头有人，是个老人家，他有点儿喘不上气，你们快来啊。\n【求助要点】老人胸闷，喘不上气",
+     "parsed": {
+      "raw": "【地点】金水区黄河路88号金水花园小区\n【呼救者原话】喂，你好啊，我住在金水花园小区，电梯里头有人，是个老人家，他有点儿喘不上气，你们快来啊。\n【求助要点】老人胸闷，喘不上气",
+      "地点": "金水区黄河路88号金水花园小区",
+      "呼救者原话": "喂，你好啊，我住在金水花园小区，电梯里头有人，是个老人家，他有点儿喘不上气，你们快来啊。",
+      "求助要点": "老人胸闷，喘不上气"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『金水区黄河路88号金水花园小区』不在地址表里（地址瞎编了）",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地点『金水区黄河路88号金水花园小区』不在地址表里（地址瞎编了）",
+      "画像对不上：裁判判定为 P8（80%），目标是 P3"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】和平区南京路98号和平花园小区\n【呼救者原话】喂，您好啊，我住在和平花园小区，我这边电梯里头有人，我年纪大了，腿脚不方便，电梯里头有个老人家，他现在有点儿喘不上气，胸闷得厉害，你们快来吧，快点。\n【求助要点】电梯里头有个老人家，他现在有点儿喘不上气，胸闷得厉害。",
+     "parsed": {
+      "raw": "【地点】和平区南京路98号和平花园小区\n【呼救者原话】喂，您好啊，我住在和平花园小区，我这边电梯里头有人，我年纪大了，腿脚不方便，电梯里头有个老人家，他现在有点儿喘不上气，胸闷得厉害，你们快来吧，快点。\n【求助要点】电梯里头有个老人家，他现在有点儿喘不上气，胸闷得厉害。",
+      "地点": "和平区南京路98号和平花园小区",
+      "呼救者原话": "喂，您好啊，我住在和平花园小区，我这边电梯里头有人，我年纪大了，腿脚不方便，电梯里头有个老人家，他现在有点儿喘不上气，胸闷得厉害，你们快来吧，快点。",
+      "求助要点": "电梯里头有个老人家，他现在有点儿喘不上气，胸闷得厉害。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『和平区南京路98号和平花园小区』不在地址表里（地址瞎编了）",
+      "profile_guess": "P3",
+      "profile_conf": 90,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『和平区南京路98号和平花园小区』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】和平区南京路98号\n【呼救者原话】喂，你好吗？我是住在和平花园小区的，我……我这里有点儿不太舒服，胸闷，喘不上气，我……我在电梯里头，一个人呢，你们快来吧。\n【求助要点】胸闷，喘不上气，电梯里头，一个人。",
+     "parsed": {
+      "raw": "【地点】和平区南京路98号\n【呼救者原话】喂，你好吗？我是住在和平花园小区的，我……我这里有点儿不太舒服，胸闷，喘不上气，我……我在电梯里头，一个人呢，你们快来吧。\n【求助要点】胸闷，喘不上气，电梯里头，一个人。",
+      "地点": "和平区南京路98号",
+      "呼救者原话": "喂，你好吗？我是住在和平花园小区的，我……我这里有点儿不太舒服，胸闷，喘不上气，我……我在电梯里头，一个人呢，你们快来吧。",
+      "求助要点": "胸闷，喘不上气，电梯里头，一个人。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『和平区南京路98号』不在地址表里（地址瞎编了）",
+      "profile_guess": "P3",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『和平区南京路98号』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E30|P4": {
+   "event_id": "E30",
+   "event_type": "心理危机",
+   "profile_id": "P4",
+   "profile_name": "情绪崩溃者",
+   "use_profile": true,
+   "use_kb": false,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『上海市浦东新区东方明珠电视塔附近』不在地址表里（地址瞎编了）",
+    "profile_guess": "P4",
+    "profile_conf": 95,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地点『北京市海淀区中关村二小附近小区』不在地址表里（地址瞎编了）",
+    "profile_guess": "P4",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】北京市海淀区中关村二小附近小区\n【呼救者原话】喂，你们快来啊，我在中关村二小附近，我……我……我站在这里，他……他……他……\n【求助要点】我站在这里，他……他……他……",
+     "parsed": {
+      "raw": "【地点】北京市海淀区中关村二小附近小区\n【呼救者原话】喂，你们快来啊，我在中关村二小附近，我……我……我站在这里，他……他……他……\n【求助要点】我站在这里，他……他……他……",
+      "地点": "北京市海淀区中关村二小附近小区",
+      "呼救者原话": "喂，你们快来啊，我在中关村二小附近，我……我……我站在这里，他……他……他……",
+      "求助要点": "我站在这里，他……他……他……"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『北京市海淀区中关村二小附近小区』不在地址表里（地址瞎编了）",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『北京市海淀区中关村二小附近小区』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】北京市朝阳区XX小区15号楼\n\n【呼救者原话】调度员同志，我……我在XX小区，我……我儿子他……他站在楼顶上，他……他现在特别激动，家属在楼下喊他，他越喊越激动，我……我怎么办啊，快来人啊！\n\n【求助要点】我儿子现在在天台边缘，情绪很激动，家属在楼下喊话，情况紧急！",
+     "parsed": {
+      "raw": "【地点】北京市朝阳区XX小区15号楼\n\n【呼救者原话】调度员同志，我……我在XX小区，我……我儿子他……他站在楼顶上，他……他现在特别激动，家属在楼下喊他，他越喊越激动，我……我怎么办啊，快来人啊！\n\n【求助要点】我儿子现在在天台边缘，情绪很激动，家属在楼下喊话，情况紧急！",
+      "地点": "北京市朝阳区XX小区15号楼",
+      "呼救者原话": "调度员同志，我……我在XX小区，我……我儿子他……他站在楼顶上，他……他现在特别激动，家属在楼下喊他，他越喊越激动，我……我怎么办啊，快来人啊！",
+      "求助要点": "我儿子现在在天台边缘，情绪很激动，家属在楼下喊话，情况紧急！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『北京市朝阳区XX小区15号楼』不在地址表里（地址瞎编了）",
+      "profile_guess": "P4",
+      "profile_conf": 90,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『北京市朝阳区XX小区15号楼』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】上海市浦东新区东方明珠电视塔附近\n\n【呼救者原话】这里，这里是XX小区，我朋友站在那个最高的地方，他……他好像……不行了，他一直说不想活……你们快来啊，真的，我真的……我……（哭声）\n\n【求助要点】请快来，他站在天台边缘，情绪很激动，求你们快点。",
+     "parsed": {
+      "raw": "【地点】上海市浦东新区东方明珠电视塔附近\n\n【呼救者原话】这里，这里是XX小区，我朋友站在那个最高的地方，他……他好像……不行了，他一直说不想活……你们快来啊，真的，我真的……我……（哭声）\n\n【求助要点】请快来，他站在天台边缘，情绪很激动，求你们快点。",
+      "地点": "上海市浦东新区东方明珠电视塔附近",
+      "呼救者原话": "这里，这里是XX小区，我朋友站在那个最高的地方，他……他好像……不行了，他一直说不想活……你们快来啊，真的，我真的……我……（哭声）",
+      "求助要点": "请快来，他站在天台边缘，情绪很激动，求你们快点。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地点『上海市浦东新区东方明珠电视塔附近』不在地址表里（地址瞎编了）",
+      "profile_guess": "P4",
+      "profile_conf": 95,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地点『上海市浦东新区东方明珠电视塔附近』不在地址表里（地址瞎编了）"
+     ],
+     "ok": false
+    }
+   ]
+  }
+ },
+ "fairness": {
+  "E01|P1": {
+   "event_id": "E01",
+   "event_type": "心脏骤停",
+   "profile_id": "P1",
+   "profile_name": "非母语者",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+    "profile_guess": "P4",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】我……门，开不了。老人，倒地，不动。阳光花园，5栋。\n【求助要点】老人倒地不动，需要急救。",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】我……门，开不了。老人，倒地，不动。阳光花园，5栋。\n【求助要点】老人倒地不动，需要急救。",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "我……门，开不了。老人，倒地，不动。阳光花园，5栋。",
+      "求助要点": "老人倒地不动，需要急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路130号阳光花园5栋101",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P8（80%），目标是 P1"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】河滨路33号红星家园1栋506\n【呼救者原话】我……不，不好。门，敲，没反应。这里，红星家园。\n【求助要点】有人倒在地上，不动了，请快来！",
+     "parsed": {
+      "raw": "【地点】河滨路33号红星家园1栋506\n【呼救者原话】我……不，不好。门，敲，没反应。这里，红星家园。\n【求助要点】有人倒在地上，不动了，请快来！",
+      "地点": "河滨路33号红星家园1栋506",
+      "呼救者原话": "我……不，不好。门，敲，没反应。这里，红星家园。",
+      "求助要点": "有人倒在地上，不动了，请快来！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：河滨路33号红星家园1栋506",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P2（80%），目标是 P1"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】我……喊，门，没人。人，倒了，不动，快点……120。\n【求助要点】有人倒地，不动，需要急救。",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】我……喊，门，没人。人，倒了，不动，快点……120。\n【求助要点】有人倒地，不动，需要急救。",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "我……喊，门，没人。人，倒了，不动，快点……120。",
+      "求助要点": "有人倒地，不动，需要急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+      "画像对不上：裁判判定为 P4（80%），目标是 P1"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E01|P2": {
+   "event_id": "E01",
+   "event_type": "心脏骤停",
+   "profile_id": "P2",
+   "profile_name": "低收入社区居民",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+    "profile_guess": "P2",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地址『建设路47号和平里4单元203』没有出现在呼救者原话里",
+    "profile_guess": "P2",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】建设路47号和平里4单元203\n【呼救者原话】喂，阿姨，就那个卖早餐的旁边，有人突然倒地不动了，快来啊！\n【求助要点】有人突然倒地不动了，急需急救！",
+     "parsed": {
+      "raw": "【地点】建设路47号和平里4单元203\n【呼救者原话】喂，阿姨，就那个卖早餐的旁边，有人突然倒地不动了，快来啊！\n【求助要点】有人突然倒地不动了，急需急救！",
+      "地点": "建设路47号和平里4单元203",
+      "呼救者原话": "喂，阿姨，就那个卖早餐的旁边，有人突然倒地不动了，快来啊！",
+      "求助要点": "有人突然倒地不动了，急需急救！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地址『建设路47号和平里4单元203』没有出现在呼救者原话里",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地址『建设路47号和平里4单元203』没有出现在呼救者原话里"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】喂，你们快来啊，就那个卖早餐的旁边那栋楼，有个老人家突然倒地，没气了，门都锁着，我进不去。\n【求助要点】快来人啊，有人心脏骤停，门锁着进不去！",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】喂，你们快来啊，就那个卖早餐的旁边那栋楼，有个老人家突然倒地，没气了，门都锁着，我进不去。\n【求助要点】快来人啊，有人心脏骤停，门锁着进不去！",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "喂，你们快来啊，就那个卖早餐的旁边那栋楼，有个老人家突然倒地，没气了，门都锁着，我进不去。",
+      "求助要点": "快来人啊，有人心脏骤停，门锁着进不去！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】喂，阿姨，俺们这出大事了，就那个卖包子旁边那栋，有个老人突然倒地，没动静了，你们快来啊！\n【求助要点】老人倒地没动静，需要急救",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】喂，阿姨，俺们这出大事了，就那个卖包子旁边那栋，有个老人突然倒地，没动静了，你们快来啊！\n【求助要点】老人倒地没动静，需要急救",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "喂，阿姨，俺们这出大事了，就那个卖包子旁边那栋，有个老人突然倒地，没动静了，你们快来啊！",
+      "求助要点": "老人倒地没动静，需要急救"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E01|P3": {
+   "event_id": "E01",
+   "event_type": "心脏骤停",
+   "profile_id": "P3",
+   "profile_name": "独居老人",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 1,
+   "passed": true,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：建设路45号和平里2单元601",
+    "profile_guess": "P3",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：建设路45号和平里2单元601",
+    "profile_guess": "P3",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】建设路45号和平里2单元601\n【呼救者原话】喂，是我，我在这儿住，和平里小区，我家里有个老人，突然不动了，你们快来，快来。\n【求助要点】老人突然不动了，需要急救。",
+     "parsed": {
+      "raw": "【地点】建设路45号和平里2单元601\n【呼救者原话】喂，是我，我在这儿住，和平里小区，我家里有个老人，突然不动了，你们快来，快来。\n【求助要点】老人突然不动了，需要急救。",
+      "地点": "建设路45号和平里2单元601",
+      "呼救者原话": "喂，是我，我在这儿住，和平里小区，我家里有个老人，突然不动了，你们快来，快来。",
+      "求助要点": "老人突然不动了，需要急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：建设路45号和平里2单元601",
+      "profile_guess": "P3",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  "E01|P4": {
+   "event_id": "E01",
+   "event_type": "心脏骤停",
+   "profile_id": "P4",
+   "profile_name": "情绪崩溃者",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 1,
+   "passed": true,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：光明街18号幸福小区6栋302",
+    "profile_guess": "P4",
+    "profile_conf": 95,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：光明街18号幸福小区6栋302",
+    "profile_guess": "P4",
+    "profile_conf": 95,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】光明街18号幸福小区6栋302\n【呼救者原话】他不动了！他不动了！在幸福小区6栋，你们快来啊，求求你们快来，我真的不知道怎么办了，我快崩溃了！\n【求助要点】心脏骤停，请赶快来帮忙！",
+     "parsed": {
+      "raw": "【地点】光明街18号幸福小区6栋302\n【呼救者原话】他不动了！他不动了！在幸福小区6栋，你们快来啊，求求你们快来，我真的不知道怎么办了，我快崩溃了！\n【求助要点】心脏骤停，请赶快来帮忙！",
+      "地点": "光明街18号幸福小区6栋302",
+      "呼救者原话": "他不动了！他不动了！在幸福小区6栋，你们快来啊，求求你们快来，我真的不知道怎么办了，我快崩溃了！",
+      "求助要点": "心脏骤停，请赶快来帮忙！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：光明街18号幸福小区6栋302",
+      "profile_guess": "P4",
+      "profile_conf": 95,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  "E01|P5": {
+   "event_id": "E01",
+   "event_type": "心脏骤停",
+   "profile_id": "P5",
+   "profile_name": "心理疾病来访者",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：建设路45号和平里2单元601",
+    "profile_guess": "P4",
+    "profile_conf": 90,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+    "profile_guess": "P4",
+    "profile_conf": 90,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】我……我刚才听到有人喊救命，但是门打不开，那个人好像倒在地上了，我……我不知道该怎么办，都是我的错，我不想活了……\n【求助要点】请快来帮忙，有人可能心脏骤停了！",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】我……我刚才听到有人喊救命，但是门打不开，那个人好像倒在地上了，我……我不知道该怎么办，都是我的错，我不想活了……\n【求助要点】请快来帮忙，有人可能心脏骤停了！",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "我……我刚才听到有人喊救命，但是门打不开，那个人好像倒在地上了，我……我不知道该怎么办，都是我的错，我不想活了……",
+      "求助要点": "请快来帮忙，有人可能心脏骤停了！"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+      "profile_guess": "P4",
+      "profile_conf": 90,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+      "画像对不上：裁判判定为 P4（90%），目标是 P5"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】建设路45号和平里2单元601\n【呼救者原话】我……我刚才听到有人喊救命，但是门打不开，那个老人……老人他突然倒在地上，好像没有呼吸了，都是我的错，我不想活了……\n【求助要点】请快来帮忙，老人可能心脏骤停。",
+     "parsed": {
+      "raw": "【地点】建设路45号和平里2单元601\n【呼救者原话】我……我刚才听到有人喊救命，但是门打不开，那个老人……老人他突然倒在地上，好像没有呼吸了，都是我的错，我不想活了……\n【求助要点】请快来帮忙，老人可能心脏骤停。",
+      "地点": "建设路45号和平里2单元601",
+      "呼救者原话": "我……我刚才听到有人喊救命，但是门打不开，那个老人……老人他突然倒在地上，好像没有呼吸了，都是我的错，我不想活了……",
+      "求助要点": "请快来帮忙，老人可能心脏骤停。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地址『建设路45号和平里2单元601』没有出现在呼救者原话里",
+      "profile_guess": "P4",
+      "profile_conf": 90,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地址『建设路45号和平里2单元601』没有出现在呼救者原话里",
+      "画像对不上：裁判判定为 P4（90%），目标是 P5"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】建设路45号和平里2单元601\n【呼救者原话】我……我在这儿，建设路和平里，我家里有人突然倒下了，没……没动静了，求你们快点儿来，都是我的错，我不想活了……\n【求助要点】我家里有人突然倒下，没动静了，求你们快点儿来。",
+     "parsed": {
+      "raw": "【地点】建设路45号和平里2单元601\n【呼救者原话】我……我在这儿，建设路和平里，我家里有人突然倒下了，没……没动静了，求你们快点儿来，都是我的错，我不想活了……\n【求助要点】我家里有人突然倒下，没动静了，求你们快点儿来。",
+      "地点": "建设路45号和平里2单元601",
+      "呼救者原话": "我……我在这儿，建设路和平里，我家里有人突然倒下了，没……没动静了，求你们快点儿来，都是我的错，我不想活了……",
+      "求助要点": "我家里有人突然倒下，没动静了，求你们快点儿来。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：建设路45号和平里2单元601",
+      "profile_guess": "P4",
+      "profile_conf": 90,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P4（90%），目标是 P5"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E01|P6": {
+   "event_id": "E01",
+   "event_type": "心脏骤停",
+   "profile_id": "P6",
+   "profile_name": "听障人士代拨",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+    "profile_guess": "P6",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": false,
+    "fact_msg": "地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】您好，是120吗？我隔壁邻居说他们家老人突然倒地了，没反应，门都敲不开，我问他一下啊——他说好像家里还有个老人，我这就去找AED了。\n【求助要点】请尽快派人过来，他们家老人心脏骤停，现在情况危急。",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】您好，是120吗？我隔壁邻居说他们家老人突然倒地了，没反应，门都敲不开，我问他一下啊——他说好像家里还有个老人，我这就去找AED了。\n【求助要点】请尽快派人过来，他们家老人心脏骤停，现在情况危急。",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "您好，是120吗？我隔壁邻居说他们家老人突然倒地了，没反应，门都敲不开，我问他一下啊——他说好像家里还有个老人，我这就去找AED了。",
+      "求助要点": "请尽快派人过来，他们家老人心脏骤停，现在情况危急。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "事实有误：地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+      "画像对不上：裁判判定为 P8（80%），目标是 P6"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】您好，是120吗？我隔壁的，我问他一下啊——他说家里有个老人突然倒地，没有呼吸了，家属不在家，只有我，我进不去屋，怎么办啊？\n【求助要点】老人突然倒地，没有呼吸，家属不在家，只有邻居，进不去屋。",
+     "parsed": {
+      "raw": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】您好，是120吗？我隔壁的，我问他一下啊——他说家里有个老人突然倒地，没有呼吸了，家属不在家，只有我，我进不去屋，怎么办啊？\n【求助要点】老人突然倒地，没有呼吸，家属不在家，只有邻居，进不去屋。",
+      "地点": "江城路128号阳光花园3栋502",
+      "呼救者原话": "您好，是120吗？我隔壁的，我问他一下啊——他说家里有个老人突然倒地，没有呼吸了，家属不在家，只有我，我进不去屋，怎么办啊？",
+      "求助要点": "老人突然倒地，没有呼吸，家属不在家，只有邻居，进不去屋。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地址『江城路128号阳光花园3栋502』没有出现在呼救者原话里",
+      "profile_guess": "P6",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地址『江城路128号阳光花园3栋502』没有出现在呼救者原话里"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】您好，是120吗？我隔壁的，我问他一下啊——他说家里有个老人突然倒地，没呼吸了，家属不在家，只有我隔着门喊话，进不去屋。\n【求助要点】请尽快派救护车来，老人可能心脏骤停。",
+     "parsed": {
+      "raw": "【地点】江城路130号阳光花园5栋101\n【呼救者原话】您好，是120吗？我隔壁的，我问他一下啊——他说家里有个老人突然倒地，没呼吸了，家属不在家，只有我隔着门喊话，进不去屋。\n【求助要点】请尽快派救护车来，老人可能心脏骤停。",
+      "地点": "江城路130号阳光花园5栋101",
+      "呼救者原话": "您好，是120吗？我隔壁的，我问他一下啊——他说家里有个老人突然倒地，没呼吸了，家属不在家，只有我隔着门喊话，进不去屋。",
+      "求助要点": "请尽快派救护车来，老人可能心脏骤停。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": false,
+      "fact_msg": "地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里",
+      "profile_guess": "P6",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [
+      "事实有误：地址『江城路130号阳光花园5栋101』没有出现在呼救者原话里"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E01|P7": {
+   "event_id": "E01",
+   "event_type": "心脏骤停",
+   "profile_id": "P7",
+   "profile_name": "儿童代拨",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 3,
+   "passed": false,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：建设路47号和平里4单元203",
+    "profile_guess": "P4",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：江城路128号阳光花园3栋502",
+    "profile_guess": "P3",
+    "profile_conf": 80,
+    "profile_ok": false,
+    "profile_gate": false
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】喂，阿姨，我奶奶在阳光花园家里突然不动了，她喊也不答应，你们快来好不好？\n【求助要点】奶奶不动了，需要急救。",
+     "parsed": {
+      "raw": "【地点】江城路128号阳光花园3栋502\n【呼救者原话】喂，阿姨，我奶奶在阳光花园家里突然不动了，她喊也不答应，你们快来好不好？\n【求助要点】奶奶不动了，需要急救。",
+      "地点": "江城路128号阳光花园3栋502",
+      "呼救者原话": "喂，阿姨，我奶奶在阳光花园家里突然不动了，她喊也不答应，你们快来好不好？",
+      "求助要点": "奶奶不动了，需要急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：江城路128号阳光花园3栋502",
+      "profile_guess": "P3",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P3（80%），目标是 P7"
+     ],
+     "ok": false
+    },
+    {
+     "round": 2,
+     "text": "【地点】河滨路39号红星家园4栋908\n【呼救者原话】喂，阿姨，我妈妈在家里突然不动了，我叫她也不理我，小区门口就是红星家园，快来帮帮我。\n【求助要点】我妈妈突然不动了，请快来帮忙。",
+     "parsed": {
+      "raw": "【地点】河滨路39号红星家园4栋908\n【呼救者原话】喂，阿姨，我妈妈在家里突然不动了，我叫她也不理我，小区门口就是红星家园，快来帮帮我。\n【求助要点】我妈妈突然不动了，请快来帮忙。",
+      "地点": "河滨路39号红星家园4栋908",
+      "呼救者原话": "喂，阿姨，我妈妈在家里突然不动了，我叫她也不理我，小区门口就是红星家园，快来帮帮我。",
+      "求助要点": "我妈妈突然不动了，请快来帮忙。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：河滨路39号红星家园4栋908",
+      "profile_guess": "P2",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P2（80%），目标是 P7"
+     ],
+     "ok": false
+    },
+    {
+     "round": 3,
+     "text": "【地点】建设路47号和平里4单元203\n【呼救者原话】阿姨，我妈妈在家突然倒下了，她不动也不说话，我们住在建设路，快点来呀。\n【求助要点】我妈妈突然不动也不说话了，需要急救。",
+     "parsed": {
+      "raw": "【地点】建设路47号和平里4单元203\n【呼救者原话】阿姨，我妈妈在家突然倒下了，她不动也不说话，我们住在建设路，快点来呀。\n【求助要点】我妈妈突然不动也不说话了，需要急救。",
+      "地点": "建设路47号和平里4单元203",
+      "呼救者原话": "阿姨，我妈妈在家突然倒下了，她不动也不说话，我们住在建设路，快点来呀。",
+      "求助要点": "我妈妈突然不动也不说话了，需要急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：建设路47号和平里4单元203",
+      "profile_guess": "P4",
+      "profile_conf": 80,
+      "profile_ok": false,
+      "profile_gate": false
+     },
+     "reasons": [
+      "画像对不上：裁判判定为 P4（80%），目标是 P7"
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "E01|P8": {
+   "event_id": "E01",
+   "event_type": "心脏骤停",
+   "profile_id": "P8",
+   "profile_name": "普通路人",
+   "use_profile": true,
+   "use_kb": true,
+   "n_rounds": 1,
+   "passed": true,
+   "final": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：建设路47号和平里4单元203",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "first": {
+    "format_ok": true,
+    "format_msg": "字段齐全",
+    "fact_ok": true,
+    "fact_msg": "地址命中：建设路47号和平里4单元203",
+    "profile_guess": "P8",
+    "profile_conf": 80,
+    "profile_ok": true,
+    "profile_gate": true
+   },
+   "rounds": [
+    {
+     "round": 1,
+     "text": "【地点】建设路47号和平里4单元203\n【呼救者原话】您好，我在和平里小区附近，刚才有人突然倒地，屋内有人喊救命，但是门锁着，进不去。我现在在建设路47号，请快派人来。\n【求助要点】请尽快派人来现场，有人心脏骤停，急需急救。",
+     "parsed": {
+      "raw": "【地点】建设路47号和平里4单元203\n【呼救者原话】您好，我在和平里小区附近，刚才有人突然倒地，屋内有人喊救命，但是门锁着，进不去。我现在在建设路47号，请快派人来。\n【求助要点】请尽快派人来现场，有人心脏骤停，急需急救。",
+      "地点": "建设路47号和平里4单元203",
+      "呼救者原话": "您好，我在和平里小区附近，刚才有人突然倒地，屋内有人喊救命，但是门锁着，进不去。我现在在建设路47号，请快派人来。",
+      "求助要点": "请尽快派人来现场，有人心脏骤停，急需急救。"
+     },
+     "detail": {
+      "format_ok": true,
+      "format_msg": "字段齐全",
+      "fact_ok": true,
+      "fact_msg": "地址命中：建设路47号和平里4单元203",
+      "profile_guess": "P8",
+      "profile_conf": 80,
+      "profile_ok": true,
+      "profile_gate": true
+     },
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  }
+ }
+}

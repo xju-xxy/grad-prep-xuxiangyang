@@ -1,0 +1,647 @@
+[
+ {
+  "id": "metagpt",
+  "name": "MetaGPT",
+  "tag": "综述点名",
+  "desc": "把软件公司当成一个多智能体组织，给每个 Agent 分配产品经理、架构师、项目经理、工程师这类标准角色，角色是写死的。它靠一份标准作业流程（SOP）把一句话需求拆成具体交付物，Agent 之间通过一个共享的消息池交换结构化文档。综述把它当成结构化协作加共享消息池的标杆。",
+  "pred": {
+   "environment_interface": {
+    "label": "None",
+    "evidence": "描述中没有提及Agent与外部世界的交互，仅涉及Agent之间的文本交换。"
+   },
+   "agent_profiling": {
+    "label": "Pre-defined",
+    "evidence": "描述中提到每个Agent分配了标准角色，如产品经理、架构师等，这些角色是预先定义的。"
+   },
+   "agent_communication": {
+    "paradigm": [
+     "合作"
+    ],
+    "structure": [
+     "共享消息池"
+    ],
+    "evidence": "描述中提到Agent之间通过共享的消息池交换结构化文档，这表明它们是合作且使用共享消息池进行通信的。"
+   },
+   "capability_acquisition": {
+    "feedback": [
+     "无"
+    ],
+    "mechanism": [],
+    "evidence": "描述中没有提及Agent的能力获取方式，因此反馈来源为无，生长机制未提及。"
+   },
+   "pitfalls": {
+    "multimodal_gap": {
+     "touched": false,
+     "note": "描述中没有提及多模态环境。"
+    },
+    "hallucination_cascade": {
+     "touched": false,
+     "note": "描述中没有提及假消息传播的问题。"
+    },
+    "group_optimization": {
+     "touched": false,
+     "note": "描述中没有提及群体优化。"
+    },
+    "benchmark_gap": {
+     "touched": false,
+     "note": "描述中没有提及应急/灾害场景的benchmark。"
+    }
+   }
+  },
+  "raw": "{\n  \"environment_interface\": {\n    \"label\": \"None\",\n    \"evidence\": \"描述中没有提及Agent与外部世界的交互，仅涉及Agent之间的文本交换。\"\n  },\n  \"agent_profiling\": {\n    \"label\": \"Pre-defined\",\n    \"evidence\": \"描述中提到每个Agent分配了标准角色，如产品经理、架构师等，这些角色是预先定义的。\"\n  },\n  \"agent_communication\": {\n    \"paradigm\": [\"合作\"],\n    \"structure\": [\"共享消息池\"],\n    \"evidence\": \"描述中提到Agent之间通过共享的消息池交换结构化文档，这表明它们是合作且使用共享消息池进行通信的。\"\n  },\n  \"capability_acquisition\": {\n    \"feedback\": [\"无\"],\n    \"mechanism\": [],\n    \"evidence\": \"描述中没有提及Agent的能力获取方式，因此反馈来源为无，生长机制未提及。\"\n  },\n  \"pitfalls\": {\n    \"multimodal_gap\": {\"touched\": false, \"note\": \"描述中没有提及多模态环境。\"},\n    \"hallucination_cascade\": {\"touched\": false, \"note\": \"描述中没有提及假消息传播的问题。\"},\n    \"group_optimization\": {\"touched\": false, \"note\": \"描述中没有提及群体优化。\"},\n    \"benchmark_gap\": {\"touched\": false, \"note\": \"描述中没有提及应急/灾害场景的benchmark。\"}\n  }\n}"
+ },
+ {
+  "id": "chatdev",
+  "name": "ChatDev",
+  "tag": "综述点名",
+  "desc": "同样是软件公司范式，角色更聚焦，有 CEO、CTO、程序员、测试员等。它用聊天链让两个角色成对多轮对话，依次走完设计、编码、测试、写文档几个阶段，中间还有教练式的指令引导。整体是串行推进的合作流程。",
+  "pred": {
+   "environment_interface": {
+    "label": "Sandbox",
+    "evidence": "描述中提到使用聊天链进行角色之间的对话，这表明Agent在一个虚拟环境中进行交互，而非真实的物理世界。"
+   },
+   "agent_profiling": {
+    "label": "Pre-defined",
+    "evidence": "描述中明确提到了角色如CEO、CTO、程序员、测试员等，这些角色是预先定义好的。"
+   },
+   "agent_communication": {
+    "paradigm": [
+     "合作"
+    ],
+    "structure": [
+     "分层"
+    ],
+    "evidence": "描述中提到角色之间进行多轮对话，并依次完成设计、编码、测试、写文档等阶段，这表明存在合作范式和分层结构。"
+   },
+   "capability_acquisition": {
+    "feedback": [
+     "其他Agent",
+     "人类"
+    ],
+    "mechanism": [
+     "记忆机制"
+    ],
+    "evidence": "描述中提到有教练式的指令引导，这表明Agent可能会从其他Agent和人类那里获得反馈，同时可能使用记忆机制来存储信息。"
+   },
+   "pitfalls": {
+    "multimodal_gap": {
+     "touched": false,
+     "note": "描述中没有提及多模态环境。"
+    },
+    "hallucination_cascade": {
+     "touched": false,
+     "note": "描述中没有提及假消息传播的问题。"
+    },
+    "group_optimization": {
+     "touched": false,
+     "note": "描述中没有提及群体优化。"
+    },
+    "benchmark_gap": {
+     "touched": false,
+     "note": "描述中没有提及应急/灾害场景的benchmark。"
+    }
+   }
+  },
+  "raw": "{\n  \"environment_interface\": {\n    \"label\": \"Sandbox\",\n    \"evidence\": \"描述中提到使用聊天链进行角色之间的对话，这表明Agent在一个虚拟环境中进行交互，而非真实的物理世界。\"\n  },\n  \"agent_profiling\": {\n    \"label\": \"Pre-defined\",\n    \"evidence\": \"描述中明确提到了角色如CEO、CTO、程序员、测试员等，这些角色是预先定义好的。\"\n  },\n  \"agent_communication\": {\n    \"paradigm\": [\"合作\"],\n    \"structure\": [\"分层\"],\n    \"evidence\": \"描述中提到角色之间进行多轮对话，并依次完成设计、编码、测试、写文档等阶段，这表明存在合作范式和分层结构。\"\n  },\n  \"capability_acquisition\": {\n    \"feedback\": [\"其他Agent\", \"人类\"],\n    \"mechanism\": [\"记忆机制\"],\n    \"evidence\": \"描述中提到有教练式的指令引导，这表明Agent可能会从其他Agent和人类那里获得反馈，同时可能使用记忆机制来存储信息。\"\n  },\n  \"pitfalls\": {\n    \"multimodal_gap\": {\"touched\": false, \"note\": \"描述中没有提及多模态环境。\"},\n    \"hallucination_cascade\": {\"touched\": false, \"note\": \"描述中没有提及假消息传播的问题。\"},\n    \"group_optimization\": {\"touched\": false, \"note\": \"描述中没有提及群体优化。\"},\n    \"benchmark_gap\": {\"touched\": false, \"note\": \"描述中没有提及应急/灾害场景的benchmark。\"}\n  }\n}"
+ },
+ {
+  "id": "camel",
+  "name": "CAMEL",
+  "tag": "综述点名",
+  "desc": "提出角色扮演式的 Agent 框架，先用一段提示让模型自己生成两个互补的角色，比如一个 Python 程序员配一个股票交易员。然后让这两个角色进行指令和跟随式的自主多轮对话来完成任务，人设是模型临时生成的，通信是去中心化的双人对话，能力靠双方互相给反馈长起来。",
+  "pred": {
+   "environment_interface": {
+    "label": "None",
+    "evidence": "描述中没有提及 Agent 与外部世界的交互，仅涉及 Agent 之间的文本交流。"
+   },
+   "agent_profiling": {
+    "label": "Model-Generated",
+    "evidence": "描述中提到 '先用一段提示让模型自己生成两个互补的角色'，表明角色是由模型临时生成的。"
+   },
+   "agent_communication": {
+    "paradigm": [
+     "合作"
+    ],
+    "structure": [
+     "去中心化"
+    ],
+    "evidence": "描述中提到 '让这两个角色进行指令和跟随式的自主多轮对话来完成任务'，表明存在合作范式和去中心化结构。"
+   },
+   "capability_acquisition": {
+    "feedback": [
+     "其他Agent"
+    ],
+    "mechanism": [
+     "记忆机制"
+    ],
+    "evidence": "描述中提到 '能力靠双方互相给反馈长起来'，表明反馈来源于其他 Agent，且可能涉及记忆机制。"
+   },
+   "pitfalls": {
+    "multimodal_gap": {
+     "touched": false,
+     "note": "描述中没有提及多模态环境，因此未触及多模态空白问题。"
+    },
+    "hallucination_cascade": {
+     "touched": false,
+     "note": "描述中没有提及假消息传播问题，因此未触及幻觉级联问题。"
+    },
+    "group_optimization": {
+     "touched": false,
+     "note": "描述中没有提及群体优化问题，因此未触及群体优化缺失问题。"
+    },
+    "benchmark_gap": {
+     "touched": false,
+     "note": "描述中没有提及应急/灾害场景的基准问题，因此未触及缺应急 benchmark 问题。"
+    }
+   }
+  },
+  "raw": "{\n  \"environment_interface\": {\n    \"label\": \"None\",\n    \"evidence\": \"描述中没有提及 Agent 与外部世界的交互，仅涉及 Agent 之间的文本交流。\"\n  },\n  \"agent_profiling\": {\n    \"label\": \"Model-Generated\",\n    \"evidence\": \"描述中提到 '先用一段提示让模型自己生成两个互补的角色'，表明角色是由模型临时生成的。\"\n  },\n  \"agent_communication\": {\n    \"paradigm\": [\"合作\"],\n    \"structure\": [\"去中心化\"],\n    \"evidence\": \"描述中提到 '让这两个角色进行指令和跟随式的自主多轮对话来完成任务'，表明存在合作范式和去中心化结构。\"\n  },\n  \"capability_acquisition\": {\n    \"feedback\": [\"其他Agent\"],\n    \"mechanism\": [\"记忆机制\"],\n    \"evidence\": \"描述中提到 '能力靠双方互相给反馈长起来'，表明反馈来源于其他 Agent，且可能涉及记忆机制。\"\n  },\n  \"pitfalls\": {\n    \"multimodal_gap\": {\n      \"touched\": false,\n      \"note\": \"描述中没有提及多模态环境，因此未触及多模态空白问题。\"\n    },\n    \"hallucination_cascade\": {\n      \"touched\": false,\n      \"note\": \"描述中没有提及假消息传播问题，因此未触及幻觉级联问题。\"\n    },\n    \"group_optimization\": {\n      \"touched\": false,\n      \"note\": \"描述中没有提及群体优化问题，因此未触及群体优化缺失问题。\"\n    },\n    \"benchmark_gap\": {\n      \"touched\": false,\n      \"note\": \"描述中没有提及应急/灾害场景的基准问题，因此未触及缺应急 benchmark 问题。\"\n    }\n  }\n}"
+ },
+ {
+  "id": "autogen",
+  "name": "AutoGen",
+  "tag": "综述点名",
+  "desc": "微软的可对话多智能体框架，把大模型、工具、人类都封装成可对话的 Agent，通过群聊或两两对话来编排任务，还支持人类中途介入。通信结构可以是中心化的群聊管理员，也可以去中心化，是对话即计算这个思路做成基础设施的代表。",
+  "pred": {
+   "environment_interface": {
+    "label": "None",
+    "evidence": "描述中没有提到 Agent 与外部世界（如物理世界）的交互，只是通过对话来编排任务。"
+   },
+   "agent_profiling": {
+    "label": "Pre-defined",
+    "evidence": "描述中没有提到 Agent 角色是由模型生成或从数据中提取的，而是提到大模型、工具和人类都被封装成 Agent，这暗示角色可能是预先定义的。"
+   },
+   "agent_communication": {
+    "paradigm": [
+     "合作",
+     "辩论"
+    ],
+    "structure": [
+     "中心化",
+     "去中心化"
+    ],
+    "evidence": "描述中提到 Agent 通过群聊或两两对话来编排任务，这表明存在合作和辩论的通信范式。同时，通信结构可以是中心化的群聊管理员，也可以去中心化，即对话即计算。"
+   },
+   "capability_acquisition": {
+    "feedback": [
+     "其他Agent",
+     "人类"
+    ],
+    "mechanism": [
+     "记忆机制"
+    ],
+    "evidence": "描述中提到人类可以中途介入，这表明人类可以提供反馈。同时，没有提到 Agent 有自我进化的能力或动态生成新 Agent 的机制，但提到 Agent 可以记忆和检索信息，这暗示了记忆机制的存在。"
+   },
+   "pitfalls": {
+    "multimodal_gap": {
+     "touched": false,
+     "note": "描述中没有提到多模态环境的使用。"
+    },
+    "hallucination_cascade": {
+     "touched": false,
+     "note": "描述中没有提到假消息传播的问题。"
+    },
+    "group_optimization": {
+     "touched": false,
+     "note": "描述中没有提到群体层面的协同优化。"
+    },
+    "benchmark_gap": {
+     "touched": false,
+     "note": "描述中没有提到应急/灾害场景的基准问题。"
+    }
+   }
+  },
+  "raw": "{\n  \"environment_interface\": {\n    \"label\": \"None\",\n    \"evidence\": \"描述中没有提到 Agent 与外部世界（如物理世界）的交互，只是通过对话来编排任务。\"\n  },\n  \"agent_profiling\": {\n    \"label\": \"Pre-defined\",\n    \"evidence\": \"描述中没有提到 Agent 角色是由模型生成或从数据中提取的，而是提到大模型、工具和人类都被封装成 Agent，这暗示角色可能是预先定义的。\"\n  },\n  \"agent_communication\": {\n    \"paradigm\": [\"合作\", \"辩论\"],\n    \"structure\": [\"中心化\", \"去中心化\"],\n    \"evidence\": \"描述中提到 Agent 通过群聊或两两对话来编排任务，这表明存在合作和辩论的通信范式。同时，通信结构可以是中心化的群聊管理员，也可以去中心化，即对话即计算。\"\n  },\n  \"capability_acquisition\": {\n    \"feedback\": [\"其他Agent\", \"人类\"],\n    \"mechanism\": [\"记忆机制\"],\n    \"evidence\": \"描述中提到人类可以中途介入，这表明人类可以提供反馈。同时，没有提到 Agent 有自我进化的能力或动态生成新 Agent 的机制，但提到 Agent 可以记忆和检索信息，这暗示了记忆机制的存在。\"\n  },\n  \"pitfalls\": {\n    \"multimodal_gap\": {\n      \"touched\": false,\n      \"note\": \"描述中没有提到多模态环境的使用。\"\n    },\n    \"hallucination_cascade\": {\n      \"touched\": false,\n      \"note\": \"描述中没有提到假消息传播的问题。\"\n    },\n    \"group_optimization\": {\n      \"touched\": false,\n      \"note\": \"描述中没有提到群体层面的协同优化。\"\n    },\n    \"benchmark_gap\": {\n      \"touched\": false,\n      \"note\": \"描述中没有提到应急/灾害场景的基准问题。\"\n    }\n  }\n}"
+ },
+ {
+  "id": "debate",
+  "name": "多智能体辩论（Du et al.）",
+  "tag": "综述点名",
+  "desc": "让多个模型实例对同一个问题各自给出答案和推理过程，再互相看对方的答案进行多轮反驳，最后收敛或靠多数投票给出一个更可信的答案。目的是提升事实性、减少幻觉，通信范式是辩论，一般没有外部环境。",
+  "pred": {
+   "environment_interface": {
+    "label": "None",
+    "evidence": "一般没有外部环境"
+   },
+   "agent_profiling": {
+    "label": "Model-Generated",
+    "evidence": "让多个模型实例对同一个问题各自给出答案和推理过程"
+   },
+   "agent_communication": {
+    "paradigm": [
+     "辩论"
+    ],
+    "structure": [
+     "去中心化"
+    ],
+    "evidence": "通信范式是辩论，一般没有外部环境"
+   },
+   "capability_acquisition": {
+    "feedback": [
+     "其他Agent"
+    ],
+    "mechanism": [
+     "记忆机制"
+    ],
+    "evidence": "再互相看对方的答案进行多轮反驳"
+   },
+   "pitfalls": {
+    "multimodal_gap": {
+     "touched": false,
+     "note": "描述中没有提及多模态环境"
+    },
+    "hallucination_cascade": {
+     "touched": false,
+     "note": "描述中没有提及幻觉级联问题"
+    },
+    "group_optimization": {
+     "touched": false,
+     "note": "描述中没有提及群体优化"
+    },
+    "benchmark_gap": {
+     "touched": false,
+     "note": "描述中没有提及应急benchmark"
+    }
+   }
+  },
+  "raw": "{\n  \"environment_interface\": {\n    \"label\": \"None\",\n    \"evidence\": \"一般没有外部环境\"\n  },\n  \"agent_profiling\": {\n    \"label\": \"Model-Generated\",\n    \"evidence\": \"让多个模型实例对同一个问题各自给出答案和推理过程\"\n  },\n  \"agent_communication\": {\n    \"paradigm\": [\"辩论\"],\n    \"structure\": [\"去中心化\"],\n    \"evidence\": \"通信范式是辩论，一般没有外部环境\"\n  },\n  \"capability_acquisition\": {\n    \"feedback\": [\"其他Agent\"],\n    \"mechanism\": [\"记忆机制\"],\n    \"evidence\": \"再互相看对方的答案进行多轮反驳\"\n  },\n  \"pitfalls\": {\n    \"multimodal_gap\": {\n      \"touched\": false,\n      \"note\": \"描述中没有提及多模态环境\"\n    },\n    \"hallucination_cascade\": {\n      \"touched\": false,\n      \"note\": \"描述中没有提及幻觉级联问题\"\n    },\n    \"group_optimization\": {\n      \"touched\": false,\n      \"note\": \"描述中没有提及群体优化\"\n    },\n    \"benchmark_gap\": {\n      \"touched\": false,\n      \"note\": \"描述中没有提及应急benchmark\"\n    }\n  }\n}"
+ },
+ {
+  "id": "chateval",
+  "name": "ChatEval",
+  "tag": "综述点名",
+  "desc": "把多个评审员组成一个团队来自动评估文本质量，几个 Agent 用不同的人设风格对同一篇生成文本打分并互相辩论，模拟人类评审团。属于辩论式互评，没有外部环境。",
+  "pred": {
+   "environment_interface": {
+    "label": "None",
+    "evidence": "属于辩论式互评，没有外部环境。"
+   },
+   "agent_profiling": {
+    "label": "Pre-defined",
+    "evidence": "几个 Agent 用不同的人设风格对同一篇生成文本打分并互相辩论，模拟人类评审团。"
+   },
+   "agent_communication": {
+    "paradigm": [
+     "辩论"
+    ],
+    "structure": [
+     "去中心化"
+    ],
+    "evidence": "几个 Agent 用不同的人设风格对同一篇生成文本打分并互相辩论，模拟人类评审团。"
+   },
+   "capability_acquisition": {
+    "feedback": [
+     "其他Agent"
+    ],
+    "mechanism": [],
+    "evidence": "几个 Agent 用不同的人设风格对同一篇生成文本打分并互相辩论，模拟人类评审团。"
+   },
+   "pitfalls": {
+    "multimodal_gap": {
+     "touched": false,
+     "note": "描述中没有提及多模态环境。"
+    },
+    "hallucination_cascade": {
+     "touched": false,
+     "note": "描述中没有提及假消息传播问题。"
+    },
+    "group_optimization": {
+     "touched": false,
+     "note": "描述中没有提及群体优化。"
+    },
+    "benchmark_gap": {
+     "touched": false,
+     "note": "描述中没有提及应急/灾害场景的基准。"
+    }
+   }
+  },
+  "raw": "{\n  \"environment_interface\": {\n    \"label\": \"None\",\n    \"evidence\": \"属于辩论式互评，没有外部环境。\"\n  },\n  \"agent_profiling\": {\n    \"label\": \"Pre-defined\",\n    \"evidence\": \"几个 Agent 用不同的人设风格对同一篇生成文本打分并互相辩论，模拟人类评审团。\"\n  },\n  \"agent_communication\": {\n    \"paradigm\": [\"辩论\"],\n    \"structure\": [\"去中心化\"],\n    \"evidence\": \"几个 Agent 用不同的人设风格对同一篇生成文本打分并互相辩论，模拟人类评审团。\"\n  },\n  \"capability_acquisition\": {\n    \"feedback\": [\"其他Agent\"],\n    \"mechanism\": [],\n    \"evidence\": \"几个 Agent 用不同的人设风格对同一篇生成文本打分并互相辩论，模拟人类评审团。\"\n  },\n  \"pitfalls\": {\n    \"multimodal_gap\": {\n      \"touched\": false,\n      \"note\": \"描述中没有提及多模态环境。\"\n    },\n    \"hallucination_cascade\": {\n      \"touched\": false,\n      \"note\": \"描述中没有提及假消息传播问题。\"\n    },\n    \"group_optimization\": {\n      \"touched\": false,\n      \"note\": \"描述中没有提及群体优化。\"\n    },\n    \"benchmark_gap\": {\n      \"touched\": false,\n      \"note\": \"描述中没有提及应急/灾害场景的基准。\"\n    }\n  }\n}"
+ },
+ {
+  "id": "werewolf",
+  "name": "狼人杀（Werewolf）",
+  "tag": "综述点名",
+  "desc": "让大模型玩狼人杀这类谋杀之谜游戏，玩家分成村民和狼人两个阵营，白天公开讨论投票、夜晚各自行动，靠撒谎、怀疑和结盟来博弈。通信范式是竞争对抗，结构上有一个中心化的主持人主持流程，玩家轮流公开发言。",
+  "pred": {
+   "environment_interface": {
+    "label": "Sandbox",
+    "evidence": "描述中提到让大模型玩狼人杀游戏，这表明是在一个模拟环境中进行，而非真实的物理世界。"
+   },
+   "agent_profiling": {
+    "label": "Pre-defined",
+    "evidence": "描述中提到玩家分成村民和狼人两个阵营，这些角色是预先定义好的。"
+   },
+   "agent_communication": {
+    "paradigm": [
+     "竞争"
+    ],
+    "structure": [
+     "中心化"
+    ],
+    "evidence": "描述中提到通信范式是竞争对抗，结构上有一个中心化的主持人主持流程。"
+   },
+   "capability_acquisition": {
+    "feedback": [
+     "其他Agent",
+     "人类"
+    ],
+    "mechanism": [
+     "记忆机制"
+    ],
+    "evidence": "描述中提到玩家通过撒谎、怀疑和结盟来博弈，这表明玩家需要从其他玩家那里获取反馈，并且可能需要记忆机制来记住游戏中的信息。"
+   },
+   "pitfalls": {
+    "multimodal_gap": {
+     "touched": false,
+     "note": "描述中没有提及多模态环境。"
+    },
+    "hallucination_cascade": {
+     "touched": false,
+     "note": "描述中没有提及假消息传播的问题。"
+    },
+    "group_optimization": {
+     "touched": false,
+     "note": "描述中没有提及群体优化的问题。"
+    },
+    "benchmark_gap": {
+     "touched": false,
+     "note": "描述中没有提及应急/灾害场景的benchmark。"
+    }
+   }
+  },
+  "raw": "{\n  \"environment_interface\": {\n    \"label\": \"Sandbox\",\n    \"evidence\": \"描述中提到让大模型玩狼人杀游戏，这表明是在一个模拟环境中进行，而非真实的物理世界。\"\n  },\n  \"agent_profiling\": {\n    \"label\": \"Pre-defined\",\n    \"evidence\": \"描述中提到玩家分成村民和狼人两个阵营，这些角色是预先定义好的。\"\n  },\n  \"agent_communication\": {\n    \"paradigm\": [\"竞争\"],\n    \"structure\": [\"中心化\"],\n    \"evidence\": \"描述中提到通信范式是竞争对抗，结构上有一个中心化的主持人主持流程。\"\n  },\n  \"capability_acquisition\": {\n    \"feedback\": [\"其他Agent\", \"人类\"],\n    \"mechanism\": [\"记忆机制\"],\n    \"evidence\": \"描述中提到玩家通过撒谎、怀疑和结盟来博弈，这表明玩家需要从其他玩家那里获取反馈，并且可能需要记忆机制来记住游戏中的信息。\"\n  },\n  \"pitfalls\": {\n    \"multimodal_gap\": {\"touched\": false, \"note\": \"描述中没有提及多模态环境。\"},\n    \"hallucination_cascade\": {\"touched\": false, \"note\": \"描述中没有提及假消息传播的问题。\"},\n    \"group_optimization\": {\"touched\": false, \"note\": \"描述中没有提及群体优化的问题。\"},\n    \"benchmark_gap\": {\"touched\": false, \"note\": \"描述中没有提及应急/灾害场景的benchmark。\"}\n  }\n}"
+ },
+ {
+  "id": "avalon",
+  "name": "阿瓦隆（Avalon）",
+  "tag": "综述点名",
+  "desc": "也是一款隐藏身份的推理游戏，好人阵营和坏人阵营对抗，玩家要通过发言和投票推断彼此身份，并完成或破坏任务。同样属于竞争对抗范式，没有外部物理环境。",
+  "pred": {
+   "environment_interface": {
+    "label": "None",
+    "evidence": "没有外部物理环境"
+   },
+   "agent_profiling": {
+    "label": "Pre-defined",
+    "evidence": "好人阵营和坏人阵营对抗，角色是预先定义的"
+   },
+   "agent_communication": {
+    "paradigm": [
+     "竞争"
+    ],
+    "structure": [
+     "去中心化"
+    ],
+    "evidence": "玩家通过发言和投票推断彼此身份，属于竞争对抗范式，没有中心节点，玩家之间自由两两通信"
+   },
+   "capability_acquisition": {
+    "feedback": [
+     "其他Agent",
+     "人类"
+    ],
+    "mechanism": [
+     "记忆机制"
+    ],
+    "evidence": "玩家通过发言和投票推断彼此身份，可能依赖于记忆机制和同伴的批评/评价/回答来改进"
+   },
+   "pitfalls": {
+    "multimodal_gap": {
+     "touched": false,
+     "note": "描述中没有提及多模态环境"
+    },
+    "hallucination_cascade": {
+     "touched": false,
+     "note": "描述中没有提及假消息传播问题"
+    },
+    "group_optimization": {
+     "touched": false,
+     "note": "描述中没有提及群体优化"
+    },
+    "benchmark_gap": {
+     "touched": false,
+     "note": "描述中没有提及应急/灾害场景的benchmark"
+    }
+   }
+  },
+  "raw": "{\n  \"environment_interface\": {\n    \"label\": \"None\",\n    \"evidence\": \"没有外部物理环境\"\n  },\n  \"agent_profiling\": {\n    \"label\": \"Pre-defined\",\n    \"evidence\": \"好人阵营和坏人阵营对抗，角色是预先定义的\"\n  },\n  \"agent_communication\": {\n    \"paradigm\": [\"竞争\"],\n    \"structure\": [\"去中心化\"],\n    \"evidence\": \"玩家通过发言和投票推断彼此身份，属于竞争对抗范式，没有中心节点，玩家之间自由两两通信\"\n  },\n  \"capability_acquisition\": {\n    \"feedback\": [\"其他Agent\", \"人类\"],\n    \"mechanism\": [\"记忆机制\"],\n    \"evidence\": \"玩家通过发言和投票推断彼此身份，可能依赖于记忆机制和同伴的批评/评价/回答来改进\"\n  },\n  \"pitfalls\": {\n    \"multimodal_gap\": {\n      \"touched\": false,\n      \"note\": \"描述中没有提及多模态环境\"\n    },\n    \"hallucination_cascade\": {\n      \"touched\": false,\n      \"note\": \"描述中没有提及假消息传播问题\"\n    },\n    \"group_optimization\": {\n      \"touched\": false,\n      \"note\": \"描述中没有提及群体优化\"\n    },\n    \"benchmark_gap\": {\n      \"touched\": false,\n      \"note\": \"描述中没有提及应急/灾害场景的benchmark\"\n    }\n  }\n}"
+ },
+ {
+  "id": "roco",
+  "name": "RoCo",
+  "tag": "综述点名",
+  "desc": "面向具身智能的多机器人协作，两个机械臂 Agent 通过自然语言对话协商分工，比如谁扶着谁去拧螺丝，各自有自己的视觉感知和动作空间，在真实的物理环境里合作完成长程任务。这是综述里少见的物理环境加多模态的例子。",
+  "pred": {
+   "environment_interface": {
+    "label": "Physical",
+    "evidence": "在真实的物理环境里合作完成长程任务"
+   },
+   "agent_profiling": {
+    "label": "Pre-defined",
+    "evidence": "描述中没有提及角色是如何生成的，因此默认为预定义角色"
+   },
+   "agent_communication": {
+    "paradigm": [
+     "合作"
+    ],
+    "structure": [
+     "去中心化"
+    ],
+    "evidence": "两个机械臂 Agent 通过自然语言对话协商分工"
+   },
+   "capability_acquisition": {
+    "feedback": [
+     "环境",
+     "其他Agent"
+    ],
+    "mechanism": [
+     "记忆机制"
+    ],
+    "evidence": "各自有自己的视觉感知和动作空间，在真实的物理环境里合作完成长程任务，表明Agent具有从环境中获取反馈和记忆机制的能力"
+   },
+   "pitfalls": {
+    "multimodal_gap": {
+     "touched": true,
+     "note": "描述中提到这是综述里少见的物理环境加多模态的例子，触及了多模态空白的问题"
+    },
+    "hallucination_cascade": {
+     "touched": false,
+     "note": "描述中没有提及假消息传播的问题"
+    },
+    "group_optimization": {
+     "touched": false,
+     "note": "描述中没有提及群体优化的问题"
+    },
+    "benchmark_gap": {
+     "touched": false,
+     "note": "描述中没有提及应急/灾害场景的benchmark问题"
+    }
+   }
+  },
+  "raw": "{\n  \"environment_interface\": {\n    \"label\": \"Physical\",\n    \"evidence\": \"在真实的物理环境里合作完成长程任务\"\n  },\n  \"agent_profiling\": {\n    \"label\": \"Pre-defined\",\n    \"evidence\": \"描述中没有提及角色是如何生成的，因此默认为预定义角色\"\n  },\n  \"agent_communication\": {\n    \"paradigm\": [\"合作\"],\n    \"structure\": [\"去中心化\"],\n    \"evidence\": \"两个机械臂 Agent 通过自然语言对话协商分工\"\n  },\n  \"capability_acquisition\": {\n    \"feedback\": [\"环境\", \"其他Agent\"],\n    \"mechanism\": [\"记忆机制\"],\n    \"evidence\": \"各自有自己的视觉感知和动作空间，在真实的物理环境里合作完成长程任务，表明Agent具有从环境中获取反馈和记忆机制的能力\"\n  },\n  \"pitfalls\": {\n    \"multimodal_gap\": {\n      \"touched\": true,\n      \"note\": \"描述中提到这是综述里少见的物理环境加多模态的例子，触及了多模态空白的问题\"\n    },\n    \"hallucination_cascade\": {\n      \"touched\": false,\n      \"note\": \"描述中没有提及假消息传播的问题\"\n    },\n    \"group_optimization\": {\n      \"touched\": false,\n      \"note\": \"描述中没有提及群体优化的问题\"\n    },\n    \"benchmark_gap\": {\n      \"touched\": false,\n      \"note\": \"描述中没有提及应急/灾害场景的benchmark问题\"\n    }\n  }\n}"
+ },
+ {
+  "id": "xiao2023",
+  "name": "虚拟政府应急响应（Xiao et al. 2023）",
+  "tag": "综述点名",
+  "desc": "用一个虚拟政府的多智能体社会模拟来应对小镇水污染危机，不同 Agent 扮演政府各个部门的角色，在环境事件驱动下协同做出应急响应决策。这是综述里离灾害应急场景最近的一篇前置工作。",
+  "pred": {
+   "environment_interface": {
+    "label": "Sandbox",
+    "evidence": "虚拟政府的多智能体社会模拟，说明Agent在一个可交互的环境中操作，但不是真实的物理世界。"
+   },
+   "agent_profiling": {
+    "label": "Pre-defined",
+    "evidence": "不同 Agent 扮演政府各个部门的角色，说明角色是预先定义好的。"
+   },
+   "agent_communication": {
+    "paradigm": [
+     "合作"
+    ],
+    "structure": [
+     "中心化"
+    ],
+    "evidence": "不同 Agent 协同做出应急响应决策，说明存在合作范式；在环境事件驱动下，可能存在一个中枢/主持人来调度。"
+   },
+   "capability_acquisition": {
+    "feedback": [
+     "环境",
+     "其他Agent"
+    ],
+    "mechanism": [
+     "记忆机制"
+    ],
+    "evidence": "环境事件驱动下协同决策，说明Agent可能从环境中获取反馈；扮演政府部门的角色，可能需要记忆机制来处理长期信息。"
+   },
+   "pitfalls": {
+    "multimodal_gap": {
+     "touched": false,
+     "note": "描述中没有提及多模态环境。"
+    },
+    "hallucination_cascade": {
+     "touched": false,
+     "note": "描述中没有提及假消息传播问题。"
+    },
+    "group_optimization": {
+     "touched": false,
+     "note": "描述中没有提及群体优化。"
+    },
+    "benchmark_gap": {
+     "touched": false,
+     "note": "描述中没有提及应急/灾害场景的基准。"
+    }
+   }
+  },
+  "raw": "{\n  \"environment_interface\": {\n    \"label\": \"Sandbox\",\n    \"evidence\": \"虚拟政府的多智能体社会模拟，说明Agent在一个可交互的环境中操作，但不是真实的物理世界。\"\n  },\n  \"agent_profiling\": {\n    \"label\": \"Pre-defined\",\n    \"evidence\": \"不同 Agent 扮演政府各个部门的角色，说明角色是预先定义好的。\"\n  },\n  \"agent_communication\": {\n    \"paradigm\": [\"合作\"],\n    \"structure\": [\"中心化\"],\n    \"evidence\": \"不同 Agent 协同做出应急响应决策，说明存在合作范式；在环境事件驱动下，可能存在一个中枢/主持人来调度。\"\n  },\n  \"capability_acquisition\": {\n    \"feedback\": [\"环境\", \"其他Agent\"],\n    \"mechanism\": [\"记忆机制\"],\n    \"evidence\": \"环境事件驱动下协同决策，说明Agent可能从环境中获取反馈；扮演政府部门的角色，可能需要记忆机制来处理长期信息。\"\n  },\n  \"pitfalls\": {\n    \"multimodal_gap\": {\"touched\": false, \"note\": \"描述中没有提及多模态环境。\"},\n    \"hallucination_cascade\": {\"touched\": false, \"note\": \"描述中没有提及假消息传播问题。\"},\n    \"group_optimization\": {\"touched\": false, \"note\": \"描述中没有提及群体优化。\"},\n    \"benchmark_gap\": {\"touched\": false, \"note\": \"描述中没有提及应急/灾害场景的基准。\"}\n  }\n}"
+ },
+ {
+  "id": "autogen-demo",
+  "name": "autogen-demo（我自己的复现）",
+  "tag": "自己的系统",
+  "desc": "我手写的三角色会议框架，对标 AutoGen 的对话协作机制，模拟一场县级应急指挥会议。信息官是唯一能联网搜索的角色，分析师读会议记录做态势研判，顾问综合研判给行动建议，三个角色按顺序开两轮会，共享一份会议记录当记忆，最后顾问输出决策建议报告。",
+  "pred": {
+   "environment_interface": {
+    "label": "Sandbox",
+    "evidence": "模拟一场县级应急指挥会议，说明这是一个虚拟环境，并非真实的物理世界。"
+   },
+   "agent_profiling": {
+    "label": "Pre-defined",
+    "evidence": "信息官、分析师、顾问的角色是预先定义好的，没有提到模型生成或数据驱动。"
+   },
+   "agent_communication": {
+    "paradigm": [
+     "合作"
+    ],
+    "structure": [
+     "分层",
+     "共享消息池"
+    ],
+    "evidence": "三个角色按顺序开两轮会，共享一份会议记录当记忆，说明存在合作和共享信息的结构。"
+   },
+   "capability_acquisition": {
+    "feedback": [
+     "环境",
+     "其他Agent",
+     "人类"
+    ],
+    "mechanism": [
+     "记忆机制"
+    ],
+    "evidence": "信息官联网搜索、分析师读会议记录、顾问综合研判，说明有从环境、其他Agent和人类获取反馈的机制，同时共享会议记录作为记忆。"
+   },
+   "pitfalls": {
+    "multimodal_gap": {
+     "touched": false,
+     "note": "描述中没有提及多模态环境。"
+    },
+    "hallucination_cascade": {
+     "touched": false,
+     "note": "描述中没有提及假消息传播的问题。"
+    },
+    "group_optimization": {
+     "touched": false,
+     "note": "描述中没有提及群体优化。"
+    },
+    "benchmark_gap": {
+     "touched": false,
+     "note": "描述中没有提及应急/灾害场景的基准。"
+    }
+   }
+  },
+  "raw": "{\n  \"environment_interface\": {\n    \"label\": \"Sandbox\",\n    \"evidence\": \"模拟一场县级应急指挥会议，说明这是一个虚拟环境，并非真实的物理世界。\"\n  },\n  \"agent_profiling\": {\n    \"label\": \"Pre-defined\",\n    \"evidence\": \"信息官、分析师、顾问的角色是预先定义好的，没有提到模型生成或数据驱动。\"\n  },\n  \"agent_communication\": {\n    \"paradigm\": [\"合作\"],\n    \"structure\": [\"分层\", \"共享消息池\"],\n    \"evidence\": \"三个角色按顺序开两轮会，共享一份会议记录当记忆，说明存在合作和共享信息的结构。\"\n  },\n  \"capability_acquisition\": {\n    \"feedback\": [\"环境\", \"其他Agent\", \"人类\"],\n    \"mechanism\": [\"记忆机制\"],\n    \"evidence\": \"信息官联网搜索、分析师读会议记录、顾问综合研判，说明有从环境、其他Agent和人类获取反馈的机制，同时共享会议记录作为记忆。\"\n  },\n  \"pitfalls\": {\n    \"multimodal_gap\": {\"touched\": false, \"note\": \"描述中没有提及多模态环境。\"},\n    \"hallucination_cascade\": {\"touched\": false, \"note\": \"描述中没有提及假消息传播的问题。\"},\n    \"group_optimization\": {\"touched\": false, \"note\": \"描述中没有提及群体优化。\"},\n    \"benchmark_gap\": {\"touched\": false, \"note\": \"描述中没有提及应急/灾害场景的基准。\"}\n  }\n}"
+ },
+ {
+  "id": "crisis-sight",
+  "name": "crisis-sight（我自己的系统）",
+  "tag": "自己的系统",
+  "desc": "我做的知识增强多 Agent 灾害态势推理系统，四个 Agent（情报官、研判官、决策官、审核官）依次发言两轮，每个都结合内置的灾害知识库做要素提取、态势研判、分级行动建议和不确定性提示，最后生成一份四段式报告。知识库相当于给每个 Agent 挂了一份长期记忆。",
+  "pred": {
+   "environment_interface": {
+    "label": "Sandbox",
+    "evidence": "描述中提到系统是知识增强的灾害态势推理系统，没有提及与真实物理世界的交互，因此推测是在一个模拟环境中进行操作。"
+   },
+   "agent_profiling": {
+    "label": "Pre-defined",
+    "evidence": "描述中明确提到了四个不同的角色：情报官、研判官、决策官、审核官，这些角色是预先定义好的。"
+   },
+   "agent_communication": {
+    "paradigm": [
+     "合作"
+    ],
+    "structure": [
+     "分层"
+    ],
+    "evidence": "四个 Agent 依次发言，表明它们之间存在一个顺序，这暗示了分层结构。同时，它们共同工作以生成报告，表明它们之间存在合作。"
+   },
+   "capability_acquisition": {
+    "feedback": [
+     "环境",
+     "其他Agent",
+     "人类"
+    ],
+    "mechanism": [
+     "记忆机制"
+    ],
+    "evidence": "每个 Agent 结合内置的灾害知识库进行操作，这表明它们有长期记忆。描述中没有提到自我进化或动态生成新 Agent 的机制，因此这些选项留空。"
+   },
+   "pitfalls": {
+    "multimodal_gap": {
+     "touched": false,
+     "note": "描述中没有提及多模态环境。"
+    },
+    "hallucination_cascade": {
+     "touched": false,
+     "note": "描述中没有提及假消息的传播问题。"
+    },
+    "group_optimization": {
+     "touched": false,
+     "note": "描述中没有提及群体层面的协同优化。"
+    },
+    "benchmark_gap": {
+     "touched": false,
+     "note": "描述中没有提及应急/灾害场景的基准问题。"
+    }
+   }
+  },
+  "raw": "{\n  \"environment_interface\": {\n    \"label\": \"Sandbox\",\n    \"evidence\": \"描述中提到系统是知识增强的灾害态势推理系统，没有提及与真实物理世界的交互，因此推测是在一个模拟环境中进行操作。\"\n  },\n  \"agent_profiling\": {\n    \"label\": \"Pre-defined\",\n    \"evidence\": \"描述中明确提到了四个不同的角色：情报官、研判官、决策官、审核官，这些角色是预先定义好的。\"\n  },\n  \"agent_communication\": {\n    \"paradigm\": [\"合作\"],\n    \"structure\": [\"分层\"],\n    \"evidence\": \"四个 Agent 依次发言，表明它们之间存在一个顺序，这暗示了分层结构。同时，它们共同工作以生成报告，表明它们之间存在合作。\"\n  },\n  \"capability_acquisition\": {\n    \"feedback\": [\"环境\", \"其他Agent\", \"人类\"],\n    \"mechanism\": [\"记忆机制\"],\n    \"evidence\": \"每个 Agent 结合内置的灾害知识库进行操作，这表明它们有长期记忆。描述中没有提到自我进化或动态生成新 Agent 的机制，因此这些选项留空。\"\n  },\n  \"pitfalls\": {\n    \"multimodal_gap\": {\"touched\": false, \"note\": \"描述中没有提及多模态环境。\"},\n    \"hallucination_cascade\": {\"touched\": false, \"note\": \"描述中没有提及假消息的传播问题。\"},\n    \"group_optimization\": {\"touched\": false, \"note\": \"描述中没有提及群体层面的协同优化。\"},\n    \"benchmark_gap\": {\"touched\": false, \"note\": \"描述中没有提及应急/灾害场景的基准问题。\"}\n  }\n}"
+ }
+]

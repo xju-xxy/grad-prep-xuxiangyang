@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "name": "中文急救接警事后复盘规程（精简版）",
+    "version": "0.1",
+    "note": "仿 LogiDebrief 的 911 手册，改成中文 120 场景。每条需求 = 前置条件 + 触发条件 + 要求动作 + 时间窗 + 致命情形标签。时间窗写成 [anchor, anchor+seconds]，对应论文里 STL 的时序蕴含 G(p -> F_[0,T] q)：在锚点发生后 T 秒内 q 必须出现。",
+    "authors_note": "20 条需求，覆盖 6 类通话、6 类致命情形。不是官方手册，是我按常见急救调度要点自己拆的，用于复现方法骨架。"
+  },
+
+  "call_types": {
+    "CARDIAC": "心脏/呼吸骤停类（意识丧失、无呼吸、溺水等）",
+    "TRAUMA": "外伤出血类（车祸、刀伤、摔伤）",
+    "CHOKING": "气道异物梗阻类（噎食、呛咳堵住）",
+    "OBSTETRIC": "产科分娩类（临产、破水、急产）",
+    "FIRE": "火灾/燃气等危险源类",
+    "GENERAL": "一般急症类（发烧、腹痛等非创伤非心搏骤停）"
+  },
+
+  "fatal_tags": {
+    "气道": "气道相关处置缺失",
+    "CPR": "未指导心肺复苏",
+    "AED": "未指导使用 AED",
+    "止血": "未指导止血",
+    "气道阻塞": "未指导解除气道异物",
+    "分娩": "未指导紧急分娩"
+  },
+
+  "actions": {
+    "ask_address":        { "name_zh": "确认事发详细地址", "desc": "接线员问到具体地址（路名/门牌/小区楼栋）" },
+    "ask_callback":       { "name_zh": "记录回拨联系电话", "desc": "接线员索要或确认可回拨的号码" },
+    "dispatch":           { "name_zh": "告知已派出救护车", "desc": "接线员明确说车已经派出/在路上了" },
+    "ask_scene_safety":   { "name_zh": "确认现场是否安全", "desc": "接线员问现场有没有持续危险（车流、火、电、燃气等）或问人所处位置是否安全" },
+    "ask_patient_basic":  { "name_zh": "询问患者年龄/性别", "desc": "接线员问到患者年龄或性别等基本信息" },
+    "ask_onset_time":     { "name_zh": "询问发病/受伤时间", "desc": "接线员问到什么时候发的病、多久前受的伤" },
+    "reassure":           { "name_zh": "安抚情绪并提示保持通话", "desc": "接线员明确安抚呼救者别慌、让其在原地坚持、保持通话不要挂断" },
+    "repeat_address":     { "name_zh": "结束前复述地址确认", "desc": "通话末尾接线员把地址复述一遍向呼救者确认" },
+
+    "ask_consciousness":  { "name_zh": "询问患者是否有意识", "desc": "接线员让呼救者叫/拍患者，问有没有反应" },
+    "ask_breathing":      { "name_zh": "询问患者是否有呼吸", "desc": "接线员问有没有呼吸、看胸口有无起伏" },
+    "found_no_breathing": { "name_zh": "判定患者没有呼吸", "desc": "对话中明确确认患者没呼吸/呼吸不正常（呼救者答没有呼吸，或接线员据此确认）" },
+    "cpr_instruction":    { "name_zh": "指导做胸外按压", "desc": "接线员指导进行心肺复苏/胸外按压" },
+    "aed_instruction":    { "name_zh": "指导取用并操作 AED", "desc": "接线员让人去找自动体外除颤器并指导贴片/操作" },
+
+    "ask_bleeding":       { "name_zh": "询问出血情况", "desc": "接线员问哪里流血、出血多不多" },
+    "found_bleeding":     { "name_zh": "判定有明显活动性出血", "desc": "对话中确认患者正在大量/持续出血" },
+    "bleeding_control":   { "name_zh": "指导止血", "desc": "接线员指导用干净布/手直接压迫伤口止血" },
+
+    "ask_airway_obstruction": { "name_zh": "询问是否气道被异物堵住", "desc": "接线员问是不是被东西噎住、还能不能咳出声/说话" },
+    "found_airway_obstruction": { "name_zh": "判定气道被异物堵塞", "desc": "对话中确认气道被异物完全堵住（说不出话、咳不出）" },
+    "choking_maneuver":   { "name_zh": "指导解除气道异物", "desc": "接线员指导海姆立克法（腹部冲击）或背部拍击" },
+
+    "ask_contraction":    { "name_zh": "询问宫缩间隔/是否破水", "desc": "接线员问多久疼一次、羊水破没破" },
+    "found_labor":        { "name_zh": "判定已进入临产", "desc": "对话中确认已破水/宫缩很密/已见胎头等临产征兆" },
+    "delivery_guidance":  { "name_zh": "指导分娩准备与接生", "desc": "接线员指导产妇体位、垫高、准备毛巾等接生准备" },
+
+    "warning_danger":     { "name_zh": "警告远离危险源", "desc": "接线员明确让呼救者断电/别开灯别打火/远离燃气或火源" },
+    "ask_history":        { "name_zh": "询问既往病史/过敏", "desc": "接线员问有没有心脏病、高血压、糖尿病等老毛病或药物过敏" }
+  },
+
+  "requirements": [
+    { "id": "R01", "title": "确认详细地址", "applies_to": ["CARDIAC","TRAUMA","CHOKING","OBSTETRIC","FIRE","GENERAL"],
+      "requires_trigger": null, "required_action": "ask_address",
+      "window": { "anchor": "call_start", "seconds": 60 }, "fatal_tag": null },
+
+    { "id": "R02", "title": "记录回拨电话", "applies_to": ["CARDIAC","TRAUMA","CHOKING","OBSTETRIC","FIRE","GENERAL"],
+      "requires_trigger": null, "required_action": "ask_callback",
+      "window": { "anchor": "call_start", "seconds": 120 }, "fatal_tag": null },
+
+    { "id": "R03", "title": "告知已派出救护车", "applies_to": ["CARDIAC","TRAUMA","CHOKING","OBSTETRIC","FIRE","GENERAL"],
+      "requires_trigger": null, "required_action": "dispatch",
+      "window": { "anchor": "call_start", "seconds": 90 }, "fatal_tag": null },
+
+    { "id": "R04", "title": "确认现场安全", "applies_to": ["CARDIAC","TRAUMA","CHOKING","OBSTETRIC","FIRE","GENERAL"],
+      "requires_trigger": null, "required_action": "ask_scene_safety",
+      "window": { "anchor": "call_start", "seconds": 120 }, "fatal_tag": null },
+
+    { "id": "R05", "title": "询问患者基本信息", "applies_to": ["CARDIAC","TRAUMA","CHOKING","OBSTETRIC","FIRE","GENERAL"],
+      "requires_trigger": null, "required_action": "ask_patient_basic",
+      "window": { "anchor": "call_start", "seconds": 150 }, "fatal_tag": null },
+
+    { "id": "R06", "title": "询问发病/受伤时间", "applies_to": ["CARDIAC","TRAUMA","CHOKING","OBSTETRIC","FIRE","GENERAL"],
+      "requires_trigger": null, "required_action": "ask_onset_time",
+      "window": { "anchor": "call_start", "seconds": 150 }, "fatal_tag": null },
+
+    { "id": "R07", "title": "安抚并提示保持通话", "applies_to": ["CARDIAC","TRAUMA","CHOKING","OBSTETRIC","FIRE","GENERAL"],
+      "requires_trigger": null, "required_action": "reassure",
+      "window": { "anchor": "call_start", "seconds": 180 }, "fatal_tag": null },
+
+    { "id": "R08", "title": "结束前复述地址", "applies_to": ["CARDIAC","TRAUMA","CHOKING","OBSTETRIC","FIRE","GENERAL"],
+      "requires_trigger": null, "required_action": "repeat_address",
+      "window": { "anchor": "call_end", "seconds": 60 }, "fatal_tag": null },
+
+    { "id": "R09", "title": "判断患者意识", "applies_to": ["CARDIAC"],
+      "requires_trigger": null, "required_action": "ask_consciousness",
+      "window": { "anchor": "call_start", "seconds": 90 }, "fatal_tag": null },
+
+    { "id": "R10", "title": "判断患者呼吸", "applies_to": ["CARDIAC"],
+      "requires_trigger": null, "required_action": "ask_breathing",
+      "window": { "anchor": "call_start", "seconds": 120 }, "fatal_tag": "气道" },
+
+    { "id": "R11", "title": "无呼吸时指导胸外按压", "applies_to": ["CARDIAC"],
+      "requires_trigger": "found_no_breathing", "required_action": "cpr_instruction",
+      "window": { "anchor": "found_no_breathing", "seconds": 60 }, "fatal_tag": "CPR" },
+
+    { "id": "R12", "title": "无呼吸时指导使用 AED", "applies_to": ["CARDIAC"],
+      "requires_trigger": "found_no_breathing", "required_action": "aed_instruction",
+      "window": { "anchor": "found_no_breathing", "seconds": 180 }, "fatal_tag": "AED" },
+
+    { "id": "R13", "title": "询问出血情况", "applies_to": ["TRAUMA"],
+      "requires_trigger": null, "required_action": "ask_bleeding",
+      "window": { "anchor": "call_start", "seconds": 90 }, "fatal_tag": null },
+
+    { "id": "R14", "title": "出血时指导止血", "applies_to": ["TRAUMA"],
+      "requires_trigger": "found_bleeding", "required_action": "bleeding_control",
+      "window": { "anchor": "found_bleeding", "seconds": 60 }, "fatal_tag": "止血" },
+
+    { "id": "R15", "title": "询问是否气道异物梗阻", "applies_to": ["CHOKING"],
+      "requires_trigger": null, "required_action": "ask_airway_obstruction",
+      "window": { "anchor": "call_start", "seconds": 90 }, "fatal_tag": "气道阻塞" },
+
+    { "id": "R16", "title": "异物梗阻时指导解阻", "applies_to": ["CHOKING"],
+      "requires_trigger": "found_airway_obstruction", "required_action": "choking_maneuver",
+      "window": { "anchor": "found_airway_obstruction", "seconds": 60 }, "fatal_tag": "气道阻塞" },
+
+    { "id": "R17", "title": "询问宫缩间隔/是否破水", "applies_to": ["OBSTETRIC"],
+      "requires_trigger": null, "required_action": "ask_contraction",
+      "window": { "anchor": "call_start", "seconds": 90 }, "fatal_tag": null },
+
+    { "id": "R18", "title": "临产时指导分娩", "applies_to": ["OBSTETRIC"],
+      "requires_trigger": "found_labor", "required_action": "delivery_guidance",
+      "window": { "anchor": "found_labor", "seconds": 120 }, "fatal_tag": "分娩" },
+
+    { "id": "R19", "title": "危险源警告", "applies_to": ["FIRE"],
+      "requires_trigger": null, "required_action": "warning_danger",
+      "window": { "anchor": "call_start", "seconds": 90 }, "fatal_tag": null },
+
+    { "id": "R20", "title": "询问既往病史/过敏", "applies_to": ["CARDIAC","TRAUMA","GENERAL"],
+      "requires_trigger": null, "required_action": "ask_history",
+      "window": { "anchor": "call_start", "seconds": 180 }, "fatal_tag": null }
+  ]
+}

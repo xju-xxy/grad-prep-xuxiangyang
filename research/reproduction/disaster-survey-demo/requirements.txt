@@ -1,0 +1,6 @@
+# 灾害管理综述复现项目用到的库。
+# 安装： pip install -r requirements.txt
+zhipuai>=2.1.5
+python-dotenv
+# zhipuai 在 python 3.14 上没自动拉到 sniffio，会报 ModuleNotFoundError，显式装上
+sniffio

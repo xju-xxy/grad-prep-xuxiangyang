@@ -1,0 +1,1586 @@
+{
+  "C01": {
+    "classify": {
+      "call_type": "CARDIAC",
+      "event_type": "心搏骤停",
+      "fatal_category": "CPR",
+      "response_unit": "救护",
+      "_raw": "```json\n{\"call_type\": \"CARDIAC\", \"event_type\": \"心搏骤停\", \"fatal_category\": \"CPR\", \"response_unit\": \"救护\"}\n```"
+    },
+    "actions": {
+      "ask_address": {
+        "status": "present",
+        "turn": 2,
+        "quote": "把确切的地址告诉我"
+      },
+      "ask_callback": {
+        "status": "present",
+        "turn": 5,
+        "quote": "您现在用的这个手机号能一直打通吗"
+      },
+      "dispatch": {
+        "status": "present",
+        "turn": 4,
+        "quote": "救护车已经派出去了"
+      },
+      "ask_scene_safety": {
+        "status": "present",
+        "turn": 8,
+        "quote": "没有，就是普通家里"
+      },
+      "ask_patient_basic": {
+        "status": "present",
+        "turn": 9,
+        "quote": "老人家多大年纪，是男的还是女的？"
+      },
+      "ask_onset_time": {
+        "status": "present",
+        "turn": 11,
+        "quote": "他大概是什么时候倒下的？"
+      },
+      "reassure": {
+        "status": "present",
+        "turn": 2,
+        "quote": "您先别慌"
+      },
+      "repeat_address": {
+        "status": "present",
+        "turn": 27,
+        "quote": "是兴隆大街168号3栋2单元501对吧"
+      },
+      "ask_consciousness": {
+        "status": "present",
+        "turn": 13,
+        "quote": "您现在拍他肩膀、大声叫他，看有没有反应"
+      },
+      "ask_breathing": {
+        "status": "present",
+        "turn": 15,
+        "quote": "那他还有呼吸吗？您把脸凑近看他胸口有没有起伏"
+      },
+      "found_no_breathing": {
+        "status": "present",
+        "turn": 16,
+        "quote": "没有……胸口一点都没动，也不出气"
+      },
+      "cpr_instruction": {
+        "status": "present",
+        "turn": 17,
+        "quote": "我现在教您做胸外按压，一分钟大约一百下，用力往下压"
+      },
+      "aed_instruction": {
+        "status": "present",
+        "turn": 21,
+        "quote": "您家里或者楼上楼下有没有 AED，就是那个自动体外除颤器，让家里其他人赶紧去找一"
+      },
+      "ask_bleeding": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_bleeding": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "bleeding_control": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_airway_obstruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_airway_obstruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "choking_maneuver": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_contraction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_labor": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "delivery_guidance": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "warning_danger": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_history": {
+        "status": "present",
+        "turn": 19,
+        "quote": "他家有什么老毛病？心脏病、高血压这些有吗？"
+      },
+      "_raw": "```json\n{\n  \"ask_address\": {\"status\": \"present\", \"turn\": 2, \"quote\": \"把确切的地址告诉我\"},\n  \"ask_callback\": {\"status\": \"present\", \"turn\": 5, \"quote\": \"您现在用的这个手机号能一直打通吗\"},\n  \"dispatch\": {\"status\": \"present\", \"turn\": 4, \"quote\": \"救护车已经派出去了\"},\n  \"ask_scene_safety\": {\"status\": \"present\", \"turn\": 8, \"quote\": \"没有，就是普通家里\"},\n  \"ask_patient_basic\": {\"status\": \"present\", \"turn\": 9, \"quote\": \"老人家多大年纪，是男的还是女的？\"},\n  \"ask_onset_time\": {\"status\": \"present\", \"turn\": 11, \"quote\": \"他大概是什么时候倒下的？\"},\n  \"reassure\": {\"status\": \"present\", \"turn\": 2, \"quote\": \"您先别慌\"},\n  \"repeat_address\": {\"status\": \"present\", \"turn\": 27, \"quote\": \"是兴隆大街168号3栋2单元501对吧\"},\n  \"ask_consciousness\": {\"status\": \"present\", \"turn\": 13, \"quote\": \"您现在拍他肩膀、大声叫他，看有没有反应\"},\n  \"ask_breathing\": {\"status\": \"present\", \"turn\": 15, \"quote\": \"那他还有呼吸吗？您把脸凑近看他胸口有没有起伏\"},\n  \"found_no_breathing\": {\"status\": \"present\", \"turn\": 16, \"quote\": \"没有……胸口一点都没动，也不出气\"},\n  \"cpr_instruction\": {\"status\": \"present\", \"turn\": 17, \"quote\": \"我现在教您做胸外按压，一分钟大约一百下，用力往下压\"},\n  \"aed_instruction\": {\"status\": \"present\", \"turn\": 21, \"quote\": \"您家里或者楼上楼下有没有 AED，就是那个自动体外除颤器，让家里其他人赶紧去找一台\"},\n  \"ask_history\": {\"status\": \"present\", \"turn\": 19, \"quote\": \"他家有什么老毛病？心脏病、高血压这些有吗？\"}\n}\n```"
+    }
+  },
+  "C02": {
+    "classify": {
+      "call_type": "CARDIAC",
+      "event_type": "胸痛求助",
+      "fatal_category": "气道阻塞",
+      "response_unit": "救护",
+      "_raw": "```json\n{\"call_type\": \"CARDIAC\", \"event_type\": \"胸痛求助\", \"fatal_category\": \"气道阻塞\", \"response_unit\": \"救护\"}\n```"
+    },
+    "actions": {
+      "ask_address": {
+        "status": "present",
+        "turn": 2,
+        "quote": "告诉我具体地址"
+      },
+      "ask_callback": {
+        "status": "present",
+        "turn": 5,
+        "quote": "这个电话保持能接通，多少号？"
+      },
+      "dispatch": {
+        "status": "present",
+        "turn": 4,
+        "quote": "车已经派出去了"
+      },
+      "ask_scene_safety": {
+        "status": "present",
+        "turn": 7,
+        "quote": "你们现在的位置安全吧，没有别的情况吧？"
+      },
+      "ask_patient_basic": {
+        "status": "present",
+        "turn": 9,
+        "quote": "他多大年纪，男的还是女的？"
+      },
+      "ask_onset_time": {
+        "status": "present",
+        "turn": 11,
+        "quote": "疼了多久了？"
+      },
+      "reassure": {
+        "status": "present",
+        "turn": 19,
+        "quote": "让他别走动，靠着坐着休息，把领口和腰带松开，别紧张，救护车马上就到"
+      },
+      "repeat_address": {
+        "status": "present",
+        "turn": 21,
+        "quote": "你们是太平门街12号2栋对吧"
+      },
+      "ask_consciousness": {
+        "status": "present",
+        "turn": 13,
+        "quote": "您叫叫他名字，他人是清楚的吗，能答话吗？"
+      },
+      "ask_breathing": {
+        "status": "present",
+        "turn": 15,
+        "quote": "他现在喘气正常吗，有没有喘不上气？"
+      },
+      "found_no_breathing": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "cpr_instruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "aed_instruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_bleeding": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_bleeding": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "bleeding_control": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_airway_obstruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_airway_obstruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "choking_maneuver": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_contraction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_labor": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "delivery_guidance": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "warning_danger": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_history": {
+        "status": "present",
+        "turn": 17,
+        "quote": "他以前有没有心脏病、高血压、糖尿病的底子？"
+      },
+      "_raw": "```json\n{\n  \"ask_address\": {\"status\": \"present\", \"turn\": 2, \"quote\": \"告诉我具体地址\"},\n  \"ask_callback\": {\"status\": \"present\", \"turn\": 5, \"quote\": \"这个电话保持能接通，多少号？\"},\n  \"dispatch\": {\"status\": \"present\", \"turn\": 4, \"quote\": \"车已经派出去了\"},\n  \"ask_scene_safety\": {\"status\": \"present\", \"turn\": 7, \"quote\": \"你们现在的位置安全吧，没有别的情况吧？\"},\n  \"ask_patient_basic\": {\"status\": \"present\", \"turn\": 9, \"quote\": \"他多大年纪，男的还是女的？\"},\n  \"ask_onset_time\": {\"status\": \"present\", \"turn\": 11, \"quote\": \"疼了多久了？\"},\n  \"reassure\": {\"status\": \"present\", \"turn\": 19, \"quote\": \"让他别走动，靠着坐着休息，把领口和腰带松开，别紧张，救护车马上就到\"},\n  \"repeat_address\": {\"status\": \"present\", \"turn\": 21, \"quote\": \"你们是太平门街12号2栋对吧\"},\n  \"ask_consciousness\": {\"status\": \"present\", \"turn\": 13, \"quote\": \"您叫叫他名字，他人是清楚的吗，能答话吗？\"},\n  \"ask_breathing\": {\"status\": \"present\", \"turn\": 15, \"quote\": \"他现在喘气正常吗，有没有喘不上气？\"},\n  \"found_no_breathing\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"cpr_instruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"aed_instruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_bleeding\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_bleeding\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"bleeding_control\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_airway_obstruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_airway_obstruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"choking_maneuver\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_contraction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_labor\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"delivery_guidance\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"warning_danger\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_history\": {\"status\": \"present\", \"turn\": 17, \"quote\": \"他以前有没有心脏病、高血压、糖尿病的底子？\"}\n}\n```"
+    }
+  },
+  "C03": {
+    "classify": {
+      "call_type": "TRAUMA",
+      "event_type": "车祸外伤",
+      "fatal_category": "止血",
+      "response_unit": "救护",
+      "_raw": "```json\n{\"call_type\": \"TRAUMA\", \"event_type\": \"车祸外伤\", \"fatal_category\": \"止血\", \"response_unit\": \"救护\"}\n```"
+    },
+    "actions": {
+      "ask_address": {
+        "status": "present",
+        "turn": 2,
+        "quote": "是哪两条路交叉，靠近什么建筑？"
+      },
+      "ask_callback": {
+        "status": "present",
+        "turn": 5,
+        "quote": "你手机号多少，我们保持联系。"
+      },
+      "dispatch": {
+        "status": "present",
+        "turn": 4,
+        "quote": "救护车已经派出去了，你们先别随便搬动伤者。"
+      },
+      "ask_scene_safety": {
+        "status": "present",
+        "turn": 7,
+        "quote": "你们现在站在安全的地方吗，路上车还多不多？"
+      },
+      "ask_patient_basic": {
+        "status": "present",
+        "turn": 9,
+        "quote": "伤者多大年纪，男的还是女的？"
+      },
+      "ask_onset_time": {
+        "status": "present",
+        "turn": 11,
+        "quote": "他是什么时候受的伤？"
+      },
+      "reassure": {
+        "status": "present",
+        "turn": 21,
+        "quote": "别让他喝水吃东西，伤口就一直压着，救护车马上到，你们坚持一下。"
+      },
+      "repeat_address": {
+        "status": "present",
+        "turn": 23,
+        "quote": "是XX路和YY路新华书店门口对吧，车到了。"
+      },
+      "ask_consciousness": {
+        "status": "present",
+        "turn": 17,
+        "quote": "他有没有被撞到头，人是清楚的吗？"
+      },
+      "ask_breathing": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_no_breathing": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "cpr_instruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "aed_instruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_bleeding": {
+        "status": "present",
+        "turn": 13,
+        "quote": "他身上哪里在流血，流得多不多？"
+      },
+      "found_bleeding": {
+        "status": "present",
+        "turn": 14,
+        "quote": "右腿，血一直在流，裤子都透了，止不住。"
+      },
+      "bleeding_control": {
+        "status": "present",
+        "turn": 15,
+        "quote": "你马上找一块干净的布、毛巾或者衣服，用力压住出血的地方，一直压着别松手，压到我们"
+      },
+      "ask_airway_obstruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_airway_obstruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "choking_maneuver": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_contraction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_labor": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "delivery_guidance": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "warning_danger": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_history": {
+        "status": "present",
+        "turn": 19,
+        "quote": "他以前有什么病吗，对药物过不过敏？"
+      },
+      "_raw": "```json\n{\n  \"ask_address\": {\"status\": \"present\", \"turn\": 2, \"quote\": \"是哪两条路交叉，靠近什么建筑？\"},\n  \"ask_callback\": {\"status\": \"present\", \"turn\": 5, \"quote\": \"你手机号多少，我们保持联系。\"},\n  \"dispatch\": {\"status\": \"present\", \"turn\": 4, \"quote\": \"救护车已经派出去了，你们先别随便搬动伤者。\"},\n  \"ask_scene_safety\": {\"status\": \"present\", \"turn\": 7, \"quote\": \"你们现在站在安全的地方吗，路上车还多不多？\"},\n  \"ask_patient_basic\": {\"status\": \"present\", \"turn\": 9, \"quote\": \"伤者多大年纪，男的还是女的？\"},\n  \"ask_onset_time\": {\"status\": \"present\", \"turn\": 11, \"quote\": \"他是什么时候受的伤？\"},\n  \"reassure\": {\"status\": \"present\", \"turn\": 21, \"quote\": \"别让他喝水吃东西，伤口就一直压着，救护车马上到，你们坚持一下。\"},\n  \"repeat_address\": {\"status\": \"present\", \"turn\": 23, \"quote\": \"是XX路和YY路新华书店门口对吧，车到了。\"},\n  \"ask_consciousness\": {\"status\": \"present\", \"turn\": 17, \"quote\": \"他有没有被撞到头，人是清楚的吗？\"},\n  \"ask_breathing\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_no_breathing\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"cpr_instruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"aed_instruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_bleeding\": {\"status\": \"present\", \"turn\": 13, \"quote\": \"他身上哪里在流血，流得多不多？\"},\n  \"found_bleeding\": {\"status\": \"present\", \"turn\": 14, \"quote\": \"右腿，血一直在流，裤子都透了，止不住。\"},\n  \"bleeding_control\": {\"status\": \"present\", \"turn\": 15, \"quote\": \"你马上找一块干净的布、毛巾或者衣服，用力压住出血的地方，一直压着别松手，压到我们到为止。\"},\n  \"ask_airway_obstruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_airway_obstruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"choking_maneuver\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_contraction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_labor\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"delivery_guidance\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"warning_danger\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_history\": {\"status\": \"present\", \"turn\": 19, \"quote\": \"他以前有什么病吗，对药物过不过敏？\"}\n}\n```"
+    }
+  },
+  "C04": {
+    "classify": {
+      "call_type": "TRAUMA",
+      "event_type": "电动车摔伤",
+      "fatal_category": "止血",
+      "response_unit": "救护",
+      "_raw": "```json\n{\"call_type\": \"TRAUMA\", \"event_type\": \"电动车摔伤\", \"fatal_category\": \"止血\", \"response_unit\": \"救护\"}\n```"
+    },
+    "actions": {
+      "ask_address": {
+        "status": "present",
+        "turn": 2,
+        "quote": "先告诉我地址，在哪条路上？"
+      },
+      "ask_callback": {
+        "status": "present",
+        "turn": 4,
+        "quote": "你手机号给我一个"
+      },
+      "dispatch": {
+        "status": "present",
+        "turn": 24,
+        "quote": "好，车派出去了"
+      },
+      "ask_scene_safety": {
+        "status": "present",
+        "turn": 6,
+        "quote": "你们旁边有没有车流，人靠边站，别站在路中间"
+      },
+      "ask_patient_basic": {
+        "status": "present",
+        "turn": 8,
+        "quote": "她多大年纪？"
+      },
+      "ask_onset_time": {
+        "status": "present",
+        "turn": 10,
+        "quote": "什么时候摔的？"
+      },
+      "reassure": {
+        "status": "present",
+        "turn": 16,
+        "quote": "你们在原地别乱动她，别让她到处走，救护车马上到"
+      },
+      "repeat_address": {
+        "status": "present",
+        "turn": 20,
+        "quote": "我再确认一下，是双龙大道88号华为店门口对吧？"
+      },
+      "ask_consciousness": {
+        "status": "present",
+        "turn": 14,
+        "quote": "她人是清醒的吗，手脚能不能动？"
+      },
+      "ask_breathing": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_no_breathing": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "cpr_instruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "aed_instruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_bleeding": {
+        "status": "present",
+        "turn": 12,
+        "quote": "伤口在哪里，出血多不多？"
+      },
+      "found_bleeding": {
+        "status": "present",
+        "turn": 13,
+        "quote": "左胳膊，血一直在流，袖子都湿了"
+      },
+      "bleeding_control": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_airway_obstruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_airway_obstruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "choking_maneuver": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_contraction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_labor": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "delivery_guidance": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "warning_danger": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_history": {
+        "status": "present",
+        "turn": 16,
+        "quote": "她以前有什么病或者药物过敏吗？"
+      },
+      "_raw": "```json\n{\n  \"ask_address\": {\"status\": \"present\", \"turn\": 2, \"quote\": \"先告诉我地址，在哪条路上？\"},\n  \"ask_callback\": {\"status\": \"present\", \"turn\": 4, \"quote\": \"你手机号给我一个\"},\n  \"dispatch\": {\"status\": \"present\", \"turn\": 24, \"quote\": \"好，车派出去了\"},\n  \"ask_scene_safety\": {\"status\": \"present\", \"turn\": 6, \"quote\": \"你们旁边有没有车流，人靠边站，别站在路中间\"},\n  \"ask_patient_basic\": {\"status\": \"present\", \"turn\": 8, \"quote\": \"她多大年纪？\"},\n  \"ask_onset_time\": {\"status\": \"present\", \"turn\": 10, \"quote\": \"什么时候摔的？\"},\n  \"reassure\": {\"status\": \"present\", \"turn\": 16, \"quote\": \"你们在原地别乱动她，别让她到处走，救护车马上到\"},\n  \"repeat_address\": {\"status\": \"present\", \"turn\": 20, \"quote\": \"我再确认一下，是双龙大道88号华为店门口对吧？\"},\n  \"ask_consciousness\": {\"status\": \"present\", \"turn\": 14, \"quote\": \"她人是清醒的吗，手脚能不能动？\"},\n  \"ask_breathing\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_no_breathing\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"cpr_instruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"aed_instruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_bleeding\": {\"status\": \"present\", \"turn\": 12, \"quote\": \"伤口在哪里，出血多不多？\"},\n  \"found_bleeding\": {\"status\": \"present\", \"turn\": 13, \"quote\": \"左胳膊，血一直在流，袖子都湿了\"},\n  \"bleeding_control\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_airway_obstruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_airway_obstruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"choking_maneuver\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_contraction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_labor\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"delivery_guidance\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"warning_danger\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_history\": {\"status\": \"present\", \"turn\": 16, \"quote\": \"她以前有什么病或者药物过敏吗？\"}\n}\n```"
+    }
+  },
+  "C05": {
+    "classify": {
+      "call_type": "CHOKING",
+      "event_type": "食物噎住",
+      "fatal_category": "气道阻塞",
+      "response_unit": "救护",
+      "_raw": "```json\n{\"call_type\": \"CHOKING\", \"event_type\": \"食物噎住\", \"fatal_category\": \"气道阻塞\", \"response_unit\": \"救护\"}\n```"
+    },
+    "actions": {
+      "ask_address": {
+        "status": "present",
+        "turn": 2,
+        "quote": "先告诉我地址"
+      },
+      "ask_callback": {
+        "status": "present",
+        "turn": 5,
+        "quote": "你手机这个号能打通吗？"
+      },
+      "dispatch": {
+        "status": "present",
+        "turn": 4,
+        "quote": "救护车已经派出去了"
+      },
+      "ask_scene_safety": {
+        "status": "present",
+        "turn": 7,
+        "quote": "周围安全吧，没有别的危险吧？"
+      },
+      "ask_patient_basic": {
+        "status": "present",
+        "turn": 9,
+        "quote": "孩子多大，男孩女孩？"
+      },
+      "ask_onset_time": {
+        "status": "present",
+        "turn": 11,
+        "quote": "他是大概什么时候噎住的？"
+      },
+      "reassure": {
+        "status": "present",
+        "turn": 2,
+        "quote": "您别慌"
+      },
+      "repeat_address": {
+        "status": "present",
+        "turn": 21,
+        "quote": "广州路5号A栋1802对吧？"
+      },
+      "ask_consciousness": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_breathing": {
+        "status": "present",
+        "turn": 13,
+        "quote": "他现在还能咳出声、能哭吗，还是完全堵住出不了气？"
+      },
+      "found_no_breathing": {
+        "status": "present",
+        "turn": 14,
+        "quote": "咳不出来，也哭不出来，脸都发紫了"
+      },
+      "cpr_instruction": {
+        "status": "present",
+        "turn": 15,
+        "quote": "你从后面抱住他，让他身体前倾...连续冲五下"
+      },
+      "aed_instruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_bleeding": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_bleeding": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "bleeding_control": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_airway_obstruction": {
+        "status": "present",
+        "turn": 13,
+        "quote": "他现在还能咳出声、能哭吗，还是完全堵住出不了气？"
+      },
+      "found_airway_obstruction": {
+        "status": "present",
+        "turn": 14,
+        "quote": "咳不出来，也哭不出来，脸都发紫了"
+      },
+      "choking_maneuver": {
+        "status": "present",
+        "turn": 15,
+        "quote": "你从后面抱住他，让他身体前倾...连续冲五下"
+      },
+      "ask_contraction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_labor": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "delivery_guidance": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "warning_danger": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_history": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "_raw": "```json\n{\n  \"ask_address\": {\"status\": \"present\", \"turn\": 2, \"quote\": \"先告诉我地址\"},\n  \"ask_callback\": {\"status\": \"present\", \"turn\": 5, \"quote\": \"你手机这个号能打通吗？\"},\n  \"dispatch\": {\"status\": \"present\", \"turn\": 4, \"quote\": \"救护车已经派出去了\"},\n  \"ask_scene_safety\": {\"status\": \"present\", \"turn\": 7, \"quote\": \"周围安全吧，没有别的危险吧？\"},\n  \"ask_patient_basic\": {\"status\": \"present\", \"turn\": 9, \"quote\": \"孩子多大，男孩女孩？\"},\n  \"ask_onset_time\": {\"status\": \"present\", \"turn\": 11, \"quote\": \"他是大概什么时候噎住的？\"},\n  \"reassure\": {\"status\": \"present\", \"turn\": 2, \"quote\": \"您别慌\"},\n  \"repeat_address\": {\"status\": \"present\", \"turn\": 21, \"quote\": \"广州路5号A栋1802对吧？\"},\n  \"ask_consciousness\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_breathing\": {\"status\": \"present\", \"turn\": 13, \"quote\": \"他现在还能咳出声、能哭吗，还是完全堵住出不了气？\"},\n  \"found_no_breathing\": {\"status\": \"present\", \"turn\": 14, \"quote\": \"咳不出来，也哭不出来，脸都发紫了\"},\n  \"cpr_instruction\": {\"status\": \"present\", \"turn\": 15, \"quote\": \"你从后面抱住他，让他身体前倾...连续冲五下\"},\n  \"aed_instruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_bleeding\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_bleeding\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"bleeding_control\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_airway_obstruction\": {\"status\": \"present\", \"turn\": 13, \"quote\": \"他现在还能咳出声、能哭吗，还是完全堵住出不了气？\"},\n  \"found_airway_obstruction\": {\"status\": \"present\", \"turn\": 14, \"quote\": \"咳不出来，也哭不出来，脸都发紫了\"},\n  \"choking_maneuver\": {\"status\": \"present\", \"turn\": 15, \"quote\": \"你从后面抱住他，让他身体前倾...连续冲五下\"},\n  \"ask_contraction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_labor\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"delivery_guidance\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"warning_danger\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_history\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"}\n}\n```"
+    }
+  },
+  "C06": {
+    "classify": {
+      "call_type": "CHOKING",
+      "event_type": "气道阻塞",
+      "fatal_category": "气道阻塞",
+      "response_unit": "救护",
+      "_raw": "```json\n{\"call_type\": \"CHOKING\", \"event_type\": \"气道阻塞\", \"fatal_category\": \"气道阻塞\", \"response_unit\": \"救护\"}\n```"
+    },
+    "actions": {
+      "ask_address": {
+        "status": "present",
+        "turn": 2,
+        "quote": "给我地址"
+      },
+      "ask_callback": {
+        "status": "present",
+        "turn": 4,
+        "quote": "你电话多少？"
+      },
+      "dispatch": {
+        "status": "present",
+        "turn": 14,
+        "quote": "我们已经派车了"
+      },
+      "ask_scene_safety": {
+        "status": "present",
+        "turn": 6,
+        "quote": "你们在店里安全吧，周围没什么别的情况吧？"
+      },
+      "ask_patient_basic": {
+        "status": "present",
+        "turn": 8,
+        "quote": "他多大年纪？"
+      },
+      "ask_onset_time": {
+        "status": "present",
+        "turn": 10,
+        "quote": "什么时候噎住的？"
+      },
+      "reassure": {
+        "status": "present",
+        "turn": 14,
+        "quote": "再坚持一下下就好"
+      },
+      "repeat_address": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_consciousness": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_breathing": {
+        "status": "present",
+        "turn": 12,
+        "quote": "他现在还能说话、能呼吸吗？"
+      },
+      "found_no_breathing": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "cpr_instruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "aed_instruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_bleeding": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_bleeding": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "bleeding_control": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_airway_obstruction": {
+        "status": "present",
+        "turn": 11,
+        "quote": "他现在还能说话、能呼吸吗？"
+      },
+      "found_airway_obstruction": {
+        "status": "present",
+        "turn": 11,
+        "quote": "说不了话，喘得很难受，脸通红"
+      },
+      "choking_maneuver": {
+        "status": "present",
+        "turn": 14,
+        "quote": "你让他坐直了别乱动"
+      },
+      "ask_contraction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_labor": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "delivery_guidance": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "warning_danger": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_history": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "_raw": "```json\n{\n  \"ask_address\": {\"status\": \"present\", \"turn\": 2, \"quote\": \"给我地址\"},\n  \"ask_callback\": {\"status\": \"present\", \"turn\": 4, \"quote\": \"你电话多少？\"},\n  \"dispatch\": {\"status\": \"present\", \"turn\": 14, \"quote\": \"我们已经派车了\"},\n  \"ask_scene_safety\": {\"status\": \"present\", \"turn\": 6, \"quote\": \"你们在店里安全吧，周围没什么别的情况吧？\"},\n  \"ask_patient_basic\": {\"status\": \"present\", \"turn\": 8, \"quote\": \"他多大年纪？\"},\n  \"ask_onset_time\": {\"status\": \"present\", \"turn\": 10, \"quote\": \"什么时候噎住的？\"},\n  \"reassure\": {\"status\": \"present\", \"turn\": 14, \"quote\": \"再坚持一下下就好\"},\n  \"repeat_address\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_consciousness\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_breathing\": {\"status\": \"present\", \"turn\": 12, \"quote\": \"他现在还能说话、能呼吸吗？\"},\n  \"found_no_breathing\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"cpr_instruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"aed_instruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_bleeding\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_bleeding\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"bleeding_control\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_airway_obstruction\": {\"status\": \"present\", \"turn\": 11, \"quote\": \"他现在还能说话、能呼吸吗？\"},\n  \"found_airway_obstruction\": {\"status\": \"present\", \"turn\": 11, \"quote\": \"说不了话，喘得很难受，脸通红\"},\n  \"choking_maneuver\": {\"status\": \"present\", \"turn\": 14, \"quote\": \"你让他坐直了别乱动\"},\n  \"ask_contraction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_labor\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"delivery_guidance\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"warning_danger\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_history\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"}\n}\n```"
+    }
+  },
+  "C07": {
+    "classify": {
+      "call_type": "OBSTETRIC",
+      "event_type": "临产",
+      "fatal_category": "分娩",
+      "response_unit": "救护",
+      "_raw": "```json\n{\"call_type\": \"OBSTETRIC\", \"event_type\": \"临产\", \"fatal_category\": \"分娩\", \"response_unit\": \"救护\"}\n```"
+    },
+    "actions": {
+      "ask_address": {
+        "status": "present",
+        "turn": 2,
+        "quote": "地址告诉我"
+      },
+      "ask_callback": {
+        "status": "present",
+        "turn": 4,
+        "quote": "你的电话给我"
+      },
+      "dispatch": {
+        "status": "present",
+        "turn": 4,
+        "quote": "救护车已经派出去了"
+      },
+      "ask_scene_safety": {
+        "status": "present",
+        "turn": 6,
+        "quote": "没有别的情况、周围安全吧"
+      },
+      "ask_patient_basic": {
+        "status": "present",
+        "turn": 8,
+        "quote": "产妇多大年纪？"
+      },
+      "ask_onset_time": {
+        "status": "present",
+        "turn": 10,
+        "quote": "她大概是几点开始肚子疼的？"
+      },
+      "reassure": {
+        "status": "present",
+        "turn": 16,
+        "quote": "不用紧张，我们的人马上就到，保持电话别挂"
+      },
+      "repeat_address": {
+        "status": "present",
+        "turn": 18,
+        "quote": "XX路9号6楼对吧"
+      },
+      "ask_consciousness": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_breathing": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_no_breathing": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "cpr_instruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "aed_instruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_bleeding": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_bleeding": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "bleeding_control": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_airway_obstruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_airway_obstruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "choking_maneuver": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_contraction": {
+        "status": "present",
+        "turn": 12,
+        "quote": "现在多久疼一次？羊水破了没有？"
+      },
+      "found_labor": {
+        "status": "present",
+        "turn": 13,
+        "quote": "刚才破水了，流了一摊"
+      },
+      "delivery_guidance": {
+        "status": "present",
+        "turn": 14,
+        "quote": "现在先让她平躺下来，屁股底下垫个枕头或者被子垫高，准备几条干净的毛巾"
+      },
+      "warning_danger": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_history": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "_raw": "```json\n{\n  \"ask_address\": {\"status\": \"present\", \"turn\": 2, \"quote\": \"地址告诉我\"},\n  \"ask_callback\": {\"status\": \"present\", \"turn\": 4, \"quote\": \"你的电话给我\"},\n  \"dispatch\": {\"status\": \"present\", \"turn\": 4, \"quote\": \"救护车已经派出去了\"},\n  \"ask_scene_safety\": {\"status\": \"present\", \"turn\": 6, \"quote\": \"没有别的情况、周围安全吧\"},\n  \"ask_patient_basic\": {\"status\": \"present\", \"turn\": 8, \"quote\": \"产妇多大年纪？\"},\n  \"ask_onset_time\": {\"status\": \"present\", \"turn\": 10, \"quote\": \"她大概是几点开始肚子疼的？\"},\n  \"reassure\": {\"status\": \"present\", \"turn\": 16, \"quote\": \"不用紧张，我们的人马上就到，保持电话别挂\"},\n  \"repeat_address\": {\"status\": \"present\", \"turn\": 18, \"quote\": \"XX路9号6楼对吧\"},\n  \"ask_consciousness\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_breathing\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_no_breathing\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"cpr_instruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"aed_instruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_bleeding\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_bleeding\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"bleeding_control\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_airway_obstruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_airway_obstruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"choking_maneuver\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_contraction\": {\"status\": \"present\", \"turn\": 12, \"quote\": \"现在多久疼一次？羊水破了没有？\"},\n  \"found_labor\": {\"status\": \"present\", \"turn\": 13, \"quote\": \"刚才破水了，流了一摊\"},\n  \"delivery_guidance\": {\"status\": \"present\", \"turn\": 14, \"quote\": \"现在先让她平躺下来，屁股底下垫个枕头或者被子垫高，准备几条干净的毛巾\"},\n  \"warning_danger\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_history\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"}\n}\n```"
+    }
+  },
+  "C08": {
+    "classify": {
+      "call_type": "OBSTETRIC",
+      "event_type": "临产",
+      "fatal_category": "分娩",
+      "response_unit": "救护",
+      "_raw": "```json\n{\"call_type\": \"OBSTETRIC\", \"event_type\": \"临产\", \"fatal_category\": \"分娩\", \"response_unit\": \"救护\"}\n```"
+    },
+    "actions": {
+      "ask_address": {
+        "status": "present",
+        "turn": 2,
+        "quote": "地址在哪？"
+      },
+      "ask_callback": {
+        "status": "present",
+        "turn": 4,
+        "quote": "你电话多少？"
+      },
+      "dispatch": {
+        "status": "present",
+        "turn": 4,
+        "quote": "好，车派出去了"
+      },
+      "ask_scene_safety": {
+        "status": "present",
+        "turn": 6,
+        "quote": "你们现在安全吧，没有摔倒磕到吧？"
+      },
+      "ask_patient_basic": {
+        "status": "present",
+        "turn": 8,
+        "quote": "她多大了？"
+      },
+      "ask_onset_time": {
+        "status": "present",
+        "turn": 10,
+        "quote": "什么时候开始有反应的？"
+      },
+      "reassure": {
+        "status": "present",
+        "turn": 14,
+        "quote": "你们先别乱动了，救护车马上就到，坚持住，别紧张。"
+      },
+      "repeat_address": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_consciousness": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_breathing": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_no_breathing": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "cpr_instruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "aed_instruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_bleeding": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_bleeding": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "bleeding_control": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_airway_obstruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_airway_obstruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "choking_maneuver": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_contraction": {
+        "status": "present",
+        "turn": 12,
+        "quote": "现在多久疼一次？见红或者羊水破了吗？"
+      },
+      "found_labor": {
+        "status": "present",
+        "turn": 13,
+        "quote": "羊水刚破了"
+      },
+      "delivery_guidance": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "warning_danger": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_history": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "_raw": "```json\n{\n  \"ask_address\": {\"status\": \"present\", \"turn\": 2, \"quote\": \"地址在哪？\"},\n  \"ask_callback\": {\"status\": \"present\", \"turn\": 4, \"quote\": \"你电话多少？\"},\n  \"dispatch\": {\"status\": \"present\", \"turn\": 4, \"quote\": \"好，车派出去了\"},\n  \"ask_scene_safety\": {\"status\": \"present\", \"turn\": 6, \"quote\": \"你们现在安全吧，没有摔倒磕到吧？\"},\n  \"ask_patient_basic\": {\"status\": \"present\", \"turn\": 8, \"quote\": \"她多大了？\"},\n  \"ask_onset_time\": {\"status\": \"present\", \"turn\": 10, \"quote\": \"什么时候开始有反应的？\"},\n  \"reassure\": {\"status\": \"present\", \"turn\": 14, \"quote\": \"你们先别乱动了，救护车马上就到，坚持住，别紧张。\"},\n  \"repeat_address\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_consciousness\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_breathing\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_no_breathing\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"cpr_instruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"aed_instruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_bleeding\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_bleeding\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"bleeding_control\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_airway_obstruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_airway_obstruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"choking_maneuver\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_contraction\": {\"status\": \"present\", \"turn\": 12, \"quote\": \"现在多久疼一次？见红或者羊水破了吗？\"},\n  \"found_labor\": {\"status\": \"present\", \"turn\": 13, \"quote\": \"羊水刚破了\"},\n  \"delivery_guidance\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"warning_danger\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_history\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"}\n}\n```"
+    }
+  },
+  "C09": {
+    "classify": {
+      "call_type": "FIRE",
+      "event_type": "燃气泄漏",
+      "fatal_category": "null",
+      "response_unit": "救护+消防",
+      "_raw": "```json\n{\"call_type\": \"FIRE\", \"event_type\": \"燃气泄漏\", \"fatal_category\": \"null\", \"response_unit\": \"救护+消防\"}\n```"
+    },
+    "actions": {
+      "ask_address": {
+        "status": "present",
+        "turn": 2,
+        "quote": "先告诉我地址，您现在人在哪里？"
+      },
+      "ask_callback": {
+        "status": "present",
+        "turn": 4,
+        "quote": "您手机号多少？"
+      },
+      "dispatch": {
+        "status": "present",
+        "turn": 4,
+        "quote": "好，我已经通知消防和救护车了。"
+      },
+      "ask_scene_safety": {
+        "status": "present",
+        "turn": 6,
+        "quote": "您现在马上把门窗打开通风，千万不要开灯、不要打火、不要在屋里打电话，也别碰任何开"
+      },
+      "ask_patient_basic": {
+        "status": "present",
+        "turn": 12,
+        "quote": "您多大年纪，现在有没有头晕、恶心不舒服？"
+      },
+      "ask_onset_time": {
+        "status": "present",
+        "turn": 14,
+        "quote": "大概什么时候开始闻到味道的？"
+      },
+      "reassure": {
+        "status": "present",
+        "turn": 16,
+        "quote": "您别慌，消防和救护车马上到，就在楼下等着，保持电话。"
+      },
+      "repeat_address": {
+        "status": "present",
+        "turn": 18,
+        "quote": "我再确认一下，是石头城路7号4单元302对吧？"
+      },
+      "ask_consciousness": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_breathing": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_no_breathing": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "cpr_instruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "aed_instruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_bleeding": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_bleeding": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "bleeding_control": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_airway_obstruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_airway_obstruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "choking_maneuver": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_contraction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_labor": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "delivery_guidance": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "warning_danger": {
+        "status": "present",
+        "turn": 6,
+        "quote": "千万不要开灯、不要打火、不要在屋里打电话，也别碰任何开关。"
+      },
+      "ask_history": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "_raw": "```json\n{\n  \"ask_address\": {\"status\": \"present\", \"turn\": 2, \"quote\": \"先告诉我地址，您现在人在哪里？\"},\n  \"ask_callback\": {\"status\": \"present\", \"turn\": 4, \"quote\": \"您手机号多少？\"},\n  \"dispatch\": {\"status\": \"present\", \"turn\": 4, \"quote\": \"好，我已经通知消防和救护车了。\"},\n  \"ask_scene_safety\": {\"status\": \"present\", \"turn\": 6, \"quote\": \"您现在马上把门窗打开通风，千万不要开灯、不要打火、不要在屋里打电话，也别碰任何开关。\"},\n  \"ask_patient_basic\": {\"status\": \"present\", \"turn\": 12, \"quote\": \"您多大年纪，现在有没有头晕、恶心不舒服？\"},\n  \"ask_onset_time\": {\"status\": \"present\", \"turn\": 14, \"quote\": \"大概什么时候开始闻到味道的？\"},\n  \"reassure\": {\"status\": \"present\", \"turn\": 16, \"quote\": \"您别慌，消防和救护车马上到，就在楼下等着，保持电话。\"},\n  \"repeat_address\": {\"status\": \"present\", \"turn\": 18, \"quote\": \"我再确认一下，是石头城路7号4单元302对吧？\"},\n  \"ask_consciousness\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_breathing\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_no_breathing\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"cpr_instruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"aed_instruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_bleeding\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_bleeding\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"bleeding_control\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_airway_obstruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_airway_obstruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"choking_maneuver\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_contraction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_labor\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"delivery_guidance\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"warning_danger\": {\"status\": \"present\", \"turn\": 6, \"quote\": \"千万不要开灯、不要打火、不要在屋里打电话，也别碰任何开关。\"},\n  \"ask_history\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"}\n}\n```"
+    }
+  },
+  "C10": {
+    "classify": {
+      "call_type": "FIRE",
+      "event_type": "火灾伤员",
+      "fatal_category": "气道阻塞",
+      "response_unit": "救护+消防",
+      "_raw": "```json\n{\"call_type\": \"FIRE\", \"event_type\": \"火灾伤员\", \"fatal_category\": \"气道阻塞\", \"response_unit\": \"救护+消防\"}\n```"
+    },
+    "actions": {
+      "ask_address": {
+        "status": "present",
+        "turn": 2,
+        "quote": "哪一栋楼，几层？"
+      },
+      "ask_callback": {
+        "status": "present",
+        "turn": 5,
+        "quote": "你电话给我"
+      },
+      "dispatch": {
+        "status": "present",
+        "turn": 4,
+        "quote": "好，消防和救护车都派出去了"
+      },
+      "ask_scene_safety": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_patient_basic": {
+        "status": "present",
+        "turn": 8,
+        "quote": "那个老人多大年纪，是男的还是女的？"
+      },
+      "ask_onset_time": {
+        "status": "present",
+        "turn": 10,
+        "quote": "他大概是什么时候被烟呛晕的？"
+      },
+      "reassure": {
+        "status": "present",
+        "turn": 18,
+        "quote": "继续按，别停，医生马上到，坚持住"
+      },
+      "repeat_address": {
+        "status": "present",
+        "turn": 20,
+        "quote": "我确认一下，你们是仙林大道12号7栋对吧？"
+      },
+      "ask_consciousness": {
+        "status": "present",
+        "turn": 12,
+        "quote": "那个老人现在什么情况，有呼吸吗？"
+      },
+      "ask_breathing": {
+        "status": "present",
+        "turn": 12,
+        "quote": "那个老人现在什么情况，有呼吸吗？"
+      },
+      "found_no_breathing": {
+        "status": "present",
+        "turn": 13,
+        "quote": "抬下来了，但是叫他没反应，好像也没什么呼吸了"
+      },
+      "cpr_instruction": {
+        "status": "present",
+        "turn": 14,
+        "quote": "你把他平放在地上，我现在教你做胸外按压，双手叠起来压胸口，一分钟一百下"
+      },
+      "aed_instruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_bleeding": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_bleeding": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "bleeding_control": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_airway_obstruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_airway_obstruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "choking_maneuver": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_contraction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_labor": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "delivery_guidance": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "warning_danger": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_history": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "_raw": "```json\n{\n  \"ask_address\": {\"status\": \"present\", \"turn\": 2, \"quote\": \"哪一栋楼，几层？\"},\n  \"ask_callback\": {\"status\": \"present\", \"turn\": 5, \"quote\": \"你电话给我\"},\n  \"dispatch\": {\"status\": \"present\", \"turn\": 4, \"quote\": \"好，消防和救护车都派出去了\"},\n  \"ask_scene_safety\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_patient_basic\": {\"status\": \"present\", \"turn\": 8, \"quote\": \"那个老人多大年纪，是男的还是女的？\"},\n  \"ask_onset_time\": {\"status\": \"present\", \"turn\": 10, \"quote\": \"他大概是什么时候被烟呛晕的？\"},\n  \"reassure\": {\"status\": \"present\", \"turn\": 18, \"quote\": \"继续按，别停，医生马上到，坚持住\"},\n  \"repeat_address\": {\"status\": \"present\", \"turn\": 20, \"quote\": \"我确认一下，你们是仙林大道12号7栋对吧？\"},\n  \"ask_consciousness\": {\"status\": \"present\", \"turn\": 12, \"quote\": \"那个老人现在什么情况，有呼吸吗？\"},\n  \"ask_breathing\": {\"status\": \"present\", \"turn\": 12, \"quote\": \"那个老人现在什么情况，有呼吸吗？\"},\n  \"found_no_breathing\": {\"status\": \"present\", \"turn\": 13, \"quote\": \"抬下来了，但是叫他没反应，好像也没什么呼吸了\"},\n  \"cpr_instruction\": {\"status\": \"present\", \"turn\": 14, \"quote\": \"你把他平放在地上，我现在教你做胸外按压，双手叠起来压胸口，一分钟一百下\"},\n  \"aed_instruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_bleeding\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_bleeding\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"bleeding_control\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_airway_obstruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_airway_obstruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"choking_maneuver\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_contraction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_labor\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"delivery_guidance\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"warning_danger\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_history\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"}\n}\n```"
+    }
+  },
+  "C11": {
+    "classify": {
+      "call_type": "GENERAL",
+      "event_type": "老人发烧",
+      "fatal_category": null,
+      "response_unit": "救护",
+      "_raw": "```json\n{\"call_type\": \"GENERAL\", \"event_type\": \"老人发烧\", \"fatal_category\": null, \"response_unit\": \"救护\"}\n```"
+    },
+    "actions": {
+      "ask_address": {
+        "status": "present",
+        "turn": 2,
+        "quote": "先告诉我地址"
+      },
+      "ask_callback": {
+        "status": "present",
+        "turn": 4,
+        "quote": "你的电话给我一下"
+      },
+      "dispatch": {
+        "status": "present",
+        "turn": 4,
+        "quote": "车派出去了"
+      },
+      "ask_scene_safety": {
+        "status": "present",
+        "turn": 6,
+        "quote": "家里现在安全吧，没有别的意外吧？"
+      },
+      "ask_patient_basic": {
+        "status": "present",
+        "turn": 8,
+        "quote": "老人家多大年纪？"
+      },
+      "ask_onset_time": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "reassure": {
+        "status": "present",
+        "turn": 14,
+        "quote": "救护车马上到，您别急，保持电话"
+      },
+      "repeat_address": {
+        "status": "present",
+        "turn": 16,
+        "quote": "是尧化门街20号3栋502对吧？"
+      },
+      "ask_consciousness": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_breathing": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_no_breathing": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "cpr_instruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "aed_instruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_bleeding": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_bleeding": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "bleeding_control": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_airway_obstruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_airway_obstruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "choking_maneuver": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_contraction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_labor": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "delivery_guidance": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "warning_danger": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_history": {
+        "status": "present",
+        "turn": 10,
+        "quote": "他有没有高血压、糖尿病这些老毛病，吃着什么药？"
+      },
+      "_raw": "```json\n{\n  \"ask_address\": {\"status\": \"present\", \"turn\": 2, \"quote\": \"先告诉我地址\"},\n  \"ask_callback\": {\"status\": \"present\", \"turn\": 4, \"quote\": \"你的电话给我一下\"},\n  \"dispatch\": {\"status\": \"present\", \"turn\": 4, \"quote\": \"车派出去了\"},\n  \"ask_scene_safety\": {\"status\": \"present\", \"turn\": 6, \"quote\": \"家里现在安全吧，没有别的意外吧？\"},\n  \"ask_patient_basic\": {\"status\": \"present\", \"turn\": 8, \"quote\": \"老人家多大年纪？\"},\n  \"ask_onset_time\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"reassure\": {\"status\": \"present\", \"turn\": 14, \"quote\": \"救护车马上到，您别急，保持电话\"},\n  \"repeat_address\": {\"status\": \"present\", \"turn\": 16, \"quote\": \"是尧化门街20号3栋502对吧？\"},\n  \"ask_consciousness\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_breathing\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_no_breathing\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"cpr_instruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"aed_instruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_bleeding\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_bleeding\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"bleeding_control\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_airway_obstruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_airway_obstruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"choking_maneuver\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_contraction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_labor\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"delivery_guidance\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"warning_danger\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_history\": {\"status\": \"present\", \"turn\": 10, \"quote\": \"他有没有高血压、糖尿病这些老毛病，吃着什么药？\"}\n}\n```"
+    }
+  },
+  "C12": {
+    "classify": {
+      "call_type": "CARDIAC",
+      "event_type": "溺水急救",
+      "fatal_category": "CPR",
+      "response_unit": "救护",
+      "_raw": "```json\n{\"call_type\": \"CARDIAC\", \"event_type\": \"溺水急救\", \"fatal_category\": \"CPR\", \"response_unit\": \"救护\"}\n```"
+    },
+    "actions": {
+      "ask_address": {
+        "status": "present",
+        "turn": 2,
+        "quote": "在哪个位置，河堤哪一段？"
+      },
+      "ask_callback": {
+        "status": "present",
+        "turn": 5,
+        "quote": "137XXXXXXXX"
+      },
+      "dispatch": {
+        "status": "present",
+        "turn": 4,
+        "quote": "好，救护车派出去了。"
+      },
+      "ask_scene_safety": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_patient_basic": {
+        "status": "present",
+        "turn": 8,
+        "quote": "落水的人多大年纪？"
+      },
+      "ask_onset_time": {
+        "status": "present",
+        "turn": 10,
+        "quote": "他大概什么时候被捞上来的？"
+      },
+      "reassure": {
+        "status": "present",
+        "turn": 20,
+        "quote": "别慌，车马上到，你们坚持住，保持电话别挂。"
+      },
+      "repeat_address": {
+        "status": "present",
+        "turn": 23,
+        "quote": "我确认一下，你们是在河堤路小亭子旁边对吧？"
+      },
+      "ask_consciousness": {
+        "status": "present",
+        "turn": 12,
+        "quote": "您叫他、拍他肩膀，有反应吗？"
+      },
+      "ask_breathing": {
+        "status": "present",
+        "turn": 14,
+        "quote": "那他还有呼吸吗，看胸口有没有起伏？"
+      },
+      "found_no_breathing": {
+        "status": "present",
+        "turn": 15,
+        "quote": "好像没呼吸了，胸口不动。"
+      },
+      "cpr_instruction": {
+        "status": "present",
+        "turn": 16,
+        "quote": "您先把他侧过来躺，头低一点，把肚子里的水拍出来、控一控。"
+      },
+      "aed_instruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_bleeding": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_bleeding": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "bleeding_control": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_airway_obstruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_airway_obstruction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "choking_maneuver": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_contraction": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "found_labor": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "delivery_guidance": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "warning_danger": {
+        "status": "absent",
+        "turn": null,
+        "quote": ""
+      },
+      "ask_history": {
+        "status": "present",
+        "turn": 18,
+        "quote": "他以前有什么病吗，会不会游泳？"
+      },
+      "_raw": "```json\n{\n  \"ask_address\": {\"status\": \"present\", \"turn\": 2, \"quote\": \"在哪个位置，河堤哪一段？\"},\n  \"ask_callback\": {\"status\": \"present\", \"turn\": 5, \"quote\": \"137XXXXXXXX\"},\n  \"dispatch\": {\"status\": \"present\", \"turn\": 4, \"quote\": \"好，救护车派出去了。\"},\n  \"ask_scene_safety\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_patient_basic\": {\"status\": \"present\", \"turn\": 8, \"quote\": \"落水的人多大年纪？\"},\n  \"ask_onset_time\": {\"status\": \"present\", \"turn\": 10, \"quote\": \"他大概什么时候被捞上来的？\"},\n  \"reassure\": {\"status\": \"present\", \"turn\": 20, \"quote\": \"别慌，车马上到，你们坚持住，保持电话别挂。\"},\n  \"repeat_address\": {\"status\": \"present\", \"turn\": 23, \"quote\": \"我确认一下，你们是在河堤路小亭子旁边对吧？\"},\n  \"ask_consciousness\": {\"status\": \"present\", \"turn\": 12, \"quote\": \"您叫他、拍他肩膀，有反应吗？\"},\n  \"ask_breathing\": {\"status\": \"present\", \"turn\": 14, \"quote\": \"那他还有呼吸吗，看胸口有没有起伏？\"},\n  \"found_no_breathing\": {\"status\": \"present\", \"turn\": 15, \"quote\": \"好像没呼吸了，胸口不动。\"},\n  \"cpr_instruction\": {\"status\": \"present\", \"turn\": 16, \"quote\": \"您先把他侧过来躺，头低一点，把肚子里的水拍出来、控一控。\"},\n  \"aed_instruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_bleeding\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_bleeding\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"bleeding_control\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_airway_obstruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_airway_obstruction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"choking_maneuver\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_contraction\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"found_labor\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"delivery_guidance\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"warning_danger\": {\"status\": \"absent\", \"turn\": null, \"quote\": \"\"},\n  \"ask_history\": {\"status\": \"present\", \"turn\": 18, \"quote\": \"他以前有什么病吗，会不会游泳？\"}\n}\n```"
+    }
+  }
+}

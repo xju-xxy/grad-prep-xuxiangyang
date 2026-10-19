@@ -86,3 +86,30 @@ crisis-sight/
 结果页底部（知识库命中来源）见 [screenshots/result-bottom.png](screenshots/result-bottom.png)。
 
 详细源码见 `src/crisis-sight/`，接口和数据结构的说明在 `src/crisis-sight/README.md`。
+
+## 新版：CrisisSight Pro（src/crisis-sight-pro/）
+
+Flask 那版能跑，但界面是手搓的 CSS，动画和图表都比较糙。于是我又用 React + TypeScript 重写了一版，推演逻辑和灾害知识库从 Python 整体搬到了前端，不用起后端、不用配 Key，打开页面就能推演。
+
+技术栈换成了 Vite 5 + React 18 + TypeScript + Tailwind CSS 3，动画用 Framer Motion，图表用 Recharts，图标统一走 lucide-react。界面走应急指挥大屏的路子：深蓝黑底 + 青蓝强调色 + 玻璃拟态面板。
+
+业务上比旧版多了几样：推演过程做成了逐段浮现的时间轴（当前 Agent 高亮、已完成折叠），结果面板加了风险维度雷达图、分时段处置优先级柱状图、资源需求占比饼图，这些数据都是从推演结果里现算的，不是写死的。其余功能（四智能体两轮发言、知识库命中来源、报告复制/下载、localStorage 记录）跟旧版一致。
+
+```bash
+cd src/crisis-sight-pro
+npm install
+npm run dev     # 打开 http://localhost:5173
+```
+
+更细的说明（目录结构、设计取舍、已知不足）见 `src/crisis-sight-pro/README.md`。
+
+## CrisisBench 评测可视化平台
+
+第二个系统，`src/crisisbench-lab/`。把我论文项目 CrisisBench（多智能体灾害态势推理评测基
+准，36 个场景 × 三层要点）的真实实验结果做成可交互看板：总览、分层得分对比、雷达对比、场景
+浏览、裁判可靠性、成本、图表库七个 Tab。数字全部从 `research/crisis-bench/results/` 下的结
+果文件现算，页面上都标了出处，没有编造。
+
+技术栈是 Vite + React 18 + TypeScript + Tailwind v3 + Recharts + Framer Motion，纯前端，
+不需要后端。跑法：`cd engineering/src/crisisbench-lab` 然后 `npm install`、`npm run dev`
+（开发端口 5174）。细节见 `src/crisisbench-lab/README.md`。

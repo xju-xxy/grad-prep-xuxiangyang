@@ -1,0 +1,98 @@
+{
+  "args": {
+    "epochs": 8,
+    "train_size": 10000,
+    "batch_size": 128,
+    "lr": 0.05,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "data_dir": "./data",
+    "out_dir": "./results",
+    "seed": 42,
+    "num_workers": 2,
+    "threads": 0
+  },
+  "device": "cpu",
+  "train_images": 10000,
+  "test_images": 10000,
+  "params_M": 11.174,
+  "epochs_done": 8,
+  "best_test_acc": 58.43,
+  "last_test_acc": 58.43,
+  "total_train_seconds": 1170.0,
+  "torch": "2.14.1+cpu",
+  "epochs_detail": [
+    {
+      "epoch": 1,
+      "lr": 0.05,
+      "train_loss": 2.0911,
+      "train_acc": 25.14,
+      "test_loss": 1.9053,
+      "test_acc": 33.08,
+      "seconds": 146.2
+    },
+    {
+      "epoch": 2,
+      "lr": 0.048097,
+      "train_loss": 1.7096,
+      "train_acc": 35.22,
+      "test_loss": 2.4072,
+      "test_acc": 24.37,
+      "seconds": 145.3
+    },
+    {
+      "epoch": 3,
+      "lr": 0.042678,
+      "train_loss": 1.6814,
+      "train_acc": 37.03,
+      "test_loss": 1.5864,
+      "test_acc": 40.8,
+      "seconds": 146.2
+    },
+    {
+      "epoch": 4,
+      "lr": 0.034567,
+      "train_loss": 1.4906,
+      "train_acc": 44.4,
+      "test_loss": 1.4233,
+      "test_acc": 47.43,
+      "seconds": 146.2
+    },
+    {
+      "epoch": 5,
+      "lr": 0.025,
+      "train_loss": 1.3735,
+      "train_acc": 49.82,
+      "test_loss": 1.3792,
+      "test_acc": 50.15,
+      "seconds": 148.8
+    },
+    {
+      "epoch": 6,
+      "lr": 0.015433,
+      "train_loss": 1.2631,
+      "train_acc": 53.34,
+      "test_loss": 1.3336,
+      "test_acc": 51.61,
+      "seconds": 149.6
+    },
+    {
+      "epoch": 7,
+      "lr": 0.007322,
+      "train_loss": 1.1678,
+      "train_acc": 56.97,
+      "test_loss": 1.2336,
+      "test_acc": 55.56,
+      "seconds": 144.0
+    },
+    {
+      "epoch": 8,
+      "lr": 0.001903,
+      "train_loss": 1.0931,
+      "train_acc": 60.43,
+      "test_loss": 1.1546,
+      "test_acc": 58.43,
+      "seconds": 143.6
+    }
+  ]
+}

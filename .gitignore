@@ -14,6 +14,7 @@ ENV/
 
 # Node
 node_modules/
+dist/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -40,6 +41,12 @@ logs/
 data/
 # 第4篇复现的评测样本很小且复现必需，单独放行（原始大数据集 events_set1 仍忽略）
 !research/reproduction/llm-crisis-demo/data/
+# 第63篇复现手搓的小知识库（事件规格/画像/协议/地址表），复现必需，放行
+!research/reproduction/sim911-demo/
+!research/reproduction/sim911-demo/data/
+# 第4篇复现的知识库、第21篇的合成数据，都是小文件，放行
+!research/reproduction/wildfiregpt-demo/data/
+!research/reproduction/sstkg-demo/data/
 datasets/
 checkpoints/
 outputs/

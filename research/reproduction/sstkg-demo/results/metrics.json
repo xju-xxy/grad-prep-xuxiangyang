@@ -1,0 +1,106 @@
+{
+  "train": {
+    "pred_formula": {
+      "rmse": 8.1498,
+      "mape": 8.155,
+      "acc10": 0.6958,
+      "acc15": 0.8716
+    },
+    "pred_als": {
+      "rmse": 6.7888,
+      "mape": 6.7947,
+      "acc10": 0.7784,
+      "acc15": 0.9153
+    },
+    "pred_persist": {
+      "rmse": 14.1738,
+      "mape": 14.707,
+      "acc10": 0.4826,
+      "acc15": 0.6442
+    },
+    "pred_node_mean": {
+      "rmse": 20.0523,
+      "mape": 23.9085,
+      "acc10": 0.3284,
+      "acc15": 0.51
+    }
+  },
+  "test": {
+    "pred_formula": {
+      "rmse": 8.9038,
+      "mape": 7.0752,
+      "acc10": 0.732,
+      "acc15": 0.921
+    },
+    "pred_als": {
+      "rmse": 9.7583,
+      "mape": 7.7385,
+      "acc10": 0.689,
+      "acc15": 0.891
+    },
+    "pred_persist": {
+      "rmse": 13.0005,
+      "mape": 10.3855,
+      "acc10": 0.573,
+      "acc15": 0.766
+    },
+    "pred_node_mean": {
+      "rmse": 17.6673,
+      "mape": 14.4295,
+      "acc10": 0.319,
+      "acc15": 0.523
+    }
+  },
+  "test_shock_day_only": {
+    "pred_formula": {
+      "rmse": 8.266,
+      "mape": 6.3957,
+      "acc10": 0.78,
+      "acc15": 0.93
+    },
+    "pred_als": {
+      "rmse": 9.02,
+      "mape": 6.7593,
+      "acc10": 0.77,
+      "acc15": 0.89
+    },
+    "pred_persist": {
+      "rmse": 13.0001,
+      "mape": 10.4143,
+      "acc10": 0.57,
+      "acc15": 0.76
+    },
+    "pred_node_mean": {
+      "rmse": 20.3036,
+      "mape": 16.9386,
+      "acc10": 0.2,
+      "acc15": 0.4
+    }
+  },
+  "test_shock_day_after": {
+    "pred_formula": {
+      "rmse": 8.8239,
+      "mape": 7.1572,
+      "acc10": 0.77,
+      "acc15": 0.88
+    },
+    "pred_als": {
+      "rmse": 9.0006,
+      "mape": 7.3502,
+      "acc10": 0.73,
+      "acc15": 0.91
+    },
+    "pred_persist": {
+      "rmse": 11.9358,
+      "mape": 9.6544,
+      "acc10": 0.64,
+      "acc15": 0.8
+    },
+    "pred_node_mean": {
+      "rmse": 16.0655,
+      "mape": 13.7115,
+      "acc10": 0.33,
+      "acc15": 0.58
+    }
+  }
+}

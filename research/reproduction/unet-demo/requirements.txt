@@ -1,0 +1,8 @@
+# U-Net 复现用到的库。
+# 装法：pip install -r requirements.txt
+# 注意：本机系统 python 3.14 里已经装好了 torch(CPU) / numpy / matplotlib / pillow，
+# 所以这个项目我直接用系统 python 跑，没建 .venv。
+torch>=2.0
+numpy
+matplotlib
+pillow

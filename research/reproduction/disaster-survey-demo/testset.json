@@ -1,0 +1,66 @@
+{
+  "note": "自己写的评测集：12 条中文灾情文本/情报，覆盖综述的四个阶段；其中 Response 覆盖五个子任务，态势评估还带了细分。gold 里的 阶段/任务/细分 是我按 taxonomy 手工标注的答案，模型类型是我按综述思路给的参考值（分类/估计→ELM，生成→DLM），不是论文硬标准。",
+  "model": "glm-4-flash",
+  "items": [
+    {
+      "id": "R1",
+      "text": "微博上有人发了一段视频，说是某地暴雨积水，但我们不确定这条信息到底是不是跟这次台风灾害有关，先判断一下它相不相关。",
+      "gold": {"stage": "response", "task": "disaster_identification", "model": "ELM"}
+    },
+    {
+      "id": "R2",
+      "text": "市应急中心陆续收到多条信息：城东出现山洪，道路被冲毁，多处房屋进水，还有人被困。请判断这属于哪一种灾害。",
+      "gold": {"stage": "response", "task": "disaster_situation_assessment", "subtype": "situation_classification", "model": "ELM"}
+    },
+    {
+      "id": "R3",
+      "text": "目前某县水位已超警戒线 2.3 米，主城区约三分之一区域进水，估计受灾人口在 8 万以上。请评估这次灾情的严重程度等级。",
+      "gold": {"stage": "response", "task": "disaster_situation_assessment", "subtype": "severity_estimation", "model": "ELM"}
+    },
+    {
+      "id": "R4",
+      "text": "请根据以下零散信息生成一份简洁的灾情摘要：台风今晚登陆、阵风 14 级、沿海三个乡镇已断电、预计转移两万人。",
+      "gold": {"stage": "response", "task": "disaster_situation_assessment", "subtype": "description_generation", "model": "DLM"}
+    },
+    {
+      "id": "R5",
+      "text": "现在有三个渠道报上来的信息：气象台说雨量 80 毫米、社区网格员说两栋楼进水、消防救援队说接到三次求助。内容有重复也有出入，请把它们汇总整合成一份统一的情况汇总。",
+      "gold": {"stage": "response", "task": "disaster_information_coordination", "model": "DLM"}
+    },
+    {
+      "id": "R6",
+      "text": "某小区被淹，被困居民大约 200 人，其中有老人和小孩。现有 3 艘冲锋舟，从小区到最近的安置点要经过 3 个路口。请给出一条救援方案和路线安排。",
+      "gold": {"stage": "response", "task": "disaster_rescuing", "model": "DLM"}
+    },
+    {
+      "id": "R7",
+      "text": "有市民打电话来问：家里进水了，电器是不是要先断电？大概什么时候可以回家？能不能带宠物去安置点？",
+      "gold": {"stage": "response", "task": "disaster_issue_consultation", "model": "DLM"}
+    },
+    {
+      "id": "M1",
+      "text": "我们想评估一下全市老旧砖混房屋遇到地震时倒塌的风险有多大，为以后的加固改造排个优先级。",
+      "gold": {"stage": "mitigation", "task": "vulnerability_assessment", "model": "ELM"}
+    },
+    {
+      "id": "P1",
+      "text": "台风还有两天才到，请帮我制定一份提前 48 小时的疏散预案，包括转移先后顺序和撤离路线。",
+      "gold": {"stage": "preparedness", "task": "evacuation_planning", "model": "DLM"}
+    },
+    {
+      "id": "P2",
+      "text": "根据气象预报两天后会有强降雨，请写一条面向居民发布的暴雨预警信息，提醒大家注意。",
+      "gold": {"stage": "preparedness", "task": "early_warning", "model": "DLM"}
+    },
+    {
+      "id": "Rec1",
+      "text": "灾后一个月了，请统计这次洪灾造成的直接经济损失，把房屋、道路和农田的损失分别算出来。",
+      "gold": {"stage": "recovery", "task": "damage_assessment", "model": "ELM"}
+    },
+    {
+      "id": "Rec2",
+      "text": "洪水退去之后，我们需要规划灾后重建的先后顺序，先修哪些基础设施、后修哪些。",
+      "gold": {"stage": "recovery", "task": "reconstruction", "model": "DLM"}
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+# 虚拟环境（如果哪天要用 .venv 跑，别提交进去）
+.venv/
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# gen_data.py 生成的数据（npz），想复现自己跑一遍就行
+data/*.npz
+
+# 训练出来的权重文件，几百 K 到几 M，不往 git 里塞
+results/*.pt

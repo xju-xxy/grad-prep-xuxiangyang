@@ -1,0 +1,7 @@
+# WildfireGPT 复现项目用到的第三方库。
+# 安装方法： pip install -r requirements.txt
+zhipuai>=2.1.5
+python-dotenv
+numpy
+# 新版 zhipuai 装完会缺这个间接依赖，必须补上，否则 import 就报错
+sniffio

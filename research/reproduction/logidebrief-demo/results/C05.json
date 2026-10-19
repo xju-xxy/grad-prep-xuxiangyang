@@ -1,0 +1,248 @@
+{
+  "id": "C05",
+  "title": "3 岁小孩吃花生噎住（规范处置）",
+  "duration": 226,
+  "classify": {
+    "call_type": "CHOKING",
+    "event_type": "食物噎住",
+    "fatal_category": "气道阻塞",
+    "response_unit": "救护"
+  },
+  "classify_gt": {
+    "call_type": "CHOKING",
+    "event_type": "气道异物梗阻",
+    "fatal_category": "气道阻塞"
+  },
+  "rows": [
+    {
+      "id": "R01",
+      "title": "确认详细地址",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 60]s 内出现（实际 7s）",
+      "evidence": {
+        "action": "ask_address",
+        "turn": 2,
+        "time": 7,
+        "quote": "先告诉我地址"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R02",
+      "title": "记录回拨电话",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 120]s 内出现（实际 29s）",
+      "evidence": {
+        "action": "ask_callback",
+        "turn": 5,
+        "time": 29,
+        "quote": "你手机这个号能打通吗？"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R03",
+      "title": "告知已派出救护车",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 90]s 内出现（实际 22s）",
+      "evidence": {
+        "action": "dispatch",
+        "turn": 4,
+        "time": 22,
+        "quote": "救护车已经派出去了"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R04",
+      "title": "确认现场安全",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 120]s 内出现（实际 44s）",
+      "evidence": {
+        "action": "ask_scene_safety",
+        "turn": 7,
+        "time": 44,
+        "quote": "周围安全吧，没有别的危险吧？"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R05",
+      "title": "询问患者基本信息",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 150]s 内出现（实际 59s）",
+      "evidence": {
+        "action": "ask_patient_basic",
+        "turn": 9,
+        "time": 59,
+        "quote": "孩子多大，男孩女孩？"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R06",
+      "title": "询问发病/受伤时间",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 150]s 内出现（实际 74s）",
+      "evidence": {
+        "action": "ask_onset_time",
+        "turn": 11,
+        "time": 74,
+        "quote": "他是大概什么时候噎住的？"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R07",
+      "title": "安抚并提示保持通话",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 180]s 内出现（实际 7s）",
+      "evidence": {
+        "action": "reassure",
+        "turn": 2,
+        "time": 7,
+        "quote": "您别慌"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R08",
+      "title": "结束前复述地址",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [166, 226]s 内出现（实际 216s）",
+      "evidence": {
+        "action": "repeat_address",
+        "turn": 21,
+        "time": 216,
+        "quote": "广州路5号A栋1802对吧？"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R09",
+      "title": "判断患者意识",
+      "fatal_tag": null,
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CARDIAC，本通话类型为 CHOKING",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R10",
+      "title": "判断患者呼吸",
+      "fatal_tag": "气道",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CARDIAC，本通话类型为 CHOKING",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R11",
+      "title": "无呼吸时指导胸外按压",
+      "fatal_tag": "CPR",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CARDIAC，本通话类型为 CHOKING",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R12",
+      "title": "无呼吸时指导使用 AED",
+      "fatal_tag": "AED",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CARDIAC，本通话类型为 CHOKING",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R13",
+      "title": "询问出血情况",
+      "fatal_tag": null,
+      "verdict": "NA",
+      "reason": "该需求仅适用于 TRAUMA，本通话类型为 CHOKING",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R14",
+      "title": "出血时指导止血",
+      "fatal_tag": "止血",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 TRAUMA，本通话类型为 CHOKING",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R15",
+      "title": "询问是否气道异物梗阻",
+      "fatal_tag": "气道阻塞",
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 90]s 内出现（实际 90s）",
+      "evidence": {
+        "action": "ask_airway_obstruction",
+        "turn": 13,
+        "time": 90,
+        "quote": "他现在还能咳出声、能哭吗，还是完全堵住出不了气？"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R16",
+      "title": "异物梗阻时指导解阻",
+      "fatal_tag": "气道阻塞",
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [102, 162]s 内出现（实际 111s）",
+      "evidence": {
+        "action": "choking_maneuver",
+        "turn": 15,
+        "time": 111,
+        "quote": "你从后面抱住他，让他身体前倾...连续冲五下"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R17",
+      "title": "询问宫缩间隔/是否破水",
+      "fatal_tag": null,
+      "verdict": "NA",
+      "reason": "该需求仅适用于 OBSTETRIC，本通话类型为 CHOKING",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R18",
+      "title": "临产时指导分娩",
+      "fatal_tag": "分娩",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 OBSTETRIC，本通话类型为 CHOKING",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R19",
+      "title": "危险源警告",
+      "fatal_tag": null,
+      "verdict": "NA",
+      "reason": "该需求仅适用于 FIRE，本通话类型为 CHOKING",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R20",
+      "title": "询问既往病史/过敏",
+      "fatal_tag": null,
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CARDIAC/TRAUMA/GENERAL，本通话类型为 CHOKING",
+      "evidence": null,
+      "gt": "NA"
+    }
+  ]
+}

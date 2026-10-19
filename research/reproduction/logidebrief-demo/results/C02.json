@@ -1,0 +1,253 @@
+{
+  "id": "C02",
+  "title": "中年男性胸痛冒冷汗、神志清醒（规范处置）",
+  "duration": 182,
+  "classify": {
+    "call_type": "CARDIAC",
+    "event_type": "胸痛求助",
+    "fatal_category": "气道阻塞",
+    "response_unit": "救护"
+  },
+  "classify_gt": {
+    "call_type": "CARDIAC",
+    "event_type": "急性胸痛",
+    "fatal_category": null
+  },
+  "rows": [
+    {
+      "id": "R01",
+      "title": "确认详细地址",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 60]s 内出现（实际 7s）",
+      "evidence": {
+        "action": "ask_address",
+        "turn": 2,
+        "time": 7,
+        "quote": "告诉我具体地址"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R02",
+      "title": "记录回拨电话",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 120]s 内出现（实际 31s）",
+      "evidence": {
+        "action": "ask_callback",
+        "turn": 5,
+        "time": 31,
+        "quote": "这个电话保持能接通，多少号？"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R03",
+      "title": "告知已派出救护车",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 90]s 内出现（实际 23s）",
+      "evidence": {
+        "action": "dispatch",
+        "turn": 4,
+        "time": 23,
+        "quote": "车已经派出去了"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R04",
+      "title": "确认现场安全",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 120]s 内出现（实际 46s）",
+      "evidence": {
+        "action": "ask_scene_safety",
+        "turn": 7,
+        "time": 46,
+        "quote": "你们现在的位置安全吧，没有别的情况吧？"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R05",
+      "title": "询问患者基本信息",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 150]s 内出现（实际 61s）",
+      "evidence": {
+        "action": "ask_patient_basic",
+        "turn": 9,
+        "time": 61,
+        "quote": "他多大年纪，男的还是女的？"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R06",
+      "title": "询问发病/受伤时间",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 150]s 内出现（实际 76s）",
+      "evidence": {
+        "action": "ask_onset_time",
+        "turn": 11,
+        "time": 76,
+        "quote": "疼了多久了？"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R07",
+      "title": "安抚并提示保持通话",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 180]s 内出现（实际 137s）",
+      "evidence": {
+        "action": "reassure",
+        "turn": 19,
+        "time": 137,
+        "quote": "让他别走动，靠着坐着休息，把领口和腰带松开，别紧张，救护车马上就到"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R08",
+      "title": "结束前复述地址",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [122, 182]s 内出现（实际 172s）",
+      "evidence": {
+        "action": "repeat_address",
+        "turn": 21,
+        "time": 172,
+        "quote": "你们是太平门街12号2栋对吧"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R09",
+      "title": "判断患者意识",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 90]s 内出现（实际 86s）",
+      "evidence": {
+        "action": "ask_consciousness",
+        "turn": 13,
+        "time": 86,
+        "quote": "您叫叫他名字，他人是清楚的吗，能答话吗？"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R10",
+      "title": "判断患者呼吸",
+      "fatal_tag": "气道",
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 120]s 内出现（实际 103s）",
+      "evidence": {
+        "action": "ask_breathing",
+        "turn": 15,
+        "time": 103,
+        "quote": "他现在喘气正常吗，有没有喘不上气？"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R11",
+      "title": "无呼吸时指导胸外按压",
+      "fatal_tag": "CPR",
+      "verdict": "NA",
+      "reason": "前置触发条件未满足（未判定出现「found_no_breathing」）",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R12",
+      "title": "无呼吸时指导使用 AED",
+      "fatal_tag": "AED",
+      "verdict": "NA",
+      "reason": "前置触发条件未满足（未判定出现「found_no_breathing」）",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R13",
+      "title": "询问出血情况",
+      "fatal_tag": null,
+      "verdict": "NA",
+      "reason": "该需求仅适用于 TRAUMA，本通话类型为 CARDIAC",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R14",
+      "title": "出血时指导止血",
+      "fatal_tag": "止血",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 TRAUMA，本通话类型为 CARDIAC",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R15",
+      "title": "询问是否气道异物梗阻",
+      "fatal_tag": "气道阻塞",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CHOKING，本通话类型为 CARDIAC",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R16",
+      "title": "异物梗阻时指导解阻",
+      "fatal_tag": "气道阻塞",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CHOKING，本通话类型为 CARDIAC",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R17",
+      "title": "询问宫缩间隔/是否破水",
+      "fatal_tag": null,
+      "verdict": "NA",
+      "reason": "该需求仅适用于 OBSTETRIC，本通话类型为 CARDIAC",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R18",
+      "title": "临产时指导分娩",
+      "fatal_tag": "分娩",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 OBSTETRIC，本通话类型为 CARDIAC",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R19",
+      "title": "危险源警告",
+      "fatal_tag": null,
+      "verdict": "NA",
+      "reason": "该需求仅适用于 FIRE，本通话类型为 CARDIAC",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R20",
+      "title": "询问既往病史/过敏",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 180]s 内出现（实际 120s）",
+      "evidence": {
+        "action": "ask_history",
+        "turn": 17,
+        "time": 120,
+        "quote": "他以前有没有心脏病、高血压、糖尿病的底子？"
+      },
+      "gt": "Yes"
+    }
+  ]
+}

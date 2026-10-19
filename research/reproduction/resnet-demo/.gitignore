@@ -1,0 +1,15 @@
+# 虚拟环境
+.venv/
+venv/
+
+# python 缓存
+__pycache__/
+*.pyc
+
+# CIFAR-10 数据缓存（torchvision 下载的，几十上百 MB，不进仓库）
+data/
+*.tar.gz
+
+# 训练临时产物
+results/*.pt
+results/*.pth

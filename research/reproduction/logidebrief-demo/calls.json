@@ -1,0 +1,442 @@
+{
+  "meta": {
+    "note": "12 通中文模拟 120 接警通话，均为本人手写构造，不是模板复制。每通含相对时间戳（秒）与人工标注答案（gt）。gt.applicable = 该通适用的需求；gt.violations = 故意做的违规（应判 No）；gt.refused = 呼救者拒绝/无法提供（应判 Refused）。未列入 applicable 的需求视为 NA。call_type_gt 只用于比对分类准确率，不给模型看。",
+    "constructed_violations": ["C04/R14", "C06/R16", "C08/R18", "C10/R19", "C11/R06", "C12/R11", "C12/R12"],
+    "constructed_refused": ["C11/R20"]
+  },
+
+  "calls": [
+    {
+      "id": "C01",
+      "title": "老人在家突然倒地、无呼吸（规范处置）",
+      "call_type_gt": "CARDIAC",
+      "event_type_gt": "心搏骤停",
+      "fatal_category_gt": "CPR",
+      "turns": [
+        { "role": "caller",   "t": 0,   "text": "快来人啊！我爸刚才突然一下就倒在地上了，叫都叫不醒！" },
+        { "role": "operator", "t": 5,   "text": "您先别慌，把确切的地址告诉我，我马上安排救护车。" },
+        { "role": "caller",   "t": 13,  "text": "建邺区兴隆大街168号，阳光家园3栋2单元501。" },
+        { "role": "operator", "t": 19,  "text": "501我记下了，救护车已经派出去了，正在路上。" },
+        { "role": "operator", "t": 25,  "text": "您现在用的这个手机号能一直打通吗，我们等会儿可能回拨。" },
+        { "role": "caller",   "t": 32,  "text": "能，139XXXXXXXX。" },
+        { "role": "operator", "t": 38,  "text": "好的。现在您家里这个环境安全吧，没有电线、火这些东西吧？" },
+        { "role": "caller",   "t": 45,  "text": "没有，就是普通家里。" },
+        { "role": "operator", "t": 51,  "text": "老人家多大年纪，是男的还是女的？" },
+        { "role": "caller",   "t": 58,  "text": "七十六，男的。" },
+        { "role": "operator", "t": 64,  "text": "他大概是什么时候倒下的？" },
+        { "role": "caller",   "t": 71,  "text": "也就十来分钟前吧。" },
+        { "role": "operator", "t": 78,  "text": "您现在拍他肩膀、大声叫他，看有没有反应。" },
+        { "role": "caller",   "t": 88,  "text": "拍了，喊了他名字，一点反应都没有。" },
+        { "role": "operator", "t": 96,  "text": "那他还有呼吸吗？您把脸凑近看他胸口有没有起伏。" },
+        { "role": "caller",   "t": 108, "text": "没有……胸口一点都没动，也不出气。" },
+        { "role": "operator", "t": 116, "text": "好，那您马上把他平躺放到硬一点的地上，我现在教您做胸外按压，一分钟大约一百下，用力往下压。" },
+        { "role": "caller",   "t": 130, "text": "好，我按你说的放平了，在按。" },
+        { "role": "operator", "t": 142, "text": "他家有什么老毛病？心脏病、高血压这些有吗？" },
+        { "role": "caller",   "t": 152, "text": "有高血压，别的不知道。" },
+        { "role": "operator", "t": 160, "text": "您家里或者楼上楼下有没有 AED，就是那个自动体外除颤器，让家里其他人赶紧去找一台。" },
+        { "role": "caller",   "t": 176, "text": "楼下物业好像有一台，我让我姐去拿。" },
+        { "role": "operator", "t": 214, "text": "拿回来之后打开电源，按它的语音提示，把两个贴片一个贴右胸上方、一个贴左腋下。" },
+        { "role": "caller",   "t": 300, "text": "贴好了。" },
+        { "role": "operator", "t": 312, "text": "您坚持按，别停，救护车马上就到了，千万不要放弃。" },
+        { "role": "caller",   "t": 330, "text": "好的好的。" },
+        { "role": "operator", "t": 356, "text": "我再跟您确认一下地址，是兴隆大街168号3栋2单元501对吧，我们的人到了会喊您。" },
+        { "role": "caller",   "t": 366, "text": "对的。" }
+      ],
+      "gt": {
+        "applicable": ["R01","R02","R03","R04","R05","R06","R07","R08","R09","R10","R11","R12","R20"],
+        "violations": [],
+        "refused": []
+      }
+    },
+
+    {
+      "id": "C02",
+      "title": "中年男性胸痛冒冷汗、神志清醒（规范处置）",
+      "call_type_gt": "CARDIAC",
+      "event_type_gt": "急性胸痛",
+      "fatal_category_gt": null,
+      "turns": [
+        { "role": "caller",   "t": 0,   "text": "你好，我爸胸口疼得特别厉害，一直冒冷汗，看着很吓人。" },
+        { "role": "operator", "t": 7,   "text": "您先别急，告诉我具体地址。" },
+        { "role": "caller",   "t": 16,  "text": "玄武区太平门街12号，老小区2栋。" },
+        { "role": "operator", "t": 23,  "text": "好，车已经派出去了，你们在楼下路口等车，把门打开。" },
+        { "role": "operator", "t": 31,  "text": "这个电话保持能接通，多少号？" },
+        { "role": "caller",   "t": 39,  "text": "138XXXXXXXX。" },
+        { "role": "operator", "t": 46,  "text": "你们现在的位置安全吧，没有别的情况吧？" },
+        { "role": "caller",   "t": 54,  "text": "在家里，没事。" },
+        { "role": "operator", "t": 61,  "text": "他多大年纪，男的还是女的？" },
+        { "role": "caller",   "t": 69,  "text": "五十八，男的。" },
+        { "role": "operator", "t": 76,  "text": "疼了多久了？" },
+        { "role": "caller",   "t": 84,  "text": "差不多二十分钟了。" },
+        { "role": "operator", "t": 86,  "text": "您叫叫他名字，他人是清楚的吗，能答话吗？" },
+        { "role": "caller",   "t": 95,  "text": "清楚的，能说话，就是疼。" },
+        { "role": "operator", "t": 103, "text": "他现在喘气正常吗，有没有喘不上气？" },
+        { "role": "caller",   "t": 112, "text": "呼吸正常，就是胸疼。" },
+        { "role": "operator", "t": 120, "text": "他以前有没有心脏病、高血压、糖尿病的底子？" },
+        { "role": "caller",   "t": 129, "text": "有高血压，一直吃药。" },
+        { "role": "operator", "t": 137, "text": "好，让他别走动，靠着坐着休息，把领口和腰带松开，别紧张，救护车马上就到。" },
+        { "role": "caller",   "t": 154, "text": "好的。" },
+        { "role": "operator", "t": 172, "text": "我再说一遍，你们是太平门街12号2栋对吧，车快到了。" },
+        { "role": "caller",   "t": 182, "text": "对。" }
+      ],
+      "gt": {
+        "applicable": ["R01","R02","R03","R04","R05","R06","R07","R08","R09","R10","R20"],
+        "violations": [],
+        "refused": []
+      }
+    },
+
+    {
+      "id": "C03",
+      "title": "路口车祸、右腿大量出血（规范处置）",
+      "call_type_gt": "TRAUMA",
+      "event_type_gt": "车祸外伤",
+      "fatal_category_gt": "止血",
+      "turns": [
+        { "role": "caller",   "t": 0,   "text": "XX路和YY路交叉口出车祸了！有个人腿压在下面，一直在淌血！" },
+        { "role": "operator", "t": 7,   "text": "地址我听到了，是哪两条路交叉，靠近什么建筑？" },
+        { "role": "caller",   "t": 17,  "text": "XX路和YY路，就那个新华书店门口。" },
+        { "role": "operator", "t": 24,  "text": "好，救护车已经派出去了，你们先别随便搬动伤者。" },
+        { "role": "operator", "t": 32,  "text": "你手机号多少，我们保持联系。" },
+        { "role": "caller",   "t": 40,  "text": "137XXXXXXXX。" },
+        { "role": "operator", "t": 47,  "text": "你们现在站在安全的地方吗，路上车还多不多？" },
+        { "role": "caller",   "t": 57,  "text": "我们退到路边了。" },
+        { "role": "operator", "t": 64,  "text": "伤者多大年纪，男的还是女的？" },
+        { "role": "caller",   "t": 72,  "text": "三十来岁，男的。" },
+        { "role": "operator", "t": 79,  "text": "他是什么时候受的伤？" },
+        { "role": "caller",   "t": 87,  "text": "就刚刚撞的，不到五分钟。" },
+        { "role": "operator", "t": 88,  "text": "他身上哪里在流血，流得多不多？" },
+        { "role": "caller",   "t": 98,  "text": "右腿，血一直在流，裤子都透了，止不住。" },
+        { "role": "operator", "t": 106, "text": "你马上找一块干净的布、毛巾或者衣服，用力压住出血的地方，一直压着别松手，压到我们到为止。" },
+        { "role": "caller",   "t": 128, "text": "好，我按住了。" },
+        { "role": "operator", "t": 140, "text": "他有没有被撞到头，人是清楚的吗？" },
+        { "role": "caller",   "t": 150, "text": "清楚的，还能说话。" },
+        { "role": "operator", "t": 160, "text": "他以前有什么病吗，对药物过不过敏？" },
+        { "role": "caller",   "t": 170, "text": "不太清楚，应该没有。" },
+        { "role": "operator", "t": 174, "text": "别让他喝水吃东西，伤口就一直压着，救护车马上到，你们坚持一下。" },
+        { "role": "caller",   "t": 200, "text": "好。" },
+        { "role": "operator", "t": 248, "text": "我再确认下位置，是XX路和YY路新华书店门口对吧，车到了。" },
+        { "role": "caller",   "t": 258, "text": "对。" }
+      ],
+      "gt": {
+        "applicable": ["R01","R02","R03","R04","R05","R06","R07","R08","R13","R14","R20"],
+        "violations": [],
+        "refused": []
+      }
+    },
+
+    {
+      "id": "C04",
+      "title": "骑车摔伤、胳膊划伤出血（漏了止血指导）",
+      "call_type_gt": "TRAUMA",
+      "event_type_gt": "摔伤出血",
+      "fatal_category_gt": "止血",
+      "turns": [
+        { "role": "caller",   "t": 0,   "text": "我老婆骑电动车摔了，胳膊划了很大一个口子，全是血。" },
+        { "role": "operator", "t": 7,   "text": "先告诉我地址，在哪条路上？" },
+        { "role": "caller",   "t": 16,  "text": "江宁区双龙大道88号，华为体验店门口。" },
+        { "role": "operator", "t": 24,  "text": "好，车派出去了。你手机号给我一个。" },
+        { "role": "caller",   "t": 32,  "text": "135XXXXXXXX。" },
+        { "role": "operator", "t": 39,  "text": "你们旁边有没有车流，人靠边站，别站在路中间。" },
+        { "role": "caller",   "t": 48,  "text": "已经在人行道上了。" },
+        { "role": "operator", "t": 55,  "text": "她多大年纪？" },
+        { "role": "caller",   "t": 63,  "text": "四十二。" },
+        { "role": "operator", "t": 70,  "text": "什么时候摔的？" },
+        { "role": "caller",   "t": 78,  "text": "就刚刚，两三分钟前。" },
+        { "role": "operator", "t": 86,  "text": "伤口在哪里，出血多不多？" },
+        { "role": "caller",   "t": 96,  "text": "左胳膊，血一直在流，袖子都湿了。" },
+        { "role": "operator", "t": 105, "text": "她人是清醒的吗，手脚能不能动？" },
+        { "role": "caller",   "t": 115, "text": "清醒的，就是疼得厉害。" },
+        { "role": "operator", "t": 128, "text": "你们在原地别乱动她，别让她到处走，救护车马上到。她以前有什么病或者药物过敏吗？" },
+        { "role": "caller",   "t": 145, "text": "没有，都挺好的。" },
+        { "role": "operator", "t": 160, "text": "再坚持一下，就几分钟，车在路上了。" },
+        { "role": "caller",   "t": 178, "text": "好。" },
+        { "role": "operator", "t": 206, "text": "我再确认一下，是双龙大道88号华为店门口对吧？" },
+        { "role": "caller",   "t": 216, "text": "对。" }
+      ],
+      "gt": {
+        "applicable": ["R01","R02","R03","R04","R05","R06","R07","R08","R13","R14","R20"],
+        "violations": ["R14"],
+        "refused": []
+      }
+    },
+
+    {
+      "id": "C05",
+      "title": "3 岁小孩吃花生噎住（规范处置）",
+      "call_type_gt": "CHOKING",
+      "event_type_gt": "气道异物梗阻",
+      "fatal_category_gt": "气道阻塞",
+      "turns": [
+        { "role": "caller",   "t": 0,   "text": "快！我儿子吃花生噎住了，喘不上气，脸都憋红了！" },
+        { "role": "operator", "t": 7,   "text": "您别慌，先告诉我地址。" },
+        { "role": "caller",   "t": 15,  "text": "鼓楼区广州路5号，A栋1802。" },
+        { "role": "operator", "t": 22,  "text": "好，救护车已经派出去了。" },
+        { "role": "operator", "t": 29,  "text": "你手机这个号能打通吗？" },
+        { "role": "caller",   "t": 37,  "text": "能，136XXXXXXXX。" },
+        { "role": "operator", "t": 44,  "text": "你们现在在家里吗，周围安全吧，没有别的危险吧？" },
+        { "role": "caller",   "t": 52,  "text": "在家，安全。" },
+        { "role": "operator", "t": 59,  "text": "孩子多大，男孩女孩？" },
+        { "role": "caller",   "t": 67,  "text": "三岁，男孩。" },
+        { "role": "operator", "t": 74,  "text": "他是大概什么时候噎住的？" },
+        { "role": "caller",   "t": 82,  "text": "就刚才，一分钟前吃花生的时候。" },
+        { "role": "operator", "t": 90,  "text": "他现在还能咳出声、能哭吗，还是完全堵住出不了气？" },
+        { "role": "caller",   "t": 102, "text": "咳不出来，也哭不出来，脸都发紫了。" },
+        { "role": "operator", "t": 111, "text": "你从后面抱住他，让他身体前倾，一只手握拳顶在他肚脐上方两指的地方，另一只手包住这个拳头，用力往里往上冲，连续冲五下。" },
+        { "role": "caller",   "t": 128, "text": "好，我在做。" },
+        { "role": "operator", "t": 138, "text": "如果东西还没出来，就把他翻过来脸朝下趴在你腿上，拍他两个肩胛骨中间，拍五下，两种交替做。" },
+        { "role": "caller",   "t": 158, "text": "好，花生吐出来一点了！" },
+        { "role": "operator", "t": 170, "text": "太好了，继续观察他呼吸，别让他再吃东西，救护车马上到，保持电话不要挂。" },
+        { "role": "caller",   "t": 190, "text": "好，谢谢！" },
+        { "role": "operator", "t": 216, "text": "我确认一下，你们是广州路5号A栋1802对吧？" },
+        { "role": "caller",   "t": 226, "text": "对。" }
+      ],
+      "gt": {
+        "applicable": ["R01","R02","R03","R04","R05","R06","R07","R08","R15","R16"],
+        "violations": [],
+        "refused": []
+      }
+    },
+
+    {
+      "id": "C06",
+      "title": "成人吃饭噎住、说不出话（没指导解阻动作）",
+      "call_type_gt": "CHOKING",
+      "event_type_gt": "气道异物梗阻",
+      "fatal_category_gt": "气道阻塞",
+      "turns": [
+        { "role": "caller",   "t": 0,   "text": "我朋友喝酒吃菜，突然好像噎住了，说不出话，脸都红了！" },
+        { "role": "operator", "t": 7,   "text": "给我地址。" },
+        { "role": "caller",   "t": 15,  "text": "秦淮区中华路66号，老南京饭店2楼。" },
+        { "role": "operator", "t": 23,  "text": "好，车派了。你电话多少？" },
+        { "role": "caller",   "t": 31,  "text": "138XXXXXXXX。" },
+        { "role": "operator", "t": 38,  "text": "你们在店里安全吧，周围没什么别的情况吧？" },
+        { "role": "caller",   "t": 47,  "text": "安全。" },
+        { "role": "operator", "t": 54,  "text": "他多大年纪？" },
+        { "role": "caller",   "t": 62,  "text": "四十五，男的。" },
+        { "role": "operator", "t": 69,  "text": "什么时候噎住的？" },
+        { "role": "caller",   "t": 77,  "text": "就刚刚，一口菜下去就不对劲了。" },
+        { "role": "operator", "t": 85,  "text": "他现在还能说话、能呼吸吗？" },
+        { "role": "caller",   "t": 95,  "text": "说不了话，喘得很难受，脸通红。" },
+        { "role": "operator", "t": 104, "text": "好的我知道了，你让他坐直了别乱动，我们已经派车了，再坚持一下下就好。" },
+        { "role": "caller",   "t": 122, "text": "他好像越来越严重了，人有点站不稳。" },
+        { "role": "operator", "t": 136, "text": "医生马上就到，你们在中华路66号二楼对吧，别急，保持电话。" },
+        { "role": "caller",   "t": 152, "text": "对，快点。" }
+      ],
+      "gt": {
+        "applicable": ["R01","R02","R03","R04","R05","R06","R07","R08","R15","R16"],
+        "violations": ["R16"],
+        "refused": []
+      }
+    },
+
+    {
+      "id": "C07",
+      "title": "孕妇临产、已破水（规范处置）",
+      "call_type_gt": "OBSTETRIC",
+      "event_type_gt": "临产",
+      "fatal_category_gt": "分娩",
+      "turns": [
+        { "role": "caller",   "t": 0,   "text": "我老婆要生了！肚子疼得不行，你们快点来！" },
+        { "role": "operator", "t": 7,   "text": "您别急，地址告诉我，预产期什么时候？" },
+        { "role": "caller",   "t": 17,  "text": "浦口区江浦街道XX路9号，6楼，预产期就这两天。" },
+        { "role": "operator", "t": 25,  "text": "好，救护车已经派出去了，你的电话给我。" },
+        { "role": "caller",   "t": 34,  "text": "139XXXXXXXX。" },
+        { "role": "operator", "t": 41,  "text": "你们现在在家里吧，没有别的情况、周围安全吧？" },
+        { "role": "caller",   "t": 50,  "text": "在家，没别的事。" },
+        { "role": "operator", "t": 57,  "text": "产妇多大年纪？" },
+        { "role": "caller",   "t": 65,  "text": "二十九。" },
+        { "role": "operator", "t": 72,  "text": "她大概是几点开始肚子疼的？" },
+        { "role": "caller",   "t": 81,  "text": "三个小时前开始疼，现在越来越密。" },
+        { "role": "operator", "t": 89,  "text": "现在多久疼一次？羊水破了没有？" },
+        { "role": "caller",   "t": 100, "text": "差不多两三分钟一次了，刚才破水了，流了一摊。" },
+        { "role": "operator", "t": 110, "text": "好的。您看看下面有没有看到孩子的头？现在先让她平躺下来，屁股底下垫个枕头或者被子垫高，准备几条干净的毛巾。" },
+        { "role": "caller",   "t": 130, "text": "还没看到头，我让她躺下了。" },
+        { "role": "operator", "t": 145, "text": "让她别用力憋着，慢慢哈气，不用紧张，我们的人马上就到，保持电话别挂。" },
+        { "role": "caller",   "t": 165, "text": "好的。" },
+        { "role": "operator", "t": 200, "text": "我再说一遍，你们是XX路9号6楼对吧，救护车快到了。" },
+        { "role": "caller",   "t": 210, "text": "对。" }
+      ],
+      "gt": {
+        "applicable": ["R01","R02","R03","R04","R05","R06","R07","R08","R17","R18"],
+        "violations": [],
+        "refused": []
+      }
+    },
+
+    {
+      "id": "C08",
+      "title": "孕妇急产、羊水已破（没给分娩指导）",
+      "call_type_gt": "OBSTETRIC",
+      "event_type_gt": "急产",
+      "fatal_category_gt": "分娩",
+      "turns": [
+        { "role": "caller",   "t": 0,   "text": "快来人！我老婆在厕所里喊，说肚子往下坠，感觉要生了！" },
+        { "role": "operator", "t": 7,   "text": "地址在哪？到预产期了吗？" },
+        { "role": "caller",   "t": 16,  "text": "雨花台区软件大道3号，B栋，预产期就这两天。" },
+        { "role": "operator", "t": 24,  "text": "好，车派出去了，你电话多少？" },
+        { "role": "caller",   "t": 33,  "text": "137XXXXXXXX。" },
+        { "role": "operator", "t": 40,  "text": "你们现在安全吧，没有摔倒磕到吧？" },
+        { "role": "caller",   "t": 49,  "text": "没有，就是吓人。" },
+        { "role": "operator", "t": 56,  "text": "她多大了？" },
+        { "role": "caller",   "t": 64,  "text": "三十一。" },
+        { "role": "operator", "t": 71,  "text": "什么时候开始有反应的？" },
+        { "role": "caller",   "t": 80,  "text": "半小时前突然说肚子往下坠，然后越来越频繁。" },
+        { "role": "operator", "t": 88,  "text": "现在多久疼一次？见红或者羊水破了吗？" },
+        { "role": "caller",   "t": 100, "text": "两分钟一次，羊水刚破了。" },
+        { "role": "operator", "t": 109, "text": "好的我知道了，你们先别乱动了，救护车马上就到，坚持住，别紧张。" },
+        { "role": "caller",   "t": 128, "text": "她说忍不住了，好像马上要出来了！" },
+        { "role": "operator", "t": 140, "text": "再坚持一下，车已经到楼下了，我让他们直接上楼，保持电话别挂。" },
+        { "role": "caller",   "t": 158, "text": "好，快点！" },
+        { "role": "operator", "t": 182, "text": "你们是软件大道3号B栋对吧，我确认一下。" },
+        { "role": "caller",   "t": 192, "text": "对。" }
+      ],
+      "gt": {
+        "applicable": ["R01","R02","R03","R04","R05","R06","R07","R08","R17","R18"],
+        "violations": ["R18"],
+        "refused": []
+      }
+    },
+
+    {
+      "id": "C09",
+      "title": "家中燃气泄漏、人已撤出（规范处置）",
+      "call_type_gt": "FIRE",
+      "event_type_gt": "燃气泄漏",
+      "fatal_category_gt": null,
+      "turns": [
+        { "role": "caller",   "t": 0,   "text": "我家好像煤气味特别大，闻着熏人，是不是漏气了。" },
+        { "role": "operator", "t": 7,   "text": "先告诉我地址，您现在人在哪里？" },
+        { "role": "caller",   "t": 16,  "text": "鼓楼区石头城路7号4单元302。" },
+        { "role": "operator", "t": 24,  "text": "好，我已经通知消防和救护车了。您手机号多少？" },
+        { "role": "caller",   "t": 33,  "text": "138XXXXXXXX。" },
+        { "role": "operator", "t": 40,  "text": "您现在马上把门窗打开通风，千万不要开灯、不要打火、不要在屋里打电话，也别碰任何开关。" },
+        { "role": "caller",   "t": 58,  "text": "好，我已经出来了，站在楼下。" },
+        { "role": "operator", "t": 66,  "text": "您现在站的位置安全吗？离那栋楼再远一点，别让其他人靠近，就在空旷的地方等着。" },
+        { "role": "caller",   "t": 80,  "text": "好。" },
+        { "role": "operator", "t": 88,  "text": "楼里就您一个人吗，还有没有别人在里面？" },
+        { "role": "caller",   "t": 100, "text": "就我一个，家里没别人。" },
+        { "role": "operator", "t": 108, "text": "您多大年纪，现在有没有头晕、恶心不舒服？" },
+        { "role": "caller",   "t": 120, "text": "五十了，没有不舒服。" },
+        { "role": "operator", "t": 128, "text": "大概什么时候开始闻到味道的？" },
+        { "role": "caller",   "t": 138, "text": "十几分钟前，越闻越重。" },
+        { "role": "operator", "t": 148, "text": "好的，您别慌，消防和救护车马上到，就在楼下等着，保持电话。" },
+        { "role": "caller",   "t": 168, "text": "好。" },
+        { "role": "operator", "t": 210, "text": "我再确认一下，是石头城路7号4单元302对吧？" },
+        { "role": "caller",   "t": 220, "text": "对。" }
+      ],
+      "gt": {
+        "applicable": ["R01","R02","R03","R04","R05","R06","R07","R08","R19"],
+        "violations": [],
+        "refused": []
+      }
+    },
+
+    {
+      "id": "C10",
+      "title": "居民楼火灾、老人被烟呛晕（没做危险源警告）",
+      "call_type_gt": "FIRE",
+      "event_type_gt": "火灾",
+      "fatal_category_gt": "气道",
+      "turns": [
+        { "role": "caller",   "t": 0,   "text": "我们楼里着火了！烟特别大，一个老人被烟呛晕了，抬下来了！" },
+        { "role": "operator", "t": 8,   "text": "地址！哪一栋楼，几层？" },
+        { "role": "caller",   "t": 17,  "text": "栖霞区仙林大道12号，7栋5楼。" },
+        { "role": "operator", "t": 25,  "text": "好，消防和救护车都派出去了。你电话给我。" },
+        { "role": "caller",   "t": 34,  "text": "139XXXXXXXX。" },
+        { "role": "operator", "t": 41,  "text": "你们现在在哪儿，人都在安全的地方吧？" },
+        { "role": "caller",   "t": 51,  "text": "我们在楼下空地上，人都出来了。" },
+        { "role": "operator", "t": 58,  "text": "那个老人多大年纪，是男的还是女的？" },
+        { "role": "caller",   "t": 66,  "text": "七十多岁，男的。" },
+        { "role": "operator", "t": 73,  "text": "他大概是什么时候被烟呛晕的？" },
+        { "role": "caller",   "t": 80,  "text": "就刚才，几分钟前吧。" },
+        { "role": "operator", "t": 88,  "text": "那个老人现在什么情况，有呼吸吗？" },
+        { "role": "caller",   "t": 98,  "text": "抬下来了，但是叫他没反应，好像也没什么呼吸了。" },
+        { "role": "operator", "t": 107, "text": "你把他平放在地上，我现在教你做胸外按压，双手叠起来压胸口，一分钟一百下。" },
+        { "role": "caller",   "t": 124, "text": "好，在按了。" },
+        { "role": "operator", "t": 134, "text": "他身上有没有被火烧到、烫伤的地方？" },
+        { "role": "caller",   "t": 146, "text": "脸上有点黑，别的看不出来。" },
+        { "role": "operator", "t": 158, "text": "继续按，别停，医生马上到，坚持住。" },
+        { "role": "caller",   "t": 180, "text": "好。" },
+        { "role": "operator", "t": 220, "text": "我确认一下，你们是仙林大道12号7栋对吧？" },
+        { "role": "caller",   "t": 230, "text": "对。" }
+      ],
+      "gt": {
+        "applicable": ["R01","R02","R03","R04","R05","R06","R07","R08","R19"],
+        "violations": ["R19"],
+        "refused": []
+      }
+    },
+
+    {
+      "id": "C11",
+      "title": "老人发烧、家属拒绝提供病史（漏问发病时间）",
+      "call_type_gt": "GENERAL",
+      "event_type_gt": "发热",
+      "fatal_category_gt": null,
+      "turns": [
+        { "role": "caller",   "t": 0,   "text": "我爷爷发烧，烧得挺厉害，人没精神。" },
+        { "role": "operator", "t": 7,   "text": "您好，先告诉我地址。" },
+        { "role": "caller",   "t": 16,  "text": "栖霞区尧化门街20号，3栋502。" },
+        { "role": "operator", "t": 24,  "text": "好，车派出去了。你的电话给我一下。" },
+        { "role": "caller",   "t": 33,  "text": "135XXXXXXXX。" },
+        { "role": "operator", "t": 40,  "text": "家里现在安全吧，没有别的意外吧？" },
+        { "role": "caller",   "t": 49,  "text": "没有。" },
+        { "role": "operator", "t": 56,  "text": "老人家多大年纪？" },
+        { "role": "caller",   "t": 64,  "text": "八十二。" },
+        { "role": "operator", "t": 71,  "text": "他有没有高血压、糖尿病这些老毛病，吃着什么药？" },
+        { "role": "caller",   "t": 82,  "text": "哎你别问这些了我不知道，你们赶紧来就行了，我现在没工夫跟你说。" },
+        { "role": "operator", "t": 94,  "text": "好的好的，那您先说说他现在具体什么样子。" },
+        { "role": "caller",   "t": 106, "text": "就是发烧，脸红，摸着很烫。" },
+        { "role": "operator", "t": 118, "text": "让他多喝点温水，别盖太厚的被子，救护车马上到，您别急，保持电话。" },
+        { "role": "caller",   "t": 140, "text": "好。" },
+        { "role": "operator", "t": 172, "text": "我再确认一下，是尧化门街20号3栋502对吧？" },
+        { "role": "caller",   "t": 182, "text": "对。" }
+      ],
+      "gt": {
+        "applicable": ["R01","R02","R03","R04","R05","R06","R07","R08","R20"],
+        "violations": ["R06"],
+        "refused": ["R20"]
+      }
+    },
+
+    {
+      "id": "C12",
+      "title": "落水者被救上岸、无呼吸（没做 CPR 和 AED）",
+      "call_type_gt": "CARDIAC",
+      "event_type_gt": "溺水",
+      "fatal_category_gt": "CPR",
+      "turns": [
+        { "role": "caller",   "t": 0,   "text": "有人掉河里了！我们刚把他捞上来，人没动静了！" },
+        { "role": "operator", "t": 8,   "text": "在哪个位置，河堤哪一段？" },
+        { "role": "caller",   "t": 18,  "text": "在江心洲大桥下面的河堤路，靠近那个小亭子。" },
+        { "role": "operator", "t": 26,  "text": "好，救护车派出去了。你电话给我。" },
+        { "role": "caller",   "t": 35,  "text": "137XXXXXXXX。" },
+        { "role": "operator", "t": 42,  "text": "你们现在都在岸上吧，别站在水边，注意安全。" },
+        { "role": "caller",   "t": 52,  "text": "都在岸上。" },
+        { "role": "operator", "t": 59,  "text": "落水的人多大年纪？" },
+        { "role": "caller",   "t": 67,  "text": "二十多岁，男的。" },
+        { "role": "operator", "t": 74,  "text": "他大概什么时候被捞上来的？" },
+        { "role": "caller",   "t": 83,  "text": "刚捞上来一分钟左右。" },
+        { "role": "operator", "t": 90,  "text": "您叫他、拍他肩膀，有反应吗？" },
+        { "role": "caller",   "t": 100, "text": "没反应，喊他名字也不理。" },
+        { "role": "operator", "t": 108, "text": "那他还有呼吸吗，看胸口有没有起伏？" },
+        { "role": "caller",   "t": 118, "text": "好像没呼吸了，胸口不动。" },
+        { "role": "operator", "t": 126, "text": "您先把他侧过来躺，头低一点，把肚子里的水拍出来、控一控。" },
+        { "role": "caller",   "t": 148, "text": "拍出来一点水了。" },
+        { "role": "operator", "t": 158, "text": "他以前有什么病吗，会不会游泳？" },
+        { "role": "caller",   "t": 166, "text": "不知道，看着面生。" },
+        { "role": "operator", "t": 174, "text": "别慌，车马上到，你们坚持住，保持电话别挂。" },
+        { "role": "operator", "t": 186, "text": "你们围的人散开一点，给他留点空间。" },
+        { "role": "caller",   "t": 198, "text": "好。" },
+        { "role": "operator", "t": 280, "text": "我确认一下，你们是在河堤路小亭子旁边对吧？" },
+        { "role": "caller",   "t": 290, "text": "对。" }
+      ],
+      "gt": {
+        "applicable": ["R01","R02","R03","R04","R05","R06","R07","R08","R09","R10","R11","R12","R20"],
+        "violations": ["R11","R12"],
+        "refused": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "id": "C07",
+  "title": "孕妇临产、已破水（规范处置）",
+  "duration": 210,
+  "classify": {
+    "call_type": "OBSTETRIC",
+    "event_type": "临产",
+    "fatal_category": "分娩",
+    "response_unit": "救护"
+  },
+  "classify_gt": {
+    "call_type": "OBSTETRIC",
+    "event_type": "临产",
+    "fatal_category": "分娩"
+  },
+  "rows": [
+    {
+      "id": "R01",
+      "title": "确认详细地址",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 60]s 内出现（实际 7s）",
+      "evidence": {
+        "action": "ask_address",
+        "turn": 2,
+        "time": 7,
+        "quote": "地址告诉我"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R02",
+      "title": "记录回拨电话",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 120]s 内出现（实际 25s）",
+      "evidence": {
+        "action": "ask_callback",
+        "turn": 4,
+        "time": 25,
+        "quote": "你的电话给我"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R03",
+      "title": "告知已派出救护车",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 90]s 内出现（实际 25s）",
+      "evidence": {
+        "action": "dispatch",
+        "turn": 4,
+        "time": 25,
+        "quote": "救护车已经派出去了"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R04",
+      "title": "确认现场安全",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 120]s 内出现（实际 41s）",
+      "evidence": {
+        "action": "ask_scene_safety",
+        "turn": 6,
+        "time": 41,
+        "quote": "没有别的情况、周围安全吧"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R05",
+      "title": "询问患者基本信息",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 150]s 内出现（实际 57s）",
+      "evidence": {
+        "action": "ask_patient_basic",
+        "turn": 8,
+        "time": 57,
+        "quote": "产妇多大年纪？"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R06",
+      "title": "询问发病/受伤时间",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 150]s 内出现（实际 72s）",
+      "evidence": {
+        "action": "ask_onset_time",
+        "turn": 10,
+        "time": 72,
+        "quote": "她大概是几点开始肚子疼的？"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R07",
+      "title": "安抚并提示保持通话",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 180]s 内出现（实际 145s）",
+      "evidence": {
+        "action": "reassure",
+        "turn": 16,
+        "time": 145,
+        "quote": "不用紧张，我们的人马上就到，保持电话别挂"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R08",
+      "title": "结束前复述地址",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [150, 210]s 内出现（实际 200s）",
+      "evidence": {
+        "action": "repeat_address",
+        "turn": 18,
+        "time": 200,
+        "quote": "XX路9号6楼对吧"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R09",
+      "title": "判断患者意识",
+      "fatal_tag": null,
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CARDIAC，本通话类型为 OBSTETRIC",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R10",
+      "title": "判断患者呼吸",
+      "fatal_tag": "气道",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CARDIAC，本通话类型为 OBSTETRIC",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R11",
+      "title": "无呼吸时指导胸外按压",
+      "fatal_tag": "CPR",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CARDIAC，本通话类型为 OBSTETRIC",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R12",
+      "title": "无呼吸时指导使用 AED",
+      "fatal_tag": "AED",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CARDIAC，本通话类型为 OBSTETRIC",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R13",
+      "title": "询问出血情况",
+      "fatal_tag": null,
+      "verdict": "NA",
+      "reason": "该需求仅适用于 TRAUMA，本通话类型为 OBSTETRIC",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R14",
+      "title": "出血时指导止血",
+      "fatal_tag": "止血",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 TRAUMA，本通话类型为 OBSTETRIC",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R15",
+      "title": "询问是否气道异物梗阻",
+      "fatal_tag": "气道阻塞",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CHOKING，本通话类型为 OBSTETRIC",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R16",
+      "title": "异物梗阻时指导解阻",
+      "fatal_tag": "气道阻塞",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CHOKING，本通话类型为 OBSTETRIC",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R17",
+      "title": "询问宫缩间隔/是否破水",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 90]s 内出现（实际 89s）",
+      "evidence": {
+        "action": "ask_contraction",
+        "turn": 12,
+        "time": 89,
+        "quote": "现在多久疼一次？羊水破了没有？"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R18",
+      "title": "临产时指导分娩",
+      "fatal_tag": "分娩",
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [100, 220]s 内出现（实际 110s）",
+      "evidence": {
+        "action": "delivery_guidance",
+        "turn": 14,
+        "time": 110,
+        "quote": "现在先让她平躺下来，屁股底下垫个枕头或者被子垫高，准备几条干净的毛巾"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R19",
+      "title": "危险源警告",
+      "fatal_tag": null,
+      "verdict": "NA",
+      "reason": "该需求仅适用于 FIRE，本通话类型为 OBSTETRIC",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R20",
+      "title": "询问既往病史/过敏",
+      "fatal_tag": null,
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CARDIAC/TRAUMA/GENERAL，本通话类型为 OBSTETRIC",
+      "evidence": null,
+      "gt": "NA"
+    }
+  ]
+}

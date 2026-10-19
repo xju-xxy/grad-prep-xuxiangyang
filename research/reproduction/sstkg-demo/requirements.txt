@@ -1,0 +1,4 @@
+# SSTKG 复现用到的第三方库。
+# 安装方法： pip install -r requirements.txt
+# 这个复现只用到 numpy（自己按公式实现交替优化，没有用 torch 训练）。
+numpy>=1.26

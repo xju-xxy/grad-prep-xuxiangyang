@@ -1,0 +1,14 @@
+# ResNet 复现用到的库。
+# 注意：这台机器上系统 python 已经自带 torch 2.13.0+cpu，但没有 torchvision，
+# 所以我建了一个带 --system-site-packages 的虚拟环境，只单独装了 torchvision。
+# 如果从零装，直接 pip install -r requirements.txt 也行（下面写清了两种方式）。
+#
+# CPU 版安装（推荐，装得快）：
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+#   pip install torchvision --index-url https://download.pytorch.org/whl/cpu
+#
+# 或者直接：
+#   pip install -r requirements.txt
+torch
+torchvision
+matplotlib

@@ -1,0 +1,32 @@
+﻿训练集 800 张，测试集 200 张，batch=16，epochs=30
+epoch  1/30  loss 0.9988  test_dice 0.9794  <- 存权重
+epoch  2/30  loss 0.7378  test_dice 0.9906  <- 存权重
+epoch  3/30  loss 0.5436  test_dice 0.9992  <- 存权重
+epoch  4/30  loss 0.3826  test_dice 0.9995  <- 存权重
+epoch  5/30  loss 0.2556  test_dice 0.9995  <- 存权重
+epoch  6/30  loss 0.1681  test_dice 0.9996  <- 存权重
+epoch  7/30  loss 0.1135  test_dice 0.9998  <- 存权重
+epoch  8/30  loss 0.0795  test_dice 0.9998  <- 存权重
+epoch  9/30  loss 0.0627  test_dice 0.9998
+epoch 10/30  loss 0.0416  test_dice 0.9999  <- 存权重
+epoch 11/30  loss 0.0328  test_dice 0.9999  <- 存权重
+epoch 12/30  loss 0.0256  test_dice 0.9999  <- 存权重
+epoch 13/30  loss 0.0205  test_dice 0.9999  <- 存权重
+epoch 14/30  loss 0.0171  test_dice 0.9999
+epoch 15/30  loss 0.0145  test_dice 1.0000  <- 存权重
+epoch 16/30  loss 0.0131  test_dice 0.9997
+epoch 17/30  loss 0.0117  test_dice 0.9999
+epoch 18/30  loss 0.0098  test_dice 0.9999
+epoch 19/30  loss 0.0085  test_dice 1.0000  <- 存权重
+epoch 20/30  loss 0.0076  test_dice 0.9999
+epoch 21/30  loss 0.0070  test_dice 0.9999
+epoch 22/30  loss 0.0062  test_dice 1.0000
+epoch 23/30  loss 0.0058  test_dice 1.0000  <- 存权重
+epoch 24/30  loss 0.0051  test_dice 1.0000
+epoch 25/30  loss 0.0047  test_dice 1.0000
+epoch 26/30  loss 0.0043  test_dice 1.0000
+epoch 27/30  loss 0.0039  test_dice 1.0000
+epoch 28/30  loss 0.0036  test_dice 1.0000  <- 存权重
+epoch 29/30  loss 0.0038  test_dice 1.0000
+epoch 30/30  loss 0.0036  test_dice 0.9996
+训练结束，共 880.6 秒（14.68 分钟），最好 test_dice=1.0000

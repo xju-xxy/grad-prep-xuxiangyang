@@ -1,0 +1,88 @@
+{
+  "source": {
+    "paper": "Harnessing Large Language Models for Disaster Management: A Survey",
+    "venue": "ACL 2025 Findings",
+    "arxiv": "2501.06932",
+    "note": "把综述 Figure 1 的分类框架（灾害四阶段 x 任务 x 模型类型）编码成结构化配置，供抽取工具读取。占比数字取自论文对已收录文献的统计。"
+  },
+  "stages": [
+    {
+      "key": "mitigation",
+      "cn": "灾害缓解",
+      "share": 0.016,
+      "desc": "灾前长期预防，比如评估建筑脆弱性",
+      "tasks": [
+        {"key": "vulnerability_assessment", "cn": "脆弱性评估", "desc": "评估建筑/区域面对灾害的风险"}
+      ]
+    },
+    {
+      "key": "preparedness",
+      "cn": "灾害准备",
+      "share": 0.126,
+      "desc": "灾前预警、疏散规划",
+      "tasks": [
+        {"key": "early_warning", "cn": "灾害预警", "desc": "生成面向公众的预警信息"},
+        {"key": "evacuation_planning", "cn": "疏散规划", "desc": "制定提前疏散预案、转移路线"}
+      ]
+    },
+    {
+      "key": "response",
+      "cn": "灾害响应",
+      "share": 0.724,
+      "desc": "灾害发生时的应急处理，论文里占七成多，我方向也落在这一阶段",
+      "tasks": [
+        {"key": "disaster_identification", "cn": "灾害识别", "desc": "判断一条消息是否与灾害相关"},
+        {
+          "key": "disaster_situation_assessment",
+          "cn": "灾害态势评估",
+          "desc": "判断灾种、估计严重程度、生成灾情描述",
+          "subtasks": [
+            {"key": "situation_classification", "cn": "态势分类", "desc": "判断是洪水、地震还是火灾"},
+            {"key": "severity_estimation", "cn": "严重程度估计", "desc": "几级灾情、损失多大"},
+            {"key": "description_generation", "cn": "灾情描述生成", "desc": "自动生成灾情摘要/报告"}
+          ]
+        },
+        {"key": "disaster_information_coordination", "cn": "灾害信息协调", "desc": "汇总各方信息、去重整合"},
+        {"key": "disaster_rescuing", "cn": "灾害救援", "desc": "生成救援方案、路径规划"},
+        {"key": "disaster_issue_consultation", "cn": "灾害问题咨询", "desc": "回答灾区群众的问题"}
+      ]
+    },
+    {
+      "key": "recovery",
+      "cn": "灾害恢复",
+      "share": 0.134,
+      "desc": "灾后重建、损失评估",
+      "tasks": [
+        {"key": "damage_assessment", "cn": "损失评估", "desc": "统计灾害造成的经济损失"},
+        {"key": "reconstruction", "cn": "灾后重建", "desc": "规划重建优先级"}
+      ]
+    }
+  ],
+  "model_types": [
+    {
+      "key": "ELM",
+      "cn": "编码器型大模型",
+      "en": "Encoder-based LLM",
+      "desc": "BERT 这类，擅长分类、理解任务（论文图标是黄色小人）"
+    },
+    {
+      "key": "DLM",
+      "cn": "解码器型大模型",
+      "en": "Decoder-based LLM",
+      "desc": "GPT 这类生成模型，擅长写报告、生成文本（论文图标是骆驼）"
+    },
+    {
+      "key": "MLLM",
+      "cn": "多模态大模型",
+      "en": "Multimodal LLM",
+      "desc": "能同时处理图片和文字（论文图标是眼睛）"
+    }
+  ],
+  "datasets": [
+    {"name": "CrisisLex", "task": "相关性分类", "source": "Twitter", "note": "比较老，但是经典"},
+    {"name": "CrisisMMD", "task": "多模态", "source": "Twitter + 图片", "note": "有图有文，适合 MLLM"},
+    {"name": "Damage Multimodal Dataset", "task": "损坏评估", "source": "多源", "note": "可能需要用到"},
+    {"name": "AIDR", "task": "分类/标注", "source": "Twitter", "note": "流行度比较高"},
+    {"name": "CrisisNLP", "task": "多任务", "source": "社交媒体", "note": "跨多种灾害类型"}
+  ]
+}

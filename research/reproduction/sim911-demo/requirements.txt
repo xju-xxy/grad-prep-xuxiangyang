@@ -1,0 +1,7 @@
+# Sim911 复现项目用到的第三方库。
+# 安装方法： pip install -r requirements.txt
+zhipuai>=2.1.5
+python-dotenv
+# 坑：zhipuai 2.1.5 没把 sniffio 写进依赖，import 时会报
+# ModuleNotFoundError: No module named 'sniffio'，得手动补上
+sniffio

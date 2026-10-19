@@ -1,0 +1,253 @@
+{
+  "id": "C03",
+  "title": "路口车祸、右腿大量出血（规范处置）",
+  "duration": 258,
+  "classify": {
+    "call_type": "TRAUMA",
+    "event_type": "车祸外伤",
+    "fatal_category": "止血",
+    "response_unit": "救护"
+  },
+  "classify_gt": {
+    "call_type": "TRAUMA",
+    "event_type": "车祸外伤",
+    "fatal_category": "止血"
+  },
+  "rows": [
+    {
+      "id": "R01",
+      "title": "确认详细地址",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 60]s 内出现（实际 7s）",
+      "evidence": {
+        "action": "ask_address",
+        "turn": 2,
+        "time": 7,
+        "quote": "是哪两条路交叉，靠近什么建筑？"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R02",
+      "title": "记录回拨电话",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 120]s 内出现（实际 32s）",
+      "evidence": {
+        "action": "ask_callback",
+        "turn": 5,
+        "time": 32,
+        "quote": "你手机号多少，我们保持联系。"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R03",
+      "title": "告知已派出救护车",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 90]s 内出现（实际 24s）",
+      "evidence": {
+        "action": "dispatch",
+        "turn": 4,
+        "time": 24,
+        "quote": "救护车已经派出去了，你们先别随便搬动伤者。"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R04",
+      "title": "确认现场安全",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 120]s 内出现（实际 47s）",
+      "evidence": {
+        "action": "ask_scene_safety",
+        "turn": 7,
+        "time": 47,
+        "quote": "你们现在站在安全的地方吗，路上车还多不多？"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R05",
+      "title": "询问患者基本信息",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 150]s 内出现（实际 64s）",
+      "evidence": {
+        "action": "ask_patient_basic",
+        "turn": 9,
+        "time": 64,
+        "quote": "伤者多大年纪，男的还是女的？"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R06",
+      "title": "询问发病/受伤时间",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 150]s 内出现（实际 79s）",
+      "evidence": {
+        "action": "ask_onset_time",
+        "turn": 11,
+        "time": 79,
+        "quote": "他是什么时候受的伤？"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R07",
+      "title": "安抚并提示保持通话",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 180]s 内出现（实际 174s）",
+      "evidence": {
+        "action": "reassure",
+        "turn": 21,
+        "time": 174,
+        "quote": "别让他喝水吃东西，伤口就一直压着，救护车马上到，你们坚持一下。"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R08",
+      "title": "结束前复述地址",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [198, 258]s 内出现（实际 248s）",
+      "evidence": {
+        "action": "repeat_address",
+        "turn": 23,
+        "time": 248,
+        "quote": "是XX路和YY路新华书店门口对吧，车到了。"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R09",
+      "title": "判断患者意识",
+      "fatal_tag": null,
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CARDIAC，本通话类型为 TRAUMA",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R10",
+      "title": "判断患者呼吸",
+      "fatal_tag": "气道",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CARDIAC，本通话类型为 TRAUMA",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R11",
+      "title": "无呼吸时指导胸外按压",
+      "fatal_tag": "CPR",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CARDIAC，本通话类型为 TRAUMA",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R12",
+      "title": "无呼吸时指导使用 AED",
+      "fatal_tag": "AED",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CARDIAC，本通话类型为 TRAUMA",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R13",
+      "title": "询问出血情况",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 90]s 内出现（实际 88s）",
+      "evidence": {
+        "action": "ask_bleeding",
+        "turn": 13,
+        "time": 88,
+        "quote": "他身上哪里在流血，流得多不多？"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R14",
+      "title": "出血时指导止血",
+      "fatal_tag": "止血",
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [98, 158]s 内出现（实际 106s）",
+      "evidence": {
+        "action": "bleeding_control",
+        "turn": 15,
+        "time": 106,
+        "quote": "你马上找一块干净的布、毛巾或者衣服，用力压住出血的地方，一直压着别松手，压到我们"
+      },
+      "gt": "Yes"
+    },
+    {
+      "id": "R15",
+      "title": "询问是否气道异物梗阻",
+      "fatal_tag": "气道阻塞",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CHOKING，本通话类型为 TRAUMA",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R16",
+      "title": "异物梗阻时指导解阻",
+      "fatal_tag": "气道阻塞",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 CHOKING，本通话类型为 TRAUMA",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R17",
+      "title": "询问宫缩间隔/是否破水",
+      "fatal_tag": null,
+      "verdict": "NA",
+      "reason": "该需求仅适用于 OBSTETRIC，本通话类型为 TRAUMA",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R18",
+      "title": "临产时指导分娩",
+      "fatal_tag": "分娩",
+      "verdict": "NA",
+      "reason": "该需求仅适用于 OBSTETRIC，本通话类型为 TRAUMA",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R19",
+      "title": "危险源警告",
+      "fatal_tag": null,
+      "verdict": "NA",
+      "reason": "该需求仅适用于 FIRE，本通话类型为 TRAUMA",
+      "evidence": null,
+      "gt": "NA"
+    },
+    {
+      "id": "R20",
+      "title": "询问既往病史/过敏",
+      "fatal_tag": null,
+      "verdict": "Yes",
+      "reason": "要求动作在时间窗 [0, 180]s 内出现（实际 160s）",
+      "evidence": {
+        "action": "ask_history",
+        "turn": 19,
+        "time": 160,
+        "quote": "他以前有什么病吗，对药物过不过敏？"
+      },
+      "gt": "Yes"
+    }
+  ]
+}

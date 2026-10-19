@@ -1,0 +1,16 @@
+{
+  "n_calls": 12,
+  "n_pairs": 240,
+  "agreement": 0.9666666666666667,
+  "violation_tp": 5,
+  "violation_fp": 5,
+  "violation_fn": 2,
+  "violation_precision": 0.5,
+  "violation_recall": 0.7142857142857143,
+  "violation_f1": 0.588235294117647,
+  "refused_hit": 0,
+  "refused_total": 1,
+  "na_agree": 114,
+  "na_total": 114,
+  "type_accuracy": 1.0
+}

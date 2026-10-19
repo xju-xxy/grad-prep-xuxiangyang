@@ -1,0 +1,116 @@
+{
+  "source": {
+    "paper": "Large Language Model based Multi-Agents: A Survey of Progress and Challenges",
+    "venue": "IJCAI 2024 Survey Track",
+    "arxiv": "2402.01680",
+    "note": "把综述的四维分析框架（环境接口 / 人设 / 通信 / 能力获取）编码成结构化配置，供打标工具读取。每个维度的选项和定义都照综述笔记里的说法写，另外把综述点名的四个坑单列出来做褒贬核对。"
+  },
+  "dimensions": [
+    {
+      "key": "environment_interface",
+      "cn": "环境接口",
+      "en": "Agent-Environment Interface",
+      "desc": "Agent 跟外部世界的关系，决定它能不能真的动手",
+      "multi": false,
+      "options": [
+        {"key": "Sandbox", "cn": "沙盒", "desc": "人造的可交互环境，比如代码解释器、游戏世界，Agent 在里面试探、操作"},
+        {"key": "Physical", "cn": "物理环境", "desc": "真实的物理世界，比如机械臂、机器人，Agent 要处理真实的感知和动作"},
+        {"key": "None", "cn": "无环境", "desc": "关起门来纯讨论，Agent 只跟其他 Agent 交换文本，不碰外部世界"}
+      ]
+    },
+    {
+      "key": "agent_profiling",
+      "cn": "人设",
+      "en": "Agent Profiling",
+      "desc": "每个 Agent 的身份是怎么定出来的",
+      "multi": false,
+      "options": [
+        {"key": "Pre-defined", "cn": "人工预定义", "desc": "角色是人手写死的，比如固定分产品经理/工程师"},
+        {"key": "Model-Generated", "cn": "模型生成", "desc": "让模型自己临时生成角色分工"},
+        {"key": "Data-Derived", "cn": "数据派生", "desc": "从现成的数据集/真实人物记录里挑出角色"}
+      ]
+    },
+    {
+      "key": "agent_communication",
+      "cn": "通信",
+      "en": "Agent Communication",
+      "desc": "Agent 之间怎么说话，分范式层和结构层两块",
+      "multi": true,
+      "subfacets": [
+        {
+          "key": "paradigm",
+          "cn": "通信范式",
+          "multi": true,
+          "options": [
+            {"key": "合作", "desc": "为同一个目标分工协作"},
+            {"key": "辩论", "desc": "互相质疑、反驳，靠争论逼近更可信的结论"},
+            {"key": "竞争", "desc": "彼此对抗、博弈，一方赢一方输"}
+          ]
+        },
+        {
+          "key": "structure",
+          "cn": "通信结构",
+          "multi": true,
+          "options": [
+            {"key": "分层", "desc": "有上下级，上级统筹、下级执行"},
+            {"key": "去中心化", "desc": "没有中心节点，Agent 之间自由两两通信"},
+            {"key": "中心化", "desc": "有一个中枢/主持人在调度"},
+            {"key": "共享消息池", "desc": "大家往同一个消息池读写，靠池子同步"}
+          ]
+        }
+      ]
+    },
+    {
+      "key": "capability_acquisition",
+      "cn": "能力获取",
+      "en": "Capability Acquisition",
+      "desc": "Agent 的本事从哪儿长出来，看反馈来源和生长机制",
+      "multi": true,
+      "subfacets": [
+        {
+          "key": "feedback",
+          "cn": "反馈来源",
+          "multi": true,
+          "options": [
+            {"key": "环境", "desc": "从环境里试错拿反馈"},
+            {"key": "其他Agent", "desc": "靠同伴的批评/评价/回答来改进"},
+            {"key": "人类", "desc": "有人中途介入给纠正"},
+            {"key": "无", "desc": "没有明确的外部反馈通道"}
+          ]
+        },
+        {
+          "key": "mechanism",
+          "cn": "生长机制",
+          "multi": true,
+          "options": [
+            {"key": "记忆机制", "desc": "有记忆/外部知识库/向量检索当长期记忆"},
+            {"key": "自我进化", "desc": "会改自己的提示或策略"},
+            {"key": "动态生成新Agent", "desc": "按需临时拉起新角色"}
+          ]
+        }
+      ]
+    }
+  ],
+  "pitfalls": [
+    {
+      "key": "multimodal_gap",
+      "cn": "多模态空白",
+      "desc": "综述说多模态环境几乎空白，现在基本都是纯文本"
+    },
+    {
+      "key": "hallucination_cascade",
+      "cn": "幻觉级联",
+      "desc": "一个 Agent 编的内容被别的 Agent 引用再加工，假消息像病毒一样传开"
+    },
+    {
+      "key": "group_optimization",
+      "cn": "群体优化缺失",
+      "desc": "大家都只逐个 Agent 单点调优，没人从群体层面做协同优化"
+    },
+    {
+      "key": "benchmark_gap",
+      "cn": "缺应急benchmark",
+      "desc": "编排成本高、评估基准缺，应急/灾害场景更是没有现成 benchmark"
+    }
+  ]
+}
